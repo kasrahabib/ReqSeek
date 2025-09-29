@@ -16,8 +16,8 @@ This replication package supports our paper titled: **ReqSeek: Transformer-Based
 1. **[`ReqSeek/`](./ReqSeek/)**  
    - This is the ***ReqSeek*** model; the best performing model. For more details, refer to the paper.
 
-   - [`using_reqseek.ipynb`](./using_reqseek.ipynb): This notebook demonstrates how to download and use `ReqSeek.`
-   - **Note**: To run `ReqSeek` you might need GPU power
+   - [`demo.ipynb`](./demo.ipynb): This notebook demonstrates how to download and use `ReqSeek.`
+   - **Note**: To run `ReqSeek`, you might need GPU power
 
 2. **[`datasets/`](./datasets/)**  
    - **Will contain** our curated requirements datasets. The three curated datasets (`ARID`, `SwaRD`, `BLINDED-DATASET`) are exclusively submitted for review through the submission portal.

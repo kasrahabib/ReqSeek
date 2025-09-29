@@ -4,7 +4,8 @@ datasets_with_data/*
 
 **/.ipynb_checkpoints/
 **/.DS_Store
-./viewing_licenses.ipynb
+
+/viewing_licenses.ipynb
 
 evaluations/RQ1/training_scripts_and_models/models/*
 evaluations/RQ1/training_scripts_and_models/model_snapshot_download.py
