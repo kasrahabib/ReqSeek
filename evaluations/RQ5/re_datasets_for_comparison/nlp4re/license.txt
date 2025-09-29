@@ -1,0 +1,6 @@
+Attribution
+This work incorporates material from the NLP4RE ReqEval Shared Task Dataset, available at https://github.com/frieden84/nlp4re-reqeval/tree/V2.0, and licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+
+You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+If citing the dataset in publications, please refer to the repository or associated workshop paper (if provided in the repository documentation).

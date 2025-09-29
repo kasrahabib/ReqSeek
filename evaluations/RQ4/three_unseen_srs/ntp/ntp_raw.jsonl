@@ -1,0 +1,1065 @@
+{"text": "See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/265397639", "label": ["non_requirement_text"]}
+{"text": "Software Requirements Specification (SRS) for the <Nodes Portal Toolkit (NPT)>", "label": ["non_requirement_text"]}
+{"text": "Technical Report \u00b7 September 2011", "label": ["non_requirement_text"]}
+{"text": "2 authors, including:", "label": ["non_requirement_text"]}
+{"text": "Universit\u00e9 Libre de Bruxelles", "label": ["non_requirement_text"]}
+{"text": "Some of the authors of this publication are also working on these related projects:", "label": ["non_requirement_text"]}
+{"text": "Biogeographic Atlas of the Southern OceanView project", "label": ["non_requirement_text"]}
+{"text": "rECTO - Refugia and Ecosystem Tolerance in the Southern OceanView project", "label": ["non_requirement_text"]}
+{"text": "All content following this page was uploaded by Bruno Danis on 08 September 2014.", "label": ["non_requirement_text"]}
+{"text": "The user has requested enhancement of the downloaded file.", "label": ["non_requirement_text"]}
+{"text": "Contributors Date Reason for changes", "label": ["non_requirement_text"]}
+{"text": "Renaudier 18 Jul 2011 Initial draft, open for discussion", "label": ["non_requirement_text"]}
+{"text": "Chi-Jen Ko, B.", "label": ["non_requirement_text"]}
+{"text": "Addink 13 Sep 2011 Second version, includes comments and revisions from the NPT-Advisory Group and GBIF-Secretariat", "label": ["non_requirement_text"]}
+{"text": "Chi-Jen Ko, B.", "label": ["non_requirement_text"]}
+{"text": "Smith 27 Sep 2011 Third version, includes revisions from the NPT-Technical Task Force, circulated to NPT-Advisory Group and GBIF-Secretariat", "label": ["non_requirement_text"]}
+{"text": "- Revision History 2", "label": ["non_requirement_text"]}
+{"text": "- Introduction 6", "label": ["non_requirement_text"]}
+{"text": "- Purpose 2", "label": ["non_requirement_text"]}
+{"text": "- Scope of the NPT 2", "label": ["non_requirement_text"]}
+{"text": "- Product perspective and historical background 7", "label": ["non_requirement_text"]}
+{"text": "- Document conventions 7", "label": ["non_requirement_text"]}
+{"text": "- Actor Survey 9", "label": ["non_requirement_text"]}
+{"text": "- Primary actors 9", "label": ["non_requirement_text"]}
+{"text": "- - Front end users 9", "label": ["non_requirement_text"]}
+{"text": "- Back office users 9", "label": ["non_requirement_text"]}
+{"text": "Secondary actors 9", "label": ["non_requirement_text"]}
+{"text": "- Use-Case Model Survey 11", "label": ["non_requirement_text"]}
+{"text": "- Back end users 11", "label": ["non_requirement_text"]}
+{"text": "- - Administrator 11", "label": ["non_requirement_text"]}
+{"text": "- Data manager 12", "label": ["non_requirement_text"]}
+{"text": "- Portal manager 15", "label": ["non_requirement_text"]}
+{"text": "Front end users 12", "label": ["non_requirement_text"]}
+{"text": "- - Visitor 16", "label": ["non_requirement_text"]}
+{"text": "- Registered visitor 19", "label": ["non_requirement_text"]}
+{"text": "Functional requirements 21", "label": ["non_requirement_text"]}
+{"text": "- Back end functionalities 21", "label": ["non_requirement_text"]}
+{"text": "- - Administrator 21", "label": ["non_requirement_text"]}
+{"text": "- Data manager 21", "label": ["non_requirement_text"]}
+{"text": "- Portal manager 23", "label": ["non_requirement_text"]}
+{"text": "Front-end functionalities 24", "label": ["non_requirement_text"]}
+{"text": "- - Visitor 24", "label": ["non_requirement_text"]}
+{"text": "- Registered visitor 25", "label": ["non_requirement_text"]}
+{"text": "Nonfunctional Requirements 26", "label": ["non_requirement_text"]}
+{"text": "- Assumptions and Dependencies 22", "label": ["non_requirement_text"]}
+{"text": "- Security Requirements 22", "label": ["non_requirement_text"]}
+{"text": "- Scalability Requirements 22", "label": ["non_requirement_text"]}
+{"text": "- Robustness Requirements 27", "label": ["non_requirement_text"]}
+{"text": "- Interoperability Requirements 27", "label": ["non_requirement_text"]}
+{"text": "- Operating Environment 27", "label": ["non_requirement_text"]}
+{"text": "- Usability Requirements 27", "label": ["non_requirement_text"]}
+{"text": "- Supportability Requirements 27", "label": ["non_requirement_text"]}
+{"text": "- User Documentation Requirements 27", "label": ["non_requirement_text"]}
+{"text": "- Design and Implementation Constraints 28", "label": ["non_requirement_text"]}
+{"text": "- Interfaces 28", "label": ["non_requirement_text"]}
+{"text": "- User Interfaces 28", "label": ["non_requirement_text"]}
+{"text": "- - Pagination 28", "label": ["non_requirement_text"]}
+{"text": "- Distribution map 28", "label": ["non_requirement_text"]}
+{"text": "- Filter building interface 28", "label": ["non_requirement_text"]}
+{"text": "Hardware Interfaces 28", "label": ["non_requirement_text"]}
+{"text": "The NPT is a community, open source project.", "label": ["non_requirement_text"]}
+{"text": "The present Nodes Portal Toolkit (NPT) Software Requirements Specification (SRS) document was prepared as the next incremental step after the NPT Scoping and Requirements (S&R) document, which was drafted by the NPT Advisory Group (AG), during the Madrid workshop in March 2011 and publicly released in June 2011.", "label": ["non_requirement_text"]}
+{"text": "The purpose of the SRS is to describe the software requirements for the NPT, reaching a level of detail which makes it fit to be circulated amongst the NPT stakeholders, and in particular amongst the NPT developers.", "label": ["non_requirement_text"]}
+{"text": "It is also intended to serve as a basis for discussion during the Brussels NPT technical meeting (September 2011), during which elements for a high-level architectural and design document will be gathered.", "label": ["non_requirement_text"]}
+{"text": "The purpose of the current version of the SRS document is to clarify, validate and verify the requirements for the NPT as expressed by the NPT-AG, focusing on its functional aspects.", "label": ["non_requirement_text"]}
+{"text": "The SRS captures and describes the desired behavior of the end product in a wide range of situations.", "label": ["non_requirement_text"]}
+{"text": "Some of the non-functional requirements in this document were taken as is from the scoping document and can still be refined.", "label": ["non_requirement_text"]}
+{"text": "The present document is also intended to be a planning instrument for the development of the NPT and its potential derivatives.", "label": ["non_requirement_text"]}
+{"text": "As described in the NPT (S&R) document, the Nodes Portal Toolkit is a tool to facilitate discovery and access to GBIF data at a national, regional or thematic level, including the possibility to offer access to additional sources of information.", "label": ["non_requirement_text"]}
+{"text": "The primary users of the NPT are the Node Managers (specifically, the technical teams involved in GBIF Participant Nodes and/or relevant biodiversity information networks), as well as the End-Users of the data published through the various NPT instances.", "label": ["non_requirement_text"]}
+{"text": "The NPT should enable the Node Managers to customize the way GBIF-compliant data are served to their own community or to a specific group of data users.", "label": ["non_requirement_text"]}
+{"text": "Development of the NPT is based on the needs expressed by the Nodes community.", "label": ["non_requirement_text"]}
+{"text": "To the best extent possible, the wishes of the Nodes and their communities regarding NPT functionalities will be expressed in the flexibility and scalability of the tool itself.", "label": ["non_requirement_text"]}
+{"text": "Commitment and feedback is expected from the Nodes community in order to align their needs and the functionalities of the NPT, as it evolves in its various releases.", "label": ["non_requirement_text"]}
+{"text": "Even if the NPT is intended to be a technical tool, NPT-based portals are also envisioned as an important public relations and communication tool for GBIF Participant Nodes, serving also to demonstrate the possibilities that the GBIF network offers at different levels (national, regional, thematic).", "label": ["non_requirement_text"]}
+{"text": "The need for GBIF Participant Node data portals distinct from (and interacting with) the GBIF central portal was already recognized at the first meeting of the Nodes committee in Oct 2002 in San Juan, Costa Rica as a major component of the overall GBIF architecture.", "label": ["non_requirement_text"]}
+{"text": "This quickly led to the release of a first version of a GBIF Portal toolkit for Nodes (Dec 2002).", "label": ["non_requirement_text"]}
+{"text": "As there were still no GBIF-mediated data to share at that time, this early portal was mainly a communication tool (featuring a hierarchical directory of links, files and html pages, announcements, news and articles, calendar of events, news channels syndication, etc.\u2026).", "label": ["non_requirement_text"]}
+{"text": "It also featured a repository for biodiversity data files exported from databases (prefiguring to some degree the approach adopted by the current IPT software in which exported Darwin Core Archives are used to facilitate indexing).", "label": ["non_requirement_text"]}
+{"text": "Nodes started to deploy the GBIF DiGIR network to publish species occurrence data in the fall of 2004 (BioCASE sites following shortly after).", "label": ["non_requirement_text"]}
+{"text": "A first prototype GBIF central portal was officially launched in February 2004.", "label": ["non_requirement_text"]}
+{"text": "In April 2004, Nodes recommended to consider the development of a data portal toolkit for nodes as part of a work program.", "label": ["non_requirement_text"]}
+{"text": "In October 2004, the recommendation became a ranked priority, second only to hiring a full time Nodes officer.", "label": ["non_requirement_text"]}
+{"text": "Between May and October 2005, a draft requirements document was developed, a workshop was held in Copenhagen and some resources were allocated to an early prototype presented in April 2006 in South Africa.", "label": ["non_requirement_text"]}
+{"text": "At that time, the customized portal for nodes was pretty much perceived as a national or thematic subset of the central portal.", "label": ["non_requirement_text"]}
+{"text": "Subsequently the secretariat focused on the development of a new central portal and the prototype custom portal for nodes was never deployed.", "label": ["non_requirement_text"]}
+{"text": "In the summer of 2009, an online survey was conducted with preliminary results presented at the Nodes meeting in Copenhagen in October.", "label": ["non_requirement_text"]}
+{"text": "This led to convening an Advisory Group (AG) in December 2009 in Montreal to work on a scoping document for a Nodes Portal Toolkit (NPT) and a set of recommendations on how to develop, implement and deploy such a toolkit.", "label": ["non_requirement_text"]}
+{"text": "The AG met again in March 2011 in Madrid and prepared the scoping (S&R) document, under the supervision of the NPT Coordinator.", "label": ["non_requirement_text"]}
+{"text": "After revision and consultation loops between the NPT AG, the GBIF secretariat and the NPT-Coordinator, the S&R document was publicly released in June 2011.", "label": ["non_requirement_text"]}
+{"text": "The main type of convention used throughout this document helps to represent the level of priority of the different software requirements.", "label": ["non_requirement_text"]}
+{"text": "These priorities are established in function of many factors, including those identified in the NPT (S&R) document, consultation loops with the NPT stakeholders, and technical constraints which represent the reality at the moment this document is prepared.", "label": ["non_requirement_text"]}
+{"text": "In the functional requirements section, to keep consistency with the NPT (S&R) document, the same color codes define priorities as defined by the MoSCoW method.", "label": ["non_requirement_text"]}
+{"text": "- Green: NPT V1.0 must have this feature", "label": ["non_requirement_text"]}
+{"text": "- Yellow: NPT V1.0 should have this feature if at all possible", "label": ["non_requirement_text"]}
+{"text": "- Red: NPT V1.0 could have this feature (if it doesn't affect anything else)", "label": ["non_requirement_text"]}
+{"text": "- Black: NPT V1.0 won't have this feature (maybe in the future)", "label": ["non_requirement_text"]}
+{"text": "In Use Case surveys, and Use Case sections, priorities and frequency are attributed an increasing index, ranging from 1 (low priority/frequency) to 5 (high priority/frequency).", "label": ["non_requirement_text"]}
+{"text": "In the nonfunctional requirements section, a series of acronyms are used, as described below:", "label": ["non_requirement_text"]}
+{"text": "BR Business Rules", "label": ["non_requirement_text"]}
+{"text": "CO Design and Implementation Constraints", "label": ["non_requirement_text"]}
+{"text": "CR Capacity Requirements", "label": ["non_requirement_text"]}
+{"text": "IR Interoperability Requirements", "label": ["non_requirement_text"]}
+{"text": "OE Operating Environment", "label": ["non_requirement_text"]}
+{"text": "RR Robustness Requirements", "label": ["non_requirement_text"]}
+{"text": "ScaR Scalability Requirements", "label": ["non_requirement_text"]}
+{"text": "SR Security Requirements", "label": ["non_requirement_text"]}
+{"text": "SupR Supportability Requirements", "label": ["non_requirement_text"]}
+{"text": "UD User Documentation", "label": ["non_requirement_text"]}
+{"text": "UR Usability Requirements", "label": ["non_requirement_text"]}
+{"text": "This section lists the different actors NPT instances shall interact with: end users (primary actors) and actors from which the system needs assistance to satisfy a goal (secondary actors).", "label": ["non_requirement_text"]}
+{"text": "Figure 1: Primary Actors", "label": ["non_requirement_text"]}
+{"text": "Visitors: the data consumers, they only have access to the system frontend.", "label": ["non_requirement_text"]}
+{"text": "Registered visitors: once registered, a visitor is offered extra functionalities to save and load custom occurrence filters.", "label": ["non_requirement_text"]}
+{"text": "Administrators: they are responsible for installing, configuring and monitoring the system and managing modules.", "label": ["non_requirement_text"]}
+{"text": "They are also in charge of managing user accounts and associated roles.", "label": ["non_requirement_text"]}
+{"text": "Administrators should have skills in system administration, database management and deployment of Web applications.", "label": ["non_requirement_text"]}
+{"text": "They should also have basic knowledge of Web-based GIS.", "label": ["non_requirement_text"]}
+{"text": "Data managers: they are in charge of maintaining portal resources.", "label": ["non_requirement_text"]}
+{"text": "Data managers should have basic knowledge of taxonomy and biodiversity data.", "label": ["non_requirement_text"]}
+{"text": "Portal managers: they configure the portal according to the node profile and contribute news, blog entries and articles.", "label": ["non_requirement_text"]}
+{"text": "GBIF Registry: the GBIF Registry is an application that manages the nodes, organizations, resources, and IPT installations registered with GBIF, making them discoverable and interoperable.", "label": ["non_requirement_text"]}
+{"text": "More importantly in the context of the NPT, it also acts as a repository for extensions.", "label": ["non_requirement_text"]}
+{"text": "Data sources: resource repositories that NPT instances can harvest.", "label": ["non_requirement_text"]}
+{"text": "Two types of sources are envisioned in a first approach: IPT instances and GBIF portal Web services (using GBIF Portal API).", "label": ["non_requirement_text"]}
+{"text": "Other data source types may be provided as modules in the future.", "label": ["non_requirement_text"]}
+{"text": "UC ID Name Priority", "label": ["non_requirement_text"]}
+{"text": "UC-A1 Manage modules", "label": ["non_requirement_text"]}
+{"text": "UC-A2 Configure the distribution map", "label": ["non_requirement_text"]}
+{"text": "UC-A3 Manage spatial layers", "label": ["non_requirement_text"]}
+{"text": "UC-A4 Manage user accounts", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-A1 \u2013 Manage modules", "label": ["non_requirement_text"]}
+{"text": "Description: The administrator selects to manage modules in order to add new functionalities to the system by installing modules.", "label": ["non_requirement_text"]}
+{"text": "This use case also allows the administrator to configure or update previously installed modules.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-A2 \u2013 Configure the distribution map", "label": ["non_requirement_text"]}
+{"text": "Description: The administrator selects to configure the distribution map to set the specific projection and default extent for the Node area of interest.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-A3 \u2013 Manage spatial layers", "label": ["non_requirement_text"]}
+{"text": "Description The administrator selects to add or delete the spatial layers displayed on the distribution map for the specific Node.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-A4 \u2013 Manage user accounts", "label": ["non_requirement_text"]}
+{"text": "Description The security officer performs this use case in order to create or delete accounts for the portal staff members so they can access restricted functionalities.", "label": ["non_requirement_text"]}
+{"text": "UC ID Name Priority", "label": ["non_requirement_text"]}
+{"text": "UC-DM1 Manage resources", "label": ["non_requirement_text"]}
+{"text": "UC-DM2 Register a new data source", "label": ["non_requirement_text"]}
+{"text": "UC-DM3 Register a GBIF index data source", "label": ["non_requirement_text"]}
+{"text": "UC-DM4 Register an IPT data source", "label": ["non_requirement_text"]}
+{"text": "UC-DM1 \u2013 Manage resources", "label": ["non_requirement_text"]}
+{"text": "The data manager wants to manage resources in order to import a new resource, edit a resource metadata or delete a resource.", "label": ["non_requirement_text"]}
+{"text": "UC-DM2 \u2013 Register a new data source", "label": ["non_requirement_text"]}
+{"text": "The data manager registers a new data source so the associated core resource is harvested during next harvesting job.", "label": ["non_requirement_text"]}
+{"text": "Data manager \u2013 Secondary: Data source", "label": ["non_requirement_text"]}
+{"text": "UC-DM3 \u2013 Register a GBIF index data source", "label": ["non_requirement_text"]}
+{"text": "Specializes Register a new data source to allow specific configuration for GBIF occurrence Web services data sources.", "label": ["non_requirement_text"]}
+{"text": "Data manager \u2013 Secondary: GBIF Web services", "label": ["non_requirement_text"]}
+{"text": "UC-DM4 \u2013 Register an IPT data source", "label": ["non_requirement_text"]}
+{"text": "Specializes Register a new data source to allow specific configuration for IPT", "label": ["non_requirement_text"]}
+{"text": "The data manager previously added a data source which is no more relevant to the node or which is no more available.", "label": ["non_requirement_text"]}
+{"text": "The data manager wants to unregister this source.", "label": ["non_requirement_text"]}
+{"text": "Actors Data manager", "label": ["non_requirement_text"]}
+{"text": "The data manager wants to manage jobs so as to monitor finished and upcoming jobs, schedule a new job or cancel a scheduled job.", "label": ["non_requirement_text"]}
+{"text": "Actors Data manager", "label": ["non_requirement_text"]}
+{"text": "The data manager checks core resources consistency with registered data sources to identify outdated core resources and unavailable data sources.", "label": ["non_requirement_text"]}
+{"text": "Actors Data manager - Secondary: Registered occurrence data source", "label": ["non_requirement_text"]}
+{"text": "The data manager selects to backup portal data so as to synchronize the portal biodiversity data with those hosted on the registered data sources.", "label": ["non_requirement_text"]}
+{"text": "Actors Primary: Data manager - Secondary: Data source", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-DM9\u2013 Update taxonomic backbone", "label": ["non_requirement_text"]}
+{"text": "Description The data manager updates the taxonomic backbone.", "label": ["non_requirement_text"]}
+{"text": "Actors Data manager", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-DM10 \u2013 Install an extension", "label": ["non_requirement_text"]}
+{"text": "Description The data manager wants to install an extension to allow the system to deal with extra attributes for records of core resources.", "label": ["non_requirement_text"]}
+{"text": "Actors Primary: Data manager \u2013 Secondary: GBIF registry", "label": ["non_requirement_text"]}
+{"text": "- Configure data metrics visibility", "label": ["non_requirement_text"]}
+{"text": "- customize NPT instance", "label": ["non_requirement_text"]}
+{"text": "- Configure front ofice languages", "label": ["non_requirement_text"]}
+{"text": "UC ID Name Priority", "label": ["non_requirement_text"]}
+{"text": "UC-PM1 Configure data metrics visibility", "label": ["non_requirement_text"]}
+{"text": "UC-PM2 Customize NPT instance", "label": ["non_requirement_text"]}
+{"text": "UC-PM3 Configure front office languages", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-PM1 - Configure data metrics visibility", "label": ["non_requirement_text"]}
+{"text": "Description: The portal manager configures data metrics visibility in order to hide some metrics from the visitors in the front office.", "label": ["non_requirement_text"]}
+{"text": "Actors: Portal manager", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-PM2 - Customize NPT instance", "label": ["non_requirement_text"]}
+{"text": "Description: Portal manager customizes NPT instance to adapt the portal appearance and parameters to fit its organization.", "label": ["non_requirement_text"]}
+{"text": "Actors: Portal manager", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-PM3 \u2013 Configure front office languages", "label": ["non_requirement_text"]}
+{"text": "Description: The data manager selects to manage front office languages so as to set the default language and chooses alternate language.", "label": ["non_requirement_text"]}
+{"text": "Actors: Portal manager", "label": ["non_requirement_text"]}
+{"text": "UC ID Name Priority", "label": ["non_requirement_text"]}
+{"text": "UC-V1 Send feedback to the portal contact person", "label": ["non_requirement_text"]}
+{"text": "UC-V2 Select occurrence records and view distribution map", "label": ["non_requirement_text"]}
+{"text": "UC-V3 View occurrence record selection as a table", "label": ["non_requirement_text"]}
+{"text": "UC-V4 Export occurrence record selection", "label": ["non_requirement_text"]}
+{"text": "UC-V5 Export distribution map as an image", "label": ["non_requirement_text"]}
+{"text": "UC-V6 Search portal using full text search", "label": ["non_requirement_text"]}
+{"text": "UC-V7 Contact an occurrence resource publisher", "label": ["non_requirement_text"]}
+{"text": "UC-V8 Export a checklist", "label": ["non_requirement_text"]}
+{"text": "UC-V9 Choose portal language", "label": ["non_requirement_text"]}
+{"text": "Select occurrence records and view distribution map", "label": ["non_requirement_text"]}
+{"text": "View occurrence record selection as table", "label": ["non_requirement_text"]}
+{"text": "Expont distribution map as an image", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-V1 - Send feedback to the portal contact person", "label": ["non_requirement_text"]}
+{"text": "Description The visitor sends feedback to the portal contact person so as to communicate remarks or suggestions about the portal or about the hosted data.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-V2 \u2013 Select occurrence records and view distribution map", "label": ["non_requirement_text"]}
+{"text": "Description The visitor wants to discover and access occurrence records.", "label": ["non_requirement_text"]}
+{"text": "He can select his records of interest using simple taxonomic search or a more elaborate advanced search by combining various criteria.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-V3 - View occurrence record selection as a table", "label": ["non_requirement_text"]}
+{"text": "Description User selects to view occurrence records selection as a table in order to display their attributes.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-V4 - Export occurrence record selection", "label": ["non_requirement_text"]}
+{"text": "Description: User exports the occurrence selection for further analysis.", "label": ["non_requirement_text"]}
+{"text": "Priority: 3 Frequency: 3", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-V5 - Export distribution map as an image", "label": ["non_requirement_text"]}
+{"text": "Description: The visitor exports distribution map as an image so as to be able to insert it in a document.", "label": ["non_requirement_text"]}
+{"text": "Priority: 3 Frequency: 4", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-V6 \u2013 Search portal using full text search", "label": ["non_requirement_text"]}
+{"text": "Description: The visitor searches resource metadata, blog, article and news entries using full text search in order to find and access matching resources and entries.", "label": ["non_requirement_text"]}
+{"text": "Priority: 3 Frequency: 4", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-V7 \u2013 Contact an occurrence resource publisher", "label": ["non_requirement_text"]}
+{"text": "Description The visitor contacts the publisher of an occurrence resource to request more information or send a comment.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-V8 \u2013 Export a checklist", "label": ["non_requirement_text"]}
+{"text": "Description The visitor downloads a checklist for consultation/analysis.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-V9 - Choose portal language", "label": ["non_requirement_text"]}
+{"text": "Description The visitor chooses his language of preference.", "label": ["non_requirement_text"]}
+{"text": "Preconditions The portal manager has configured front office languages with at least one alternate language.", "label": ["non_requirement_text"]}
+{"text": "UC ID Name Priority", "label": ["non_requirement_text"]}
+{"text": "UC-RV1 Save a custom filter", "label": ["non_requirement_text"]}
+{"text": "UC-RV2 Load a custom filter", "label": ["non_requirement_text"]}
+{"text": "UC-RV3 Delete a custom filter", "label": ["non_requirement_text"]}
+{"text": "Save a Custom Filter", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-RV1 \u2013 Save a custom filter", "label": ["non_requirement_text"]}
+{"text": "Description: The registered visitor has built a filter and wants to be able to reuse it in the future.", "label": ["non_requirement_text"]}
+{"text": "He saves the filter in his profile.", "label": ["non_requirement_text"]}
+{"text": "Actors: Registered visitor", "label": ["non_requirement_text"]}
+{"text": "Load a Custom Filter", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-RV2 \u2013 Load a custom filter", "label": ["non_requirement_text"]}
+{"text": "Description: Visitor loads a filter he previously saved in his profile.", "label": ["non_requirement_text"]}
+{"text": "Actors: Registered visitor", "label": ["non_requirement_text"]}
+{"text": "Delete a Custom Filter", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-RV3 \u2013 Delete a custom filter", "label": ["non_requirement_text"]}
+{"text": "Description: Visitor has built a filter.", "label": ["non_requirement_text"]}
+{"text": "He wants to be able to reuse it in future visits.", "label": ["non_requirement_text"]}
+{"text": "He saves the filter to be able to load it later.", "label": ["non_requirement_text"]}
+{"text": "Actors: Registered visitor", "label": ["non_requirement_text"]}
+{"text": "FR ID Name UC ID Priority", "label": ["non_requirement_text"]}
+{"text": "FR-A1 The system shall allow the administrator to install modules UC-A1", "label": ["non_requirement_text"]}
+{"text": "FR-A2 The system shall allow the administrator to uninstall modules UC-A1", "label": ["non_requirement_text"]}
+{"text": "FR-A3 The system shall allow the administrator to configure the distribution map projection UC-A2", "label": ["non_requirement_text"]}
+{"text": "FR-A4 The system shall allow the administrator to configure the distribution map default extent UC-A2", "label": ["non_requirement_text"]}
+{"text": "FR-A5 The system shall allow the administrator to edit the email server configuration (URL, port, account)", "label": ["non_requirement_text"]}
+{"text": "FR-A6 The system shall allow the administrator to add a spatial layer to the distribution map UC-A3", "label": ["non_requirement_text"]}
+{"text": "FR-A7 The system shall allow the administrator to remove a spatial layer from the distribution map UC-A3", "label": ["non_requirement_text"]}
+{"text": "FR-A8 The system shall allow the administrator to edit the name of a spatial layer of the distribution map UC-A3", "label": ["non_requirement_text"]}
+{"text": "FR-A9 The system shall allow the administrator to view error logs", "label": ["non_requirement_text"]}
+{"text": "FR-A10 The system shall allow the administrator to download error logs", "label": ["non_requirement_text"]}
+{"text": "FR-A11 The system shall allow the security officer to create a new user account UC-A4", "label": ["non_requirement_text"]}
+{"text": "FR-A12 The system shall allow the security officer to delete a user account UC-A4", "label": ["non_requirement_text"]}
+{"text": "FR-A13 The system shall allow the security officer to assign a role to a user account UC-A4", "label": ["non_requirement_text"]}
+{"text": "FR-A14 The system shall allow the security officer to remove a role from a user account UC-A4", "label": ["non_requirement_text"]}
+{"text": "FR-A15 The system shall allow the security officer to edit the email address associated with a user account UC-A4", "label": ["non_requirement_text"]}
+{"text": "FR-A16 The system shall allow the security officer to view audit logs -", "label": ["non_requirement_text"]}
+{"text": "FR-A17 The system shall allow the security officer to download audit log entries for a given month -", "label": ["non_requirement_text"]}
+{"text": "FR ID Name UC ID Priority", "label": ["non_requirement_text"]}
+{"text": "FR-DM1 The system shall allow the data manager to import an occurrence resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM2 The system shall allow the data manager to delete an occurrence resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM3 The system shall allow the data manager to edit the metadata of an occurrence resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM4 The system shall allow the data manager to search occurrence resources by keywords UC-DM1", "label": ["non_requirement_text"]}
+{"text": "Feature Reference Description Use Case", "label": ["non_requirement_text"]}
+{"text": "FR-DM6 The system shall allow the data manager to delete a checklist resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM7 The system shall allow the data manager to edit the metadata of a checklist resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM8 The system shall allow the data manager to search checklist resources by keywords UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM9 The system shall allow the data manager to import a multimedia resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM10 The system shall allow the data manager to delete a multimedia resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM11 The system shall allow the data manager to edit the metadata of a multimedia resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM12 The system shall allow the data manager to search multimedia resources by keywords UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM13 The system shall allow the data manager to import a bibliographic resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM14 The system shall allow the data manager to delete a bibliographic resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM15 The system shall allow the data manager to edit the metadata of a bibliographic resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM16 The system shall allow the data manager to search bibliographic resources by keywords UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM17 The system shall allow the data manager to import an institution resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM18 The system shall allow the data manager to delete an institution resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM19 The system shall allow the data manager to edit the metadata of an institution resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM20 The system shall allow the data manager to search institution resources by keywords UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM21 The system shall allow the data manager to import an expert resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM22 The system shall allow the data manager to delete an expert resource UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM23 The system shall allow the data manager to edit the metadata of an expert UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM24 The system shall allow the data manager to search expert resources by keywords UC-DM1", "label": ["non_requirement_text"]}
+{"text": "FR-DM25 The system shall allow the data manager to register a GBIF index data source UC-DM3", "label": ["non_requirement_text"]}
+{"text": "FR-DM26 The system shall allow the data manager to register an IPT data source UC-DM4", "label": ["non_requirement_text"]}
+{"text": "FR-DM27 The system shall allow the data manager to unregister an IPT data source UC-DM5", "label": ["non_requirement_text"]}
+{"text": "FR-DM28 The system shall allow the data manager to unregister a GBIF index data source UC-DM5", "label": ["non_requirement_text"]}
+{"text": "FR-DM29 Schedule a harvesting job UC-DM6", "label": ["non_requirement_text"]}
+{"text": "FR-DM30 Cancel a harvesting job UC-DM6", "label": ["non_requirement_text"]}
+{"text": "FR-DM31 View report for a harvesting jobs UC-DM6", "label": ["non_requirement_text"]}
+{"text": "FR-DM32 Check core resources consistency with registered data sources UC-DM7", "label": ["non_requirement_text"]}
+{"text": "FR-DM33 Trigger a harvesting job UC-DM8", "label": ["non_requirement_text"]}
+{"text": "FR-DM34 The system shall allow the data manager to request -", "label": ["non_requirement_text"]}
+{"text": "FR ID Name UC ID Priority", "label": ["non_requirement_text"]}
+{"text": "FR-PM1 The system shall allow the portal manager to configure data metrics visibility UC-PM1", "label": ["non_requirement_text"]}
+{"text": "FR-PM2 The system shall allow the portal manager to change the logo displayed on the portal UC-PM2", "label": ["non_requirement_text"]}
+{"text": "FR-PM3 The system shall allow the portal manager to change the Node name displayed on the portal UC-PM2", "label": ["non_requirement_text"]}
+{"text": "FR-PM4 The system shall allow the portal manager to change the portal banner UC-PM2", "label": ["non_requirement_text"]}
+{"text": "FR-PM5 The system shall allow the portal manager to configure the name and email of the portal contact person UC-PM2", "label": ["non_requirement_text"]}
+{"text": "FR-PM6 The system shall allow the portal manager to configure the Network summary information UC-PM2", "label": ["non_requirement_text"]}
+{"text": "FR-PM7 The system shall allow the portal manager to choose the default language of the portal", "label": ["non_requirement_text"]}
+{"text": "FR-PM8 The system shall allow the portal manager to add an alternate language to the portal", "label": ["non_requirement_text"]}
+{"text": "FR-PM9 The system shall allow the portal manager to remove an alternate language to the portal", "label": ["non_requirement_text"]}
+{"text": "FR-PM10 The system shall allow the portal manager to contribute a portal news entry", "label": ["non_requirement_text"]}
+{"text": "FR-PM11 The system shall allow the portal manager to edit a portal news entry", "label": ["non_requirement_text"]}
+{"text": "FR-PM12 The system shall allow the portal manager to delete a portal news entry", "label": ["non_requirement_text"]}
+{"text": "FR-PM13 The system shall allow the portal manager to contribute a blog post", "label": ["non_requirement_text"]}
+{"text": "FR-PM14 The system shall allow the portal manager to edit a blog post", "label": ["non_requirement_text"]}
+{"text": "FR-PM15 The system shall allow the portal manager to delete a blog post", "label": ["non_requirement_text"]}
+{"text": "FR-PM16 The system shall allow the portal manager to manage the portal menu", "label": ["non_requirement_text"]}
+{"text": "FR-PM17 The system shall allow the portal manager to add a page to the portal", "label": ["non_requirement_text"]}
+{"text": "FR-PM18 The system shall allow the portal manager to delete a page from the portal", "label": ["non_requirement_text"]}
+{"text": "FR-PM19 The system shall allow the portal manager to edit a page from the portal", "label": ["non_requirement_text"]}
+{"text": "FR-PM20 The system shall allow the portal manager to edit the HTML metadata tags for the portal pages to help the portal to be discoverable through search engines", "label": ["non_requirement_text"]}
+{"text": "FR ID Name UC ID Priority", "label": ["non_requirement_text"]}
+{"text": "FR-V1 The system shall allow a visitor to build an occurrence selection filter UC-V1", "label": ["non_requirement_text"]}
+{"text": "FR-V2 The system shall allow a visitor to add a taxonomic criterion to a filter UC-V1", "label": ["non_requirement_text"]}
+{"text": "FR-V3 The system shall allow a visitor to add a dataset criterion to a filter UC-V1", "label": ["non_requirement_text"]}
+{"text": "FR-V4 The system shall allow a visitor to add a depth criterion to a filter UC-V1", "label": ["non_requirement_text"]}
+{"text": "FR-V5 The system shall allow a visitor to add an altitude criterion to a filter UC-V1", "label": ["non_requirement_text"]}
+{"text": "FR-V6 The system shall allow a visitor to add a basis of records criterion to a filter UC-V1", "label": ["non_requirement_text"]}
+{"text": "FR-V7 The system shall allow a visitor to add a geographic criterion to a filter UC-V1", "label": ["non_requirement_text"]}
+{"text": "FR-V8 The system shall allow a visitor to add a date criterion to a filter UC-V1", "label": ["non_requirement_text"]}
+{"text": "FR-V9 The system shall allow a visitor to remove a criterion from a filter UC-V1", "label": ["non_requirement_text"]}
+{"text": "FR-V10 The system shall allow a visitor to select occurrence records using a filter UC-V2", "label": ["non_requirement_text"]}
+{"text": "FR-V11 The system shall allow a visitor to view the distribution map for an occurrence record selection UC-V2", "label": ["non_requirement_text"]}
+{"text": "FR-V12 The system shall allow a visitor to view an occurrence record selection as a table UC-V3", "label": ["non_requirement_text"]}
+{"text": "FR-V13 The system shall allow a visitor to export an occurrence record selection UC-V4", "label": ["non_requirement_text"]}
+{"text": "FR-V14 The system shall allow a visitor to export the distribution map for an occurrence record selection as an image UC-V5", "label": ["non_requirement_text"]}
+{"text": "FR-V15 The system shall allow a visitor to search all the portal content using full text search UC-V6", "label": ["non_requirement_text"]}
+{"text": "FR-V16 The system shall allow a visitor to contact an occurrence resource publisher UC-V7", "label": ["non_requirement_text"]}
+{"text": "FR-V17 The system shall allow a visitor to export a checklist UC-V8", "label": ["non_requirement_text"]}
+{"text": "FR-V18 The system shall allow a visitor to choose his preferred language for the portal interface UC-V9", "label": ["non_requirement_text"]}
+{"text": "FR-V19 The system shall allow a visitor to send feedback to the portal contact person UC-V10", "label": ["non_requirement_text"]}
+{"text": "FR-V20 The system shall allow a visitor to view latest blog posts", "label": ["non_requirement_text"]}
+{"text": "FR-V21 The system shall allow a visitor to read a blog post", "label": ["non_requirement_text"]}
+{"text": "FR-V22 The system shall allow a visitor to view latest portal news entries", "label": ["non_requirement_text"]}
+{"text": "FR-V23 The system shall allow a visitor to read a portal news entry", "label": ["non_requirement_text"]}
+{"text": "FR-V24 The system shall allow a visitor to view details for a taxon", "label": ["non_requirement_text"]}
+{"text": "FR-V25 The system shall allow a visitor to view metadata for a dataset", "label": ["non_requirement_text"]}
+{"text": "FR-V26 The system shall allow a visitor to view metadata for a checklist", "label": ["non_requirement_text"]}
+{"text": "FR-V27 The system shall allow a visitor to view details for a", "label": ["non_requirement_text"]}
+{"text": "FR-V28 The system shall allow a visitor to view details for an institution", "label": ["non_requirement_text"]}
+{"text": "FR-V29 The system shall allow a visitor to view details for an expert", "label": ["non_requirement_text"]}
+{"text": "FR-V30 The system shall allow a visitor to view metadata for a multimedia file", "label": ["non_requirement_text"]}
+{"text": "FR-V31 The system shall allow a visitor to download a multimedia file", "label": ["non_requirement_text"]}
+{"text": "FR-V32 The system shall allow a visitor to navigate (pan, zoom in and out) a distribution map", "label": ["non_requirement_text"]}
+{"text": "FR-V33 The system shall allow a visitor to toggle spatial layers visible/hidden on a distribution map", "label": ["non_requirement_text"]}
+{"text": "FR-V34 The system shall allow a visitor to register", "label": ["non_requirement_text"]}
+{"text": "FR-V35 The system shall allow a visitor to access the log in functionality", "label": ["non_requirement_text"]}
+{"text": "FR-V36 The system shall allow a visitor to request to be sent his password by email", "label": ["non_requirement_text"]}
+{"text": "FR-V37 The system shall allow a visitor to share a distribution map on twitter", "label": ["non_requirement_text"]}
+{"text": "FR-V38 The system shall allow a visitor to access a dashboard displaying data metrics for the portal", "label": ["non_requirement_text"]}
+{"text": "FR-V39 The system shall allow a visitor to export data metric archives for the portal", "label": ["non_requirement_text"]}
+{"text": "FR-V40 The system shall allow a visitor to view Network summary information", "label": ["non_requirement_text"]}
+{"text": "FR-V41 The system shall allow a visitor to view information about tools and services offered by the portal", "label": ["non_requirement_text"]}
+{"text": "FR-V42 The system shall allow a visitor to view latest news from GBIF newsfeeds relayed by the system", "label": ["non_requirement_text"]}
+{"text": "FR ID Name UC ID Priority", "label": ["non_requirement_text"]}
+{"text": "FR-RV1 The system shall allow a registered visitor to save a custom filter UC-RV1", "label": ["non_requirement_text"]}
+{"text": "FR-RV2 The system shall allow a registered visitor to load a custom filter UC-RV2", "label": ["non_requirement_text"]}
+{"text": "FR-RV3 The system shall allow a registered visitor to delete a custom filter UC-RV3", "label": ["non_requirement_text"]}
+{"text": "The operation of the system depends on GBIF registry to allow addition of new extensions.", "label": ["non_requirement_text"]}
+{"text": "The operation of the system depends on GBIF occurrence Web services\u00b9 to harvest a data source if it is of GBIF global index type.", "label": ["non_requirement_text"]}
+{"text": "The operation of the system to harvest occurrence resource for an IPT instance data source depends on that IPT instance.", "label": ["non_requirement_text"]}
+{"text": "The system shall retain an audit log for all successful back end operations.", "label": ["non_requirement_text"]}
+{"text": "The system shall restrict access to all functionalities altering data to data managers (BR4).", "label": ["non_requirement_text"]}
+{"text": "The system shall restrict access to user management functionalities to administrators.", "label": ["non_requirement_text"]}
+{"text": "The system shall restrict access to module management functionalities to administrators (BR6).", "label": ["non_requirement_text"]}
+{"text": "The system shall restrict access to distribution map configuration functionalities to administrators (BR6).", "label": ["non_requirement_text"]}
+{"text": "The system shall restrict access to portal manager for the following functionalities: manage blog posts, pages and news entries, customize NPT instance and choose languages available on the front end (BR5).", "label": ["non_requirement_text"]}
+{"text": "The system shall restrict access to portal manager for blog management functionalities (BR5).", "label": ["non_requirement_text"]}
+{"text": "The system shall restrict access to portal manager for news management functionalities (BR5).", "label": ["non_requirement_text"]}
+{"text": "The system shall restrict access to portal manager for the NPT instance customization function (BR5).", "label": ["non_requirement_text"]}
+{"text": "The system shall restrict access to portal manager for front-end available language management functionalities (BR5).", "label": ["non_requirement_text"]}
+{"text": "The system should be able to cope with 300 000 000 occurrence records (size of the GBIF index at the time of writing).", "label": ["non_requirement_text"]}
+{"text": "The system shall have no limitation on the number records the export occurrence records functionality can process (UC-V4, FR-V13).", "label": ["non_requirement_text"]}
+{"text": "The system should be able to cope (without crashing) with a wide range of stress situations.", "label": ["non_requirement_text"]}
+{"text": "The system should perform reasonably under important workload (queries and data discovery).", "label": ["non_requirement_text"]}
+{"text": "- RR1 An error tracking system shall be in place.", "label": ["non_requirement_text"]}
+{"text": "- RR2 Database transactions shall insure data consistency in case of failure.", "label": ["non_requirement_text"]}
+{"text": "- RR3 Backups of all system data shall be generated on a weekly basis.", "label": ["non_requirement_text"]}
+{"text": "- RR4 Upon request from the data manager, a backup shall be restored within the next 24 hours.", "label": ["non_requirement_text"]}
+{"text": "- IR1 The system shall allow importing checklist resources as DwC-A files.", "label": ["non_requirement_text"]}
+{"text": "- IR2 The system shall allow importing occurrence resources as DwC-A files.", "label": ["non_requirement_text"]}
+{"text": "- IR3 The system shall allow exporting checklist resources as DwC-A files.", "label": ["non_requirement_text"]}
+{"text": "- IR4 The system shall allow exporting occurrence records as DwC-A files.", "label": ["non_requirement_text"]}
+{"text": "- IR5 The system shall allow exporting occurrences records as KMZ files.", "label": ["non_requirement_text"]}
+{"text": "- IR6 The system shall allow exporting occurrences records as CSV files.", "label": ["non_requirement_text"]}
+{"text": "- IR7 The system shall allow exporting occurrences records as ESRI shapefiles.", "label": ["non_requirement_text"]}
+{"text": "- IR8 The system shall allow exporting distribution map as images.", "label": ["non_requirement_text"]}
+{"text": "- IR9 The system shall allow exporting core resource metadata as EML profiles.", "label": ["non_requirement_text"]}
+{"text": "- IR10 The system shall allow using the Audubon Core format for multimedia metadata.", "label": ["non_requirement_text"]}
+{"text": "- OE1 The system shall operate with the two latest major releases of the following Web browsers: Firefox, Opera, Chrome, Internet Explorer and Safari.", "label": ["non_requirement_text"]}
+{"text": "- OE2 The system shall operate on a server running Linux, Windows server or Mac OS.", "label": ["non_requirement_text"]}
+{"text": "- UR1 The interface for end-users should be relatively intuitive and easy to use, without requiring extensive technical assistance, support or off line user guides.", "label": ["non_requirement_text"]}
+{"text": "- UR2 For system managers, guides may be needed to explore advanced functionalities, but those advanced functionalities should be as intuitive as possible.", "label": ["non_requirement_text"]}
+{"text": "- UR3 Maintenance in terms of user interface configuration, user rights management, and data source settings should be done with visual tools.", "label": ["non_requirement_text"]}
+{"text": "- UR4 The system shall allow a visitor to select the language used on the front end.", "label": ["non_requirement_text"]}
+{"text": "- UR5 The system shall display friendly error messages to the users.", "label": ["non_requirement_text"]}
+{"text": "- SupR1 A clear and standard practice for the maintenance and documentation of code should be set in place, agreed and communicated as a best practice.", "label": ["non_requirement_text"]}
+{"text": "Any features developed outside the core of the NPT should follow that practice.", "label": ["non_requirement_text"]}
+{"text": "- UD1 The system shall provide a short tutorial video explaining how to search and export occurrence records.", "label": ["non_requirement_text"]}
+{"text": "- UD2 One offline installation guide with step-by-step instructions shall be provided (with different notes for each OS the system can operate on).", "label": ["non_requirement_text"]}
+{"text": "The system shall be implemented using open-source technologies.", "label": ["non_requirement_text"]}
+{"text": "The system shall be written in PHP.", "label": ["non_requirement_text"]}
+{"text": "The system should be built in a modular way, which ensures that component functionalities can be adjusted, added, improved, removed or exchanged without impacting the application as a whole.", "label": ["non_requirement_text"]}
+{"text": "Approaching the system using development best practices such as MVC (Model-View-Controller) can allow this sort of modularity.", "label": ["non_requirement_text"]}
+{"text": "The NPT development and implementation should follow design principles that will enable future growth, both in terms of the addition of new functionality or through modification of existing functionality.", "label": ["non_requirement_text"]}
+{"text": "In addition, NPT developers should provide the possibility to consume services and functions that are created elsewhere.", "label": ["non_requirement_text"]}
+{"text": "Examples include reference taxonomic data sources, mapping functions or web map services (WMS).", "label": ["non_requirement_text"]}
+{"text": "Sustainability embedded at each stage of development.", "label": ["non_requirement_text"]}
+{"text": "The developers of the NPT should be mindful of the strategic implications of development choices to the long term sustainability of the NPT in a number of key areas: underlying hardware and software; development tools and frameworks; level of effort for system administrators and portal managers; level of interest and engagement of users, including researchers, data providers and other interested visitors.", "label": ["non_requirement_text"]}
+{"text": "Long (more than 25) lists of items shall be paginated.", "label": ["non_requirement_text"]}
+{"text": "Distribution map shall allow the user to pan and to zoom in and out.", "label": ["non_requirement_text"]}
+{"text": "While building a filter, visitors shall be presented the count of matching occurrences in real time (before launching the search).", "label": ["non_requirement_text"]}
+{"text": "No hardware interfaces have been identified.", "label": ["non_requirement_text"]}
+{"text": "The system shall provide a Web service-based API to search and access core.", "label": ["non_requirement_text"]}
+{"text": "- SI1.2 The system shall provide a Web service-based API to search and retrieve occurrence records.", "label": ["non_requirement_text"]}
+{"text": "- SI1.3 The system shall provide a Web service-based API to search and retrieve taxa from the taxonomic backbone.", "label": ["non_requirement_text"]}
+{"text": "- SI2.1 The system shall poll IPT instances to retrieve the list of public core resources available.", "label": ["non_requirement_text"]}
+{"text": "- SI2.2 The system shall poll IPT instances to retrieve core resources.", "label": ["non_requirement_text"]}
+{"text": "- SI3.1 The system shall poll GBIF occurrence Web service to retrieve core resources.", "label": ["non_requirement_text"]}
+{"text": "- SI4.1 The system shall poll GBIF Registry to retrieve the list of available extensions.", "label": ["non_requirement_text"]}
+{"text": "- CI1 The system shall send an email to the portal contact person to forward visitor feedbacks.", "label": ["non_requirement_text"]}
+{"text": "- CI2 The system shall send an email to data provider contact person to forward visitor feedbacks.", "label": ["non_requirement_text"]}
+{"text": "- CI3 The system shall send an email to the data manager upon completion of a harvesting job.", "label": ["non_requirement_text"]}
+{"text": "- CI4 The system shall send an email to the data manager upon completion of a backup operation.", "label": ["non_requirement_text"]}
+{"text": "- CI5 The system shall send an email to the data manager upon completion of a backup restoration operation.", "label": ["non_requirement_text"]}
+{"text": "- LR1 The system shall be released under an open-source compliant license.", "label": ["non_requirement_text"]}
+{"text": "- LR2 The system shall use the same data usage agreement as GBIF portal.", "label": ["non_requirement_text"]}
+{"text": "- API: an application programming interface (API) is a particular set of rules and specifications that software programs can follow to communicate with each other.", "label": ["non_requirement_text"]}
+{"text": "It serves as an interface between different software programs and facilitates their interaction, similar to the way the user interface facilitates interaction between humans and computers.", "label": ["non_requirement_text"]}
+{"text": "- Audit log: this log keeps track of all successful operations in the system front end.", "label": ["non_requirement_text"]}
+{"text": "An audit log entry consists of the name of the operation, the name of the user who initiated the action and the date and time it occurred.", "label": ["non_requirement_text"]}
+{"text": "- Backup report: report sent to the data manager once a backup operation is completed.", "label": ["non_requirement_text"]}
+{"text": "If successful, the report contains statistics about the backup data and a link to the backup file.", "label": ["non_requirement_text"]}
+{"text": "- CMS: Content Management System.", "label": ["non_requirement_text"]}
+{"text": "- Core resource: an occurrence or checklist resource.", "label": ["non_requirement_text"]}
+{"text": "- Darwin core: A standard consisting of terms and classes of terms used to share biodiversity data.", "label": ["non_requirement_text"]}
+{"text": "(source: The GBIF Integrated Publishing Toolkit User Manual)", "label": ["non_requirement_text"]}
+{"text": "- Darwin core archive (DwC-A): A single zipped archive for a data set consisting of one or more text files of data, an XML file describing the contents of the text files and how they relate to each other, and an XML file containing the dataset metadata in EML format.", "label": ["non_requirement_text"]}
+{"text": "(source: The GBIF Integrated Publishing Toolkit User Manual)", "label": ["non_requirement_text"]}
+{"text": "- Data usage log: A usage log entry contains the following information for each usage of the occurrence data: the date and time of the usage, the type (\"mapped\" or \"exported\") of the usage, the originating country, the number of occurrence records and a text representation of the filter used.", "label": ["non_requirement_text"]}
+{"text": "- Data usage statistics: monthly statistics about the data visitors.", "label": ["non_requirement_text"]}
+{"text": "They\u2019re computed from the data usage logs.", "label": ["non_requirement_text"]}
+{"text": "- Data metrics: data usage statistics and statistics about the data hosted on the portal i.e.", "label": ["non_requirement_text"]}
+{"text": "data mass (number of occurrence records), taxonomic diversity (number of different taxa with occurrences).", "label": ["non_requirement_text"]}
+{"text": "- EML: The Ecological Metadata Language is an XML-based profile used to encode metadata about a data set.", "label": ["non_requirement_text"]}
+{"text": "- GIS: A geographic information system (GIS), geographical information system, or geospatial information system is a system designed to capture, store, manipulate, analyze, manage and present all types of geographically referenced data.", "label": ["non_requirement_text"]}
+{"text": "- Harvesting job: the process of fetching core resources from registered data sources and updating the portal index with those data.", "label": ["non_requirement_text"]}
+{"text": "- Harvesting report: a report containing success status and possible failure causes for each harvested data sources.", "label": ["non_requirement_text"]}
+{"text": "- IPT: The Integrated Publishing Toolkit (IPT) is a deployable web-based tool that allows users to serve onto the Internet (or Intranet): primary biodiversity occurrence data [...], taxonomic checklist data [...] and higher-level dataset descriptive data (metadata) [...].", "label": ["non_requirement_text"]}
+{"text": "(source: Integrated Publishing Toolkit (IPT) - Architectural view)", "label": ["non_requirement_text"]}
+{"text": "- Maintenance mode: the mode the system switches to when achieving certain operations that may prevent to deliver a satisfactory experience to the user in particular when the index may be inconsistent.", "label": ["non_requirement_text"]}
+{"text": "When in that mode, all portal screens display an apology message informing the visitors that the portal is under maintenance and inviting them to wait a moment before trying to use it.", "label": ["non_requirement_text"]}
+{"text": "- MVC: the Model View Controller is a software architecture pattern used in web applications to separate the concerns of data modeling, the rendering of the model for client consumption and the logic for accessing the content.", "label": ["non_requirement_text"]}
+{"text": "- Report: a file generated when a consuming operation on core resource index has been completed.", "label": ["non_requirement_text"]}
+{"text": "Such a file contains a success status, description on the job outcome and statistics about the core resource index after completion.", "label": ["non_requirement_text"]}
+{"text": "In case of failure, the report indicates the cause.", "label": ["non_requirement_text"]}
+{"text": "- Resource: In this document, a resource refers to a dataset and associated metadata.", "label": ["non_requirement_text"]}
+{"text": "Resources handled by NPT instances are core resources, multimedia files, institutions, literature entries and experts.", "label": ["non_requirement_text"]}
+{"text": "- Resource file: a file containing data for a resource (i.e.", "label": ["non_requirement_text"]}
+{"text": "both records and metadata).", "label": ["non_requirement_text"]}
+{"text": "- Spatial layers: the geospatial layers displayed on the distribution map.", "label": ["non_requirement_text"]}
+{"text": "- Taxonomic backbone: A specialized checklist, which is used to organize biodiversity data, indexed within the NPT, particularly occurrence data.", "label": ["non_requirement_text"]}
+{"text": "- Identifier of use cases start with \u2018UC\u2019 and sub flows with \u2018S\u2019.", "label": ["non_requirement_text"]}
+{"text": "- An underlined phrase in a use case flow refers to the use case (or sub flow) with the same name.", "label": ["non_requirement_text"]}
+{"text": "- Standard (e.g.", "label": ["non_requirement_text"]}
+{"text": "\u201clog in\u201d or \u201cregister\u201d) or obvious (e.g.", "label": ["non_requirement_text"]}
+{"text": "\u201cview Network summary information\u201d) functionalities haven\u2019t been promoted as a use case but are nevertheless listed in the functionality requirement section.", "label": ["non_requirement_text"]}
+{"text": "A user may only initiate the use cases in this section if he is logged into the system using a user account with administrator role.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-A1 \u2013 Manage modules", "label": ["non_requirement_text"]}
+{"text": "Description The administrator selects to manage modules so as to add new functionalities to the system by installing modules, configure or update previously installed modules.", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the administrator selects to manage modules.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the list of all installed modules and displays the list to the administrator.", "label": ["non_requirement_text"]}
+{"text": "The system provides two options for each module: update and configure.", "label": ["non_requirement_text"]}
+{"text": "The system also displays the function install a new module.", "label": ["non_requirement_text"]}
+{"text": "The administrator selects to install a new module.", "label": ["non_requirement_text"]}
+{"text": "The system requests the administrator to provide the module file.", "label": ["non_requirement_text"]}
+{"text": "The administrator selects the module file on his local computer.", "label": ["non_requirement_text"]}
+{"text": "The system installs the module from the file.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system informs the administrator that the module has been successfully installed.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The administrator selects the module of interest and chooses to configure it.", "label": ["non_requirement_text"]}
+{"text": "The system requests the administrator to enter the configuration parameters specific to that module.", "label": ["non_requirement_text"]}
+{"text": "The administrator enters the configuration parameters so the module fits the Node\u2019s needs.", "label": ["non_requirement_text"]}
+{"text": "The system saves the module configuration.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system informs the administrator that the module has been successfully configured.", "label": ["non_requirement_text"]}
+{"text": "The administrator selects the module of interest and chooses the option to update it.", "label": ["non_requirement_text"]}
+{"text": "The system requests the administrator to provide the module file.", "label": ["non_requirement_text"]}
+{"text": "The administrator selects the module file on his local computer.", "label": ["non_requirement_text"]}
+{"text": "The system installs the new version of the module from the file.", "label": ["non_requirement_text"]}
+{"text": "The system configures it with the parameters used for the previous version.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system informs admin the module has been successfully updated.", "label": ["non_requirement_text"]}
+{"text": "The system reports the installation failure to the administrator.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The system records an error log entry.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The system reports the update failure to the administrator.", "label": ["non_requirement_text"]}
+{"text": "The system records an error log entry.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-A2 \u2013 Configure the distribution map", "label": ["non_requirement_text"]}
+{"text": "Description The administrator selects to configure the distribution map so it uses the specific projection and default extent for the Node area of interest.", "label": ["non_requirement_text"]}
+{"text": "Post conditions The distribution map will use the projection and default extent the administrator chose.", "label": ["non_requirement_text"]}
+{"text": "Trigger Upon NPT instance configuration, the administrator selects to configure the distribution map.", "label": ["non_requirement_text"]}
+{"text": "The administrator selects to configure the distribution map.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the list of standard projections and displays the list to the administrator.", "label": ["non_requirement_text"]}
+{"text": "The system requests the administrator to select the projection and to enter the default extent for the map.", "label": ["non_requirement_text"]}
+{"text": "The administrator enters the default extent and selects the projection that will be used by the distribution map from the list.", "label": ["non_requirement_text"]}
+{"text": "The Portal manager updates the system configuration.", "label": ["non_requirement_text"]}
+{"text": "The system validates the provided default extent values.", "label": ["non_requirement_text"]}
+{"text": "The system updates its portal configuration with the new projection and default extent.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system informs the administrator the changes have successfully been saved.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "UC-A3 \u2013 Manage spatial layers", "label": ["non_requirement_text"]}
+{"text": "The administrator selects to add or delete the spatial layers displayed on the distribution map for the specific Node.", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the administrator selects to manage spatial layers.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the list of all available spatial layers.", "label": ["non_requirement_text"]}
+{"text": "The system displays the list to the administrator with two options for each layer: \u201cdelete this layer\u201d and \u201cupdate this layer\u201d.", "label": ["non_requirement_text"]}
+{"text": "The system offers a third function: \u201cadd a layer\u201d.", "label": ["non_requirement_text"]}
+{"text": "The administrator chooses the option to add a new spatial layer.", "label": ["non_requirement_text"]}
+{"text": "The system requests the administrator to enter a name for the layer and to provide the spatial layer file.", "label": ["non_requirement_text"]}
+{"text": "The administrator enters a name for the layer.", "label": ["non_requirement_text"]}
+{"text": "The administrator selects the spatial layer file on his local computer.", "label": ["non_requirement_text"]}
+{"text": "The system validates the spatial layer file.", "label": ["non_requirement_text"]}
+{"text": "The system saves the spatial layer.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system informs the administrator that the addition was successful.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The administrator selects the spatial layer of interest and chooses the option to update it.", "label": ["non_requirement_text"]}
+{"text": "The system displays the spatial layer name.", "label": ["non_requirement_text"]}
+{"text": "The system proposes the administrator to edit the layer name and to provide a new version of the spatial layer file.", "label": ["non_requirement_text"]}
+{"text": "The administrator edits the layer name and/or selects a spatial layer file on his local computer.", "label": ["non_requirement_text"]}
+{"text": "The use case resumes at step g.", "label": ["non_requirement_text"]}
+{"text": "The administrator selects the spatial layer of interest and chooses the option to delete it.", "label": ["non_requirement_text"]}
+{"text": "The system deletes the spatial layer.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system informs the administrator of the deletion success.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The system informs the administrator that the file corrupted or is not of an invalid format and requests him to try again.", "label": ["non_requirement_text"]}
+{"text": "The system records an error log entry.", "label": ["non_requirement_text"]}
+{"text": "UC-A4 \u2013 Manage user accounts", "label": ["non_requirement_text"]}
+{"text": "The administrator performs this use case in order to create or delete accounts for the portal staff members.", "label": ["non_requirement_text"]}
+{"text": "Depending on the roles the administrator associates with those accounts, the users may be allowed to access restricted back end functionalities.", "label": ["non_requirement_text"]}
+{"text": "The administrator selects to manage user accounts.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the list of user accounts and displays the list to the administrator.", "label": ["non_requirement_text"]}
+{"text": "For each user account, the system displays options to delete and update the user account.", "label": ["non_requirement_text"]}
+{"text": "The system also provides an option to create a new user account.", "label": ["non_requirement_text"]}
+{"text": "The administrator selects to create a new user account.", "label": ["non_requirement_text"]}
+{"text": "The system requests the security officer to enter user account information.", "label": ["non_requirement_text"]}
+{"text": "The administrator enters user account information.", "label": ["non_requirement_text"]}
+{"text": "The system displays the list of roles and requests the administrator to select the security roles for the user account.", "label": ["non_requirement_text"]}
+{"text": "The administrator selects the security roles for this user account.", "label": ["non_requirement_text"]}
+{"text": "The system verifies that no user account with the provided user name already exists.", "label": ["non_requirement_text"]}
+{"text": "The system saves the user account.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system informs the administrator that the user account was successfully created.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The data manager selects the user account of interest and chooses the option to update it.", "label": ["non_requirement_text"]}
+{"text": "The system displays the user account information associated with this account and requests the administrator to edit the user account password or contact email address.", "label": ["non_requirement_text"]}
+{"text": "If needed, the administrator edits the user account information.", "label": ["non_requirement_text"]}
+{"text": "The system displays the list of roles.", "label": ["non_requirement_text"]}
+{"text": "Each role is preselected if the user account is associated with it.", "label": ["non_requirement_text"]}
+{"text": "For each role, the system provides the option to select or unselect it.", "label": ["non_requirement_text"]}
+{"text": "The system requests the security officer to select the security roles this user account will be associated with.", "label": ["non_requirement_text"]}
+{"text": "The administrator selects the security roles to be associated with that user account.", "label": ["non_requirement_text"]}
+{"text": "The system updates the user account.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "A user account with that user name already exists; the system informs the administrator that the user account could not be created because the user name already exists.", "label": ["non_requirement_text"]}
+{"text": "The use case returns to step b.", "label": ["non_requirement_text"]}
+{"text": "A user may only initiate the use cases in this section if he is logged into the system using a user account with data manager role.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-DM1 \u2013 Manage resources", "label": ["non_requirement_text"]}
+{"text": "Description The data manager wants to manage resources so as to import a new resource, edit a resource metadata or delete a resource.", "label": ["non_requirement_text"]}
+{"text": "Actors Data manager", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the data manager selects to manage resources.", "label": ["non_requirement_text"]}
+{"text": "The system displays the list of available resource types (occurrence, checklist, institution, multimedia, literature or expert).", "label": ["non_requirement_text"]}
+{"text": "The system requests the data manager to select the type of resource he wishes to manage.", "label": ["non_requirement_text"]}
+{"text": "The data manager selects the type of resources to manage.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the list of resources of that type.", "label": ["non_requirement_text"]}
+{"text": "The system displays the list to the data manager with two options for each resource: delete and edit metadata.", "label": ["non_requirement_text"]}
+{"text": "The system also displays two high level functions: import a resource and search resources.", "label": ["non_requirement_text"]}
+{"text": "The data manager chooses the option to import a resource.", "label": ["non_requirement_text"]}
+{"text": "The system requests the data manager to provide the resource file and a short name for the resource.", "label": ["non_requirement_text"]}
+{"text": "The data manager selects the resource file from his local computer and enters a short name.", "label": ["non_requirement_text"]}
+{"text": "The system validates the resource file.", "label": ["non_requirement_text"]}
+{"text": "The system archives the resource file.", "label": ["non_requirement_text"]}
+{"text": "The system extracts the records and metadata from the file and saves them.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system informs the data manager that the import was successful.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Edit a resource metadata.", "label": ["non_requirement_text"]}
+{"text": "The data manager selects the resource of interest and chooses the option to edit its metadata.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the resource metadata.", "label": ["non_requirement_text"]}
+{"text": "The system displays the metadata to the data manager.", "label": ["non_requirement_text"]}
+{"text": "The data manager edits the metadata.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system saves the metadata.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The data manager selects a resource and chooses the option to delete it.", "label": ["non_requirement_text"]}
+{"text": "The system asks the data manager for confirmation.", "label": ["non_requirement_text"]}
+{"text": "The data manager confirms deletion.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system deletes the resource records and its metadata.", "label": ["non_requirement_text"]}
+{"text": "The system deletes the archived resource file.", "label": ["non_requirement_text"]}
+{"text": "The system informs the data manager of the deletion success.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The data manager selects to search secondary resource of interest.", "label": ["non_requirement_text"]}
+{"text": "The system requests the data manager to enter a keyword query.", "label": ["non_requirement_text"]}
+{"text": "The data manager enters the keywords and launches search.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the list of resources which metadata match the keyword query.", "label": ["non_requirement_text"]}
+{"text": "The use case resumes at step c.", "label": ["non_requirement_text"]}
+{"text": "The data manager cancels deletion.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The system informs the data manager that the import operation failed because the provided file was corrupted or have an invalid format.", "label": ["non_requirement_text"]}
+{"text": "The system records an error log entry.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-DM2 \u2013 Register a new data source", "label": ["non_requirement_text"]}
+{"text": "Description: The data manager registers a new data source so the associated core resource is harvested during next harvesting job.", "label": ["non_requirement_text"]}
+{"text": "Actors: Data manager \u2013 Secondary: Data source", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the data manager selects to register a data source.", "label": ["non_requirement_text"]}
+{"text": "The data manager selects to add a new data source.", "label": ["non_requirement_text"]}
+{"text": "The system displays the list of available data source types to the data manager.", "label": ["non_requirement_text"]}
+{"text": "The system requests the data manager to select a type and provide a name and a URL for the source.", "label": ["non_requirement_text"]}
+{"text": "Data manager selects the type and enters a name for the source.", "label": ["non_requirement_text"]}
+{"text": "The system requests the data manager to enter the specific configuration parameters for this source type.", "label": ["non_requirement_text"]}
+{"text": "Data manager enters the configuration parameters.", "label": ["non_requirement_text"]}
+{"text": "The system sends a request to the data source.", "label": ["non_requirement_text"]}
+{"text": "The data source responds with a success OK code.", "label": ["non_requirement_text"]}
+{"text": "The system saves the new data source to its source registry.", "label": ["non_requirement_text"]}
+{"text": "The system informs the data manager of the addition success.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Handle communication failure with the data source.", "label": ["non_requirement_text"]}
+{"text": "If the system cannot communicate with the data source, the system informs the data manager that the data source cannot be added because the source is not accessible.", "label": ["non_requirement_text"]}
+{"text": "The system records an error log entry.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Handle a response with an error code.", "label": ["non_requirement_text"]}
+{"text": "If the data source responded with an error code, the system informs the data manager that the data source cannot be added because the source responded with an error code.", "label": ["non_requirement_text"]}
+{"text": "The system records an error log entry.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-DM3 \u2013 Register a GBIF index data source", "label": ["non_requirement_text"]}
+{"text": "Description Specializes Register a new data source to allow specific configuration for GBIF occurrence Web services data sources.", "label": ["non_requirement_text"]}
+{"text": "Actors Data manager \u2013 Secondary: GBIF Web services", "label": ["non_requirement_text"]}
+{"text": "The visitor enters the request parameters that will be used to query GBIF portal API.", "label": ["non_requirement_text"]}
+{"text": "The use case resumes at step g.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-DM4 \u2013 Register an IPT data source", "label": ["non_requirement_text"]}
+{"text": "Description Specializes Register a new data source to allow specific configuration for IPT data sources.", "label": ["non_requirement_text"]}
+{"text": "Actors Data manager \u2013 Secondary: IPT data source", "label": ["non_requirement_text"]}
+{"text": "The data manager enters the URL of the IPT instance hosting the data source of interest.", "label": ["non_requirement_text"]}
+{"text": "The system calls the IPT instance for the list of hosted public core resources.", "label": ["non_requirement_text"]}
+{"text": "The IPT instance returns the resource list to the system.", "label": ["non_requirement_text"]}
+{"text": "The system displays this list of resources to the data manager.", "label": ["non_requirement_text"]}
+{"text": "The system requests the data manager to select the core resource he wishes to register.", "label": ["non_requirement_text"]}
+{"text": "The data manager selects the core resource.", "label": ["non_requirement_text"]}
+{"text": "The use case resumes at step g.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-DM5 \u2013 Unregister a data source", "label": ["non_requirement_text"]}
+{"text": "The data manager previously added a data source which is no more relevant to the node or not available any more.", "label": ["non_requirement_text"]}
+{"text": "The data manager wants to unregister this source.", "label": ["non_requirement_text"]}
+{"text": "Actors: Data manager", "label": ["non_requirement_text"]}
+{"text": "Priority: 1 Frequency: 2", "label": ["non_requirement_text"]}
+{"text": "The data source has been removed from the system configuration.", "label": ["non_requirement_text"]}
+{"text": "During next harvesting job, no occurrence records will be harvested from this data source.", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the data manager selects to unregister a data source.", "label": ["non_requirement_text"]}
+{"text": "The data manager selects the source of interest and chooses the option to unregister it.", "label": ["non_requirement_text"]}
+{"text": "The system prompts the user for confirmation and displays an option to also delete related occurrence records from the index.", "label": ["non_requirement_text"]}
+{"text": "The data manager confirms that he wishes to unregister the selected data source and selects the option to delete related occurrence records from the index.", "label": ["non_requirement_text"]}
+{"text": "The system deletes occurrence records that were harvested from this source.", "label": ["non_requirement_text"]}
+{"text": "The system removes this source from its registry.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Cancel to unregister the data source.", "label": ["non_requirement_text"]}
+{"text": "The data manager chooses to cancel unregistering the data source.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Unregister data source but keep related occurrence records.", "label": ["non_requirement_text"]}
+{"text": "If the data manager confirms data source deletion but doesn\u2019t select the option to delete related occurrence records from the index.", "label": ["non_requirement_text"]}
+{"text": "The use case resumes to step g.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-DM6 \u2013 Manage harvesting jobs", "label": ["non_requirement_text"]}
+{"text": "Description: The data manager wants to manage jobs so as to monitor finished and upcoming jobs, schedule a new job or cancel a scheduled job.", "label": ["non_requirement_text"]}
+{"text": "Actors: Data manager", "label": ["non_requirement_text"]}
+{"text": "Priority: 3 Frequency: 1", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the data manager chooses the option to manage harvesting jobs.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves two lists of jobs: finished and forthcoming jobs.", "label": ["non_requirement_text"]}
+{"text": "The system displays the lists to the data manager.", "label": ["non_requirement_text"]}
+{"text": "For the former, an option to...", "label": ["non_requirement_text"]}
+{"text": "view the associated harvesting report is provided.", "label": ["non_requirement_text"]}
+{"text": "For the latter, the system displays a cancel option for each job.", "label": ["non_requirement_text"]}
+{"text": "The system also offers the function schedule a new job.", "label": ["non_requirement_text"]}
+{"text": "The data manager chooses to schedule a new job.", "label": ["non_requirement_text"]}
+{"text": "The system requests the data manager to provide date and time for the new job.", "label": ["non_requirement_text"]}
+{"text": "Data manager enters the new job date and time.", "label": ["non_requirement_text"]}
+{"text": "The system saves the new job.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system informs the data manager that the job has successfully been scheduled.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "c1 The data manager selects the job of interest and chooses the option to cancel it.", "label": ["non_requirement_text"]}
+{"text": "d1 The system deletes the job.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "c2 The data manager selects the job of interest and chooses the option to view the harvesting report associated to it.", "label": ["non_requirement_text"]}
+{"text": "d2 The system displays the harvesting report for this job to the data manager.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name S-DM1 \u2013 Retrieve the list of data sources updated since last harvesting job", "label": ["non_requirement_text"]}
+{"text": "Description The system builds two lists: updated and unavailable data sources.", "label": ["non_requirement_text"]}
+{"text": "a The system retrieves the list of registered data sources.", "label": ["non_requirement_text"]}
+{"text": "b The system picks a data source.", "label": ["non_requirement_text"]}
+{"text": "c The system requests this data source to return the version number of the associated core resource.", "label": ["non_requirement_text"]}
+{"text": "d The data source returns the version number of its core resource.", "label": ["non_requirement_text"]}
+{"text": "e If the version number doesn\u2019t match the one of the local core resource, the system adds the source to the list of updated data sources.", "label": ["non_requirement_text"]}
+{"text": "f Step c to f repeats for all registered data sources.", "label": ["non_requirement_text"]}
+{"text": "g Return to the next step.", "label": ["non_requirement_text"]}
+{"text": "Handle communication failure with the data source.", "label": ["non_requirement_text"]}
+{"text": "d1 If the system cannot communicate with the data source, the system adds the data source to the list of unavailable data sources.", "label": ["non_requirement_text"]}
+{"text": "e1 The system records an error log entry.", "label": ["non_requirement_text"]}
+{"text": "f1 The sub flow resumes at step c.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-DM7 \u2013 Check core resources consistency with registered data sources", "label": ["non_requirement_text"]}
+{"text": "Description The data manager checks core resources consistency with registered data sources to identify outdated core resources and unavailable data sources.", "label": ["non_requirement_text"]}
+{"text": "Actors Data manager - Secondary: Registered occurrence data source", "label": ["non_requirement_text"]}
+{"text": "UC-DM8 \u2013 Trigger a harvesting job", "label": ["non_requirement_text"]}
+{"text": "The data manager selects to trigger a harvesting job so as to synchronize the portal biodiversity data with those hosted on the registered data sources.", "label": ["non_requirement_text"]}
+{"text": "Primary: Data manager - Secondary: Data sources", "label": ["non_requirement_text"]}
+{"text": "At least one data source has been added.", "label": ["non_requirement_text"]}
+{"text": "The local occurrence index is consistent with all configured data source index.", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the data manager selects to trigger a harvesting job.", "label": ["non_requirement_text"]}
+{"text": "The system adds a new job to the harvesting schedule with the current date and time.", "label": ["non_requirement_text"]}
+{"text": "Perform Retrieve the list of updated data sources", "label": ["non_requirement_text"]}
+{"text": "The system picks a resource from the updated data source list.", "label": ["non_requirement_text"]}
+{"text": "The system requests this resource originating data source to return the associated resource file.", "label": ["non_requirement_text"]}
+{"text": "The data source returns the core resource file.", "label": ["non_requirement_text"]}
+{"text": "The system validates and archives the core resource file.", "label": ["non_requirement_text"]}
+{"text": "The system repeats steps d to g for all data sources in the list.", "label": ["non_requirement_text"]}
+{"text": "The system switches to maintenance mode.", "label": ["non_requirement_text"]}
+{"text": "The system updates its index with harvested data.", "label": ["non_requirement_text"]}
+{"text": "The system switches back to normal mode.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system sets job status to \u201cfinished\u201d and success status to \u201csuccess\u201d.", "label": ["non_requirement_text"]}
+{"text": "The system sends a harvesting report to the data manager by email.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "If the system cannot communicate with the data source, the system adds the data source to the list of unharvested data sources.", "label": ["non_requirement_text"]}
+{"text": "The system records an error log entry.", "label": ["non_requirement_text"]}
+{"text": "The use case resumes at step d.", "label": ["non_requirement_text"]}
+{"text": "If the file served by the source is corrupted, the system adds the data.", "label": ["non_requirement_text"]}
+{"text": "UC-DM9 \u2013 Update taxonomic backbone", "label": ["non_requirement_text"]}
+{"text": "The data manager updates the taxonomic backbone with a checklist resource.", "label": ["non_requirement_text"]}
+{"text": "A file containing the checklist resource to be used as the new taxonomic backbone is stored on the data manager\u2019s local computer.", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the data manager selects to update the system taxonomic backbone.", "label": ["non_requirement_text"]}
+{"text": "The system requests the data manager to provide a file containing the checklist resource to replace the taxonomic backbone with.", "label": ["non_requirement_text"]}
+{"text": "The data manager selects the file containing the new taxonomic backbone from his local computer.", "label": ["non_requirement_text"]}
+{"text": "The system validates the file.", "label": ["non_requirement_text"]}
+{"text": "The system informs the data manager that the process may be long and that an email will be sent to him upon completion.", "label": ["non_requirement_text"]}
+{"text": "The system switches to maintenance mode.", "label": ["non_requirement_text"]}
+{"text": "The system updates its taxonomic backbone with the chosen checklist resource.", "label": ["non_requirement_text"]}
+{"text": "The system updates all indexes referring to entries in the taxonomic backbone to ensure index consistency.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system switches back to normal mode.", "label": ["non_requirement_text"]}
+{"text": "The system sends a taxonomic backbone update report with a \u2018success\u2019 status to the data manager by email.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "If the file provided by the data manager is corrupted or of an invalid format, the system sends the data manager a backup restoration report with a \u2018failure\u2019 status by email.", "label": ["non_requirement_text"]}
+{"text": "The system records an error log entry.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "If an error occurs while updating the taxonomic backbone index, the system rollbacks.", "label": ["non_requirement_text"]}
+{"text": "The system sends an email to the data manager containing a backup restoration report with a \u2018failure\u2019 status.", "label": ["non_requirement_text"]}
+{"text": "If an error occurs while updating all indexes referring to entries in the taxonomic backbone, the system rollbacks.", "label": ["non_requirement_text"]}
+{"text": "The system sends an email to the data manager containing a backup restoration report with a \u2018failure\u2019 status.", "label": ["non_requirement_text"]}
+{"text": "The system records an error log entry.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-DM10 \u2013 Install an extension", "label": ["non_requirement_text"]}
+{"text": "Description The data manager wants to install an extension to allow the system to deal with extra attributes for records of core resources.", "label": ["non_requirement_text"]}
+{"text": "Actors Primary: Data manager \u2013 Secondary: GBIF registry", "label": ["non_requirement_text"]}
+{"text": "Priority 3 Frequency 3", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the data manager chooses the option to manage extensions.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the list of installed extensions from its local registry and displays the list to the data manager.", "label": ["non_requirement_text"]}
+{"text": "The data manager chooses to install a new extension.", "label": ["non_requirement_text"]}
+{"text": "The system requests the GBIF registry for the lists of extensions.", "label": ["non_requirement_text"]}
+{"text": "GBIF registry returns the list of all available extensions along with their URLs.", "label": ["non_requirement_text"]}
+{"text": "The system removes the list of already installed extensions from this list.", "label": ["non_requirement_text"]}
+{"text": "The system displays this list to the data manager.", "label": ["non_requirement_text"]}
+{"text": "The data manager chooses the extension to install.", "label": ["non_requirement_text"]}
+{"text": "The system calls the GBIF registry for the extension.", "label": ["non_requirement_text"]}
+{"text": "The GBIF registry returns the extension to the system.", "label": ["non_requirement_text"]}
+{"text": "The system saves the extension and adds it to its local registry.", "label": ["non_requirement_text"]}
+{"text": "The system creates an index for the data type or extra attributes defined by this extension.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system informs the data manager that the installation was successful.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "A user may only initiate the use cases in this section if he is logged into the system using an account with portal manager role.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-PM3 - Configure data metrics visibility", "label": ["non_requirement_text"]}
+{"text": "The portal manager configures data metrics visibility in order to hide some metrics from the visitors.", "label": ["non_requirement_text"]}
+{"text": "The data metrics not declared as visible by the portal manager are hidden to the portal visitors.", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the portal manager selects to configure data metrics public availability.", "label": ["non_requirement_text"]}
+{"text": "The system displays the list of all data metrics and associated visibility status to the data manager.", "label": ["non_requirement_text"]}
+{"text": "The portal manager selects the desired visibility status for each data metrics.", "label": ["non_requirement_text"]}
+{"text": "The system updates its configuration with the new visibility status for the data metrics.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "UC-PM2 - Customize NPT instance", "label": ["non_requirement_text"]}
+{"text": "The portal manager customizes the NPT instance to adapt the portal appearance and parameters to fit its organization.", "label": ["non_requirement_text"]}
+{"text": "The system displays the node banner, logo and custom information on the portal.", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the portal manager selects to configure institutional information.", "label": ["non_requirement_text"]}
+{"text": "The system displays two functions: customize \u201clook and feel\u201d and configure portal.", "label": ["non_requirement_text"]}
+{"text": "The portal manager chooses to configure the portal.", "label": ["non_requirement_text"]}
+{"text": "The system requests the portal manager to enter the node name, Network summary information (in all front office languages) and contact person\u2019s name and email address, and HTML metadata tags.", "label": ["non_requirement_text"]}
+{"text": "The portal manager enters this information.", "label": ["non_requirement_text"]}
+{"text": "The system updates the NPT configuration with the new parameters.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The system requests the portal manager to provide files for the organization logo and the portal banner image.", "label": ["non_requirement_text"]}
+{"text": "The portal manager selects the logo and/or banner image files on his local computer.", "label": ["non_requirement_text"]}
+{"text": "The use case resumes at step f.", "label": ["non_requirement_text"]}
+{"text": "UC-PM3 \u2013 Configure front office languages", "label": ["non_requirement_text"]}
+{"text": "The data manager selects to manage front office languages so as to set the default and alternate portal languages.", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the portal manager selects to manage front office languages.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the list of all installed languages.", "label": ["non_requirement_text"]}
+{"text": "The system displays the default language and the list of alternate languages.", "label": ["non_requirement_text"]}
+{"text": "and two options: change the default language and install a new language.", "label": ["non_requirement_text"]}
+{"text": "For each alternate language, the system displays two options: uninstall and set as default.", "label": ["non_requirement_text"]}
+{"text": "The data manager selects to change the default language.", "label": ["non_requirement_text"]}
+{"text": "The system displays the list of all installed non-default languages.", "label": ["non_requirement_text"]}
+{"text": "The data manager selects the new default language.", "label": ["non_requirement_text"]}
+{"text": "The system saves the new default language in its configuration.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system informs the security officer of the operation success.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The portal manager selects to install a new language.", "label": ["non_requirement_text"]}
+{"text": "The system requests the portal manager to provide the language file.", "label": ["non_requirement_text"]}
+{"text": "The portal manager selects the language file on his local computer.", "label": ["non_requirement_text"]}
+{"text": "The system validates the language file.", "label": ["non_requirement_text"]}
+{"text": "The file is valid.", "label": ["non_requirement_text"]}
+{"text": "The system installs the new language from the file.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system informs the portal manager of the install success.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The data manager selects the language of interest and chooses the option to uninstall it.", "label": ["non_requirement_text"]}
+{"text": "The system uninstalls the language.", "label": ["non_requirement_text"]}
+{"text": "The system records an audit log entry.", "label": ["non_requirement_text"]}
+{"text": "The system informs the portal manager of the uninstall success.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The system informs the portal manager that it\u2019s impossible to install the language because the file he provided is invalid.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: UC-V1 - Send feedback to the portal contact person", "label": ["non_requirement_text"]}
+{"text": "Description: The visitor sends remarks or suggestions about the portal or about the hosted data to the portal contact person.", "label": ["non_requirement_text"]}
+{"text": "Preconditions: The portal manager has customized NPT instance and provided information for the contact person.", "label": ["non_requirement_text"]}
+{"text": "Trigger: The visitor decides to contact the NPT portal contact person.", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the visitor selects to send feedback.", "label": ["non_requirement_text"]}
+{"text": "The system requests the visitor to enter a text and body for the message and personal information (name and email address).", "label": ["non_requirement_text"]}
+{"text": "The visitor supplies that information.", "label": ["non_requirement_text"]}
+{"text": "The system validates the email address and checks that the message body is not empty.", "label": ["non_requirement_text"]}
+{"text": "The system sends the message along with the visitor\u2019s personal information to the contact person by email.", "label": ["non_requirement_text"]}
+{"text": "The system informs the visitor that his feedback has successfully been sent.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Handle invalid email address: If the email address is invalid, the system asks the visitor to enter a valid email address and prevents her to send the feedback until done.", "label": ["non_requirement_text"]}
+{"text": "The use case resumes to step b.", "label": ["non_requirement_text"]}
+{"text": "Handle blank message body: If the message body is empty, the system asks the visitor to enter one.", "label": ["non_requirement_text"]}
+{"text": "The use case resumes to step b.", "label": ["non_requirement_text"]}
+{"text": "Handle error during sending the email: If an error occurs while sending the email, the system warns the user about the issue, apologizes and asks the user to try again later.", "label": ["non_requirement_text"]}
+{"text": "The system records an error log entry.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name: S-V1 \u2013 Build an occurrence record selection filter", "label": ["non_requirement_text"]}
+{"text": "The sub flow starts when the selects to search for occurrence records.", "label": ["non_requirement_text"]}
+{"text": "The system displays the filter-building interface to the visitor.", "label": ["non_requirement_text"]}
+{"text": "Perform Add a criterion to the filter.", "label": ["non_requirement_text"]}
+{"text": "User repeats step c until the filter matches only the occurrence records he\u2019s interested in.", "label": ["non_requirement_text"]}
+{"text": "c1.1 Provided that the filter has at least one criterion.", "label": ["non_requirement_text"]}
+{"text": "The visitor selects a criterion and chooses to remove it.", "label": ["non_requirement_text"]}
+{"text": "c1.2 The system removes the criterion from the filter.", "label": ["non_requirement_text"]}
+{"text": "The use case resumes at step d.", "label": ["non_requirement_text"]}
+{"text": "S-V2 - Add a criterion to the filter", "label": ["non_requirement_text"]}
+{"text": "a The visitor selects to add a taxonomic criterion.", "label": ["non_requirement_text"]}
+{"text": "b The visitor finds the taxon of interest.", "label": ["non_requirement_text"]}
+{"text": "c The system adds the criterion to the filter.", "label": ["non_requirement_text"]}
+{"text": "d The sub flow ends.", "label": ["non_requirement_text"]}
+{"text": "a1 The visitor selects to add a depth criterion.", "label": ["non_requirement_text"]}
+{"text": "b1 The visitor enters a minimum and/or maximum observation depth value(s).", "label": ["non_requirement_text"]}
+{"text": "The sub flow ends.", "label": ["non_requirement_text"]}
+{"text": "a2 The visitor selects to add an altitude criterion.", "label": ["non_requirement_text"]}
+{"text": "b2 The visitor enters a minimum and/or maximum observation altitude value(s).", "label": ["non_requirement_text"]}
+{"text": "The sub flow ends.", "label": ["non_requirement_text"]}
+{"text": "a3 The visitor selects to add a date criterion.", "label": ["non_requirement_text"]}
+{"text": "b3 The visitor enters a start and/or an end observation date(s).", "label": ["non_requirement_text"]}
+{"text": "The sub flow ends.", "label": ["non_requirement_text"]}
+{"text": "a4 The visitor selects to add a dataset criterion.", "label": ["non_requirement_text"]}
+{"text": "b4.1 The system retrieves the list of hosted occurrence resources and displays the list to the visitor.", "label": ["non_requirement_text"]}
+{"text": "b4.2 The visitor selects the occurrence resource of interest.", "label": ["non_requirement_text"]}
+{"text": "The sub flow ends.", "label": ["non_requirement_text"]}
+{"text": "a5 The visitor selects to add a basis of records criterion.", "label": ["non_requirement_text"]}
+{"text": "b5.1 The system displays the list of basis of records to the visitor.", "label": ["non_requirement_text"]}
+{"text": "b5.2 The visitor selects the basis of record from the proposed list.", "label": ["non_requirement_text"]}
+{"text": "The sub flow ends.", "label": ["non_requirement_text"]}
+{"text": "a6 The visitor selects to add a geographic area criterion.", "label": ["non_requirement_text"]}
+{"text": "b6 User draws a polygon defining his area of interest on a map interface.", "label": ["non_requirement_text"]}
+{"text": "The sub flow ends.", "label": ["non_requirement_text"]}
+{"text": "UC-V2 \u2013 Select occurrence records and view distribution map", "label": ["non_requirement_text"]}
+{"text": "The visitor wants to discover and access occurrence records.", "label": ["non_requirement_text"]}
+{"text": "He can select", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the visitor selects to search occurrences.", "label": ["non_requirement_text"]}
+{"text": "The system proposes the visitor two search options: taxonomic search and advanced search.", "label": ["non_requirement_text"]}
+{"text": "The visitor selects to search occurrence records using advanced search.", "label": ["non_requirement_text"]}
+{"text": "Perform Build an occurrence record selection filter.", "label": ["non_requirement_text"]}
+{"text": "The visitor launches the search.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the occurrence records matching the filter criteria.", "label": ["non_requirement_text"]}
+{"text": "The system records a data usage log entry with type \u2018mapped\u2019.", "label": ["non_requirement_text"]}
+{"text": "The system displays the distribution map for the occurrence record selection.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The visitor selects to search occurrence records using taxonomic search.", "label": ["non_requirement_text"]}
+{"text": "Perform Select a taxon.", "label": ["non_requirement_text"]}
+{"text": "The visitor launches the search.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the occurrence records for that taxon.", "label": ["non_requirement_text"]}
+{"text": "Use case resumes at step g.", "label": ["non_requirement_text"]}
+{"text": "Perform Select an occurrence resource.", "label": ["non_requirement_text"]}
+{"text": "The system displays the details for this occurrence resource and the distribution map for associated occurrence records.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "The visitor searches portal using full text search.", "label": ["non_requirement_text"]}
+{"text": "If no taxon is returned, the use case ends.", "label": ["non_requirement_text"]}
+{"text": "The visitor selects a taxon.", "label": ["non_requirement_text"]}
+{"text": "The system displays the details for this taxon and the distribution map for associated occurrence records.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "UC-V3 - View occurrence record selection as a table", "label": ["non_requirement_text"]}
+{"text": "User selects to view occurrence records selection as a table in order to display their attributes.", "label": ["non_requirement_text"]}
+{"text": "The record selection contains at least one record.", "label": ["non_requirement_text"]}
+{"text": "The visitor selects occurrence records and view distribution map.", "label": ["non_requirement_text"]}
+{"text": "The visitor chooses the option to view the occurrence record selection as a table.", "label": ["non_requirement_text"]}
+{"text": "The system records a data usage log entry with type \u2018viewed\u2019.", "label": ["non_requirement_text"]}
+{"text": "UC-V4 - Export occurrence record selection", "label": ["non_requirement_text"]}
+{"text": "User exports the occurrence selection for further analysis.", "label": ["non_requirement_text"]}
+{"text": "The record selection contains at least one record.", "label": ["non_requirement_text"]}
+{"text": "A file containing the record selection has been transferred to the visitor's local computer.", "label": ["non_requirement_text"]}
+{"text": "The visitor selects occurrence records and views distribution map.", "label": ["non_requirement_text"]}
+{"text": "The visitor chooses the option to download the record selection in his format of choice.", "label": ["non_requirement_text"]}
+{"text": "The system checks that the user has accepted the data usage agreement.", "label": ["non_requirement_text"]}
+{"text": "The system records a data usage log entry with type \u2018downloaded\u2019.", "label": ["non_requirement_text"]}
+{"text": "The system warns visitor that the process may take up to half an hour.", "label": ["non_requirement_text"]}
+{"text": "It provides visitor a download link that will allow him to retrieve the file later.", "label": ["non_requirement_text"]}
+{"text": "The system builds the file.", "label": ["non_requirement_text"]}
+{"text": "The visitor later follows the download link.", "label": ["non_requirement_text"]}
+{"text": "The file is ready for download.", "label": ["non_requirement_text"]}
+{"text": "The system informs the visitor that the building process has been successfully carried out and offers an option to download the file.", "label": ["non_requirement_text"]}
+{"text": "The visitor chooses to download the file.", "label": ["non_requirement_text"]}
+{"text": "The system transfers the file to the visitor's local computer.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "If the visitor has not accepted the data usage agreement, the system displays it to the user and prompts the user to accept it.", "label": ["non_requirement_text"]}
+{"text": "If the user does, the system will remember and the use case resumes at step c.", "label": ["non_requirement_text"]}
+{"text": "If he doesn't, the use case ends.", "label": ["non_requirement_text"]}
+{"text": "The system informs the visitor that the export process is not finished yet and suggests him to try again in a few moments.", "label": ["non_requirement_text"]}
+{"text": "Use case returns to step f.", "label": ["non_requirement_text"]}
+{"text": "UC-V5 - Export distribution map as an image", "label": ["non_requirement_text"]}
+{"text": "The visitor exports distribution map as an image so as to be able, e.g., to insert it in a paper.", "label": ["non_requirement_text"]}
+{"text": "An image of the distribution map has been transferred to the visitor\u2019s local computer.", "label": ["non_requirement_text"]}
+{"text": "Description: The visitor searches resource metadata, blog, article and news entries using full text search in order to find and access matching resources and entries.", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the visitor selects to search the portal using full text search.", "label": ["non_requirement_text"]}
+{"text": "The system prompts visitor to type his keyword query.", "label": ["non_requirement_text"]}
+{"text": "The visitor enters the query.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the list of matching resources and entries.", "label": ["non_requirement_text"]}
+{"text": "The system displays those results grouped by data types with an option to view the details for each of them.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Description: The visitor contacts the publisher of an occurrence resource to request more information or send a comment.", "label": ["non_requirement_text"]}
+{"text": "Precondition: The dataset provider\u2019s metadata contains a valid contact email address.", "label": ["non_requirement_text"]}
+{"text": "Post conditions: The visitor\u2019s message has been sent to the provider\u2019s contact email address.", "label": ["non_requirement_text"]}
+{"text": "Perform Select an occurrence resource.", "label": ["non_requirement_text"]}
+{"text": "The visitor selects to contact the data provider of this dataset.", "label": ["non_requirement_text"]}
+{"text": "The system requests the visitor to enter the subject and body of the message and personal information (name and email address).", "label": ["non_requirement_text"]}
+{"text": "The visitor enters the requested information.", "label": ["non_requirement_text"]}
+{"text": "The system validates the email address and checks that the message body is not empty.", "label": ["non_requirement_text"]}
+{"text": "The system sends the visitor\u2019s message and personal information to the dataset provider by email.", "label": ["non_requirement_text"]}
+{"text": "The system informs the visitor that the message has successfully been sent.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "e2 The system informs the visitor that the email address he provided is invalid.", "label": ["non_requirement_text"]}
+{"text": "Use case resumes at step c.", "label": ["non_requirement_text"]}
+{"text": "e3 The system informs the visitor that the message body cannot be left blank.", "label": ["non_requirement_text"]}
+{"text": "The use case resumes at step c.", "label": ["non_requirement_text"]}
+{"text": "If an error occurs while sending the email, the system warns the user that the message could not be sent, apologizes for the inconvenience and suggests the visitor to try again later.", "label": ["non_requirement_text"]}
+{"text": "g4 The system records an error log entry.", "label": ["non_requirement_text"]}
+{"text": "h4 The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-V8 \u2013 Export a checklist", "label": ["non_requirement_text"]}
+{"text": "Description The visitor downloads a checklist for local consultation/analysis.", "label": ["non_requirement_text"]}
+{"text": "a The use case starts when the visitor chooses the option to view the list of checklists hosted on the portal.", "label": ["non_requirement_text"]}
+{"text": "b The system retrieves the list of checklist resources and displays it to the visitor.", "label": ["non_requirement_text"]}
+{"text": "c The visitor selects the checklist resource of interest and chooses the option to view its details.", "label": ["non_requirement_text"]}
+{"text": "d The system displays detailed metadata for this checklist resource and an export checklist option.", "label": ["non_requirement_text"]}
+{"text": "e The visitor selects to export the checklist.", "label": ["non_requirement_text"]}
+{"text": "f The system transfers the archived checklist resource file to the visitor\u2019s local computer.", "label": ["non_requirement_text"]}
+{"text": "g The use case ends.", "label": ["non_requirement_text"]}
+{"text": "S-V3 \u2013 Select a taxon", "label": ["non_requirement_text"]}
+{"text": "a The visitor chooses the option to find a taxon.", "label": ["non_requirement_text"]}
+{"text": "b The system presents a taxonomic tree and a taxon search interface.", "label": ["non_requirement_text"]}
+{"text": "c The visitor browses the tree until he finds the taxon he\u2019s interested in.", "label": ["non_requirement_text"]}
+{"text": "d The visitor selects this taxon.", "label": ["non_requirement_text"]}
+{"text": "Selects taxon by searching by name", "label": ["non_requirement_text"]}
+{"text": "c1.1 The visitor searches the taxon by name (scientific or common).", "label": ["non_requirement_text"]}
+{"text": "The visitor enters part of the name.", "label": ["non_requirement_text"]}
+{"text": "c1.2 The system presents the list of matching taxa.", "label": ["non_requirement_text"]}
+{"text": "The use case resumes at step d.", "label": ["non_requirement_text"]}
+{"text": "S-V4 \u2013 Select an occurrence resource", "label": ["non_requirement_text"]}
+{"text": "The visitor selects to list datasets.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the list of occurrence resources.", "label": ["non_requirement_text"]}
+{"text": "The system displays the list to the visitor.", "label": ["non_requirement_text"]}
+{"text": "The visitor selects the occurrence resource of interest.", "label": ["non_requirement_text"]}
+{"text": "The visitor searches portal using full text search.", "label": ["non_requirement_text"]}
+{"text": "If at least one occurrence resource is returned, the flow resumes to step c.", "label": ["non_requirement_text"]}
+{"text": "If not, it ends.", "label": ["non_requirement_text"]}
+{"text": "UC-V9 - Choose portal language", "label": ["non_requirement_text"]}
+{"text": "The visitor chooses his language of preference.", "label": ["non_requirement_text"]}
+{"text": "The portal manager has configured front office languages with at least one alternate language.", "label": ["non_requirement_text"]}
+{"text": "The portal uses the chosen language for that visitor from now on.", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the visitor selects to choose portal language.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the list of available languages to the visitor.", "label": ["non_requirement_text"]}
+{"text": "The system displays the list to the visitor.", "label": ["non_requirement_text"]}
+{"text": "The visitor chooses his preferred language.", "label": ["non_requirement_text"]}
+{"text": "The system switches portal language to the chosen language.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "A visitor may only initiate the use cases in this section if he is logged into the system as a registered visitor.", "label": ["non_requirement_text"]}
+{"text": "UC-RV1 \u2013 Save a custom filter", "label": ["non_requirement_text"]}
+{"text": "The registered visitor builds an occurrence record filter and wants to be able to reuse it in the future.", "label": ["non_requirement_text"]}
+{"text": "To do so, he saves the filter in his profile.", "label": ["non_requirement_text"]}
+{"text": "Perform Build an occurrence record selection filter.", "label": ["non_requirement_text"]}
+{"text": "Visitor selects to save the current filter.", "label": ["non_requirement_text"]}
+{"text": "The system prompts visitor for a name and description for the filter.", "label": ["non_requirement_text"]}
+{"text": "The visitor enters a name and description for the filter.", "label": ["non_requirement_text"]}
+{"text": "The system saves the filter in the registered visitor\u2019s profile.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-RV2 \u2013 Load a custom filter", "label": ["non_requirement_text"]}
+{"text": "Description   The registered visitor loads a filter he previously saved in his profile.", "label": ["non_requirement_text"]}
+{"text": "Actors Registered visitor", "label": ["non_requirement_text"]}
+{"text": "Priority 1 Frequency 2", "label": ["non_requirement_text"]}
+{"text": "Preconditions The registered visitor is displayed the filter building interface.", "label": ["non_requirement_text"]}
+{"text": "The registered visitor has saved at least one filter.", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the visitor selects to manage custom filters.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the list of filters for the registered visitor.", "label": ["non_requirement_text"]}
+{"text": "The system displays the list to the visitor with options to load or delete each of them.", "label": ["non_requirement_text"]}
+{"text": "The visitor selects the filter of interest and chooses the option to load it.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the filter criteria and populates the filter-building interface with these criteria.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "Identifier-Name UC-RV3 \u2013 Delete a custom filter", "label": ["non_requirement_text"]}
+{"text": "Description The visitor wants to delete a previously saved filter.", "label": ["non_requirement_text"]}
+{"text": "Actors Registered visitor", "label": ["non_requirement_text"]}
+{"text": "Priority 1 Frequency 2", "label": ["non_requirement_text"]}
+{"text": "Preconditions The visitor is displayed the filter building interface.", "label": ["non_requirement_text"]}
+{"text": "The visitor has saved at least one filter.", "label": ["non_requirement_text"]}
+{"text": "The use case starts when the visitor selects to manage custom filters.", "label": ["non_requirement_text"]}
+{"text": "The system retrieves the list of filters for the registered visitor.", "label": ["non_requirement_text"]}
+{"text": "The system displays the list to the visitor with options to load or delete each of them.", "label": ["non_requirement_text"]}
+{"text": "The visitor selects the filter of interest and chooses the option to delete it.", "label": ["non_requirement_text"]}
+{"text": "The system deletes the filter and informs the registered visitor of the deletion success.", "label": ["non_requirement_text"]}
+{"text": "The use case ends.", "label": ["non_requirement_text"]}
+{"text": "BR ID Name", "label": ["non_requirement_text"]}
+{"text": "BR1 Visitors must accept the portal data usage agreement before being allowed to export data from the portal.", "label": ["non_requirement_text"]}
+{"text": "BR2 To avoid conflict, the data usage agreement for all NPT instances is the same as on GBIF portal.", "label": ["non_requirement_text"]}
+{"text": "BR3 Only user logged into the system using an account with an administrator role can manage user accounts.", "label": ["non_requirement_text"]}
+{"text": "BR4 Only user logged into the system using an account with a data manager role can access the following functionalities: manage resources, manage data sources, manage harvesting jobs, and manage taxonomic backbone.", "label": ["non_requirement_text"]}
+{"text": "BR5 Only user logged into the system using an account with a portal manager role can access the following functionalities: manage blog posts, pages and news entries, customize NPT instance and choose languages available on the front end.", "label": ["non_requirement_text"]}
+{"text": "BR6 Only user logged into the system using an account with an administrator role can configure the distribution map, manage installed modules and manage user accounts.", "label": ["non_requirement_text"]}
+{"text": "BR7 Only user logged into the system using an account with a portal manager, administrator or data manager role can access data metrics with a visibility status of \u2018hidden\u2019.", "label": ["non_requirement_text"]}
+{"text": "NPT resources for further information can be found on:", "label": ["non_requirement_text"]}
+{"text": "- NPT group on GBIF Community site: http://community.gbif.org/pg/groups/3507/nodes-portal-toolkit-npt/", "label": ["non_requirement_text"]}
+{"text": "Standards, formats, tools and API documentation:", "label": ["non_requirement_text"]}
+{"text": "- Audubon: http://www.keytonature.eu/wiki/Audubon_Core", "label": ["non_requirement_text"]}
+{"text": "- EML: http://knb.ecoinformatics.org/software/eml/eml-2.0.1/index.html", "label": ["non_requirement_text"]}
+{"text": "- Darwin core: http://rs.tdwg.org/dwc/", "label": ["non_requirement_text"]}
+{"text": "- Darwin core archive: http://www.gbif.org/informatics/standards-and-tools/publishing-data/data-standards/darwin-core-archives/", "label": ["non_requirement_text"]}
+{"text": "- Documentation on the GBIF Portal API Google Code site: http://code.google.com/p/gbif-portalapi/", "label": ["non_requirement_text"]}
+{"text": "- The GBIF Integrated Publishing Toolkit User Manual: http://code.google.com/p/gbif-providertoolkit/wiki/IPT2ManualNotes", "label": ["non_requirement_text"]}
+{"text": "- Integrated Publishing Toolkit (IPT) - Architectural view: http://code.google.com/p/gbif-providertoolkit/downloads/detail?name=ipt-architecture_1.1.pdf", "label": ["non_requirement_text"]}

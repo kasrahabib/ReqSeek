@@ -1,0 +1,296 @@
+{"text": "November 08, 2024", "label": ["non_requirement_text"]}
+{"text": "INTENDED AUDIENCE AND SUGGESTIONS", "label": ["non_requirement_text"]}
+{"text": "SELECTION OF THE BASE LEARNING PLATFORM", "label": ["non_requirement_text"]}
+{"text": "CUSTOM PLUGIN DEVELOPMENT COMPLETION AND OVERVIEW", "label": ["non_requirement_text"]}
+{"text": "ALTERNATIVE PACKAGING AND DELIVERY WITH MOODLE DOCKER", "label": ["non_requirement_text"]}
+{"text": "LICENSING OF CUSTOM KIB3 MOODLE PLUGINS", "label": ["non_requirement_text"]}
+{"text": "Artificial Intelligence (AI) will permanently change the economic value chain across industries and sizes as a central disruptive technological innovation.", "label": ["non_requirement_text"]}
+{"text": "The specialists and managers required for this transformation process must be trained early.", "label": ["non_requirement_text"]}
+{"text": "The joint project KI B\u00b3 (K\u00fcnstliche Intelligenz in die Berufliche Bildung bringen) addresses the previously missing qualification opportunities for data analysis and machine learning skills in vocational and further training.", "label": ["non_requirement_text"]}
+{"text": "It is initially based on regional legal provisions that will be rolled out across Baden-W\u00fcrttemberg and combined to create national statutory ordinances.", "label": ["non_requirement_text"]}
+{"text": "The newly formed innovation cluster, which is composed of three Baden-W\u00fcrttemberg IHKs (Karlsruhe, Region Stuttgart, and Reutlingen) and the Technical University of Munich, Stuttgart, and Ludwig Maximilian University of Munich (LMU), has been developing a modular format that provides a cross-industry additional qualification to connect trainees with advanced training qualifications.", "label": ["non_requirement_text"]}
+{"text": "This is related to a deeper reflection on the creditability within vocational training and the exchange with academic education in the sense of a \"currency.\" Since much of the AI content is currently being taught primarily in academic education, the specific skills should get into vocational training via adapted or revised digital modules.", "label": ["non_requirement_text"]}
+{"text": "This software requires specification details regarding the software developed to support teaching content and the heterogeneous group of learners.", "label": ["non_requirement_text"]}
+{"text": "The project is supported by an extensive network that includes three Baden-W\u00fcrttemberg IHKs and various companies, unions, state ministries, a vocational school, the DIHK, and the DIHK Bildungs-GmbH, employment agencies, and scientific experts.", "label": ["non_requirement_text"]}
+{"text": "This learning software is built upon the Moodle platform, enhanced with custom features to address diverse student needs by ensuring equal access to personalized educational content and adaptive support.", "label": ["non_requirement_text"]}
+{"text": "Integrating an AI Chatbot as a digital tutor, guiding students with tailored feedback, adaptive assistance, and individualized tasks.", "label": ["non_requirement_text"]}
+{"text": "Additionally, it integrates a Jupyter programming environment directly into Moodle, enhancing students' programming skills.", "label": ["non_requirement_text"]}
+{"text": "Designed for hybrid learning environments, it combines Moodle's foundational structure with effective didactic strategies and added collaborative features such as discussion forums, badges, notifications, and real-time communication.", "label": ["non_requirement_text"]}
+{"text": "Integrated functionalities like Python programming and machine learning further allow students to engage in hands-on learning within the platform.", "label": ["non_requirement_text"]}
+{"text": "This comprehensive design supports both students and educators in managing, tracking, and engaging effectively with the learning process.", "label": ["non_requirement_text"]}
+{"text": "This document is created based on the IEEE template [1] for System Requirement Specification Documents.", "label": ["non_requirement_text"]}
+{"text": "Furthermore, the requirements language criteria are based on ISO 29148 [2], i.e., this is a harmonized standard of IEEE 830 [3].", "label": ["non_requirement_text"]}
+{"text": "Intended Audience and Suggestions", "label": ["non_requirement_text"]}
+{"text": "The intended audience is cross-industry, to which the digital modules and adaptive learning software shall be deployed in three phases:", "label": ["non_requirement_text"]}
+{"text": "In Baden-W\u00fcrttemberg: trials in three Industrie- und Handelskammer (IHK) model regions (IHK districts Karlsruhe, Reutlingen, Region Stuttgart), then roll out the modules and software to the remaining 9 IHK districts.", "label": ["non_requirement_text"]}
+{"text": "And nationwide perspective roll-out, i.e., creating a national ordinance based on tried and tested regional regulations.", "label": ["non_requirement_text"]}
+{"text": "This adaptive learning software is developed as part of a larger educational project for IHK, leveraging the Moodle platform with custom enhancements to serve as a comprehensive \"learning assistant.\" It uses AI-driven methods to assess and promote each student's knowledge level and skills.", "label": ["non_requirement_text"]}
+{"text": "By integrating an AI chatbot, Jupyter programming environment, and additional collaborative tools, this platform offers adaptive assistance and feedback tailored to individual learning needs.", "label": ["non_requirement_text"]}
+{"text": "This approach ensures each student receives targeted guidance and resources to foster growth within a supportive hybrid learning environment.", "label": ["non_requirement_text"]}
+{"text": "Selection of the Base Learning Platform", "label": ["non_requirement_text"]}
+{"text": "An analysis of several existing learning platforms was conducted, into which the aimed adaptive learning software could be integrated to meet the requirements (see Section 7).", "label": ["non_requirement_text"]}
+{"text": "The criteria used to select Moodle as the base platform for designing and developing the adaptive learning software.", "label": ["non_requirement_text"]}
+{"text": "A literature review was conducted to find the best learning platforms for further customization of the KIB3\u2019s needs according to the elicited software requirements.", "label": ["non_requirement_text"]}
+{"text": "Among all three e-learning platforms that were narrowed down for further analysis are Moodle, ILIAS, and Chamilo.", "label": ["non_requirement_text"]}
+{"text": "Closed-source e-learning platforms were excluded since one of the goals of the KIB3 project is to follow the open-source paradigm.", "label": ["non_requirement_text"]}
+{"text": "The three selected e-learning platforms were compared based on their features and capabilities, technical aspects, and the coverage of the KIB3 project's functional and non-functional requirements.", "label": ["non_requirement_text"]}
+{"text": "Furthermore, available studies in the literature and deployment experience reports were also considered during the selection process.", "label": ["non_requirement_text"]}
+{"text": "Since the beginning of COVID-19, a bulk of new research has been published, specifically in rating virtual learning platforms to replace or be the nearest replacement for face-to-face classes.", "label": ["non_requirement_text"]}
+{"text": "Most of such publications recommend the use of Moodle.", "label": ["non_requirement_text"]}
+{"text": "The following lists a subset of the reasons why they recommend using Moodle.", "label": ["non_requirement_text"]}
+{"text": "- It is an open-source project based on the GNU license [1, 2, 3, 4, 5, 10, 14].", "label": ["non_requirement_text"]}
+{"text": "- It is a Content Management System and Virtual Learning Environment that provides its users with learner tools such as communication, productivity, and student involvement.", "label": ["non_requirement_text"]}
+{"text": "Moreover, it provides support tools such as administration, course management, and content development [2, 6, 10, 11, 14].", "label": ["non_requirement_text"]}
+{"text": "- Moodle is easy to set up and can run on almost all servers that support PHP.", "label": ["non_requirement_text"]}
+{"text": "Moreover, it is easy to upgrade from one version to another [7, 4, 8, 10, 12, 13].", "label": ["non_requirement_text"]}
+{"text": "- The key to Moodle's success in academia is its development, which considers both pedagogy and technology by providing a solid grounding in social constructionist pedagogy and good education [5, 10, 11, 12, 14, 15, 16, 17].", "label": ["non_requirement_text"]}
+{"text": "- It has many valuable features that can promote it as an alternative to face-to-face classes, such as easy installation, customization of options and settings, good support, and proper educational tools.", "label": ["non_requirement_text"]}
+{"text": "Moreover, it has excellent documentation and strong support for security and administration [9, 10, 12, 14, 15, 16].", "label": ["non_requirement_text"]}
+{"text": "Additionally, other advantages were not discussed in previous studies.", "label": ["non_requirement_text"]}
+{"text": "Moodle is a plugin-based platform and provides a plugin marketplace (repository) with hundreds of already developed plugins, such as plugins for adding interactivity, communication tools, computer programming environments, and administration tools.", "label": ["non_requirement_text"]}
+{"text": "Moreover, Moodle has object-oriented and modular source-code configurations [5], making it easier to maintain and develop on top of it, which is one of the essential issues in the e-learning platforms ILIAS and Chamilio.", "label": ["non_requirement_text"]}
+{"text": "Finally, Moodle has a massive developer community with continuous releases of newer versions, which guarantees long-term support of the project and security assurance due to security updates in newer releases.", "label": ["non_requirement_text"]}
+{"text": "In addition to the aforementioned publications that describe the qualities of Moodle, it is also crucial to consider some statistics about Moodle.", "label": ["non_requirement_text"]}
+{"text": "Moodle currently has (as of 05.08.2021) about 187K registered sites with 277M users and over 1.5B enrollments running in 246 countries [5].", "label": ["non_requirement_text"]}
+{"text": "To this date, Germany ranks fourth top Moodle user globally with 10135 registered sites [5].", "label": ["non_requirement_text"]}
+{"text": "Additionally, the vocational training school of Balingen has already been using Moodle.", "label": ["non_requirement_text"]}
+{"text": "This training school is an important KIB3 stakeholder, which works closely with this project to support us in achieving the project's goals by providing us with information about the vocational training school\u2019s needs.", "label": ["non_requirement_text"]}
+{"text": "In summary, we selected the learning platform Moodle as the base platform for KIB3's adaptive learning software based on (i) the aforementioned reasons derived from recent studies, (ii) Moodle\u2019s functionalities that cover most of the basic requirements for this project.", "label": ["non_requirement_text"]}
+{"text": "An overview of the system architecture designed to fulfill the core requirements and functionalities of the adaptive learning software is provided in Figure 1.", "label": ["non_requirement_text"]}
+{"text": "It depicts the overall architecture, showcasing a modular design integrating built-in features with custom-developed plug-ins to create a flexible, interactive learning environment.", "label": ["non_requirement_text"]}
+{"text": "Components shown in grey represent built-in functionalities provided by the selected base platform or existing plugins that can deliver the required capabilities upon installation.", "label": ["non_requirement_text"]}
+{"text": "These include foundational elements like content management, user administration, exercises, and basic functionalities for tracking learning progress.", "label": ["non_requirement_text"]}
+{"text": "In contrast, components in blue denote functionalities developed specifically for this project.", "label": ["non_requirement_text"]}
+{"text": "Some of these custom plug-ins, such as a book search tool, an ice cream game, Jupyter Lab integration for programming tasks, and an AI-powered chatbot, are shown in green.", "label": ["non_requirement_text"]}
+{"text": "They enhance the platform's interactivity, adaptivity, and user engagement, aligning with the software\u2019s educational objectives.", "label": ["non_requirement_text"]}
+{"text": "The adaptivity and interactivity layer supports personalized learning by tailoring exercises and monitoring individual progress.", "label": ["non_requirement_text"]}
+{"text": "Communication and interaction are facilitated through integrated tools, enabling real-time engagement among users.", "label": ["non_requirement_text"]}
+{"text": "This architecture ensures a comprehensive hybrid learning experience by combining the robustness of the base platform with custom plug-and-play extensions, making the system adaptable, scalable, and responsive to diverse learning needs.", "label": ["non_requirement_text"]}
+{"text": "Server for Backend Book Search Chatbot", "label": ["non_requirement_text"]}
+{"text": "Ice-cream Game Jupyter Lab", "label": ["non_requirement_text"]}
+{"text": "Adaptivity Interactivity Communication / Interaction", "label": ["non_requirement_text"]}
+{"text": "Exercises Learning Progress", "label": ["non_requirement_text"]}
+{"text": "Content Management User Administration", "label": ["non_requirement_text"]}
+{"text": "Built-in functionality of the basic platform or existing plugin", "label": ["non_requirement_text"]}
+{"text": "Functionality not available in the basic platform: This is to be developed as part of the project:", "label": ["non_requirement_text"]}
+{"text": "Examples of customized plug-and-play extensions integrated into the platform", "label": ["non_requirement_text"]}
+{"text": "Figure 1: Overall Architecture", "label": ["non_requirement_text"]}
+{"text": "This section outlines the requirements elicitation process, led by the Chair of Software Engineering at the Technical University of Munich, detailing the collaborative steps taken to gather and refine project requirements.", "label": ["non_requirement_text"]}
+{"text": "It concludes with the final list of requirements, organized into functional and non-functional categories, forming the foundation for the software\u2019s development.", "label": ["non_requirement_text"]}
+{"text": "The requirements elicitation process for this project, led by the Chair of Software Engineering at the Technical University of Munich, began during the COVID-19 pandemic when physical meetings were not possible.", "label": ["non_requirement_text"]}
+{"text": "Consequently, all elicitation activities were conducted through online meetings with stakeholders.", "label": ["non_requirement_text"]}
+{"text": "This remote collaboration included representatives from a range of organizations, such as IHK Reutlingen (IHK RT), IHK Karlsruhe (IHK KA), IHK Region Stuttgart (IHK RS), the Institute for Natural Language Processing at the University of Stuttgart, and Ludwig Maximilian University of Munich (LMU), as well as several school teachers, ensuring a comprehensive blend of expertise.", "label": ["non_requirement_text"]}
+{"text": "The process began with a literature review conducted by software engineers at the Chair of Software Engineering, identifying general categories of functionalities, such as basic functions and chatbot tutoring, based on existing AI-supported learning platforms.", "label": ["non_requirement_text"]}
+{"text": "Before moving into breakout sessions, stakeholders were invited to suggest any additional categories they felt should be included.", "label": ["non_requirement_text"]}
+{"text": "Participants were then divided into breakout sessions according to their expertise, where they discussed and brainstormed ideas using mind maps.", "label": ["non_requirement_text"]}
+{"text": "These mind maps were subsequently consolidated and transformed into requirements compliant with ISO 29148 standards.", "label": ["non_requirement_text"]}
+{"text": "A follow-up validation meeting allowed stakeholders to review the drafted requirements, remove unfeasible ones, and finalize an agreed-upon list.", "label": ["non_requirement_text"]}
+{"text": "This final list was classified into functional and non-functional categories, establishing a structured foundation for the software's development.", "label": ["non_requirement_text"]}
+{"text": "Below are the essential functional requirements elicited in collaboration with the stakeholders to learn the platform.", "label": ["non_requirement_text"]}
+{"text": "ID Functionality Requirement Description Status", "label": ["non_requirement_text"]}
+{"text": "FR01 Basic Functionality The software shall provide features to browse and filter users, bulk user actions, adding/removing users, and uploading/editing user information. DONE", "label": ["non_requirement_text"]}
+{"text": "FR12 FR11 FR10 FR09 FR08 FR07 FR06 FR05 FR04 FR03 FR02 ID", "label": ["non_requirement_text"]}
+{"text": "Basic The software shall support roles and permissions to be set for the individual users. DONE", "label": ["non_requirement_text"]}
+{"text": "Basic The software shall have authentication support for its users. DONE", "label": ["non_requirement_text"]}
+{"text": "Basic The software shall provide the following functionalities to manage its contents: organize courses in categories and sub-categories, create and manage courses, and set up meta-courses. DONE", "label": ["non_requirement_text"]}
+{"text": "Basic The software system shall provide internal enrollment, database-driven enrollment (LDAP, external databases, flat files, and IMS Enterprise files) functionalities to enroll users\u2019 to courses, support user requests to join a course. DONE", "label": ["non_requirement_text"]}
+{"text": "Basic The software shall be able to track users' activity to prepare reports to tell strengths and weaknesses, do statistics to ensure individuals\u2019 learning progress. DONE", "label": ["non_requirement_text"]}
+{"text": "Basic Push notifications feature shall be integrated within the software system.", "label": ["non_requirement_text"]}
+{"text": "A notification system must be generated on the following events: when an assignment is assigned, forum posts and learning material is changed. DONE", "label": ["non_requirement_text"]}
+{"text": "Basic A Python programming environment shall be integrated with the learning platform. DONE", "label": ["non_requirement_text"]}
+{"text": "Basic The Python programming environment shall run in a safe manner, i.e., users shall not be able to execute malicious code. DONE", "label": ["non_requirement_text"]}
+{"text": "Basic The system shall provide a search mechanism to find materials related to keywords / concepts / definitions. DONE", "label": ["non_requirement_text"]}
+{"text": "Basic The system should also support teachers by displaying course progress. DONE", "label": ["non_requirement_text"]}
+{"text": "Basic The learning platform should provide a mechanism to train ML models. DONE", "label": ["non_requirement_text"]}
+{"text": "ID Functionality Requirement Description Status", "label": ["non_requirement_text"]}
+{"text": "3 Interaction The learning software shall provide discussion forum, email, announcement, and chat functionalities to support interaction between its users. DONE", "label": ["non_requirement_text"]}
+{"text": "4 Self-Evaluation The exercises shall be automatically evaluated and reported to both teachers and students themselves. DONE", "label": ["non_requirement_text"]}
+{"text": "5 Chatbot Tutor The chatbot shall be able to interface with the content search mechanism/index to provide students with pointers to materials. DONE", "label": ["non_requirement_text"]}
+{"text": "6 Chatbot Tutor The chatbot shall be capable of acting as a quiz master. DONE", "label": ["non_requirement_text"]}
+{"text": "7 Chatbot Tutor The chatbot shall motivate students. DONE", "label": ["non_requirement_text"]}
+{"text": "18 Chatbot Tutor The chatbot shall provide its services in real time. DONE", "label": ["non_requirement_text"]}
+{"text": "19 Chatbot Tutor The chatbot shall be able to deliver certain answers/content from the curriculum in three formats, i.e., text, video and pictures. DONE", "label": ["non_requirement_text"]}
+{"text": "20 Adaptation Functionality The system should combine user-centered gamification (i.e., rewards, reminders, or notification) strategies with the adaptive modules to motivate students. DONE", "label": ["non_requirement_text"]}
+{"text": "21 Basic Functionality The system shall provide a glossary functionality to map relevant terms to their definitions. DONE", "label": ["non_requirement_text"]}
+{"text": "22 Basic Functionality The system shall autocomplete related activities. DONE", "label": ["non_requirement_text"]}
+{"text": "Below are the essential non-functional requirements elicited in collaboration with the stakeholders to learn the platform.", "label": ["non_requirement_text"]}
+{"text": "ID Functionality Requirement Description Status", "label": ["non_requirement_text"]}
+{"text": "NF01 Basic Functionality The learning platform should be responsive to support different screen sizes, i.e., computers, mobile phones, and tablets. DONE", "label": ["non_requirement_text"]}
+{"text": "NF10 NF09 NF08 NF07 NF06 NF05 NF04 NF03 NF02 ID", "label": ["non_requirement_text"]}
+{"text": "Basic Functional Integrating the English language beside German only for the software interface is a nice functionality to have.     DONE", "label": ["non_requirement_text"]}
+{"text": "Basic Functional A mechanism will be provided to report malfunctions in the software.     DONE", "label": ["non_requirement_text"]}
+{"text": "Chatbot Tutor Chatbot should avoid dangerous / offensive conversations / discrimination     DONE", "label": ["non_requirement_text"]}
+{"text": "Security and Privacy Users' data privacy and protection must be guaranteed under GDPR.     DONE", "label": ["non_requirement_text"]}
+{"text": "The following types of questions must be supported by the test module of the learning platform: Changing the order of the question types, Standard question types, Calculated, calculated multi-choice, calculated simple, Drag and drop into text, Drag and drop markers, Drag and drop onto image, Description, Essay, Matching, Embedded Answers (Cloze Test / Gap Fill), Multiple Choice, Short Answer, Numerical and Random short-answer matching.       DONE", "label": ["non_requirement_text"]}
+{"text": "Course Content Preparations and Design Course contents must be designed in a modular fashion.     DONE", "label": ["non_requirement_text"]}
+{"text": "Course Content Preparations and Design The content delivery system must support video, audio, image, and text data types.", "label": ["non_requirement_text"]}
+{"text": "Besides the following types should be supported: Word (*.doc, *.docx, *.rtf), PDF (*.pdf), Image (*.gif, *.jpg, *.jpeg, *.png), *.svg, *.tiff), Video (*.mp4, *.flv, *.mov, *.avi), Audio (*.mp3, *.ogg, *.wav, *.aac, *.wma), Other (text box, type in comma-separated)     DONE", "label": ["non_requirement_text"]}
+{"text": "Course Content Preparations and Design The software system must perform repetition of the exercise and significant parts of the course.     DONE", "label": ["non_requirement_text"]}
+{"text": "Course Content Preparations and Design A unified template to deliver the course contents must be specified and used.", "label": ["non_requirement_text"]}
+{"text": "This template must include the relevant logos.     DONE", "label": ["non_requirement_text"]}
+{"text": "The software shall provide an implementation of a simulation game.", "label": ["non_requirement_text"]}
+{"text": "The game lets users guess a number.", "label": ["non_requirement_text"]}
+{"text": "The correct number is calculated by a prespecified formula.", "label": ["non_requirement_text"]}
+{"text": "The game can be run a maximum number of trials for each user, where the maximum number can be set individually for groups of users.", "label": ["non_requirement_text"]}
+{"text": "Custom Plugin Development Completion and Overview", "label": ["non_requirement_text"]}
+{"text": "To meet the project\u2019s elicited requirements, a series of custom plug-ins have been developed and integrated to enhance and customize Moodle for KIB3\u2019s goals and objectives.", "label": ["non_requirement_text"]}
+{"text": "These plug-ins extend the base platform\u2019s functionality, improving both student support and system services.", "label": ["non_requirement_text"]}
+{"text": "Two types of plug-ins were developed: the first category provides front-end support for students, while the second category operates in the backend to handle tasks and logic based on user interactions.", "label": ["non_requirement_text"]}
+{"text": "The table below provides an overview of both plug-in categories and their purposes.", "label": ["non_requirement_text"]}
+{"text": "Overview of custom plug-ins**", "label": ["non_requirement_text"]}
+{"text": "Category Plug-in Name Intended Use Download", "label": ["non_requirement_text"]}
+{"text": "Front Chatbot For project use (Chat interface) [18], From here", "label": ["non_requirement_text"]}
+{"text": "Front Ice Cream Game Educational game for learning [19], From here", "label": ["non_requirement_text"]}
+{"text": "Front Book Search Search functionality for students [20], From here", "label": ["non_requirement_text"]}
+{"text": "Front Jupyter Hub Integration Supports programming assignments [21], From here", "label": ["non_requirement_text"]}
+{"text": "Front Student Report Generation Collects Data, used for research [22], From here", "label": ["non_requirement_text"]}
+{"text": "Backend Jupyter Hub Grade Service Runs in background [23], From here", "label": ["non_requirement_text"]}
+{"text": "Backend Chatbot Backend Runs in background [24], From here", "label": ["non_requirement_text"]}
+{"text": "Backend Auto Complete Activities Automates activity completion [25], From here", "label": ["non_requirement_text"]}
+{"text": "Backend Gen Book Assists in uploading books easily [26], From here", "label": ["non_requirement_text"]}
+{"text": "Further, the development effort for these custom plug-ins involved a total of 30,435 lines of code.", "label": ["non_requirement_text"]}
+{"text": "The majority of the codebase is written in PHP (63.4%) and Python (25.1%), which support the core functionalities and interactive features.", "label": ["non_requirement_text"]}
+{"text": "This is followed by JavaScript (4.6%) and Mustache (2.4%), which enhance the frontend interactivity and templating.", "label": ["non_requirement_text"]}
+{"text": "A smaller portion of the code is comprised of Shell scripting (2.3%) and CSS (1.2%) for specific system tasks and styling.", "label": ["non_requirement_text"]}
+{"text": "Minor contributions come from Dockerfiles (0.8%), Gherkin (0.1%), and Makefile (0.1%), ensuring a robust and flexible platform tailored to KIB3\u2019s educational needs.", "label": ["non_requirement_text"]}
+{"text": "A further breakdown of these details is provided in Figure 2.", "label": ["non_requirement_text"]}
+{"text": "PHP: 63.4% (19,302 lines)", "label": ["non_requirement_text"]}
+{"text": "Python: 25.1% (7,644 lines)", "label": ["non_requirement_text"]}
+{"text": "JavaScript: 4.6% (1,394 lines)", "label": ["non_requirement_text"]}
+{"text": "Mustache: 2.4% (743 lines)", "label": ["non_requirement_text"]}
+{"text": "Shell: 2.3% (712 lines)", "label": ["non_requirement_text"]}
+{"text": "CSS: 1.2% (352 lines)", "label": ["non_requirement_text"]}
+{"text": "Dockerfile: 0.8% (236 lines)", "label": ["non_requirement_text"]}
+{"text": "Gherkin: 0.1% (27 lines)", "label": ["non_requirement_text"]}
+{"text": "Makefile: 0.1% (25 lines)", "label": ["non_requirement_text"]}
+{"text": "Total lines of code 30,435", "label": ["non_requirement_text"]}
+{"text": "Each plug-in is designed with a specific intended use, ranging from interactive educational tools to background processes that improve system performance and adaptability.", "label": ["non_requirement_text"]}
+{"text": "A detailed description of each plug-in is provided in the following section.", "label": ["non_requirement_text"]}
+{"text": "The development of these plug-ins ensures a robust, flexible platform that meets KIB3\u2019s educational needs through tailored, interactive, and efficient functionality.", "label": ["non_requirement_text"]}
+{"text": "This modular design, combining student-facing and backend plug-ins, allows the platform to support a dynamic and adaptive learning experience effectively.", "label": ["non_requirement_text"]}
+{"text": "The KIB3 Chatbot, Moodle Assistant, is a custom-built chatbot designed to enhance the learning experience within Moodle courses.", "label": ["non_requirement_text"]}
+{"text": "Acting as a digital tutor, the assistant provides real-time support, helping students navigate course content, find resources, and receive assistance on demand.", "label": ["non_requirement_text"]}
+{"text": "Integrated directly into Moodle, the chatbot appears on course pages, offering interactive guidance, answering questions, and assisting students in searching through learning materials using the Book Search plug-in (see Section 9.3) or accessing supplementary tools like the Ice-Cream Game.", "label": ["non_requirement_text"]}
+{"text": "The KIB3 Moodle Assistant adapts to each course\u2019s needs by leveraging AI, making learning more accessible and engaging.", "label": ["non_requirement_text"]}
+{"text": "This assistant provides personalized support for students and streamlines the educational process by automating responses and offering relevant resources.", "label": ["non_requirement_text"]}
+{"text": "The Icecream Game is a Moodle plugin designed to introduce students to the basics of machine learning through an engaging, interactive guessing game.", "label": ["non_requirement_text"]}
+{"text": "In this activity, learners are asked to predict ice cream sales, with each participant selecting from three groups that represent different machine learning strategies.", "label": ["non_requirement_text"]}
+{"text": "The game begins with an introductory video, after which students choose a group.", "label": ["non_requirement_text"]}
+{"text": "This choice is irreversible and stored in the Moodle database and the browser cache.", "label": ["non_requirement_text"]}
+{"text": "Each group receives information about expected sales in varying formats.", "label": ["non_requirement_text"]}
+{"text": "Using the information provided, students make predictions for a specific day, with the option to configure the number of guesses.", "label": ["non_requirement_text"]}
+{"text": "Upon completion, learners receive feedback on their results.", "label": ["non_requirement_text"]}
+{"text": "This activity introduces students to machine learning concepts and fosters critical thinking and data interpretation skills.", "label": ["non_requirement_text"]}
+{"text": "The Book Search plugin is a tool designed to enable text search within Moodle books that contain image-based chapters.", "label": ["non_requirement_text"]}
+{"text": "It provides a convenient search field that allows users to search for specific text within PDF files corresponding to book chapters.", "label": ["non_requirement_text"]}
+{"text": "For the search functionality to work, a PDF file with (almost) the same name as the Moodle book must be present in the course, with each PDF page aligning one-to-one with the book pages.", "label": ["non_requirement_text"]}
+{"text": "Search results appear as clickable links, directing users to the relevant page within the book.", "label": ["non_requirement_text"]}
+{"text": "This plugin can be configured as a block within Moodle, or accessed via a web service for additional flexibility.", "label": ["non_requirement_text"]}
+{"text": "By enabling streamlined navigation through course materials, the Book Search plugin enhances the accessibility of learning resources within Moodle, making it easier for students to find and reference key information.", "label": ["non_requirement_text"]}
+{"text": "The plugin\u2019s interaction flow and usage are further illustrated in Figure 4.", "label": ["non_requirement_text"]}
+{"text": "Figure 4: Book Search architecture and possible interactions", "label": ["non_requirement_text"]}
+{"text": "The Jupyter Moodle Plugin integrates Jupyter Notebooks into Moodle, providing students with a virtual programming environment directly within the platform.", "label": ["non_requirement_text"]}
+{"text": "By connecting to a JupyterHub server, this plugin authenticates Moodle users, allowing them seamless access to Jupyter notebooks from within Moodle.", "label": ["non_requirement_text"]}
+{"text": "The plugin also supports automated grading through Otter-Grader, enabling instructors to assess assignments efficiently and consistently.", "label": ["non_requirement_text"]}
+{"text": "With the Jupyter Moodle Plugin, educators can create programming assignments that students can complete within embedded notebooks, fostering hands-on learning experiences in fields such as Python programming and data science.", "label": ["non_requirement_text"]}
+{"text": "The integration streamlines coding exercises by offering a centralized platform for coding, testing, and grading, all within the familiar Moodle interface.", "label": ["non_requirement_text"]}
+{"text": "Figure 5 provides an overview of the plugin\u2019s interaction and architecture.", "label": ["non_requirement_text"]}
+{"text": "requostsave changes Jupyterhub", "label": ["non_requirement_text"]}
+{"text": "provide Jupyter Notebook", "label": ["non_requirement_text"]}
+{"text": "submit solution by student uses t0 complete assignment", "label": ["non_requirement_text"]}
+{"text": "Gradeservlce rotum rosult external Internal Student", "label": ["non_requirement_text"]}
+{"text": "The Student Report Generation (SRG) plugin is designed to support course evaluation by providing learners with anonymized access to a portion of their Moodle log data.", "label": ["non_requirement_text"]}
+{"text": "Through this feature, students can view and download their log data in an anonymized format, ensuring privacy by removing all personal identifiers, including user IDs.", "label": ["non_requirement_text"]}
+{"text": "When students access this plugin, they see a configurable description along with two buttons: one to preview the available anonymized data and another to download it as a file with a .kib3 extension.", "label": ["non_requirement_text"]}
+{"text": "For users interested in inspecting the contents of a .kib3 file, it can be converted to .zip format for extraction.", "label": ["non_requirement_text"]}
+{"text": "This plugin helps enhance transparency and engagement in course evaluation by giving students insight into their own learning data while protecting their privacy.", "label": ["non_requirement_text"]}
+{"text": "Figure 6 provides an overview of the plugin\u2019s interaction and architecture.", "label": ["non_requirement_text"]}
+{"text": "#Pluginx #Pluginx (Pluginx", "label": ["non_requirement_text"]}
+{"text": "Report Source Data-Sets View Data Download Data", "label": ["non_requirement_text"]}
+{"text": "Data from Table Each Data-Set one Tab Download _kib3 zip) folder:", "label": ["non_requirement_text"]}
+{"text": "Combined for all Data-Sets Each Content Page 50 Rows One csv file per Data-Set", "label": ["non_requirement_text"]}
+{"text": "SELECT Data Data", "label": ["non_requirement_text"]}
+{"text": "FROM kPluginx kPluginx", "label": ["non_requirement_text"]}
+{"text": "kMoodle Databasex HTML Visualization CSV Visualization", "label": ["non_requirement_text"]}
+{"text": "Core Table Preprocess Data Transform Data", "label": ["non_requirement_text"]}
+{"text": "List of Unique Table Data Report Table Data", "label": ["non_requirement_text"]}
+{"text": "All necessary Data from one DB Table SELECT FROM", "label": ["non_requirement_text"]}
+{"text": "WHERE Add Custom Data WHERE", "label": ["non_requirement_text"]}
+{"text": "Manipulate Data \"Pluginx FROM", "label": ["non_requirement_text"]}
+{"text": "kMoodle Databasex SELECT= Join Tables", "label": ["non_requirement_text"]}
+{"text": "Data-Set dependant Tables", "label": ["non_requirement_text"]}
+{"text": "Figure 6: Students Report Generation architecture and possible interactions", "label": ["non_requirement_text"]}
+{"text": "The Autocomplete Related Activities plugin streamlines activity completion tracking in Moodle courses that provide the same content in multiple formats, such as an interactive book, PDF, or video link.", "label": ["non_requirement_text"]}
+{"text": "When a student completes any of these alternative formats, the plugin automatically marks the other formats in the same section as complete, reducing redundant tasks for learners.", "label": ["non_requirement_text"]}
+{"text": "The plugin uses a configurable regular expression to identify alternative materials within a section, marking all as complete once any one format is completed.", "label": ["non_requirement_text"]}
+{"text": "Additionally, it supports an optional \"I know this already\" label, allowing students to bypass a section entirely if they feel confident with the material.", "label": ["non_requirement_text"]}
+{"text": "This label is automatically marked complete when any of the alternatives are completed, although marking the label alone does not affect the status of the alternatives.", "label": ["non_requirement_text"]}
+{"text": "This plugin activates only in courses configured by the administrator, enhancing the course experience by allowing flexible learning paths and tracking student progress across various content formats.", "label": ["non_requirement_text"]}
+{"text": "The Genbook plugin enables the generation of Moodle books directly from image files, providing a streamlined way to create book resources within courses.", "label": ["non_requirement_text"]}
+{"text": "Developed specifically to assist content developers in the KIB3 project, Genbook is designed for a specialized use case and may have limited applicability outside this project context.", "label": ["non_requirement_text"]}
+{"text": "Using the plugin, content creators can easily compile a series of images into a Moodle book by selecting a course section, specifying a book title, and uploading images as individual chapters.", "label": ["non_requirement_text"]}
+{"text": "Each chapter is defined by a configuration file that links images to chapter names.", "label": ["non_requirement_text"]}
+{"text": "This tool simplifies the process of creating structured learning materials, making it easier for developers to organize visual content as structured book resources.", "label": ["non_requirement_text"]}
+{"text": "Figure 7 provides an overview of the plugin\u2019s interaction and architecture.", "label": ["non_requirement_text"]}
+{"text": "Actor kPluginx Moodle Course Options", "label": ["non_requirement_text"]}
+{"text": "kFilesx #Pluginx &lt;Filesx", "label": ["non_requirement_text"]}
+{"text": "Xamount of Images Custom Form Book Configuration file", "label": ["non_requirement_text"]}
+{"text": "Image Name to Chapter Match Chapter Number Name #Pluginx", "label": ["non_requirement_text"]}
+{"text": "New kMoodle Databasex Create New Book Entry Book Table", "label": ["non_requirement_text"]}
+{"text": "#Pluginx Create New Chapters Entry Chapters Table", "label": ["non_requirement_text"]}
+{"text": "kMoodle Databasex New #Pluginx", "label": ["non_requirement_text"]}
+{"text": "Update Chapter SaveChapter Images Link to the Image in Filestorage", "label": ["non_requirement_text"]}
+{"text": "Alternative Packaging and Delivery with Moodle Docker", "label": ["non_requirement_text"]}
+{"text": "To make the installation and configuration of Moodle with multiple custom plugins and course materials easier, Docker provides a reliable solution for consistent deployments.", "label": ["non_requirement_text"]}
+{"text": "The Moodle Docker plugin offers a one-click setup for deploying Moodle, complete with all necessary plugins and teaching materials tailored specifically for KIB3 courses.", "label": ["non_requirement_text"]}
+{"text": "Currently supporting the \u201cZusatzqualifikation\u201d module (with DQR5 support coming soon), this Docker-based package automates the installation process, streamlining course deployment for educators and administrators.", "label": ["non_requirement_text"]}
+{"text": "With this setup, Moodle is delivered as a fully configured, ready-to-use environment.", "label": ["non_requirement_text"]}
+{"text": "The plugin enables rapid deployment by packaging everything needed for a complete Moodle instance, including course backups, plugin installations, and necessary configurations.", "label": ["non_requirement_text"]}
+{"text": "By utilizing Docker, users can easily manage server settings, adjust resource allocations, and enable SSL, creating a robust and consistent Moodle environment with minimal effort.", "label": ["non_requirement_text"]}
+{"text": "This tool simplifies course setup, making it an ideal solution for delivering standardized learning environments across KIB3\u2019s educational initiatives.", "label": ["non_requirement_text"]}
+{"text": "The Docker package for Moodle Docker is available for download here: https://github.com/SE-Stuttgart/kib3_moodle_docker", "label": ["non_requirement_text"]}
+{"text": "Licensing of Custom KIB3 Moodle Plugins", "label": ["non_requirement_text"]}
+{"text": "All custom KIB3 Moodle plugins are distributed under the GNU General Public License v3.0, ensuring they remain free and open-source.", "label": ["non_requirement_text"]}
+{"text": "This license grants users the freedom to use, modify, and distribute the plugins while also requiring that any derivative works remain under the same license.", "label": ["non_requirement_text"]}
+{"text": "This approach fosters collaboration and encourages further development within the Moodle community, aligning with the educational goals of the KIB3 project.", "label": ["non_requirement_text"]}
+{"text": "Vitiello, and P.", "label": ["non_requirement_text"]}
+{"text": "D\u2019Ambrosio, \u2018A multilevel learning management system\u2019, in Proceedings of the 14th international conference on Software engineering and knowledge engineering, 2002, pp.", "label": ["non_requirement_text"]}
+{"text": "Zenha-Rela and R.", "label": ["non_requirement_text"]}
+{"text": "Work in Progress: Self Evaluation Through Monitored Peer Review Using the Moodle Platform.", "label": ["non_requirement_text"]}
+{"text": "in Frontiers in Education Conference, 36th Annual.", "label": ["non_requirement_text"]}
+{"text": "San Diego, CA: IEEE.", "label": ["non_requirement_text"]}
+{"text": "Chavan and S.", "label": ["non_requirement_text"]}
+{"text": "Pavri, Open Source Learning Management in Moodle.", "label": ["non_requirement_text"]}
+{"text": "linux journal, 2004, 1(2): p.", "label": ["non_requirement_text"]}
+{"text": "Shearer, Open Source Software in Education.", "label": ["non_requirement_text"]}
+{"text": "2003, The Compton School: London.", "label": ["non_requirement_text"]}
+{"text": "Berry, An investigation of the effectiveness of Moodle in primary education, in Deputy Head.", "label": ["non_requirement_text"]}
+{"text": "Dougiamas, Moodle: Virtual learning environment for the rest of us.", "label": ["non_requirement_text"]}
+{"text": "Itmazi, Flexible Learning Management System To Support Learning In The Traditional And Open Universities, 2005, Granada University, Spain.", "label": ["non_requirement_text"]}
+{"text": "An Open Source Platform for Educators, in Proceedings of the Fifth IEEE Advanced Learning Technologies.", "label": ["non_requirement_text"]}
+{"text": "2005: IEEE Computer Society.", "label": ["non_requirement_text"]}
+{"text": "Al-Ajlan and H.", "label": ["non_requirement_text"]}
+{"text": "Zedan, \u2018Why moodle\u2019, in 2008 12th IEEE International Workshop on Future Trends of Distributed Computing Systems, 2008, pp.", "label": ["non_requirement_text"]}
+{"text": "Amandi, and J.", "label": ["non_requirement_text"]}
+{"text": "Biset, \u2018A software architecture perspective about Moodle flexibility for supporting empirical research of teaching theories\u2019, Education and Information Technologies, vol.", "label": ["non_requirement_text"]}
+{"text": "Maxhelaku, and A.", "label": ["non_requirement_text"]}
+{"text": "Ktona, \u2018Using data mining techniques on Moodle data for classification of student? S learning styles\u2019, in Proceedings of International Academic Conferences, 2019, no.", "label": ["non_requirement_text"]}
+{"text": "Sulthoni, and S.", "label": ["non_requirement_text"]}
+{"text": "Ulfa, Development of Ubiquitous Learning Environment Based on Moodle Learning Management System.", "label": ["non_requirement_text"]}
+{"text": "International Association of Online Engineering, 2020, pp.", "label": ["non_requirement_text"]}
+{"text": "Sulthoni, and S.", "label": ["non_requirement_text"]}
+{"text": "Ulfa, Development of Ubiquitous Learning Environment Based on Moodle Learning Management System.", "label": ["non_requirement_text"]}
+{"text": "International Association of Online Engineering, 2020, pp.", "label": ["non_requirement_text"]}
+{"text": "Zelinskiy, \u2018Analysis of the Possibilities of the MOODLE Learning Management System for Organization of Distance Learning in the Conditions of the University\u2019, Social Science Research Network, Rochester, NY, SSRN Scholarly Paper ID 3742272, Sep.", "label": ["non_requirement_text"]}
+{"text": "Ak\u00e7apinar and A.", "label": ["non_requirement_text"]}
+{"text": "Bayazit, \u2018Moodleminer: Data Mining Analysis Tool For Moodle Learning Management System\u2019, MoodleMiner: Moodle \u00f6\u011frenme y\u00f6netim sistemi i\u00e7in veri madencili\u011fi analiz Arac\u0131, 2019, doi: 10.17051/ilkonline.2019.527645.", "label": ["non_requirement_text"]}
+{"text": "Chang et al., Foundations and Trends in Smart Learning: Proceedings of 2019 International Conference on Smart Learning Environments.", "label": ["non_requirement_text"]}
+{"text": "- Chatbot Plug-in: https://github.com/SE-Stuttgart/kib3_moodle_chatbot_frontend", "label": ["non_requirement_text"]}
+{"text": "- Ice-cream Game Plug-in: https://github.com/SE-Stuttgart/kib3_moodleplugin_icecreamgame", "label": ["non_requirement_text"]}
+{"text": "- Book Search Plug-in: https://github.com/SE-Stuttgart/moodle-block_booksearch", "label": ["non_requirement_text"]}
+{"text": "- Jupyter Hub Integration Plug-in: https://github.com/SE-Stuttgart/moodle-mod_jupyter", "label": ["non_requirement_text"]}
+{"text": "- Student Report Generation Plug-in: https://github.com/SE-Stuttgart/moodle-mod_srg", "label": ["non_requirement_text"]}
+{"text": "- Jupyter Hub Backend: https://github.com/SE-Stuttgart/jupyterhub-gradeservice", "label": ["non_requirement_text"]}
+{"text": "- Chatbot Backend: https://github.com/SE-Stuttgart/jupyterhub-gradeservice", "label": ["non_requirement_text"]}
+{"text": "[25] Autocomplet Activities Plug-in: https://github.com/SE-Stuttgart/moodle-local_autocompleteactivities", "label": ["non_requirement_text"]}
+{"text": "[26] Gen Book Plug-in: https://github.com/SE-Stuttgart/kib3_moodle_genbook", "label": ["non_requirement_text"]}

@@ -1,0 +1,724 @@
+{"text": "Dr David Carrington", "label": ["non_requirement_text"]}
+{"text": "School of Information Technology & Electrical Engineering", "label": ["non_requirement_text"]}
+{"text": "University of Queensland", "label": ["non_requirement_text"]}
+{"text": "Mr Tyson Henning (41213250)", "label": ["non_requirement_text"]}
+{"text": "Mr Daryl Keehn (40766357)", "label": ["non_requirement_text"]}
+{"text": "Mr Jonathan Thompson (40525460)", "label": ["non_requirement_text"]}
+{"text": "Mr Michael Wildermoth (40092560)", "label": ["non_requirement_text"]}
+{"text": "TABLE OF CONTENTS", "label": ["non_requirement_text"]}
+{"text": "LIST OF FIGURES ...............................................................................................................................vii", "label": ["non_requirement_text"]}
+{"text": "LIST OF TABLES ..................................................................................................................................", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One", "label": ["non_requirement_text"]}
+{"text": "\u2022 v \u2022", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 vi \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Figure 4.1.1 Restaurant Menu & Ordering System Use Case Diagram 16", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.1 Log In Activity Diagram 23", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.2 Log Out Activity Diagram 23", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.3 Activate Table Activity Diagram 24", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.4 Deactivate Table Activity Diagram 24", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.5 Accept Order Activity Diagram 25", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.6 Deliver Item Activity Diagram 25", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.7 Process Bankcard Payment Activity Diagram 26", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.8 Process Cash Payment Activity Diagram 26", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.9 Pay Bill Activity Diagram 27", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.10 Place Order Activity Diagram 27", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.11 Call Waiter Activity Diagram 28", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.12 Abort Meal Activity Diagram 28", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.13 Abort Account Activity Diagram 29", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.14 Issue Refund Activity Diagram 29", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.15 Accept/Reject Item Activity Diagram 30", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.16 Indicate Item Ready Activity Diagram 30", "label": ["non_requirement_text"]}
+{"text": "Figure 4.3.1 Restaurant Menu & Ordering System Class Diagram 33", "label": ["non_requirement_text"]}
+{"text": "Figure 4.4.1 Meal Class Statechart Diagram 34", "label": ["non_requirement_text"]}
+{"text": "Figure 4.4.2 Account Class Statechart Diagram 34", "label": ["non_requirement_text"]}
+{"text": "Figure 4.4.3 Tablet Class Statechart Diagram 34", "label": ["non_requirement_text"]}
+{"text": "Figure 4.4.4 Payment Class Statechart Diagram 34", "label": ["non_requirement_text"]}
+{"text": "Figure 4.4.5 Item Class Statechart Diagram 35", "label": ["non_requirement_text"]}
+{"text": "Figure 4.4.6 Order Class Statechart Diagram 35", "label": ["non_requirement_text"]}
+{"text": "Figure 4.4.7 Table Class Statechart Diagram 35", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 vii \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One", "label": ["non_requirement_text"]}
+{"text": "\u2022 viii \u2022", "label": ["non_requirement_text"]}
+{"text": "Table 1.3.1 System Terminology ......................................................................................................... 3", "label": ["non_requirement_text"]}
+{"text": "Table 1.3.2 System Acronyms ............................................................................................................. 3", "label": ["non_requirement_text"]}
+{"text": "Table 3.1.1 Functional General Requirements .................................................................................................................. 9", "label": ["non_requirement_text"]}
+{"text": "Table 3.1.2 Functional Customer Requirements ................................................................................................................. 10", "label": ["non_requirement_text"]}
+{"text": "Table 3.1.3 Functional Waiter Requirements .................................................................................................................. 11", "label": ["non_requirement_text"]}
+{"text": "Table 3.1.4 Functional Chef Requirements .................................................................................................................. 11", "label": ["non_requirement_text"]}
+{"text": "Table 3.1.5 Functional Supervisor Requirements ................................................................................................................. 12", "label": ["non_requirement_text"]}
+{"text": "Table 3.2.1 Non-Functional Safety Requirements ................................................................................................................. 12", "label": ["non_requirement_text"]}
+{"text": "Table 3.2.2 Non-Functional Security Requirements .................................................................................................................. 13", "label": ["non_requirement_text"]}
+{"text": "Table 3.2.3 Non-Functional Human Engineering Requirements ................................................................................................................. 13", "label": ["non_requirement_text"]}
+{"text": "Table 3.2.4 Non-Functional Performance Requirements .................................................................................................................. 13", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.1 Log In Use Case Description .................................................................................................................. 17", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.2 Log Out Use Case Description .................................................................................................................. 17", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.3 Activate Table Use Case Description .................................................................................................................. 17", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.4 Deactivate Table Use Case Description .................................................................................................................. 18", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.5 Accept Order Use Case Description .................................................................................................................. 18", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.6 Deliver Item Use Case Description .................................................................................................................. 18", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.7 Process Bankcard Payment Use Case Description .................................................................................................................. 19", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.8 Process Cash Payment Use Case Description .................................................................................................................. 19", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.9 Pay Bills Use Case Description .................................................................................................................. 20", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.10 Place Order Use Case Description .................................................................................................................. 20", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.11 Call Waiter Use Case Description .................................................................................................................. 21", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.12 Abort Meal Use Case Description .................................................................................................................. 21", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.13 Abort Account Use Case Description .................................................................................................................. 21", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.14 Issue Refund Use Case Description .................................................................................................................. 22", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.15 Accept/Reject Item Use Case Description .................................................................................................................. 22", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.16 Indicate Item Ready Use Case Description .................................................................................................................. 22", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 ix \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 x \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Name Date Reason Version", "label": ["non_requirement_text"]}
+{"text": "Jonathan Thompson 24/04/08 Document Draft 1.0", "label": ["non_requirement_text"]}
+{"text": "Jonathan Thompson, Tyson Henning 27/04/08 Document Final Draft 1.1", "label": ["non_requirement_text"]}
+{"text": "Tyson Henning 28/04/08 Document Final 1.2", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 xi \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One", "label": ["non_requirement_text"]}
+{"text": "\u2022 xii \u2022", "label": ["non_requirement_text"]}
+{"text": "The following section provides an overview of the derived Software Requirements Specification (SRS) for the subject Restaurant Menu and Ordering System (RMOS).", "label": ["non_requirement_text"]}
+{"text": "To begin with, the purpose of the document is presented and its intended audience outlined.", "label": ["non_requirement_text"]}
+{"text": "Subsequently, the scope of the project specified by the document is given with a particular focus on what the resultant software will do and the relevant benefits associated with it.", "label": ["non_requirement_text"]}
+{"text": "The nomenclature used throughout the SRS is also offered.", "label": ["non_requirement_text"]}
+{"text": "To conclude, a complete document overview is provided to facilitate increased reader comprehension and navigation.", "label": ["non_requirement_text"]}
+{"text": "The purpose of this SRS is to outline both the functional and non-functional requirements of the subject RMOS.", "label": ["non_requirement_text"]}
+{"text": "In addition to said requirements, the document also provides a detailed profile of the external interfaces, performance considerations and design constraints imposed on the subsequent implementation.", "label": ["non_requirement_text"]}
+{"text": "It is the intention that the presented set of requirements possesses the following qualities; correctness, unambiguousness, completeness, consistency, verifiability, modifiability and traceability.", "label": ["non_requirement_text"]}
+{"text": "Consequently, the document should act as a foundation for efficient and well-managed project completion and further serve as an accurate reference in the future.", "label": ["non_requirement_text"]}
+{"text": "The primary audience of this SRS document will be the development team employed to implement the specified RMOS.", "label": ["non_requirement_text"]}
+{"text": "It will not only provide an extensive capacity for project planning and progress assessment but it will further assist with developer/stakeholder interactions.", "label": ["non_requirement_text"]}
+{"text": "The secondary document audience comprises the stakeholders of the project, that is, restaurateurs and associated staff.", "label": ["non_requirement_text"]}
+{"text": "To this audience group, this SRS should convey and confirm the required functionality and represent a contractual agreement between the involved parties.", "label": ["non_requirement_text"]}
+{"text": "In current formal dining environments, some form of physical static menu is utilised to convey the available food and beverage choices to customers.", "label": ["non_requirement_text"]}
+{"text": "Said menus are generally paper based and hence impose restrictions on the textual real estate available and the ability a restaurateur has to update them.", "label": ["non_requirement_text"]}
+{"text": "This document specifies the requirements for a restaurant paper menu and ordering replacement strategy to alleviate the problems associated with the current archaic method.", "label": ["non_requirement_text"]}
+{"text": "Three related concepts are encompassed by the general scope of the Restaurant Menu and Ordering System.", "label": ["non_requirement_text"]}
+{"text": "The first pertains to the replacement of paper-based menus using an electronic format, the second relates to a complementary electronic strategy for the front of house handling of a customer\u2019s order and the third surrounds the process of transferring said electronic orders to the kitchen for preparation.", "label": ["non_requirement_text"]}
+{"text": "It should be noted that while the suggested strategy incorporates the use of various hardware components, the primary focus of the presented SRS relates to the constituent software elements.", "label": ["non_requirement_text"]}
+{"text": "The Restaurant Menu and Ordering System is a software package to facilitate ordering within a traditional restaurant.", "label": ["non_requirement_text"]}
+{"text": "The customer is able to view the menu, place orders, call the waiter, and organise the final bill through the surface computer interface built into their table.", "label": ["non_requirement_text"]}
+{"text": "Waiters are able to initialise a table for customers, control table functions remotely to assist customers, confirm", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One", "label": ["non_requirement_text"]}
+{"text": "Orders, send orders to food preparation staff and finalise the customer\u2019s bill \u2013 all through their wireless tablet PC.", "label": ["non_requirement_text"]}
+{"text": "The food staff, with their touch-display interfaces to the system, are able to view orders sent to the kitchen by waiters.", "label": ["non_requirement_text"]}
+{"text": "During preparation, they are able to let the waiter know the status of each item, and can send notifications when items are completed, again through the touch-display.", "label": ["non_requirement_text"]}
+{"text": "The system contains full accountability and logging systems, and supports supervisor actions to account for exceptional circumstances, such as a meal being refunded or walked out on.", "label": ["non_requirement_text"]}
+{"text": "Customers are presented with an attractive and easy-to-use surface computer GUI with a drag-and-drop \u2018object\u2019 metaphor in their menus.", "label": ["non_requirement_text"]}
+{"text": "Waiters are able to perform all actions that the table system normally handles via their tablet PCs, so in the event of a customer being unable to operate the surface computer, the waiter can handle orders traditionally while using retaining the accountability and logging functions of the system, and retaining the same channel of communication with food staff.", "label": ["non_requirement_text"]}
+{"text": "Greater flexibility in menus, an increase in restaurant productivity and capacity for extensive business auditing are the primary benefits associated with the RMOS.", "label": ["non_requirement_text"]}
+{"text": "Menu updates can be rolled out at any time with no extra labour from printing and distributing new menus, allowing for more dynamic pricing and content changes.", "label": ["non_requirement_text"]}
+{"text": "With the underlying software system taking responsibility for a customer\u2019s order throughout its lifecycle, not only is accuracy ensured, but all actions are logged in a database for analysis and accountability of staff.", "label": ["non_requirement_text"]}
+{"text": "This allows the company to audit and account staff time, materials and restaurant efficiency, as well as to review exceptional circumstances for future handling.", "label": ["non_requirement_text"]}
+{"text": "This subsection presents definitions for the terms and acronyms used throughout this SRS as they relate to the subject RMOS.", "label": ["non_requirement_text"]}
+{"text": "Item Single serving of food/beverage", "label": ["non_requirement_text"]}
+{"text": "Order Comprises one or more items", "label": ["non_requirement_text"]}
+{"text": "Meal Comprises one or more orders (associated with one customer)", "label": ["non_requirement_text"]}
+{"text": "Customer Restaurant patron that orders/pays for a meal", "label": ["non_requirement_text"]}
+{"text": "Staff General restaurant employee", "label": ["non_requirement_text"]}
+{"text": "Waiter Staff member whose primary job is to take orders/serve meals to customers", "label": ["non_requirement_text"]}
+{"text": "Chef Staff member whose primary job is to prepare items", "label": ["non_requirement_text"]}
+{"text": "Supervisor Staff member whose primary job is to manage restaurant operations", "label": ["non_requirement_text"]}
+{"text": "Table Comprises one or more seats at which customers sit and place orders from", "label": ["non_requirement_text"]}
+{"text": "Account Comprises all the meals from a table", "label": ["non_requirement_text"]}
+{"text": "Payment Comprises the total cost of zero or more meals and zero or more tips", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 2 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Server: Backend computer that hosts the restaurant menu and ordering system", "label": ["non_requirement_text"]}
+{"text": "Surface Computer: Built into tables to provide customers with menu/ordering functionality", "label": ["non_requirement_text"]}
+{"text": "Tablet: Wireless mobile computer to provide staff with customer serving functionality", "label": ["non_requirement_text"]}
+{"text": "Display: Touch screen to provide a means for chefs to interact with the system", "label": ["non_requirement_text"]}
+{"text": "Register System: Point of sale terminal for handling bill payments", "label": ["non_requirement_text"]}
+{"text": "Bankcard: Customer debit/credit card", "label": ["non_requirement_text"]}
+{"text": "Menu: Surface computer representation of the available items and other options", "label": ["non_requirement_text"]}
+{"text": "SRS Software Requirement Specification", "label": ["non_requirement_text"]}
+{"text": "RMOS Restaurant Menu and Ordering System", "label": ["non_requirement_text"]}
+{"text": "DBMS Database Management System", "label": ["non_requirement_text"]}
+{"text": "LAN Local Area Network", "label": ["non_requirement_text"]}
+{"text": "IP Internet Protocol", "label": ["non_requirement_text"]}
+{"text": "TCP Transmission Control Protocol", "label": ["non_requirement_text"]}
+{"text": "UDP User Datagram Protocol", "label": ["non_requirement_text"]}
+{"text": "IEEE 802.11 Wireless Local Area Network Standard", "label": ["non_requirement_text"]}
+{"text": "SSLv3 Secure Sockets Layer Version 3", "label": ["non_requirement_text"]}
+{"text": "WPA2-PSK Wi-Fi Protected Access 2 with Pre-Shared Key", "label": ["non_requirement_text"]}
+{"text": "The structure of this Software Requirements Specification is as follows.", "label": ["non_requirement_text"]}
+{"text": "Section 2 presents an overall description of the subject RMOS.", "label": ["non_requirement_text"]}
+{"text": "Attention is given to putting the resultant software product into perspective and further outlining end-user characteristics, system constraints and assumptions.", "label": ["non_requirement_text"]}
+{"text": "Section 3 is devoted to the explicit specification of software requirements both functional and non-functional in nature.", "label": ["non_requirement_text"]}
+{"text": "The functional requirements listed have been demarcated according to the categories of system users.", "label": ["non_requirement_text"]}
+{"text": "For completeness, Section 4 extends upon Section 3 through the inclusion of UML analysis models and diagrams.", "label": ["non_requirement_text"]}
+{"text": "To begin with, the identified RMOS use cases are given.", "label": ["non_requirement_text"]}
+{"text": "In supplement, activity diagrams for each use case are presented along with an overall class diagram and relevant statechart diagrams.", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 3 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One", "label": ["non_requirement_text"]}
+{"text": "\u2022 4 \u2022", "label": ["non_requirement_text"]}
+{"text": "The following section presents an overall description of the subject RMOS.", "label": ["non_requirement_text"]}
+{"text": "In particular, the product has been put into perspective through a detailed assessment of the system, user, hardware, software and communication interfaces, memory considerations, operational modes and site adaptation requirements.", "label": ["non_requirement_text"]}
+{"text": "Further, characteristics of the system\u2019s end-users are discussed along with the identified system constraints and assumptions.", "label": ["non_requirement_text"]}
+{"text": "To conclude the section, an apportioning of requirements has been outlined.", "label": ["non_requirement_text"]}
+{"text": "The software described in this SRS is the software for a complete RMOS system.", "label": ["non_requirement_text"]}
+{"text": "The system merges various hardware and software elements and further interfaces with external systems.", "label": ["non_requirement_text"]}
+{"text": "Thus, while the software covers the majority of the system's functionality, it relies on a number of external interfaces for persistence and unhandled tasks, as well as physically interfacing with humans.", "label": ["non_requirement_text"]}
+{"text": "The RMOS interfaces with an existing payment system, including a cash register and software-accessible credit/EFTPOS system, in order to quickly and easily handle customer billing.", "label": ["non_requirement_text"]}
+{"text": "The payment system should be operable such that it can return information to the RMOS system as to whether payment was successful or failed.", "label": ["non_requirement_text"]}
+{"text": "There are three separate user interfaces used by the RMOS software, each related to an interfaced physical hardware device (see Section 2.1.3).", "label": ["non_requirement_text"]}
+{"text": "These three user interfaces are the Surface Computer UI, Tablet UI and Display UI.", "label": ["non_requirement_text"]}
+{"text": "The Surface Computer UI is the interface used by restaurant customers.", "label": ["non_requirement_text"]}
+{"text": "This interface uses the surface computer paradigm - users interact with the system by dragging 'objects' around on the flat-screen touch-sensitive display.", "label": ["non_requirement_text"]}
+{"text": "For the RMOS, users can manipulate objects such as items of food, dietary requirements, tips and menus on the surface of their table.", "label": ["non_requirement_text"]}
+{"text": "Such objects can be moved into static objects such as meals and payments to perform various functions.", "label": ["non_requirement_text"]}
+{"text": "In addition to this object manipulation paradigm, a limited system menu is necessary.", "label": ["non_requirement_text"]}
+{"text": "Users will summon their restaurant menu, which is combined with a system/command menu, using an easy touch gesture, a double-tap on the touch surface, and dismiss it with a similar gesture or by tapping a close button GUI element.", "label": ["non_requirement_text"]}
+{"text": "The GUI will take a small percentage of the table's screen, so the UI will be clear and uncluttered.", "label": ["non_requirement_text"]}
+{"text": "The Tablet UI is designed to run on a small, wireless-enabled touch-screen tablet PC, to be used by waiters to accommodate customer needs.", "label": ["non_requirement_text"]}
+{"text": "This UI will be designed for use with a stylus input into the touch-screen.", "label": ["non_requirement_text"]}
+{"text": "Because the number of operations the UI needs to support is relatively limited, there will be no nested menu structure.", "label": ["non_requirement_text"]}
+{"text": "The UI shall provide simple graphical interfaces, similar to a map, to allow the user to select tables/customers as the target of operations.", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 5 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "The Display UI provides kitchen staff with simple functionality related to ordered items.", "label": ["non_requirement_text"]}
+{"text": "The UI will display the list of items in large, easy-to-read text, sorted by time of submission with additional information (such as dietary requirements and the destination table) displayed in tabulated format.", "label": ["non_requirement_text"]}
+{"text": "Input is provided by fingertips, as opposed to a stylus.", "label": ["non_requirement_text"]}
+{"text": "There are three external hardware devices used by the RMOS, each related to a user interface (see Section 2.1.2).", "label": ["non_requirement_text"]}
+{"text": "These devices are the surface computers, the wireless tablets and the touch displays.", "label": ["non_requirement_text"]}
+{"text": "All three devices must be physically robust and immune to liquid damage and stains.", "label": ["non_requirement_text"]}
+{"text": "The devices (with the possible exception of displays) must also have good industrial design aesthetics, as they are to be used in place of normal restaurant tables and notepads and will be in direct contact with customers.", "label": ["non_requirement_text"]}
+{"text": "The devices behave as 'terminals' in the sense that they never have a full system image, do not store data and are not used for the core logic of the system.", "label": ["non_requirement_text"]}
+{"text": "However, they should be fully capable computers that can use textual data from the server along with local UI/interpretation code to display UI elements and take input.", "label": ["non_requirement_text"]}
+{"text": "All order and transaction records should be stored on the server, not these computers.", "label": ["non_requirement_text"]}
+{"text": "The performance of dumb terminals over an area the size of a restaurant is likely to be unacceptable.", "label": ["non_requirement_text"]}
+{"text": "In all three cases, the hardware device takes information from the RMOS and processes the information to display.", "label": ["non_requirement_text"]}
+{"text": "It also provides user input information to the RMOS.", "label": ["non_requirement_text"]}
+{"text": "The RMOS will interface with a Database Management System (DBMS) that stores the information necessary for the RMOS to operate.", "label": ["non_requirement_text"]}
+{"text": "The DBMS must be able to provide, on request and with low latency, data concerning the restaurant's menu, employees (and their passwords) and available dietary requirements.", "label": ["non_requirement_text"]}
+{"text": "Additionally, it should take and archive data provided to it by the RMOS.", "label": ["non_requirement_text"]}
+{"text": "This data will include records of all orders and transactions (system states and state changes) executed by the RMOS.", "label": ["non_requirement_text"]}
+{"text": "The DBMS must store all data such that it can be used for accounting, as well as accountability.", "label": ["non_requirement_text"]}
+{"text": "The RMOS will interface with a Local Area Network (LAN) to maintain communication with all its devices.", "label": ["non_requirement_text"]}
+{"text": "It should use a reliable-type IP protocol such as TCP/IP or reliable-UDP/IP for maximum compatibility and stability.", "label": ["non_requirement_text"]}
+{"text": "All devices it will interface with should contain standard Ethernet compatible, software accessible LAN cards to maintain communication between the server and the surface computers, tablets, displays and the external payment system.", "label": ["non_requirement_text"]}
+{"text": "Devices that are wireless should also use Ethernet compatible cards, using the IEEE 802.11b/g standard and having support for WPA2-PSK encryption.", "label": ["non_requirement_text"]}
+{"text": "The use of IEEE 802.11n transmission standard hardware is also acceptable if all other local hardware is conformant to the same standard.", "label": ["non_requirement_text"]}
+{"text": "The memory usage of the RMOS will obviously have to be constrained by the devices it is intended to run on.", "label": ["non_requirement_text"]}
+{"text": "In particular, the wireless tablets, as mobile devices, may have limited memory - this should be taken into account when writing the tablet software.", "label": ["non_requirement_text"]}
+{"text": "Memory constraints upon the server.", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 6 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Surface computers and displays are not likely to be an issue as each will likely have at least a gigabyte of primary memory and hundreds of gigabytes or more of secondary memory.", "label": ["non_requirement_text"]}
+{"text": "The RMOS has only one mode of operation.", "label": ["non_requirement_text"]}
+{"text": "However, because of the restaurant environment it is used in, it must be able to operate for long periods, without error.", "label": ["non_requirement_text"]}
+{"text": "The server must be able to operate unattended indefinitely.", "label": ["non_requirement_text"]}
+{"text": "It should not need physical interaction except for upgrades and failure of hardware elements.", "label": ["non_requirement_text"]}
+{"text": "Backup and recovery should be handled by the DBMS and operating system, or external software running on a timed backup system.", "label": ["non_requirement_text"]}
+{"text": "Interaction from the RMOS should not be required.", "label": ["non_requirement_text"]}
+{"text": "Since stateful data should not be stored on any of the devices other than the server, keeping a system image on the server for each device may be a sufficient operational method to facilitate restoration should a device become corrupted.", "label": ["non_requirement_text"]}
+{"text": "Site configuration for the RMOS is expected to encompass the following steps:", "label": ["non_requirement_text"]}
+{"text": "- Install the server, surface computers and displays", "label": ["non_requirement_text"]}
+{"text": "- Acquire sufficient tablets for all staff that need to use them", "label": ["non_requirement_text"]}
+{"text": "- Network all devices, install operating systems, server software and DBMS", "label": ["non_requirement_text"]}
+{"text": "- Secure network, distribute initial passkeys", "label": ["non_requirement_text"]}
+{"text": "- Install RMOS software", "label": ["non_requirement_text"]}
+{"text": "- Configure server RMOS software", "label": ["non_requirement_text"]}
+{"text": "Some customisation of RMOS software elements may be required, including:", "label": ["non_requirement_text"]}
+{"text": "- Table layout maps", "label": ["non_requirement_text"]}
+{"text": "- GUI elements, especially for customer-facing UIs", "label": ["non_requirement_text"]}
+{"text": "The end-users of the RMOS fall into three primary categories, unskilled, partly skilled and highly skilled.", "label": ["non_requirement_text"]}
+{"text": "The users of the surface computers are walk-in customers and should therefore be assumed to have no relevant prior skills or education other than basic abilities to operate an automated system; no more complex than a parking meter or vending machine.", "label": ["non_requirement_text"]}
+{"text": "The users of the tablets and displays are waiters and chefs respectively and they should be able to use the system and further be able to train others with minimal training themselves.", "label": ["non_requirement_text"]}
+{"text": "They must be able to explain all elements of the user interfaces except the server.", "label": ["non_requirement_text"]}
+{"text": "Supervisors also fall into the same category, though they will have to learn other sections of the system (refunds etc); these should not be of notably greater complexity than the standard functions.", "label": ["non_requirement_text"]}
+{"text": "This class of user would be expected to have a junior high-school certificate education or equivalent.", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 7 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Highly skilled user", "label": ["non_requirement_text"]}
+{"text": "The initial installation and configuration of hardware and the constituent RMOS system components (especially the server) is guaranteed to require someone with notable computer experience, including extensive experience with network and operating systems to complete it.", "label": ["non_requirement_text"]}
+{"text": "The software should not be needlessly complex, but it is still expected not to be entirely 'plug and play'.", "label": ["non_requirement_text"]}
+{"text": "This class of user is expected to have a high-school certificate or equivalent, as well as extensive computer experience.", "label": ["non_requirement_text"]}
+{"text": "The RMOS should be written in an object-oriented language with strong GUI links and a simple, accessible network API.", "label": ["non_requirement_text"]}
+{"text": "The primary candidate tool chains are Java/Swing, C++/Qt and Python/Qt.", "label": ["non_requirement_text"]}
+{"text": "The system must provide a capacity for parallel operation and system design should not introduce scalability issues with regard to the number of surface computers, tablets or displays connected at any one time.", "label": ["non_requirement_text"]}
+{"text": "The end system should also allow for seamless recovery, without data loss, from individual device failure.", "label": ["non_requirement_text"]}
+{"text": "There must be a strong audit chain with all system actions logged.", "label": ["non_requirement_text"]}
+{"text": "While interfaces are covered in Section 2.1, it is worth noting that this system is likely to conform to what is available.", "label": ["non_requirement_text"]}
+{"text": "With that in mind, the most adaptable and portable technologies should be used for the implementation.", "label": ["non_requirement_text"]}
+{"text": "The system has criticality insofar as it is a live system.", "label": ["non_requirement_text"]}
+{"text": "If the system is down, then customers must not notice, or notice that the system recovers quickly (seconds).", "label": ["non_requirement_text"]}
+{"text": "The system must be reliable enough to run crash and glitch free more or less indefinitely, or facilitate error recovery strong enough such that glitches are never revealed to its end-users.", "label": ["non_requirement_text"]}
+{"text": "The SRS assumes that none of the constituent system components will be implemented as embedded applications.", "label": ["non_requirement_text"]}
+{"text": "The implication is that the target hardware will provide a capacity for standalone program/application deployment and not require customised embedded firmware to be written.", "label": ["non_requirement_text"]}
+{"text": "It is further assumed that tablet PCs of sufficient processing capability and battery life will be utilised.", "label": ["non_requirement_text"]}
+{"text": "The surface computers employed by the system should facilitate being utilised/left on for extended periods (sufficient for daily use) and that they are programmable in the same fashion as x86 architecture computers.", "label": ["non_requirement_text"]}
+{"text": "Finally, it is further assumed that the deployment environment is capable of supporting an IEEE 802.11 wireless network for system communication.", "label": ["non_requirement_text"]}
+{"text": "This subsection pertains to both the functional and non-functional requirements omitted unintentionally from this SRS document.", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 8 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "The following section presents the complete set of functional and non-functional requirements identified for the subject RMOS.", "label": ["non_requirement_text"]}
+{"text": "Functional requirements are listed first, according to their relationship to the overall system, customers, waiters, chefs and supervisors.", "label": ["non_requirement_text"]}
+{"text": "The non-functional requirements that pertain to safety, security, the interface, human engineering, qualification, operation, maintenance and performance are subsequently presented.", "label": ["non_requirement_text"]}
+{"text": "The functional requirements have been specified using a natural language description and as such, the reader is directed to Section 4 (UML Analysis Models) for further detail.", "label": ["non_requirement_text"]}
+{"text": "This subsection presents the identified functional requirements for the subject RMOS.", "label": ["non_requirement_text"]}
+{"text": "Initially, general requirements that pertain to the whole system are given.", "label": ["non_requirement_text"]}
+{"text": "Where possible, subsequent requirements have been demarcated based on their relevance to the users of the system, that is, customers, waiters, chefs and supervisors.", "label": ["non_requirement_text"]}
+{"text": "G01 A server shall host the RMOS and provide system data processing and storage capability.", "label": ["non_requirement_text"]}
+{"text": "G02 A surface computer shall provide a customer with all customer system functionality.", "label": ["non_requirement_text"]}
+{"text": "G03 A tablet shall provide a waiter/supervisor with all waiter/supervisor system functionality (according to access control).", "label": ["non_requirement_text"]}
+{"text": "G04 A display shall provide a chef with all chef system functionality.", "label": ["non_requirement_text"]}
+{"text": "G05 All system functionality shall be accessible through touch sensitive surface computers, tablets and displays via simple touch gestures.", "label": ["non_requirement_text"]}
+{"text": "G06 A tablet shall be capable of interfacing with a register to facilitate the accurate processing of a payment.", "label": ["non_requirement_text"]}
+{"text": "C01 A customer shall be able to engage their menu by double tapping the activated surface computer in their table.", "label": ["non_requirement_text"]}
+{"text": "C02 A customer shall be able to dismiss their menu by double tapping its dismiss option.", "label": ["non_requirement_text"]}
+{"text": "C03 A customer shall be able to create an empty pending order through their engaged menu.", "label": ["non_requirement_text"]}
+{"text": "C04 A customer shall not be able to dismiss their engaged menu while there is a non-empty pending order associated with the engaged menu.", "label": ["non_requirement_text"]}
+{"text": "C05 A customer shall be able to navigate through the available items in their engaged menu.", "label": ["non_requirement_text"]}
+{"text": "C06 A customer shall be able to add an item to a pending order by dragging the item from the engaged menu onto the order.", "label": ["non_requirement_text"]}
+{"text": "C07 A customer shall be able to remove an item from a pending order by dragging the item off the order.", "label": ["non_requirement_text"]}
+{"text": "C08 A customer shall be able to add a special dietary requirement to an order by dragging the requirement from the engaged menu onto the order.", "label": ["non_requirement_text"]}
+{"text": "C09 A customer shall be able to add a wildcard special dietary requirement to an order in the case that their requirement is not represented by the system.", "label": ["non_requirement_text"]}
+{"text": "C10 A customer shall be able to place an order through their engaged menu if it is pending and not empty.", "label": ["non_requirement_text"]}
+{"text": "C11 A customer shall be able to cancel an order through their engaged menu if it is pending and not yet placed.", "label": ["non_requirement_text"]}
+{"text": "C12 A customer shall be able to call for waiter assistance through their engaged menu.", "label": ["non_requirement_text"]}
+{"text": "C13 A customer shall be able to engage bill mode to finalise payment through their engaged menu.", "label": ["non_requirement_text"]}
+{"text": "C14 A customer shall be able to disengage bill mode to cancel the billing process through their engaged menu.", "label": ["non_requirement_text"]}
+{"text": "C15 When in billing mode, a surface computer shall display a representation of a cash payment for the whole table.", "label": ["non_requirement_text"]}
+{"text": "C16 When in billing mode, a surface computer shall display a representation of a bankcard payment for each customer.", "label": ["non_requirement_text"]}
+{"text": "C17 When in billing mode, a surface computer shall display a representation of every meal ordered that may each be dragged into a payment.", "label": ["non_requirement_text"]}
+{"text": "C18 When in billing mode, a surface computer shall display a representation of tip denominations that may be dragged into a payment.", "label": ["non_requirement_text"]}
+{"text": "C19 A customer shall be able to drag a meal into a bankcard payment or a cash payment.", "label": ["non_requirement_text"]}
+{"text": "C20 A customer shall be able to drag a meal out of a bankcard payment or a cash payment.", "label": ["non_requirement_text"]}
+{"text": "C21 A customer shall be able to drag a tip denomination into a bankcard payment or a cash payment.", "label": ["non_requirement_text"]}
+{"text": "C22 A customer shall be able to drag a tip denomination out of a bankcard payment or a cash payment.", "label": ["non_requirement_text"]}
+{"text": "Table 3.1.3 presents the identified functional waiter requirements that directly relate to the waiters (and supervisors) of the subject RMOS.", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 10 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "W01 A waiter shall be able to log into a tablet using their assigned username and password.", "label": ["non_requirement_text"]}
+{"text": "W02 A waiter shall be able to log out of a tablet.", "label": ["non_requirement_text"]}
+{"text": "W03 A waiter shall be able to activate a surface computer and consequently open its associated account through a tablet.", "label": ["non_requirement_text"]}
+{"text": "W04 A waiter shall be able to deactivate a surface computer and consequently close its associated account through a tablet.", "label": ["non_requirement_text"]}
+{"text": "W05 A waiter who activates a surface computer shall be assigned to the table that contains it.", "label": ["non_requirement_text"]}
+{"text": "W06 A waiter assigned to a table shall be alerted via their wireless tablet when:", "label": ["non_requirement_text"]}
+{"text": "- An order is placed from that table", "label": ["non_requirement_text"]}
+{"text": "- An item ordered by that table is rejected by the kitchen", "label": ["non_requirement_text"]}
+{"text": "- An item ordered by that table is ready to be served", "label": ["non_requirement_text"]}
+{"text": "- The table has requested waiter assistance", "label": ["non_requirement_text"]}
+{"text": "- An order is placed from that table", "label": ["non_requirement_text"]}
+{"text": "- An item ordered by that table is rejected by the kitchen", "label": ["non_requirement_text"]}
+{"text": "- An item ordered by that table is ready to be served", "label": ["non_requirement_text"]}
+{"text": "- The table has requested waiter assistance", "label": ["non_requirement_text"]}
+{"text": "W07 A tablet shall allow a waiter to accept an order placed by a customer through a surface computer.", "label": ["non_requirement_text"]}
+{"text": "W08 A tablet shall allow a waiter to reject an order placed by a customer through a surface computer.", "label": ["non_requirement_text"]}
+{"text": "W09 A tablet shall allow a waiter to indicate the delivery of an item to its customer.", "label": ["non_requirement_text"]}
+{"text": "W10 A tablet shall allow a waiter to process a payment using cash.", "label": ["non_requirement_text"]}
+{"text": "W11 A tablet shall allow a waiter to process a payment using a bankcard.", "label": ["non_requirement_text"]}
+{"text": "K01 A chef shall be able to accept a customer\u2019s order item through a display.", "label": ["non_requirement_text"]}
+{"text": "K02 A chef shall be able to reject a customer\u2019s order item through a display.", "label": ["non_requirement_text"]}
+{"text": "K03 A chef shall be able to indicate that a customer\u2019s order item is ready to be served through a display.", "label": ["non_requirement_text"]}
+{"text": "S01 A supervisor shall be able to do everything a waiter can.", "label": ["non_requirement_text"]}
+{"text": "S02 A supervisor shall be able to do everything a chef can.", "label": ["non_requirement_text"]}
+{"text": "S03 A supervisor shall be able to abort/purge a customer\u2019s meal from the active system with no expectation of payment.", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 11 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "S04 A supervisor shall be able to abort/purge a table's account/meals from the active system with no expectation of payment.", "label": ["non_requirement_text"]}
+{"text": "S05 A supervisor shall be able to issue a refund for one or more items to a customer.", "label": ["non_requirement_text"]}
+{"text": "This subsection presents the identified non-functional requirements for the subject RMOS.", "label": ["non_requirement_text"]}
+{"text": "The subcategories of non-functional requirements given are safety, security, interface, human engineering, qualification, operational and maintenance.", "label": ["non_requirement_text"]}
+{"text": "F01 The system shall log every state and state change of every surface computer, tablet and display to provision recovery from system failure.", "label": ["non_requirement_text"]}
+{"text": "F02 The system shall be capable of restoring itself to its previous state in the event of failure (e.g.", "label": ["non_requirement_text"]}
+{"text": "a system crash or power loss).", "label": ["non_requirement_text"]}
+{"text": "F03 The system shall be able to display a menu at all times to facilitate manual order taking should the need arise.", "label": ["non_requirement_text"]}
+{"text": "F04 The system shall utilise periodic 30-second keep-alive messages between tablets and the server to monitor tablet operational status.", "label": ["non_requirement_text"]}
+{"text": "F05 The system shall flag tablets that fail to send timely keep-alive messages as non-operational and disassociate the assigned waiter from the tablet.", "label": ["non_requirement_text"]}
+{"text": "Y01 Wireless communication throughout the system will be encrypted using SSLv3 at the application layer and WPA2-PSK at the data link layer.", "label": ["non_requirement_text"]}
+{"text": "Y02 The WPA2-PSK password used for wireless communication must have a bit-strength of at least 80 bits.", "label": ["non_requirement_text"]}
+{"text": "Y03 The WPA2-PSK password used for wireless communication must be changed every three months.", "label": ["non_requirement_text"]}
+{"text": "Y04 A waiter password used for tablet login must have a bit-strength of at least 64 bits.", "label": ["non_requirement_text"]}
+{"text": "Y05 A waiter password used for tablet login must be changed every three months.", "label": ["non_requirement_text"]}
+{"text": "Y06 A waiter shall only be able to log into one tablet at any given instance of time.", "label": ["non_requirement_text"]}
+{"text": "Y07 A waiter that attempts to log into a second tablet while already logged into", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 12 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Another tablet shall be rejected and notified through both tablets.", "label": ["non_requirement_text"]}
+{"text": "The system shall provide two levels of access:", "label": ["non_requirement_text"]}
+{"text": "- A supervisor level for unrestricted access to system functionality", "label": ["non_requirement_text"]}
+{"text": "- A waiter level for access to waiter functionality", "label": ["non_requirement_text"]}
+{"text": "A surface computer shall not require a user to log in.", "label": ["non_requirement_text"]}
+{"text": "A tablet shall require a user to log in using a username and password.", "label": ["non_requirement_text"]}
+{"text": "A display shall not require a user to log in.", "label": ["non_requirement_text"]}
+{"text": "Table 3.2.3 presents the identified non-functional human engineering requirements that directly relate to the entire subject RMOS.", "label": ["non_requirement_text"]}
+{"text": "H01 Any element of the system will take no longer than 10-seconds to restart.", "label": ["non_requirement_text"]}
+{"text": "H02 A surface computer must not dismiss an engaged menu unless the customer requests it.", "label": ["non_requirement_text"]}
+{"text": "Table 3.2.4 presents the identified non-functional performance requirements that directly relate to the entire subject RMOS.", "label": ["non_requirement_text"]}
+{"text": "P01 The server shall be capable of supporting no less than 200 concurrent connections from any combination of surface computers, tablets and displays.", "label": ["non_requirement_text"]}
+{"text": "P02 The server shall be capable of supporting an arbitrary number of surface computers, tablets and displays, that is, it shall provide no limit on how many devices are in the system.", "label": ["non_requirement_text"]}
+{"text": "P03 The server shall be capable of supporting an arbitrary number of active meals/orders, that is, no meals/orders shall be lost under any circumstances.", "label": ["non_requirement_text"]}
+{"text": "P04 The server shall be capable of supporting an arbitrary number of active customer payments, that is, no payments shall be lost under any circumstances.", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 13 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One", "label": ["non_requirement_text"]}
+{"text": "\u2022 14 \u2022", "label": ["non_requirement_text"]}
+{"text": "This subsection extends upon the functional requirements given in Section 3.1 through the presentation of detailed use cases.", "label": ["non_requirement_text"]}
+{"text": "To facilitate an unambiguous and clear view of how the end-users interact with the subject RMOS, the actors (end-users) involved in the use cases, a use case diagram and detailed use case descriptions are provided.", "label": ["non_requirement_text"]}
+{"text": "The use cases that find representation are Log In, Log Out, Activate Table, Deactivate Table, Accept Order, Deliver Item, Process Bankcard Payment, Process Cash Payment, Abort Meal, Abort Account, Issue Refund, Place Order, Call Waiter, Pay Bill, Accept/Reject Item and Indicate Item Ready.", "label": ["non_requirement_text"]}
+{"text": "There are four actors in the RMOS, waiter, chef, supervisor and customer.", "label": ["non_requirement_text"]}
+{"text": "While the waiter, chef and customer actors are base specialisations, the supervisor class inherits from both the waiter and chef actors as a generalisation.", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 15 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Figure 4.1.1 presents a use case diagram for the subject RMOS.", "label": ["non_requirement_text"]}
+{"text": "The key interactions between the end-users of the system and the system itself are depicted.", "label": ["non_requirement_text"]}
+{"text": "Log Out Log Out", "label": ["non_requirement_text"]}
+{"text": "Log In Log In", "label": ["non_requirement_text"]}
+{"text": "Deactivate Table Activate Table", "label": ["non_requirement_text"]}
+{"text": "Deliver Item Accept Order", "label": ["non_requirement_text"]}
+{"text": "Waiter Process Cash Payment", "label": ["non_requirement_text"]}
+{"text": "Process Bankcard Payment \u00abincludes\u00bb", "label": ["non_requirement_text"]}
+{"text": "\u00abincludes\u00bb Pay Bill", "label": ["non_requirement_text"]}
+{"text": "Abort Meal Place Order", "label": ["non_requirement_text"]}
+{"text": "Abort Account Call Waiter", "label": ["non_requirement_text"]}
+{"text": "Issue Refund \u00abinherits\u00bb", "label": ["non_requirement_text"]}
+{"text": "Accept/Reject Item Indicate Item Ready", "label": ["non_requirement_text"]}
+{"text": "Figure 4.1.1 Restaurant Menu & Ordering System Use Case Diagram", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 16 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Use Case Log In", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Waiter", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Enable waiter access to the system through a tablet", "label": ["non_requirement_text"]}
+{"text": "Preconditions The waiter has a valid username and password and is not already logged in", "label": ["non_requirement_text"]}
+{"text": "Trigger The waiter requires access to the system to perform their job", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The waiter selects \u2018Log In\u2019 from the tablet menu 2) The tablet prompts the user for their username and password 3) The user enters their username and password 4) The tablet enables access to the system according to access control", "label": ["non_requirement_text"]}
+{"text": "Exceptions The waiter enters an invalid username or password", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.1 Log In Use Case Description", "label": ["non_requirement_text"]}
+{"text": "Use Case Log Out", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Waiter", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Disable waiter access to the system through a tablet", "label": ["non_requirement_text"]}
+{"text": "Preconditions The waiter is already logged in", "label": ["non_requirement_text"]}
+{"text": "Trigger The waiter no longer requires access to the system to perform their job", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The waiter selects \u2018Log Out\u2019 from the tablet menu 2) The tablet disables access to the system", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.2 Log Out Use Case Description", "label": ["non_requirement_text"]}
+{"text": "Use Case Activate Table", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Waiter", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Activate the surface computer in a table to enable customer functionality", "label": ["non_requirement_text"]}
+{"text": "Preconditions The waiter is already logged in", "label": ["non_requirement_text"]}
+{"text": "Trigger A new group of customers have been seated at the table", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The waiter selects \u2018Activate Table\u2019 from the tablet menu 2) The waiter selects a free deactivated table from those available 3) The waiter selects the seats to be occupied by customers 4) The surface computer in the table is activated and an account is created 5) An empty order is automatically created for each customer at the table 6) The waiter is assigned to take care of the table\u2019s account", "label": ["non_requirement_text"]}
+{"text": "Exceptions There are no free deactivated tables available", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.3 Activate Table Use Case Description", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 17 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Use Case Deactivate Table", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Waiter", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Deactivate the surface computer in a table once its customers have left", "label": ["non_requirement_text"]}
+{"text": "Preconditions The account (every meal) associated with the table has been finalised/paid", "label": ["non_requirement_text"]}
+{"text": "Trigger A table of customers finalise their account and leave the restaurant", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The waiter selects 'Deactivate Table' from the tablet menu 2) The waiter selects the table to be deactivated 3) The table is deactivated and its account details are archived 4) The account is deleted from the active system", "label": ["non_requirement_text"]}
+{"text": "Use Case Accept Order", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Waiter", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Accept an order that has been placed by a customer", "label": ["non_requirement_text"]}
+{"text": "Preconditions A customer has placed an order", "label": ["non_requirement_text"]}
+{"text": "Trigger The waiter chooses to serve the customer", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The waiter selects 'Take Order' from the tablet menu 2) The waiter selects a table with pending orders from those assigned to them 3) The waiter selects a pending order from the selected table 4) The waiter confirms the order and selects \u2018Accept\u2019 from the tablet menu 5) The items in the order are sent to the kitchen for preparation 6) The order is added to the customer\u2019s meal (and the table\u2019s account)", "label": ["non_requirement_text"]}
+{"text": "Exceptions The waiter rejects the order by selecting 'Reject' from the tablet menu", "label": ["non_requirement_text"]}
+{"text": "Use Case Deliver Item", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Waiter", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Deliver a ready item to its customer", "label": ["non_requirement_text"]}
+{"text": "Preconditions An item for a table assigned to the waiter is prepared and ready", "label": ["non_requirement_text"]}
+{"text": "Trigger The system sends an alert to the waiter notifying them the item is ready", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The waiter reads the alert, noting the item and its table/seat number 2) The waiter delivers the item to the customer who ordered it 3) The waiter marks the item as delivered through the tablet", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 18 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Use Case Process Bankcard Payment", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Waiter", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Charge a customer for their meals taking a bankcard payment", "label": ["non_requirement_text"]}
+{"text": "Preconditions Meals have been assigned to the customer\u2019s bankcard payment bill", "label": ["non_requirement_text"]}
+{"text": "Trigger The waiter chooses to finalise a customer\u2019s bill", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The waiter selects 'Bill Table' from the tablet menu 2) The waiter selects a table with outstanding bills from which the customer\u2019s have asked to finalise their account 3) The waiter selects a customer to process payment for, from a list of customers with meals assigned to their bankcard payment bill 4) The waiter swipes the customer's bankcard through the tablet 5) The system interfaces with the register system to process the payment 6) The meals are marked as paid and disappear from the surface computer", "label": ["non_requirement_text"]}
+{"text": "Exceptions The transaction is rejected by the register system", "label": ["non_requirement_text"]}
+{"text": "Use Case Process Cash Payment", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Waiter", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Charge a table of customers for their meals taking a collective cash payment", "label": ["non_requirement_text"]}
+{"text": "Preconditions Meals have been assigned to the table\u2019s cash payment bill", "label": ["non_requirement_text"]}
+{"text": "Trigger The waiter chooses to finalise a customer\u2019s bill", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The waiter selects 'Bill Table' from the tablet menu 2) The waiter selects a table with outstanding bills from which the customer\u2019s have asked to finalise their account 3) The waiter selects 'Cash Payment' from the tablet menu 4) The waiter takes cash from customers and moves to the payment system 5) The tablet automatically connects with the payment system when in proximity 6) The waiter processes the payment using the payment system 7) The meals are marked as paid and disappear from the surface computer 8) The waiter returns to the customers with their change", "label": ["non_requirement_text"]}
+{"text": "Exceptions Insufficient cash is provided by the customers", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 19 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Use Case Pay Bill", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Customer", "label": ["non_requirement_text"]}
+{"text": "Goal In Context A customer decides to pay for their meals when they are ready to leave", "label": ["non_requirement_text"]}
+{"text": "Preconditions Every item ordered by the customer has been delivered or cancelled", "label": ["non_requirement_text"]}
+{"text": "Trigger The customer asks to finalise their bill", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The customer double-taps the table to bring up a menu 2) The customer selects 'Ask For Bill' from the menu 3) The surface computer enters billing mode and displays a representation of each customer's bankcard payment, a table cash payment and each customer's meal 4) The customer drags/assigns their meals into the appropriate payment 5) The customer drags/assigns any tip denominations into the appropriate payment 6) The customer finalises the assignment process and an alert is sent to the waiter assigned to the table 7) The waiter processes the payment 8) The customer double-taps the dismiss menu option on the table to close the menu", "label": ["non_requirement_text"]}
+{"text": "Exceptions The customer cancels billing mode", "label": ["non_requirement_text"]}
+{"text": "Use Case Place Order", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Customer", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Place an order for menu items from the restaurant", "label": ["non_requirement_text"]}
+{"text": "Preconditions The customer has been seated at an activated table", "label": ["non_requirement_text"]}
+{"text": "Trigger The customer wants to order one or more menu items", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The customer double-taps the table to bring up a menu 2) The customer selects 'Order' from the menu 3) The surface computer in the table displays an empty order and the available food/beverage/dietary requirement items 4) The customer navigates through the available items and adds the ones they want by dragging them from the menu onto their order (menu items can be removed by dragging them out of the order) 5) The customer selects 'Place Order' from the menu 6) The waiter assigned to the table\u2019s account is notified that the order has been placed 7) The customer double-taps the dismiss menu option on the table to close the menu", "label": ["non_requirement_text"]}
+{"text": "Exceptions The customer cancels the order by selecting 'Cancel' from the menu", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 20 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Use Case Call Waiter", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Customer", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Get assistance from the waiter assigned to the customer\u2019s table", "label": ["non_requirement_text"]}
+{"text": "Preconditions The customer has been seated at an activated table", "label": ["non_requirement_text"]}
+{"text": "Trigger The customer decides they require waiter assistance", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The customer double-taps the table to bring up a menu 2) The customer selects 'Call Waiter' from the menu 3) An alert is sent to the waiter assigned to the table", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.11 Call Waiter Use Case Description", "label": ["non_requirement_text"]}
+{"text": "Use Case Abort Meal", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Supervisor", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Abort a customer\u2019s meal with no expectation of payment", "label": ["non_requirement_text"]}
+{"text": "Preconditions The meal exists and is associated with the customer", "label": ["non_requirement_text"]}
+{"text": "Trigger Exceptional circumstances arise and the supervisor must abort the meal", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The supervisor selects 'Abort Meal' from the tablet menu 2) The supervisor selects a table from those that have active meals 3) The supervisor selects an active meal from the selected table 4) The details of the meal, the abortion and the supervisor are archived 5) The active meal is deleted from the active system", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.12 Abort Meal Use Case Description", "label": ["non_requirement_text"]}
+{"text": "Use Case Abort Account", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Supervisor", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Abort a table\u2019s account with no expectation of payment", "label": ["non_requirement_text"]}
+{"text": "Preconditions The account exists and is associated with the table", "label": ["non_requirement_text"]}
+{"text": "Trigger Exceptional circumstances arise and the supervisor must abort the account", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The supervisor selects 'Abort Account' from the tablet menu 2) The supervisor selects a table from those that have active accounts 3) The details of the account, the abortion and the supervisor are archived 4) The active account is deleted from the active system", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.13 Abort Account Use Case Description", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 21 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.14 Issue Refund Use Case Description Table 4.1.14 Issue Refund Use Case Description", "label": ["non_requirement_text"]}
+{"text": "Use Case Issue Refund", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Supervisor", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Refund a customer\u2019s payment for a meal", "label": ["non_requirement_text"]}
+{"text": "Preconditions The customer paid for a meal in the restaurant", "label": ["non_requirement_text"]}
+{"text": "Trigger Exceptional circumstances arise and the supervisor must refund the payment", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The supervisor confirms that refund should be given 2) The supervisor selects 'Issue Refund' from the tablet menu 3) The supervisor selects the meal from a list for the given date 4) The supervisor selects \u2018Confirm Refund\u2019 from the tablet menu 5) The details of the meal, the refund and the supervisor are archived 6) The supervisor returns the cost of the meal to the customer", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.15 Accept/Reject Item Use Case Description Table 4.1.15 Accept/Reject Item Use Case Description", "label": ["non_requirement_text"]}
+{"text": "Use Case Accept/Reject Item", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Chef", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Notify waiters if an item cannot be prepared", "label": ["non_requirement_text"]}
+{"text": "Preconditions The item has not already been accepted or rejected", "label": ["non_requirement_text"]}
+{"text": "Trigger Chef proceeds to action the pending items on a kitchen display", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The chef checks if the pending item can be fulfilled and rejects or accepts it 2) An accepted pending item is added to a list of items to prepare 3) A rejected pending item is removed from the kitchen display and an alert is sent to the waiter assigned to the pending item\u2019s account", "label": ["non_requirement_text"]}
+{"text": "Table 4.1.16 Indicate Item Ready Use Case Description Table 4.1.16 Indicate Item Ready Use Case Description", "label": ["non_requirement_text"]}
+{"text": "Use Case Indicate Item Ready", "label": ["non_requirement_text"]}
+{"text": "Primary Actor Chef", "label": ["non_requirement_text"]}
+{"text": "Goal In Context Alert the appropriate waiter that an item is ready to be delivered", "label": ["non_requirement_text"]}
+{"text": "Preconditions The item has been accepted by a chef", "label": ["non_requirement_text"]}
+{"text": "Trigger Item preparation completes", "label": ["non_requirement_text"]}
+{"text": "Scenario 1) The chef selects the item from the list of items to prepare 2) The chef selects 'Ready' from the display menu 3) An alert is sent to the waiter assigned to the prepared item\u2019s account", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 22 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.1 presents the Log In activity diagram to provide a graphical representation of a waiter logging into the system.", "label": ["non_requirement_text"]}
+{"text": "[Log In' selected] Prompt for username and password", "label": ["non_requirement_text"]}
+{"text": "Access to system enabled Access to system enabled", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.1 Log In Activity Diagram", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.2 presents the Log Out activity diagram to provide a graphical representation of a waiter logging out of the system.", "label": ["non_requirement_text"]}
+{"text": "['Log Out' selected]Access to system disabled", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.2 Log Out Activity Diagram", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 23 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.3 presents the Activate Table activity diagram to provide a graphical representation of a waiter activating the surface computer in a table.", "label": ["non_requirement_text"]}
+{"text": "['Activate Table' selected] Display inactive tables Activate Table", "label": ["non_requirement_text"]}
+{"text": "[table selected] Show seats at table Create account and meals", "label": ["non_requirement_text"]}
+{"text": "[customers assigned seats] Activate surface computer (Empty order created for each customer", "label": ["non_requirement_text"]}
+{"text": "Assign account to waiter", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.4 presents the Deactivate Table activity diagram to provide a graphical representation of a waiter deactivating the surface computer in a table.", "label": ["non_requirement_text"]}
+{"text": "['Deactivate Table' selected] Display fully paid tables Deactivate Table", "label": ["non_requirement_text"]}
+{"text": "[table selected] Deactivate surface computer", "label": ["non_requirement_text"]}
+{"text": "Archive account details Account deleted", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 24 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "presents the Accept Order activity diagram to provide a graphical representation of a waiter accepting a customer\u2019s order.", "label": ["non_requirement_text"]}
+{"text": "[Take Order' selected] Accept Order", "label": ["non_requirement_text"]}
+{"text": "Display assigned tables with pending orders [table selected]", "label": ["non_requirement_text"]}
+{"text": "[order selected] Display pending orders at table", "label": ["non_requirement_text"]}
+{"text": "['Accept' selected] Add items in order to customer's meal", "label": ["non_requirement_text"]}
+{"text": "[Reject selected] Order deleted", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.5 Accept Order Activity Diagram", "label": ["non_requirement_text"]}
+{"text": "presents the Deliver Item activity diagram to provide a graphical representation of a waiter delivering an item to a customer.", "label": ["non_requirement_text"]}
+{"text": "Deliver ItemAlert waiter[waiter selects item]Mark item delivered", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.6 Deliver Item Activity Diagram", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 25 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "presents the Process Bankcard Payment activity diagram to provide a graphical representation of a waiter processing a bankcard payment.", "label": ["non_requirement_text"]}
+{"text": "Display tables with outstanding bills Process Bankcard Payment", "label": ["non_requirement_text"]}
+{"text": "[Bill Table' selected] [table selected]", "label": ["non_requirement_text"]}
+{"text": "Display payments [payment selected]", "label": ["non_requirement_text"]}
+{"text": "Prompt for card Process payment", "label": ["non_requirement_text"]}
+{"text": "[card accepted] Mark meal as paid", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.7 Process Bankcard Payment Activity Diagram", "label": ["non_requirement_text"]}
+{"text": "presents the Process Cash Payment activity diagram to provide a graphical representation of a waiter processing a cash payment.", "label": ["non_requirement_text"]}
+{"text": "Display tables with outstanding bills Process Cash Payment", "label": ["non_requirement_text"]}
+{"text": "[Bill Table' elected] [table selected]", "label": ["non_requirement_text"]}
+{"text": "Display payments [payment selected]", "label": ["non_requirement_text"]}
+{"text": "Wait for register to connect Payment system reports payment", "label": ["non_requirement_text"]}
+{"text": "Mark meal as paid", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.8 Process Cash Payment Activity Diagram", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 26 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "presents the Pay Bill activity diagram to provide a graphical representation of a customer paying for their meal.", "label": ["non_requirement_text"]}
+{"text": "[customer selects Pay Bill Pay Bill", "label": ["non_requirement_text"]}
+{"text": "Wait for input Display meals and payments [meal dragged", "label": ["non_requirement_text"]}
+{"text": "[customer selects 'Cancel Billing'] [payment finalised]", "label": ["non_requirement_text"]}
+{"text": "Send alert to waiter Remove meal from payment Add meal to payment", "label": ["non_requirement_text"]}
+{"text": "presents the Place Order activity diagram to provide a graphical representation of a customer placing an order.", "label": ["non_requirement_text"]}
+{"text": "Display empty order and menu [customer selects 'Order]", "label": ["non_requirement_text"]}
+{"text": "Wait for input [item dragged to order]", "label": ["non_requirement_text"]}
+{"text": "Add item to order [item dragged out of order]", "label": ["non_requirement_text"]}
+{"text": "[customer selects Place Order'] [customer selects", "label": ["non_requirement_text"]}
+{"text": "Cancel'] Send order to waiter Delete order", "label": ["non_requirement_text"]}
+{"text": "Remove item from order", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 27 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.11 presents the Call Waiter activity diagram to provide a graphical representation of a customer calling for waiter assistance.", "label": ["non_requirement_text"]}
+{"text": "[customer selects 'Call Waiter']Send alert to waiter", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.12 presents the Abort Meal activity diagram to provide a graphical representation of a supervisor aborting a customer\u2019s meal.", "label": ["non_requirement_text"]}
+{"text": "[Abort Meal selected]", "label": ["non_requirement_text"]}
+{"text": "Display tables [table selected]", "label": ["non_requirement_text"]}
+{"text": "[meal selected]     Display meals", "label": ["non_requirement_text"]}
+{"text": "Prompt for confirmation", "label": ["non_requirement_text"]}
+{"text": "Archive meal details", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 28 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.13 presents the Abort Account activity diagram to provide a graphical representation of a supervisor aborting a table\u2019s account.", "label": ["non_requirement_text"]}
+{"text": "['Abort Account' selected]Display tables[table selected]Prompt for confirmation[cancel]Archive account detailsDestroy account", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.14 presents the Issue Refund activity diagram to provide a graphical representation of a supervisor issuing a customer with a refund.", "label": ["non_requirement_text"]}
+{"text": "[Issue Refund selected]", "label": ["non_requirement_text"]}
+{"text": "[Confirm Refund selected]", "label": ["non_requirement_text"]}
+{"text": "[meals selected] [item selected]", "label": ["non_requirement_text"]}
+{"text": "Archive item details", "label": ["non_requirement_text"]}
+{"text": "[item deselected] Destroy highlighted items", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 29 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.15 presents the Accept/Reject Item activity diagram to provide a graphical representation of a chef accepting or rejecting an item from a customer\u2019s order.", "label": ["non_requirement_text"]}
+{"text": "Display pending item", "label": ["non_requirement_text"]}
+{"text": "Destroy item [cantt prepare] [can prepare]", "label": ["non_requirement_text"]}
+{"text": "Alert waiter   Add item to preparation list", "label": ["non_requirement_text"]}
+{"text": "Figure 4.2.16 presents the Indicate Item Ready diagram to provide a graphical representation of a chef indicating that a customer\u2019s item is ready for delivery.", "label": ["non_requirement_text"]}
+{"text": "Display itemMark item as readySend alert to waiter", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 30 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "The following subsection presents descriptions for the classes identified for the subject RMOS.", "label": ["non_requirement_text"]}
+{"text": "This class represents an item of food or beverage from the restaurant\u2019s menu.", "label": ["non_requirement_text"]}
+{"text": "It exists as a part of either a single order or a single meal, but not both at the same time (an order gets decomposed into the constituent Items and they are added to a meal).", "label": ["non_requirement_text"]}
+{"text": "An Item that is part of an order may contain a dietary requirement.", "label": ["non_requirement_text"]}
+{"text": "An Item contains the menu item's name, price, description, status and an image or model to depict the Item on a surface computer or display.", "label": ["non_requirement_text"]}
+{"text": "This class represents a customer\u2019s dietary requirement (e.g.", "label": ["non_requirement_text"]}
+{"text": "It exists as part of either a single Order or a single Item, but not both at the same time.", "label": ["non_requirement_text"]}
+{"text": "A DietaryRequirement contains both the name and a description of the particular requirement it represents.", "label": ["non_requirement_text"]}
+{"text": "This class represents a collection of Items and DietaryRequirements.", "label": ["non_requirement_text"]}
+{"text": "It is part of a single Meal and maintains information about whether it has been placed or approved.", "label": ["non_requirement_text"]}
+{"text": "An Order can be in either the placed, cancelled or the approved state.", "label": ["non_requirement_text"]}
+{"text": "An Order will typically be deleted shortly after it has been approved and its Items added to the customer's Meal, tying the Items in the Order to an Account.", "label": ["non_requirement_text"]}
+{"text": "This class represents a collection of all items ordered by a single customer.", "label": ["non_requirement_text"]}
+{"text": "It is part of a single Account and maintains the seat number related to the Meal.", "label": ["non_requirement_text"]}
+{"text": "The total price of a Meal is also maintained.", "label": ["non_requirement_text"]}
+{"text": "This class represents the associated Meals and Payments of a Table of customers.", "label": ["non_requirement_text"]}
+{"text": "It consists of one or more Meals and one or more Payments.", "label": ["non_requirement_text"]}
+{"text": "An account is related to one Table and is associated with one Tablet.", "label": ["non_requirement_text"]}
+{"text": "This class represents a physical table at which a customer may be seated and its integrated surface computer.", "label": ["non_requirement_text"]}
+{"text": "If the represented table is activated, an Account will be associated with the Table.", "label": ["non_requirement_text"]}
+{"text": "It contains information about its current mode and its unique identification number.", "label": ["non_requirement_text"]}
+{"text": "Further, it may be woken (activated), put to sleep (deactivated), placed in ordering mode or placed in billing mode.", "label": ["non_requirement_text"]}
+{"text": "This class represents a wireless tablet used by staff; it essentially represents a waiter/supervisor logged into the tablet and consequently the system.", "label": ["non_requirement_text"]}
+{"text": "The class contains information about who is.", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 31 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "logged into the Tablet.", "label": ["non_requirement_text"]}
+{"text": "It may also be associated with any number of Alerts that can be sent to it by the system.", "label": ["non_requirement_text"]}
+{"text": "This class represents a message sent to a Tablet to alert the waiter/supervisor of an event related to one of the Tables they have been assigned.", "label": ["non_requirement_text"]}
+{"text": "It maintains a category (e.g.", "label": ["non_requirement_text"]}
+{"text": "'item rejected', 'item ready') and a description.", "label": ["non_requirement_text"]}
+{"text": "An Alert belongs to exactly one Tablet.", "label": ["non_requirement_text"]}
+{"text": "This class represents a payment to be made to the restaurant.", "label": ["non_requirement_text"]}
+{"text": "It may contain any number of Meals and TipDenominations and is related to exactly one Account.", "label": ["non_requirement_text"]}
+{"text": "A Payment maintains its total value and the seat number of the paying customer.", "label": ["non_requirement_text"]}
+{"text": "This class represents an extension of the Payment class for customer payments that are to be paid using a bankcard.", "label": ["non_requirement_text"]}
+{"text": "This class represents an extension of the Payment class for customer payments that are to be paid using cash.", "label": ["non_requirement_text"]}
+{"text": "This class represents a tip denomination to be given to a waiter.", "label": ["non_requirement_text"]}
+{"text": "A TipDenomination belongs to a single Payment and contains information about the denomination value.", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 32 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Dietary Requirement type ~description", "label": ["non_requirement_text"]}
+{"text": "Display Item ~name ~price 0..1 -description ~image", "label": ["non_requirement_text"]}
+{"text": "Meal Order seat Number HisPlaced LisApproved tapprove() +placer cance", "label": ["non_requirement_text"]}
+{"text": "Tip Denomination ~mode ~tableNumber Lamovni +wakel)", "label": ["non_requirement_text"]}
+{"text": "Account eep() +changeToBillMode() tchange oOrderMode()", "label": ["non_requirement_text"]}
+{"text": "Payment Tablet +costl) employeelD HloggedInTo aieru", "label": ["non_requirement_text"]}
+{"text": "Bankcard Payment Cash Payment seatNumber +costl) tCost()", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 33 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "[Meals Paid] Active", "label": ["non_requirement_text"]}
+{"text": "[Turn On] Dormant [Log Into] Active [Turn Off]", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 34 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Figure 4.4.5 Item Class Statechart Diagram", "label": ["non_requirement_text"]}
+{"text": "[Approval] [Items Transferred]", "label": ["non_requirement_text"]}
+{"text": "Figure 4.4.6 Order Class Statechart Diagram", "label": ["non_requirement_text"]}
+{"text": "[Activation] [Payment Completion]", "label": ["non_requirement_text"]}
+{"text": "Ordering   Billing", "label": ["non_requirement_text"]}
+{"text": "Figure 4.4.7 Table Class Statechart Diagram", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 35 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One", "label": ["non_requirement_text"]}
+{"text": "\u2022 36 \u2022", "label": ["non_requirement_text"]}
+{"text": "Larman, APPLYING UML AND PATTERNS An Introduction to Object-Oriented Analysis and Design and Iterative Development, 3rd ed., Massachusetts: Pearson Education, 2005.", "label": ["non_requirement_text"]}
+{"text": "Carrington, CSSE3002 Course Notes, School of ITEE University of Queensland, 2008", "label": ["non_requirement_text"]}
+{"text": "IEEE Recommended Practice for Software Requirements Specifications, IEEE Standard 830, 1998.", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 37 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One", "label": ["non_requirement_text"]}
+{"text": "\u2022 38 \u2022", "label": ["non_requirement_text"]}
+{"text": "In order to improve an engineering process, it must be recorded and analysed.", "label": ["non_requirement_text"]}
+{"text": "This appendix seeks to collate time data based on both the planned schedule and the actual time spent during the process.", "label": ["non_requirement_text"]}
+{"text": "Furthermore, it discusses the problems encountered during the process of developing the subject SRS and suggests remedies to prevent these problems from arising in future iterations.", "label": ["non_requirement_text"]}
+{"text": "The team's original plan for developing the Software Requirements Specification (SRS) was straightforward.", "label": ["non_requirement_text"]}
+{"text": "Each team member was to review lecture notes and related textbook chapters to ensure familiarity with the process (background research).", "label": ["non_requirement_text"]}
+{"text": "They were to also research existing computerised restaurant menu/ordering systems to gather an idea of what already currently exists and what the requirements of the system would be (requirements elicitation).", "label": ["non_requirement_text"]}
+{"text": "The list of requirements gathered from this were then to be refined in a meeting with all team members, which would result in a consistent and complete set of requirements defining the system.", "label": ["non_requirement_text"]}
+{"text": "This would include a use case model, use case descriptions, sequence diagrams, activity diagrams, UML class analysis diagram and state chart diagrams.", "label": ["non_requirement_text"]}
+{"text": "From this set of requirements, the final SRS was to be developed written as a formal SRS as per the IEEE template.", "label": ["non_requirement_text"]}
+{"text": "The requirements gathered in previous phases were collated and each section was to be written in turn making sure that later sections were consistent with previously written sections and then reviewed by all team members to check for any errors or inconsistencies.", "label": ["non_requirement_text"]}
+{"text": "The completed SRS once agreed to by all team members was then to be submitted.", "label": ["non_requirement_text"]}
+{"text": "The most serious problem encountered was that of finding the time in which everyone could meet outside of university, work hours and other commitments.", "label": ["non_requirement_text"]}
+{"text": "With all of the team members having busy timetables, as well as other commitments, we were limited in the times that we were able to meet and therefore had to spend a lot of time working via email.", "label": ["non_requirement_text"]}
+{"text": "Second was the inaccurate estimation of time required to complete the writing of the SRS.", "label": ["non_requirement_text"]}
+{"text": "The time required for requirements elicitation was underestimated, delaying the schedule and leaving less time available for diagram production and report writing.", "label": ["non_requirement_text"]}
+{"text": "This miscalculation occurred because the team had no previous metrics by which to estimate the time needed to complete the requirements elicitation phase.", "label": ["non_requirement_text"]}
+{"text": "The primary change to the SRS development process that this report suggests pertains to time estimation.", "label": ["non_requirement_text"]}
+{"text": "It is not ideal to plan the development of a SRS with no previous metrics on which to base the time estimations.", "label": ["non_requirement_text"]}
+{"text": "It is recommended that a longer window of time be allocated to requirements elicitation, diagram production and the writing of the final report.", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 39 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "The differences between the submitted SRS plan and the actual process undertaken have been summarised below.", "label": ["non_requirement_text"]}
+{"text": "Preparation of SRS Plan", "label": ["non_requirement_text"]}
+{"text": "Proof reading of the SRS Plan", "label": ["non_requirement_text"]}
+{"text": "'Requirements Elicitation' meeting", "label": ["non_requirement_text"]}
+{"text": "Complete analysis/use case modelling", "label": ["non_requirement_text"]}
+{"text": "Complete sequence, activity, UML class analysis, and statechart diagrams", "label": ["non_requirement_text"]}
+{"text": "Complete first draft", "label": ["non_requirement_text"]}
+{"text": "Proof read first draft", "label": ["non_requirement_text"]}
+{"text": "Complete final report draft", "label": ["non_requirement_text"]}
+{"text": "Tables B 1.1-3 presented below highlight the aforementioned time discrepancies.", "label": ["non_requirement_text"]}
+{"text": "Early completion dates and shorter time expenditures are highlighted in green; late completion dates and extra time expenditures are highlighted in red.", "label": ["non_requirement_text"]}
+{"text": "**Table B 1.1 Plan Writing Time Data Listing**", "label": ["non_requirement_text"]}
+{"text": "Task Predicted Completion Actual Completion Predicted Time Expended Actual Time Expended", "label": ["non_requirement_text"]}
+{"text": "SRS plan first draft 08/04/08 08/04/08 1.5 hours (meeting) 1.5 hours (meeting)", "label": ["non_requirement_text"]}
+{"text": "SRS plan final draft 09/04/08 09/04/08 1.5 hours (MW) 1 hour (MW)", "label": ["non_requirement_text"]}
+{"text": "SRS plan proof read 10/04/08 11/04/08 0.5 hours (all) 0.5 hours (TH) 0 hours (DK) 0.5 hours (JT) 0 hours (MW)", "label": ["non_requirement_text"]}
+{"text": "SRS plan edited and submitted 12/04/08 13/04/08 0.5 hours (MW) 0.5 hours (MW)", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 40 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Task Predicted Completion Actual Completion Predicted Time Expended Actual Time Expended", "label": ["non_requirement_text"]}
+{"text": "Background Research 14/04/08 14/04/08 6 hours (all) 2 hours (TH) 1 hour (DK) 3 hours (JT) 2 hours (MW)", "label": ["non_requirement_text"]}
+{"text": "Requirements Elicitation 15/04/08 22/04/08 5 hours (meeting) 6 hours (meeting)", "label": ["non_requirement_text"]}
+{"text": "Complete analysis/use case modelling 17/04/08 20/04/08 4 hours (all) 1 hour (TH) 0 hours (DK) 4 hours (JT) 12 hours (MW)", "label": ["non_requirement_text"]}
+{"text": "Complete other diagrams 21/04/08 26/04/08 10 hours (all) 2 hours (TH) 0 hours (DK) 2 hours (JT) 8 hours (MW)", "label": ["non_requirement_text"]}
+{"text": "Review requirements 22/04/08 22/04/08 3 hours (meeting) 3 hours (TH) 3 hours (DK) 5 hours (JT) 5 hours (MW)", "label": ["non_requirement_text"]}
+{"text": "Table B 1.2 Preliminary Documentation Time Data Listing", "label": ["non_requirement_text"]}
+{"text": "Task Predicted Completion Actual Completion Predicted Time Expended Actual Time Expended", "label": ["non_requirement_text"]}
+{"text": "Report first draft 25/04/08 24/04/08 4 hours (all) 6 hours (TH) 4 hours (DK) 15 hours (JT) 15 hours (MW)", "label": ["non_requirement_text"]}
+{"text": "Report proof read 26/04/08 26/04/08 2 hours (all) 10 hours (TH) 0 hours (DK) 4 hours (JT) 0 hours (MW)", "label": ["non_requirement_text"]}
+{"text": "Report final draft 27/04/08 28/04/08 2 hours (MW) 10 hours (TH) 0 hours (DK) 12 hours (JT) 0 hours (MW)", "label": ["non_requirement_text"]}
+{"text": "Report submitted 28/04/08 28/04/08 0.5 hours (MW) 0.5 hour (TH) 0.25 hours (JT)", "label": ["non_requirement_text"]}
+{"text": "Table B 1.3 Final Documentation Time Data Listing", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 41 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One", "label": ["non_requirement_text"]}
+{"text": "\u2022 42 \u2022", "label": ["non_requirement_text"]}
+{"text": "Review lecture notes and related textbook chapters to ensure familiarity with the requirements engineering process and the essential components of a Software Requirements Specification.", "label": ["non_requirement_text"]}
+{"text": "This includes gaining an understanding of the different categories of requirements, the various methods and diagrams used to describe them and an understanding of why requirements engineering is important.", "label": ["non_requirement_text"]}
+{"text": "Additionally, research existing computerised restaurant menu/ordering systems and document this research for inclusion in the report.", "label": ["non_requirement_text"]}
+{"text": "Because there is not an actual client for this assignment, the elicitation phase will consist of the team brainstorming possible functionality from the \u201cclient\u2019s\u201d point of view.", "label": ["non_requirement_text"]}
+{"text": "The elicited requirements will be based primarily on the research previously conducted into existing computerised restaurant systems.", "label": ["non_requirement_text"]}
+{"text": "During the analysis phase, team members will take the derived requirements and transform them into a constant, thorough and complete set of requirements.", "label": ["non_requirement_text"]}
+{"text": "This will include formulating a use case model, use case descriptions, sequence diagrams, activity diagrams, a UML analysis class diagram and statechart diagrams.", "label": ["non_requirement_text"]}
+{"text": "The outcome of this final phase will be the production of the final report, including the full Software Requirements Specification and an appendix concerning process reflection.", "label": ["non_requirement_text"]}
+{"text": "Details of the specification will be finalised and all requirements and diagrams will be collated and organised into a single coherent Software Requirements Specification document.", "label": ["non_requirement_text"]}
+{"text": "- Tyson Henning (TH) (41213250)", "label": ["non_requirement_text"]}
+{"text": "- Jonathan Thompson (JT) (40525460)", "label": ["non_requirement_text"]}
+{"text": "- Daryl Keehn (DK) (40766357)", "label": ["non_requirement_text"]}
+{"text": "- Michael Wildermoth (MW) (40092560)", "label": ["non_requirement_text"]}
+{"text": "Week Date Task", "label": ["non_requirement_text"]}
+{"text": "Week 6 08/04 Prepare plan first draft", "label": ["non_requirement_text"]}
+{"text": "Week 6 10/04 Review and proofread plan first draft", "label": ["non_requirement_text"]}
+{"text": "Week 6 12/04 Amend review changes and submit inspection plan", "label": ["non_requirement_text"]}
+{"text": "Week 7 14/04 Complete research", "label": ["non_requirement_text"]}
+{"text": "Week 7 15/04 'Requirements Elicitation' brainstorming meeting", "label": ["non_requirement_text"]}
+{"text": "Week 7 17/04 Complete analysis/use case modelling", "label": ["non_requirement_text"]}
+{"text": "Week 8 21/04 Complete sequence, activity, UML analysis class, and statechart diagrams", "label": ["non_requirement_text"]}
+{"text": "Week 8 22/04 Review requirements", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 43 \u2022 April 2008", "label": ["non_requirement_text"]}
+{"text": "- 25/04 - Prepare inspection report draft", "label": ["non_requirement_text"]}
+{"text": "- 26/04 - Review and proofread report first draft", "label": ["non_requirement_text"]}
+{"text": "- 27/04 - Complete report final draft and submit", "label": ["non_requirement_text"]}
+{"text": "1.5 hours (meeting) Prepare plan first draft", "label": ["non_requirement_text"]}
+{"text": "0.5 hours (all) Review and proof read plan first draft", "label": ["non_requirement_text"]}
+{"text": "0.5 hours (MW) Amend review changes and submit inspection plan", "label": ["non_requirement_text"]}
+{"text": "6.0 hours (all) Complete research", "label": ["non_requirement_text"]}
+{"text": "5.0 hours (meeting) 'Requirements Elicitation' brainstorming meeting", "label": ["non_requirement_text"]}
+{"text": "4.0 hours (all) Complete analysis/use case modelling", "label": ["non_requirement_text"]}
+{"text": "10.0 hours (all) Complete sequence, activity, UML analysis class, and statechart diagrams", "label": ["non_requirement_text"]}
+{"text": "3.0 hours (meeting) Review requirements", "label": ["non_requirement_text"]}
+{"text": "4.0 hours (all) Complete report first draft", "label": ["non_requirement_text"]}
+{"text": "2.0 hours (all) Review and proofread report first draft", "label": ["non_requirement_text"]}
+{"text": "2.0 hours (MW) Complete report final draft and submit", "label": ["non_requirement_text"]}
+{"text": "Prepared By Team Danger Tutorial One \u2022 44 \u2022 April 2008", "label": ["non_requirement_text"]}

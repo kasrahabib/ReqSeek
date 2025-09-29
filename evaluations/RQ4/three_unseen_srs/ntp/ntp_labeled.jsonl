@@ -1,0 +1,1065 @@
+{"id": 108084, "text": "See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/265397639", "label": "auxiliary"}
+{"id": 108085, "text": "Software Requirements Specification (SRS) for the <Nodes Portal Toolkit (NPT)>", "label": "auxiliary"}
+{"id": 108086, "text": "Technical Report · September 2011", "label": "auxiliary"}
+{"id": 108087, "text": "2 authors, including:", "label": "auxiliary"}
+{"id": 108088, "text": "Université Libre de Bruxelles", "label": "auxiliary"}
+{"id": 108089, "text": "Some of the authors of this publication are also working on these related projects:", "label": "auxiliary"}
+{"id": 108090, "text": "Biogeographic Atlas of the Southern OceanView project", "label": "auxiliary"}
+{"id": 108091, "text": "rECTO - Refugia and Ecosystem Tolerance in the Southern OceanView project", "label": "auxiliary"}
+{"id": 108092, "text": "All content following this page was uploaded by Bruno Danis on 08 September 2014.", "label": "auxiliary"}
+{"id": 108093, "text": "The user has requested enhancement of the downloaded file.", "label": "auxiliary"}
+{"id": 108094, "text": "Contributors Date Reason for changes", "label": "auxiliary"}
+{"id": 108095, "text": "Renaudier 18 Jul 2011 Initial draft, open for discussion", "label": "auxiliary"}
+{"id": 108096, "text": "Chi-Jen Ko, B.", "label": "auxiliary"}
+{"id": 108097, "text": "Addink 13 Sep 2011 Second version, includes comments and revisions from the NPT-Advisory Group and GBIF-Secretariat", "label": "auxiliary"}
+{"id": 108098, "text": "Chi-Jen Ko, B.", "label": "auxiliary"}
+{"id": 108099, "text": "Smith 27 Sep 2011 Third version, includes revisions from the NPT-Technical Task Force, circulated to NPT-Advisory Group and GBIF-Secretariat", "label": "auxiliary"}
+{"id": 108100, "text": "- Revision History 2", "label": "auxiliary"}
+{"id": 108101, "text": "- Introduction 6", "label": "auxiliary"}
+{"id": 108102, "text": "- Purpose 2", "label": "auxiliary"}
+{"id": 108103, "text": "- Scope of the NPT 2", "label": "auxiliary"}
+{"id": 108104, "text": "- Product perspective and historical background 7", "label": "auxiliary"}
+{"id": 108105, "text": "- Document conventions 7", "label": "auxiliary"}
+{"id": 108106, "text": "- Actor Survey 9", "label": "auxiliary"}
+{"id": 108107, "text": "- Primary actors 9", "label": "auxiliary"}
+{"id": 108108, "text": "- - Front end users 9", "label": "auxiliary"}
+{"id": 108109, "text": "- Back office users 9", "label": "auxiliary"}
+{"id": 108110, "text": "Secondary actors 9", "label": "auxiliary"}
+{"id": 108111, "text": "- Use-Case Model Survey 11", "label": "auxiliary"}
+{"id": 108112, "text": "- Back end users 11", "label": "auxiliary"}
+{"id": 108113, "text": "- - Administrator 11", "label": "auxiliary"}
+{"id": 108114, "text": "- Data manager 12", "label": "auxiliary"}
+{"id": 108115, "text": "- Portal manager 15", "label": "auxiliary"}
+{"id": 108116, "text": "Front end users 12", "label": "auxiliary"}
+{"id": 108117, "text": "- - Visitor 16", "label": "auxiliary"}
+{"id": 108118, "text": "- Registered visitor 19", "label": "auxiliary"}
+{"id": 108119, "text": "Functional requirements 21", "label": "auxiliary"}
+{"id": 108120, "text": "- Back end functionalities 21", "label": "auxiliary"}
+{"id": 108121, "text": "- - Administrator 21", "label": "auxiliary"}
+{"id": 108122, "text": "- Data manager 21", "label": "auxiliary"}
+{"id": 108123, "text": "- Portal manager 23", "label": "auxiliary"}
+{"id": 108124, "text": "Front-end functionalities 24", "label": "auxiliary"}
+{"id": 108125, "text": "- - Visitor 24", "label": "auxiliary"}
+{"id": 108126, "text": "- Registered visitor 25", "label": "auxiliary"}
+{"id": 108127, "text": "Nonfunctional Requirements 26", "label": "auxiliary"}
+{"id": 108128, "text": "- Assumptions and Dependencies 22", "label": "auxiliary"}
+{"id": 108129, "text": "- Security Requirements 22", "label": "auxiliary"}
+{"id": 108130, "text": "- Scalability Requirements 22", "label": "auxiliary"}
+{"id": 108131, "text": "- Robustness Requirements 27", "label": "auxiliary"}
+{"id": 108132, "text": "- Interoperability Requirements 27", "label": "auxiliary"}
+{"id": 108133, "text": "- Operating Environment 27", "label": "auxiliary"}
+{"id": 108134, "text": "- Usability Requirements 27", "label": "auxiliary"}
+{"id": 108135, "text": "- Supportability Requirements 27", "label": "auxiliary"}
+{"id": 108136, "text": "- User Documentation Requirements 27", "label": "auxiliary"}
+{"id": 108137, "text": "- Design and Implementation Constraints 28", "label": "auxiliary"}
+{"id": 108138, "text": "- Interfaces 28", "label": "auxiliary"}
+{"id": 108139, "text": "- User Interfaces 28", "label": "auxiliary"}
+{"id": 108140, "text": "- - Pagination 28", "label": "auxiliary"}
+{"id": 108141, "text": "- Distribution map 28", "label": "auxiliary"}
+{"id": 108142, "text": "- Filter building interface 28", "label": "auxiliary"}
+{"id": 108143, "text": "Hardware Interfaces 28", "label": "auxiliary"}
+{"id": 108144, "text": "The NPT is a community, open source project.", "label": "auxiliary"}
+{"id": 108145, "text": "The present Nodes Portal Toolkit (NPT) Software Requirements Specification (SRS) document was prepared as the next incremental step after the NPT Scoping and Requirements (S&R) document, which was drafted by the NPT Advisory Group (AG), during the Madrid workshop in March 2011 and publicly released in June 2011.", "label": "auxiliary"}
+{"id": 108146, "text": "The purpose of the SRS is to describe the software requirements for the NPT, reaching a level of detail which makes it fit to be circulated amongst the NPT stakeholders, and in particular amongst the NPT developers.", "label": "auxiliary"}
+{"id": 108147, "text": "It is also intended to serve as a basis for discussion during the Brussels NPT technical meeting (September 2011), during which elements for a high-level architectural and design document will be gathered.", "label": "auxiliary"}
+{"id": 108148, "text": "The purpose of the current version of the SRS document is to clarify, validate and verify the requirements for the NPT as expressed by the NPT-AG, focusing on its functional aspects.", "label": "auxiliary"}
+{"id": 108149, "text": "The SRS captures and describes the desired behavior of the end product in a wide range of situations.", "label": "auxiliary"}
+{"id": 108150, "text": "Some of the non-functional requirements in this document were taken as is from the scoping document and can still be refined.", "label": "auxiliary"}
+{"id": 108151, "text": "The present document is also intended to be a planning instrument for the development of the NPT and its potential derivatives.", "label": "auxiliary"}
+{"id": 108152, "text": "As described in the NPT (S&R) document, the Nodes Portal Toolkit is a tool to facilitate discovery and access to GBIF data at a national, regional or thematic level, including the possibility to offer access to additional sources of information.", "label": "auxiliary"}
+{"id": 108153, "text": "The primary users of the NPT are the Node Managers (specifically, the technical teams involved in GBIF Participant Nodes and/or relevant biodiversity information networks), as well as the End-Users of the data published through the various NPT instances.", "label": "auxiliary"}
+{"id": 108154, "text": "The NPT should enable the Node Managers to customize the way GBIF-compliant data are served to their own community or to a specific group of data users.", "label": "auxiliary"}
+{"id": 108155, "text": "Development of the NPT is based on the needs expressed by the Nodes community.", "label": "auxiliary"}
+{"id": 108156, "text": "To the best extent possible, the wishes of the Nodes and their communities regarding NPT functionalities will be expressed in the flexibility and scalability of the tool itself.", "label": "auxiliary"}
+{"id": 108157, "text": "Commitment and feedback is expected from the Nodes community in order to align their needs and the functionalities of the NPT, as it evolves in its various releases.", "label": "auxiliary"}
+{"id": 108158, "text": "Even if the NPT is intended to be a technical tool, NPT-based portals are also envisioned as an important public relations and communication tool for GBIF Participant Nodes, serving also to demonstrate the possibilities that the GBIF network offers at different levels (national, regional, thematic).", "label": "auxiliary"}
+{"id": 108159, "text": "The need for GBIF Participant Node data portals distinct from (and interacting with) the GBIF central portal was already recognized at the first meeting of the Nodes committee in Oct 2002 in San Juan, Costa Rica as a major component of the overall GBIF architecture.", "label": "auxiliary"}
+{"id": 108160, "text": "This quickly led to the release of a first version of a GBIF Portal toolkit for Nodes (Dec 2002).", "label": "auxiliary"}
+{"id": 108161, "text": "As there were still no GBIF-mediated data to share at that time, this early portal was mainly a communication tool (featuring a hierarchical directory of links, files and html pages, announcements, news and articles, calendar of events, news channels syndication, etc.…).", "label": "auxiliary"}
+{"id": 108162, "text": "It also featured a repository for biodiversity data files exported from databases (prefiguring to some degree the approach adopted by the current IPT software in which exported Darwin Core Archives are used to facilitate indexing).", "label": "auxiliary"}
+{"id": 108163, "text": "Nodes started to deploy the GBIF DiGIR network to publish species occurrence data in the fall of 2004 (BioCASE sites following shortly after).", "label": "auxiliary"}
+{"id": 108164, "text": "A first prototype GBIF central portal was officially launched in February 2004.", "label": "auxiliary"}
+{"id": 108165, "text": "In April 2004, Nodes recommended to consider the development of a data portal toolkit for nodes as part of a work program.", "label": "auxiliary"}
+{"id": 108166, "text": "In October 2004, the recommendation became a ranked priority, second only to hiring a full time Nodes officer.", "label": "auxiliary"}
+{"id": 108167, "text": "Between May and October 2005, a draft requirements document was developed, a workshop was held in Copenhagen and some resources were allocated to an early prototype presented in April 2006 in South Africa.", "label": "auxiliary"}
+{"id": 108168, "text": "At that time, the customized portal for nodes was pretty much perceived as a national or thematic subset of the central portal.", "label": "auxiliary"}
+{"id": 108169, "text": "Subsequently the secretariat focused on the development of a new central portal and the prototype custom portal for nodes was never deployed.", "label": "auxiliary"}
+{"id": 108170, "text": "In the summer of 2009, an online survey was conducted with preliminary results presented at the Nodes meeting in Copenhagen in October.", "label": "auxiliary"}
+{"id": 108171, "text": "This led to convening an Advisory Group (AG) in December 2009 in Montreal to work on a scoping document for a Nodes Portal Toolkit (NPT) and a set of recommendations on how to develop, implement and deploy such a toolkit.", "label": "auxiliary"}
+{"id": 108172, "text": "The AG met again in March 2011 in Madrid and prepared the scoping (S&R) document, under the supervision of the NPT Coordinator.", "label": "auxiliary"}
+{"id": 108173, "text": "After revision and consultation loops between the NPT AG, the GBIF secretariat and the NPT-Coordinator, the S&R document was publicly released in June 2011.", "label": "auxiliary"}
+{"id": 108174, "text": "The main type of convention used throughout this document helps to represent the level of priority of the different software requirements.", "label": "auxiliary"}
+{"id": 108175, "text": "These priorities are established in function of many factors, including those identified in the NPT (S&R) document, consultation loops with the NPT stakeholders, and technical constraints which represent the reality at the moment this document is prepared.", "label": "auxiliary"}
+{"id": 108176, "text": "In the functional requirements section, to keep consistency with the NPT (S&R) document, the same color codes define priorities as defined by the MoSCoW method.", "label": "auxiliary"}
+{"id": 108177, "text": "- Green: NPT V1.0 must have this feature", "label": "auxiliary"}
+{"id": 108178, "text": "- Yellow: NPT V1.0 should have this feature if at all possible", "label": "auxiliary"}
+{"id": 108179, "text": "- Red: NPT V1.0 could have this feature (if it doesn't affect anything else)", "label": "auxiliary"}
+{"id": 108180, "text": "- Black: NPT V1.0 won't have this feature (maybe in the future)", "label": "auxiliary"}
+{"id": 108181, "text": "In Use Case surveys, and Use Case sections, priorities and frequency are attributed an increasing index, ranging from 1 (low priority/frequency) to 5 (high priority/frequency).", "label": "auxiliary"}
+{"id": 108182, "text": "In the nonfunctional requirements section, a series of acronyms are used, as described below:", "label": "auxiliary"}
+{"id": 108183, "text": "BR Business Rules", "label": "auxiliary"}
+{"id": 108184, "text": "CO Design and Implementation Constraints", "label": "auxiliary"}
+{"id": 108185, "text": "CR Capacity Requirements", "label": "auxiliary"}
+{"id": 108186, "text": "IR Interoperability Requirements", "label": "auxiliary"}
+{"id": 108187, "text": "OE Operating Environment", "label": "auxiliary"}
+{"id": 108188, "text": "RR Robustness Requirements", "label": "auxiliary"}
+{"id": 108189, "text": "ScaR Scalability Requirements", "label": "auxiliary"}
+{"id": 108190, "text": "SR Security Requirements", "label": "auxiliary"}
+{"id": 108191, "text": "SupR Supportability Requirements", "label": "auxiliary"}
+{"id": 108192, "text": "UD User Documentation", "label": "auxiliary"}
+{"id": 108193, "text": "UR Usability Requirements", "label": "auxiliary"}
+{"id": 108194, "text": "This section lists the different actors NPT instances shall interact with: end users (primary actors) and actors from which the system needs assistance to satisfy a goal (secondary actors).", "label": "auxiliary"}
+{"id": 108195, "text": "Figure 1: Primary Actors", "label": "auxiliary"}
+{"id": 108196, "text": "Visitors: the data consumers, they only have access to the system frontend.", "label": "auxiliary"}
+{"id": 108197, "text": "Registered visitors: once registered, a visitor is offered extra functionalities to save and load custom occurrence filters.", "label": "auxiliary"}
+{"id": 108198, "text": "Administrators: they are responsible for installing, configuring and monitoring the system and managing modules.", "label": "auxiliary"}
+{"id": 108199, "text": "They are also in charge of managing user accounts and associated roles.", "label": "auxiliary"}
+{"id": 108200, "text": "Administrators should have skills in system administration, database management and deployment of Web applications.", "label": "auxiliary"}
+{"id": 108201, "text": "They should also have basic knowledge of Web-based GIS.", "label": "auxiliary"}
+{"id": 108202, "text": "Data managers: they are in charge of maintaining portal resources.", "label": "auxiliary"}
+{"id": 108203, "text": "Data managers should have basic knowledge of taxonomy and biodiversity data.", "label": "auxiliary"}
+{"id": 108204, "text": "Portal managers: they configure the portal according to the node profile and contribute news, blog entries and articles.", "label": "auxiliary"}
+{"id": 108205, "text": "GBIF Registry: the GBIF Registry is an application that manages the nodes, organizations, resources, and IPT installations registered with GBIF, making them discoverable and interoperable.", "label": "auxiliary"}
+{"id": 108206, "text": "More importantly in the context of the NPT, it also acts as a repository for extensions.", "label": "auxiliary"}
+{"id": 108207, "text": "Data sources: resource repositories that NPT instances can harvest.", "label": "auxiliary"}
+{"id": 108208, "text": "Two types of sources are envisioned in a first approach: IPT instances and GBIF portal Web services (using GBIF Portal API).", "label": "auxiliary"}
+{"id": 108209, "text": "Other data source types may be provided as modules in the future.", "label": "auxiliary"}
+{"id": 108210, "text": "UC ID Name Priority", "label": "auxiliary"}
+{"id": 108211, "text": "UC-A1 Manage modules", "label": "auxiliary"}
+{"id": 108212, "text": "UC-A2 Configure the distribution map", "label": "auxiliary"}
+{"id": 108213, "text": "UC-A3 Manage spatial layers", "label": "auxiliary"}
+{"id": 108214, "text": "UC-A4 Manage user accounts", "label": "auxiliary"}
+{"id": 108215, "text": "Identifier-Name: UC-A1 – Manage modules", "label": "auxiliary"}
+{"id": 108216, "text": "Description: The administrator selects to manage modules in order to add new functionalities to the system by installing modules.", "label": "auxiliary"}
+{"id": 108217, "text": "This use case also allows the administrator to configure or update previously installed modules.", "label": "auxiliary"}
+{"id": 108218, "text": "Identifier-Name: UC-A2 – Configure the distribution map", "label": "auxiliary"}
+{"id": 108219, "text": "Description: The administrator selects to configure the distribution map to set the specific projection and default extent for the Node area of interest.", "label": "auxiliary"}
+{"id": 108220, "text": "Identifier-Name UC-A3 – Manage spatial layers", "label": "auxiliary"}
+{"id": 108221, "text": "Description The administrator selects to add or delete the spatial layers displayed on the distribution map for the specific Node.", "label": "auxiliary"}
+{"id": 108222, "text": "Identifier-Name UC-A4 – Manage user accounts", "label": "auxiliary"}
+{"id": 108223, "text": "Description The security officer performs this use case in order to create or delete accounts for the portal staff members so they can access restricted functionalities.", "label": "auxiliary"}
+{"id": 108224, "text": "UC ID Name Priority", "label": "auxiliary"}
+{"id": 108225, "text": "UC-DM1 Manage resources", "label": "auxiliary"}
+{"id": 108226, "text": "UC-DM2 Register a new data source", "label": "auxiliary"}
+{"id": 108227, "text": "UC-DM3 Register a GBIF index data source", "label": "auxiliary"}
+{"id": 108228, "text": "UC-DM4 Register an IPT data source", "label": "auxiliary"}
+{"id": 108229, "text": "UC-DM1 – Manage resources", "label": "auxiliary"}
+{"id": 108230, "text": "The data manager wants to manage resources in order to import a new resource, edit a resource metadata or delete a resource.", "label": "auxiliary"}
+{"id": 108231, "text": "UC-DM2 – Register a new data source", "label": "auxiliary"}
+{"id": 108232, "text": "The data manager registers a new data source so the associated core resource is harvested during next harvesting job.", "label": "auxiliary"}
+{"id": 108233, "text": "Data manager – Secondary: Data source", "label": "auxiliary"}
+{"id": 108234, "text": "UC-DM3 – Register a GBIF index data source", "label": "auxiliary"}
+{"id": 108235, "text": "Specializes Register a new data source to allow specific configuration for GBIF occurrence Web services data sources.", "label": "auxiliary"}
+{"id": 108236, "text": "Data manager – Secondary: GBIF Web services", "label": "auxiliary"}
+{"id": 108237, "text": "UC-DM4 – Register an IPT data source", "label": "auxiliary"}
+{"id": 108238, "text": "Specializes Register a new data source to allow specific configuration for IPT", "label": "auxiliary"}
+{"id": 108239, "text": "The data manager previously added a data source which is no more relevant to the node or which is no more available.", "label": "auxiliary"}
+{"id": 108240, "text": "The data manager wants to unregister this source.", "label": "auxiliary"}
+{"id": 108241, "text": "Actors Data manager", "label": "auxiliary"}
+{"id": 108242, "text": "The data manager wants to manage jobs so as to monitor finished and upcoming jobs, schedule a new job or cancel a scheduled job.", "label": "auxiliary"}
+{"id": 108243, "text": "Actors Data manager", "label": "auxiliary"}
+{"id": 108244, "text": "The data manager checks core resources consistency with registered data sources to identify outdated core resources and unavailable data sources.", "label": "auxiliary"}
+{"id": 108245, "text": "Actors Data manager - Secondary: Registered occurrence data source", "label": "auxiliary"}
+{"id": 108246, "text": "The data manager selects to backup portal data so as to synchronize the portal biodiversity data with those hosted on the registered data sources.", "label": "auxiliary"}
+{"id": 108247, "text": "Actors Primary: Data manager - Secondary: Data source", "label": "auxiliary"}
+{"id": 108248, "text": "Identifier-Name UC-DM9– Update taxonomic backbone", "label": "auxiliary"}
+{"id": 108249, "text": "Description The data manager updates the taxonomic backbone.", "label": "auxiliary"}
+{"id": 108250, "text": "Actors Data manager", "label": "auxiliary"}
+{"id": 108251, "text": "Identifier-Name UC-DM10 – Install an extension", "label": "auxiliary"}
+{"id": 108252, "text": "Description The data manager wants to install an extension to allow the system to deal with extra attributes for records of core resources.", "label": "auxiliary"}
+{"id": 108253, "text": "Actors Primary: Data manager – Secondary: GBIF registry", "label": "auxiliary"}
+{"id": 108254, "text": "- Configure data metrics visibility", "label": "auxiliary"}
+{"id": 108255, "text": "- customize NPT instance", "label": "auxiliary"}
+{"id": 108256, "text": "- Configure front ofice languages", "label": "auxiliary"}
+{"id": 108257, "text": "UC ID Name Priority", "label": "auxiliary"}
+{"id": 108258, "text": "UC-PM1 Configure data metrics visibility", "label": "auxiliary"}
+{"id": 108259, "text": "UC-PM2 Customize NPT instance", "label": "auxiliary"}
+{"id": 108260, "text": "UC-PM3 Configure front office languages", "label": "auxiliary"}
+{"id": 108261, "text": "Identifier-Name: UC-PM1 - Configure data metrics visibility", "label": "auxiliary"}
+{"id": 108262, "text": "Description: The portal manager configures data metrics visibility in order to hide some metrics from the visitors in the front office.", "label": "auxiliary"}
+{"id": 108263, "text": "Actors: Portal manager", "label": "auxiliary"}
+{"id": 108264, "text": "Identifier-Name: UC-PM2 - Customize NPT instance", "label": "auxiliary"}
+{"id": 108265, "text": "Description: Portal manager customizes NPT instance to adapt the portal appearance and parameters to fit its organization.", "label": "auxiliary"}
+{"id": 108266, "text": "Actors: Portal manager", "label": "auxiliary"}
+{"id": 108267, "text": "Identifier-Name: UC-PM3 – Configure front office languages", "label": "auxiliary"}
+{"id": 108268, "text": "Description: The data manager selects to manage front office languages so as to set the default language and chooses alternate language.", "label": "auxiliary"}
+{"id": 108269, "text": "Actors: Portal manager", "label": "auxiliary"}
+{"id": 108270, "text": "UC ID Name Priority", "label": "auxiliary"}
+{"id": 108271, "text": "UC-V1 Send feedback to the portal contact person", "label": "auxiliary"}
+{"id": 108272, "text": "UC-V2 Select occurrence records and view distribution map", "label": "auxiliary"}
+{"id": 108273, "text": "UC-V3 View occurrence record selection as a table", "label": "auxiliary"}
+{"id": 108274, "text": "UC-V4 Export occurrence record selection", "label": "auxiliary"}
+{"id": 108275, "text": "UC-V5 Export distribution map as an image", "label": "auxiliary"}
+{"id": 108276, "text": "UC-V6 Search portal using full text search", "label": "auxiliary"}
+{"id": 108277, "text": "UC-V7 Contact an occurrence resource publisher", "label": "auxiliary"}
+{"id": 108278, "text": "UC-V8 Export a checklist", "label": "auxiliary"}
+{"id": 108279, "text": "UC-V9 Choose portal language", "label": "auxiliary"}
+{"id": 108280, "text": "Select occurrence records and view distribution map", "label": "auxiliary"}
+{"id": 108281, "text": "View occurrence record selection as table", "label": "auxiliary"}
+{"id": 108282, "text": "Expont distribution map as an image", "label": "auxiliary"}
+{"id": 108283, "text": "Identifier-Name UC-V1 - Send feedback to the portal contact person", "label": "auxiliary"}
+{"id": 108284, "text": "Description The visitor sends feedback to the portal contact person so as to communicate remarks or suggestions about the portal or about the hosted data.", "label": "auxiliary"}
+{"id": 108285, "text": "Identifier-Name UC-V2 – Select occurrence records and view distribution map", "label": "auxiliary"}
+{"id": 108286, "text": "Description The visitor wants to discover and access occurrence records.", "label": "auxiliary"}
+{"id": 108287, "text": "He can select his records of interest using simple taxonomic search or a more elaborate advanced search by combining various criteria.", "label": "auxiliary"}
+{"id": 108288, "text": "Identifier-Name UC-V3 - View occurrence record selection as a table", "label": "auxiliary"}
+{"id": 108289, "text": "Description User selects to view occurrence records selection as a table in order to display their attributes.", "label": "auxiliary"}
+{"id": 108290, "text": "Identifier-Name: UC-V4 - Export occurrence record selection", "label": "auxiliary"}
+{"id": 108291, "text": "Description: User exports the occurrence selection for further analysis.", "label": "auxiliary"}
+{"id": 108292, "text": "Priority: 3 Frequency: 3", "label": "auxiliary"}
+{"id": 108293, "text": "Identifier-Name: UC-V5 - Export distribution map as an image", "label": "auxiliary"}
+{"id": 108294, "text": "Description: The visitor exports distribution map as an image so as to be able to insert it in a document.", "label": "auxiliary"}
+{"id": 108295, "text": "Priority: 3 Frequency: 4", "label": "auxiliary"}
+{"id": 108296, "text": "Identifier-Name: UC-V6 – Search portal using full text search", "label": "auxiliary"}
+{"id": 108297, "text": "Description: The visitor searches resource metadata, blog, article and news entries using full text search in order to find and access matching resources and entries.", "label": "auxiliary"}
+{"id": 108298, "text": "Priority: 3 Frequency: 4", "label": "auxiliary"}
+{"id": 108299, "text": "Identifier-Name UC-V7 – Contact an occurrence resource publisher", "label": "auxiliary"}
+{"id": 108300, "text": "Description The visitor contacts the publisher of an occurrence resource to request more information or send a comment.", "label": "auxiliary"}
+{"id": 108301, "text": "Identifier-Name UC-V8 – Export a checklist", "label": "auxiliary"}
+{"id": 108302, "text": "Description The visitor downloads a checklist for consultation/analysis.", "label": "auxiliary"}
+{"id": 108303, "text": "Identifier-Name UC-V9 - Choose portal language", "label": "auxiliary"}
+{"id": 108304, "text": "Description The visitor chooses his language of preference.", "label": "auxiliary"}
+{"id": 108305, "text": "Preconditions The portal manager has configured front office languages with at least one alternate language.", "label": "auxiliary"}
+{"id": 108306, "text": "UC ID Name Priority", "label": "auxiliary"}
+{"id": 108307, "text": "UC-RV1 Save a custom filter", "label": "auxiliary"}
+{"id": 108308, "text": "UC-RV2 Load a custom filter", "label": "auxiliary"}
+{"id": 108309, "text": "UC-RV3 Delete a custom filter", "label": "auxiliary"}
+{"id": 108310, "text": "Save a Custom Filter", "label": "auxiliary"}
+{"id": 108311, "text": "Identifier-Name: UC-RV1 – Save a custom filter", "label": "auxiliary"}
+{"id": 108312, "text": "Description: The registered visitor has built a filter and wants to be able to reuse it in the future.", "label": "auxiliary"}
+{"id": 108313, "text": "He saves the filter in his profile.", "label": "auxiliary"}
+{"id": 108314, "text": "Actors: Registered visitor", "label": "auxiliary"}
+{"id": 108315, "text": "Load a Custom Filter", "label": "auxiliary"}
+{"id": 108316, "text": "Identifier-Name: UC-RV2 – Load a custom filter", "label": "auxiliary"}
+{"id": 108317, "text": "Description: Visitor loads a filter he previously saved in his profile.", "label": "auxiliary"}
+{"id": 108318, "text": "Actors: Registered visitor", "label": "auxiliary"}
+{"id": 108319, "text": "Delete a Custom Filter", "label": "auxiliary"}
+{"id": 108320, "text": "Identifier-Name: UC-RV3 – Delete a custom filter", "label": "auxiliary"}
+{"id": 108321, "text": "Description: Visitor has built a filter.", "label": "auxiliary"}
+{"id": 108322, "text": "He wants to be able to reuse it in future visits.", "label": "auxiliary"}
+{"id": 108323, "text": "He saves the filter to be able to load it later.", "label": "auxiliary"}
+{"id": 108324, "text": "Actors: Registered visitor", "label": "auxiliary"}
+{"id": 108325, "text": "FR ID Name UC ID Priority", "label": "auxiliary"}
+{"id": 108326, "text": "FR-A1 The system shall allow the administrator to install modules UC-A1", "label": "requirement"}
+{"id": 108327, "text": "FR-A2 The system shall allow the administrator to uninstall modules UC-A1", "label": "requirement"}
+{"id": 108328, "text": "FR-A3 The system shall allow the administrator to configure the distribution map projection UC-A2", "label": "requirement"}
+{"id": 108329, "text": "FR-A4 The system shall allow the administrator to configure the distribution map default extent UC-A2", "label": "requirement"}
+{"id": 108330, "text": "FR-A5 The system shall allow the administrator to edit the email server configuration (URL, port, account)", "label": "requirement"}
+{"id": 108331, "text": "FR-A6 The system shall allow the administrator to add a spatial layer to the distribution map UC-A3", "label": "requirement"}
+{"id": 108332, "text": "FR-A7 The system shall allow the administrator to remove a spatial layer from the distribution map UC-A3", "label": "requirement"}
+{"id": 108333, "text": "FR-A8 The system shall allow the administrator to edit the name of a spatial layer of the distribution map UC-A3", "label": "requirement"}
+{"id": 108334, "text": "FR-A9 The system shall allow the administrator to view error logs", "label": "requirement"}
+{"id": 108335, "text": "FR-A10 The system shall allow the administrator to download error logs", "label": "requirement"}
+{"id": 108336, "text": "FR-A11 The system shall allow the security officer to create a new user account UC-A4", "label": "requirement"}
+{"id": 108337, "text": "FR-A12 The system shall allow the security officer to delete a user account UC-A4", "label": "requirement"}
+{"id": 108338, "text": "FR-A13 The system shall allow the security officer to assign a role to a user account UC-A4", "label": "requirement"}
+{"id": 108339, "text": "FR-A14 The system shall allow the security officer to remove a role from a user account UC-A4", "label": "requirement"}
+{"id": 108340, "text": "FR-A15 The system shall allow the security officer to edit the email address associated with a user account UC-A4", "label": "requirement"}
+{"id": 108341, "text": "FR-A16 The system shall allow the security officer to view audit logs -", "label": "requirement"}
+{"id": 108342, "text": "FR-A17 The system shall allow the security officer to download audit log entries for a given month -", "label": "requirement"}
+{"id": 108343, "text": "FR ID Name UC ID Priority", "label": "auxiliary"}
+{"id": 108344, "text": "FR-DM1 The system shall allow the data manager to import an occurrence resource UC-DM1", "label": "requirement"}
+{"id": 108345, "text": "FR-DM2 The system shall allow the data manager to delete an occurrence resource UC-DM1", "label": "requirement"}
+{"id": 108346, "text": "FR-DM3 The system shall allow the data manager to edit the metadata of an occurrence resource UC-DM1", "label": "requirement"}
+{"id": 108347, "text": "FR-DM4 The system shall allow the data manager to search occurrence resources by keywords UC-DM1", "label": "requirement"}
+{"id": 108348, "text": "Feature Reference Description Use Case", "label": "auxiliary"}
+{"id": 108349, "text": "FR-DM6 The system shall allow the data manager to delete a checklist resource UC-DM1", "label": "requirement"}
+{"id": 108350, "text": "FR-DM7 The system shall allow the data manager to edit the metadata of a checklist resource UC-DM1", "label": "requirement"}
+{"id": 108351, "text": "FR-DM8 The system shall allow the data manager to search checklist resources by keywords UC-DM1", "label": "requirement"}
+{"id": 108352, "text": "FR-DM9 The system shall allow the data manager to import a multimedia resource UC-DM1", "label": "requirement"}
+{"id": 108353, "text": "FR-DM10 The system shall allow the data manager to delete a multimedia resource UC-DM1", "label": "requirement"}
+{"id": 108354, "text": "FR-DM11 The system shall allow the data manager to edit the metadata of a multimedia resource UC-DM1", "label": "requirement"}
+{"id": 108355, "text": "FR-DM12 The system shall allow the data manager to search multimedia resources by keywords UC-DM1", "label": "requirement"}
+{"id": 108356, "text": "FR-DM13 The system shall allow the data manager to import a bibliographic resource UC-DM1", "label": "requirement"}
+{"id": 108357, "text": "FR-DM14 The system shall allow the data manager to delete a bibliographic resource UC-DM1", "label": "requirement"}
+{"id": 108358, "text": "FR-DM15 The system shall allow the data manager to edit the metadata of a bibliographic resource UC-DM1", "label": "requirement"}
+{"id": 108359, "text": "FR-DM16 The system shall allow the data manager to search bibliographic resources by keywords UC-DM1", "label": "requirement"}
+{"id": 108360, "text": "FR-DM17 The system shall allow the data manager to import an institution resource UC-DM1", "label": "requirement"}
+{"id": 108361, "text": "FR-DM18 The system shall allow the data manager to delete an institution resource UC-DM1", "label": "requirement"}
+{"id": 108362, "text": "FR-DM19 The system shall allow the data manager to edit the metadata of an institution resource UC-DM1", "label": "requirement"}
+{"id": 108363, "text": "FR-DM20 The system shall allow the data manager to search institution resources by keywords UC-DM1", "label": "requirement"}
+{"id": 108364, "text": "FR-DM21 The system shall allow the data manager to import an expert resource UC-DM1", "label": "requirement"}
+{"id": 108365, "text": "FR-DM22 The system shall allow the data manager to delete an expert resource UC-DM1", "label": "requirement"}
+{"id": 108366, "text": "FR-DM23 The system shall allow the data manager to edit the metadata of an expert UC-DM1", "label": "requirement"}
+{"id": 108367, "text": "FR-DM24 The system shall allow the data manager to search expert resources by keywords UC-DM1", "label": "requirement"}
+{"id": 108368, "text": "FR-DM25 The system shall allow the data manager to register a GBIF index data source UC-DM3", "label": "requirement"}
+{"id": 108369, "text": "FR-DM26 The system shall allow the data manager to register an IPT data source UC-DM4", "label": "requirement"}
+{"id": 108370, "text": "FR-DM27 The system shall allow the data manager to unregister an IPT data source UC-DM5", "label": "requirement"}
+{"id": 108371, "text": "FR-DM28 The system shall allow the data manager to unregister a GBIF index data source UC-DM5", "label": "requirement"}
+{"id": 108372, "text": "FR-DM29 Schedule a harvesting job UC-DM6", "label": "auxiliary"}
+{"id": 108373, "text": "FR-DM30 Cancel a harvesting job UC-DM6", "label": "auxiliary"}
+{"id": 108374, "text": "FR-DM31 View report for a harvesting jobs UC-DM6", "label": "auxiliary"}
+{"id": 108375, "text": "FR-DM32 Check core resources consistency with registered data sources UC-DM7", "label": "auxiliary"}
+{"id": 108376, "text": "FR-DM33 Trigger a harvesting job UC-DM8", "label": "auxiliary"}
+{"id": 108377, "text": "FR-DM34 The system shall allow the data manager to request -", "label": "requirement"}
+{"id": 108378, "text": "FR ID Name UC ID Priority", "label": "auxiliary"}
+{"id": 108379, "text": "FR-PM1 The system shall allow the portal manager to configure data metrics visibility UC-PM1", "label": "requirement"}
+{"id": 108380, "text": "FR-PM2 The system shall allow the portal manager to change the logo displayed on the portal UC-PM2", "label": "requirement"}
+{"id": 108381, "text": "FR-PM3 The system shall allow the portal manager to change the Node name displayed on the portal UC-PM2", "label": "requirement"}
+{"id": 108382, "text": "FR-PM4 The system shall allow the portal manager to change the portal banner UC-PM2", "label": "requirement"}
+{"id": 108383, "text": "FR-PM5 The system shall allow the portal manager to configure the name and email of the portal contact person UC-PM2", "label": "requirement"}
+{"id": 108384, "text": "FR-PM6 The system shall allow the portal manager to configure the Network summary information UC-PM2", "label": "requirement"}
+{"id": 108385, "text": "FR-PM7 The system shall allow the portal manager to choose the default language of the portal", "label": "requirement"}
+{"id": 108386, "text": "FR-PM8 The system shall allow the portal manager to add an alternate language to the portal", "label": "requirement"}
+{"id": 108387, "text": "FR-PM9 The system shall allow the portal manager to remove an alternate language to the portal", "label": "requirement"}
+{"id": 108388, "text": "FR-PM10 The system shall allow the portal manager to contribute a portal news entry", "label": "requirement"}
+{"id": 108389, "text": "FR-PM11 The system shall allow the portal manager to edit a portal news entry", "label": "requirement"}
+{"id": 108390, "text": "FR-PM12 The system shall allow the portal manager to delete a portal news entry", "label": "requirement"}
+{"id": 108391, "text": "FR-PM13 The system shall allow the portal manager to contribute a blog post", "label": "requirement"}
+{"id": 108392, "text": "FR-PM14 The system shall allow the portal manager to edit a blog post", "label": "requirement"}
+{"id": 108393, "text": "FR-PM15 The system shall allow the portal manager to delete a blog post", "label": "requirement"}
+{"id": 108394, "text": "FR-PM16 The system shall allow the portal manager to manage the portal menu", "label": "requirement"}
+{"id": 108395, "text": "FR-PM17 The system shall allow the portal manager to add a page to the portal", "label": "requirement"}
+{"id": 108396, "text": "FR-PM18 The system shall allow the portal manager to delete a page from the portal", "label": "requirement"}
+{"id": 108397, "text": "FR-PM19 The system shall allow the portal manager to edit a page from the portal", "label": "requirement"}
+{"id": 108398, "text": "FR-PM20 The system shall allow the portal manager to edit the HTML metadata tags for the portal pages to help the portal to be discoverable through search engines", "label": "requirement"}
+{"id": 108399, "text": "FR ID Name UC ID Priority", "label": "auxiliary"}
+{"id": 108400, "text": "FR-V1 The system shall allow a visitor to build an occurrence selection filter UC-V1", "label": "requirement"}
+{"id": 108401, "text": "FR-V2 The system shall allow a visitor to add a taxonomic criterion to a filter UC-V1", "label": "requirement"}
+{"id": 108402, "text": "FR-V3 The system shall allow a visitor to add a dataset criterion to a filter UC-V1", "label": "requirement"}
+{"id": 108403, "text": "FR-V4 The system shall allow a visitor to add a depth criterion to a filter UC-V1", "label": "requirement"}
+{"id": 108404, "text": "FR-V5 The system shall allow a visitor to add an altitude criterion to a filter UC-V1", "label": "requirement"}
+{"id": 108405, "text": "FR-V6 The system shall allow a visitor to add a basis of records criterion to a filter UC-V1", "label": "requirement"}
+{"id": 108406, "text": "FR-V7 The system shall allow a visitor to add a geographic criterion to a filter UC-V1", "label": "requirement"}
+{"id": 108407, "text": "FR-V8 The system shall allow a visitor to add a date criterion to a filter UC-V1", "label": "requirement"}
+{"id": 108408, "text": "FR-V9 The system shall allow a visitor to remove a criterion from a filter UC-V1", "label": "requirement"}
+{"id": 108409, "text": "FR-V10 The system shall allow a visitor to select occurrence records using a filter UC-V2", "label": "requirement"}
+{"id": 108410, "text": "FR-V11 The system shall allow a visitor to view the distribution map for an occurrence record selection UC-V2", "label": "requirement"}
+{"id": 108411, "text": "FR-V12 The system shall allow a visitor to view an occurrence record selection as a table UC-V3", "label": "requirement"}
+{"id": 108412, "text": "FR-V13 The system shall allow a visitor to export an occurrence record selection UC-V4", "label": "requirement"}
+{"id": 108413, "text": "FR-V14 The system shall allow a visitor to export the distribution map for an occurrence record selection as an image UC-V5", "label": "requirement"}
+{"id": 108414, "text": "FR-V15 The system shall allow a visitor to search all the portal content using full text search UC-V6", "label": "requirement"}
+{"id": 108415, "text": "FR-V16 The system shall allow a visitor to contact an occurrence resource publisher UC-V7", "label": "requirement"}
+{"id": 108416, "text": "FR-V17 The system shall allow a visitor to export a checklist UC-V8", "label": "requirement"}
+{"id": 108417, "text": "FR-V18 The system shall allow a visitor to choose his preferred language for the portal interface UC-V9", "label": "requirement"}
+{"id": 108418, "text": "FR-V19 The system shall allow a visitor to send feedback to the portal contact person UC-V10", "label": "requirement"}
+{"id": 108419, "text": "FR-V20 The system shall allow a visitor to view latest blog posts", "label": "requirement"}
+{"id": 108420, "text": "FR-V21 The system shall allow a visitor to read a blog post", "label": "requirement"}
+{"id": 108421, "text": "FR-V22 The system shall allow a visitor to view latest portal news entries", "label": "requirement"}
+{"id": 108422, "text": "FR-V23 The system shall allow a visitor to read a portal news entry", "label": "requirement"}
+{"id": 108423, "text": "FR-V24 The system shall allow a visitor to view details for a taxon", "label": "requirement"}
+{"id": 108424, "text": "FR-V25 The system shall allow a visitor to view metadata for a dataset", "label": "requirement"}
+{"id": 108425, "text": "FR-V26 The system shall allow a visitor to view metadata for a checklist", "label": "requirement"}
+{"id": 108426, "text": "FR-V27 The system shall allow a visitor to view details for a", "label": "requirement"}
+{"id": 108427, "text": "FR-V28 The system shall allow a visitor to view details for an institution", "label": "requirement"}
+{"id": 108428, "text": "FR-V29 The system shall allow a visitor to view details for an expert", "label": "requirement"}
+{"id": 108429, "text": "FR-V30 The system shall allow a visitor to view metadata for a multimedia file", "label": "requirement"}
+{"id": 108430, "text": "FR-V31 The system shall allow a visitor to download a multimedia file", "label": "requirement"}
+{"id": 108431, "text": "FR-V32 The system shall allow a visitor to navigate (pan, zoom in and out) a distribution map", "label": "requirement"}
+{"id": 108432, "text": "FR-V33 The system shall allow a visitor to toggle spatial layers visible/hidden on a distribution map", "label": "requirement"}
+{"id": 108433, "text": "FR-V34 The system shall allow a visitor to register", "label": "requirement"}
+{"id": 108434, "text": "FR-V35 The system shall allow a visitor to access the log in functionality", "label": "requirement"}
+{"id": 108435, "text": "FR-V36 The system shall allow a visitor to request to be sent his password by email", "label": "requirement"}
+{"id": 108436, "text": "FR-V37 The system shall allow a visitor to share a distribution map on twitter", "label": "requirement"}
+{"id": 108437, "text": "FR-V38 The system shall allow a visitor to access a dashboard displaying data metrics for the portal", "label": "requirement"}
+{"id": 108438, "text": "FR-V39 The system shall allow a visitor to export data metric archives for the portal", "label": "requirement"}
+{"id": 108439, "text": "FR-V40 The system shall allow a visitor to view Network summary information", "label": "requirement"}
+{"id": 108440, "text": "FR-V41 The system shall allow a visitor to view information about tools and services offered by the portal", "label": "requirement"}
+{"id": 108441, "text": "FR-V42 The system shall allow a visitor to view latest news from GBIF newsfeeds relayed by the system", "label": "requirement"}
+{"id": 108442, "text": "FR ID Name UC ID Priority", "label": "auxiliary"}
+{"id": 108443, "text": "FR-RV1 The system shall allow a registered visitor to save a custom filter UC-RV1", "label": "requirement"}
+{"id": 108444, "text": "FR-RV2 The system shall allow a registered visitor to load a custom filter UC-RV2", "label": "requirement"}
+{"id": 108445, "text": "FR-RV3 The system shall allow a registered visitor to delete a custom filter UC-RV3", "label": "requirement"}
+{"id": 108446, "text": "The operation of the system depends on GBIF registry to allow addition of new extensions.", "label": "auxiliary"}
+{"id": 108447, "text": "The operation of the system depends on GBIF occurrence Web services¹ to harvest a data source if it is of GBIF global index type.", "label": "auxiliary"}
+{"id": 108448, "text": "The operation of the system to harvest occurrence resource for an IPT instance data source depends on that IPT instance.", "label": "auxiliary"}
+{"id": 108449, "text": "The system shall retain an audit log for all successful back end operations.", "label": "requirement"}
+{"id": 108450, "text": "The system shall restrict access to all functionalities altering data to data managers (BR4).", "label": "requirement"}
+{"id": 108451, "text": "The system shall restrict access to user management functionalities to administrators.", "label": "requirement"}
+{"id": 108452, "text": "The system shall restrict access to module management functionalities to administrators (BR6).", "label": "requirement"}
+{"id": 108453, "text": "The system shall restrict access to distribution map configuration functionalities to administrators (BR6).", "label": "requirement"}
+{"id": 108454, "text": "The system shall restrict access to portal manager for the following functionalities: manage blog posts, pages and news entries, customize NPT instance and choose languages available on the front end (BR5).", "label": "requirement"}
+{"id": 108455, "text": "The system shall restrict access to portal manager for blog management functionalities (BR5).", "label": "requirement"}
+{"id": 108456, "text": "The system shall restrict access to portal manager for news management functionalities (BR5).", "label": "requirement"}
+{"id": 108457, "text": "The system shall restrict access to portal manager for the NPT instance customization function (BR5).", "label": "requirement"}
+{"id": 108458, "text": "The system shall restrict access to portal manager for front-end available language management functionalities (BR5).", "label": "requirement"}
+{"id": 108459, "text": "The system should be able to cope with 300 000 000 occurrence records (size of the GBIF index at the time of writing).", "label": "requirement"}
+{"id": 108460, "text": "The system shall have no limitation on the number records the export occurrence records functionality can process (UC-V4, FR-V13).", "label": "requirement"}
+{"id": 108461, "text": "The system should be able to cope (without crashing) with a wide range of stress situations.", "label": "requirement"}
+{"id": 108462, "text": "The system should perform reasonably under important workload (queries and data discovery).", "label": "requirement"}
+{"id": 108463, "text": "- RR1 An error tracking system shall be in place.", "label": "requirement"}
+{"id": 108464, "text": "- RR2 Database transactions shall insure data consistency in case of failure.", "label": "requirement"}
+{"id": 108465, "text": "- RR3 Backups of all system data shall be generated on a weekly basis.", "label": "requirement"}
+{"id": 108466, "text": "- RR4 Upon request from the data manager, a backup shall be restored within the next 24 hours.", "label": "requirement"}
+{"id": 108467, "text": "- IR1 The system shall allow importing checklist resources as DwC-A files.", "label": "requirement"}
+{"id": 108468, "text": "- IR2 The system shall allow importing occurrence resources as DwC-A files.", "label": "requirement"}
+{"id": 108469, "text": "- IR3 The system shall allow exporting checklist resources as DwC-A files.", "label": "requirement"}
+{"id": 108470, "text": "- IR4 The system shall allow exporting occurrence records as DwC-A files.", "label": "requirement"}
+{"id": 108471, "text": "- IR5 The system shall allow exporting occurrences records as KMZ files.", "label": "requirement"}
+{"id": 108472, "text": "- IR6 The system shall allow exporting occurrences records as CSV files.", "label": "requirement"}
+{"id": 108473, "text": "- IR7 The system shall allow exporting occurrences records as ESRI shapefiles.", "label": "requirement"}
+{"id": 108474, "text": "- IR8 The system shall allow exporting distribution map as images.", "label": "requirement"}
+{"id": 108475, "text": "- IR9 The system shall allow exporting core resource metadata as EML profiles.", "label": "requirement"}
+{"id": 108476, "text": "- IR10 The system shall allow using the Audubon Core format for multimedia metadata.", "label": "requirement"}
+{"id": 108477, "text": "- OE1 The system shall operate with the two latest major releases of the following Web browsers: Firefox, Opera, Chrome, Internet Explorer and Safari.", "label": "requirement"}
+{"id": 108478, "text": "- OE2 The system shall operate on a server running Linux, Windows server or Mac OS.", "label": "requirement"}
+{"id": 108479, "text": "- UR1 The interface for end-users should be relatively intuitive and easy to use, without requiring extensive technical assistance, support or off line user guides.", "label": "requirement"}
+{"id": 108480, "text": "- UR2 For system managers, guides may be needed to explore advanced functionalities, but those advanced functionalities should be as intuitive as possible.", "label": "requirement"}
+{"id": 108481, "text": "- UR3 Maintenance in terms of user interface configuration, user rights management, and data source settings should be done with visual tools.", "label": "requirement"}
+{"id": 108482, "text": "- UR4 The system shall allow a visitor to select the language used on the front end.", "label": "requirement"}
+{"id": 108483, "text": "- UR5 The system shall display friendly error messages to the users.", "label": "requirement"}
+{"id": 108484, "text": "- SupR1 A clear and standard practice for the maintenance and documentation of code should be set in place, agreed and communicated as a best practice.", "label": "requirement"}
+{"id": 108485, "text": "Any features developed outside the core of the NPT should follow that practice.", "label": "requirement"}
+{"id": 108486, "text": "- UD1 The system shall provide a short tutorial video explaining how to search and export occurrence records.", "label": "requirement"}
+{"id": 108487, "text": "- UD2 One offline installation guide with step-by-step instructions shall be provided (with different notes for each OS the system can operate on).", "label": "requirement"}
+{"id": 108488, "text": "The system shall be implemented using open-source technologies.", "label": "requirement"}
+{"id": 108489, "text": "The system shall be written in PHP.", "label": "requirement"}
+{"id": 108490, "text": "The system should be built in a modular way, which ensures that component functionalities can be adjusted, added, improved, removed or exchanged without impacting the application as a whole.", "label": "requirement"}
+{"id": 108491, "text": "Approaching the system using development best practices such as MVC (Model-View-Controller) can allow this sort of modularity.", "label": "auxiliary"}
+{"id": 108492, "text": "The NPT development and implementation should follow design principles that will enable future growth, both in terms of the addition of new functionality or through modification of existing functionality.", "label": "requirement"}
+{"id": 108493, "text": "In addition, NPT developers should provide the possibility to consume services and functions that are created elsewhere.", "label": "requirement"}
+{"id": 108494, "text": "Examples include reference taxonomic data sources, mapping functions or web map services (WMS).", "label": "auxiliary"}
+{"id": 108495, "text": "Sustainability embedded at each stage of development.", "label": "auxiliary"}
+{"id": 108496, "text": "The developers of the NPT should be mindful of the strategic implications of development choices to the long term sustainability of the NPT in a number of key areas: underlying hardware and software; development tools and frameworks; level of effort for system administrators and portal managers; level of interest and engagement of users, including researchers, data providers and other interested visitors.", "label": "requirement"}
+{"id": 108497, "text": "Long (more than 25) lists of items shall be paginated.", "label": "requirement"}
+{"id": 108498, "text": "Distribution map shall allow the user to pan and to zoom in and out.", "label": "requirement"}
+{"id": 108499, "text": "While building a filter, visitors shall be presented the count of matching occurrences in real time (before launching the search).", "label": "requirement"}
+{"id": 108500, "text": "No hardware interfaces have been identified.", "label": "auxiliary"}
+{"id": 108501, "text": "The system shall provide a Web service-based API to search and access core.", "label": "requirement"}
+{"id": 108502, "text": "- SI1.2 The system shall provide a Web service-based API to search and retrieve occurrence records.", "label": "requirement"}
+{"id": 108503, "text": "- SI1.3 The system shall provide a Web service-based API to search and retrieve taxa from the taxonomic backbone.", "label": "requirement"}
+{"id": 108504, "text": "- SI2.1 The system shall poll IPT instances to retrieve the list of public core resources available.", "label": "requirement"}
+{"id": 108505, "text": "- SI2.2 The system shall poll IPT instances to retrieve core resources.", "label": "requirement"}
+{"id": 108506, "text": "- SI3.1 The system shall poll GBIF occurrence Web service to retrieve core resources.", "label": "requirement"}
+{"id": 108507, "text": "- SI4.1 The system shall poll GBIF Registry to retrieve the list of available extensions.", "label": "requirement"}
+{"id": 108508, "text": "- CI1 The system shall send an email to the portal contact person to forward visitor feedbacks.", "label": "requirement"}
+{"id": 108509, "text": "- CI2 The system shall send an email to data provider contact person to forward visitor feedbacks.", "label": "requirement"}
+{"id": 108510, "text": "- CI3 The system shall send an email to the data manager upon completion of a harvesting job.", "label": "requirement"}
+{"id": 108511, "text": "- CI4 The system shall send an email to the data manager upon completion of a backup operation.", "label": "requirement"}
+{"id": 108512, "text": "- CI5 The system shall send an email to the data manager upon completion of a backup restoration operation.", "label": "requirement"}
+{"id": 108513, "text": "- LR1 The system shall be released under an open-source compliant license.", "label": "requirement"}
+{"id": 108514, "text": "- LR2 The system shall use the same data usage agreement as GBIF portal.", "label": "requirement"}
+{"id": 108515, "text": "- API: an application programming interface (API) is a particular set of rules and specifications that software programs can follow to communicate with each other.", "label": "auxiliary"}
+{"id": 108516, "text": "It serves as an interface between different software programs and facilitates their interaction, similar to the way the user interface facilitates interaction between humans and computers.", "label": "auxiliary"}
+{"id": 108517, "text": "- Audit log: this log keeps track of all successful operations in the system front end.", "label": "auxiliary"}
+{"id": 108518, "text": "An audit log entry consists of the name of the operation, the name of the user who initiated the action and the date and time it occurred.", "label": "auxiliary"}
+{"id": 108519, "text": "- Backup report: report sent to the data manager once a backup operation is completed.", "label": "auxiliary"}
+{"id": 108520, "text": "If successful, the report contains statistics about the backup data and a link to the backup file.", "label": "auxiliary"}
+{"id": 108521, "text": "- CMS: Content Management System.", "label": "auxiliary"}
+{"id": 108522, "text": "- Core resource: an occurrence or checklist resource.", "label": "auxiliary"}
+{"id": 108523, "text": "- Darwin core: A standard consisting of terms and classes of terms used to share biodiversity data.", "label": "auxiliary"}
+{"id": 108524, "text": "(source: The GBIF Integrated Publishing Toolkit User Manual)", "label": "auxiliary"}
+{"id": 108525, "text": "- Darwin core archive (DwC-A): A single zipped archive for a data set consisting of one or more text files of data, an XML file describing the contents of the text files and how they relate to each other, and an XML file containing the dataset metadata in EML format.", "label": "auxiliary"}
+{"id": 108526, "text": "(source: The GBIF Integrated Publishing Toolkit User Manual)", "label": "auxiliary"}
+{"id": 108527, "text": "- Data usage log: A usage log entry contains the following information for each usage of the occurrence data: the date and time of the usage, the type (\"mapped\" or \"exported\") of the usage, the originating country, the number of occurrence records and a text representation of the filter used.", "label": "auxiliary"}
+{"id": 108528, "text": "- Data usage statistics: monthly statistics about the data visitors.", "label": "auxiliary"}
+{"id": 108529, "text": "They’re computed from the data usage logs.", "label": "auxiliary"}
+{"id": 108530, "text": "- Data metrics: data usage statistics and statistics about the data hosted on the portal i.e.", "label": "auxiliary"}
+{"id": 108531, "text": "data mass (number of occurrence records), taxonomic diversity (number of different taxa with occurrences).", "label": "auxiliary"}
+{"id": 108532, "text": "- EML: The Ecological Metadata Language is an XML-based profile used to encode metadata about a data set.", "label": "auxiliary"}
+{"id": 108533, "text": "- GIS: A geographic information system (GIS), geographical information system, or geospatial information system is a system designed to capture, store, manipulate, analyze, manage and present all types of geographically referenced data.", "label": "auxiliary"}
+{"id": 108534, "text": "- Harvesting job: the process of fetching core resources from registered data sources and updating the portal index with those data.", "label": "auxiliary"}
+{"id": 108535, "text": "- Harvesting report: a report containing success status and possible failure causes for each harvested data sources.", "label": "auxiliary"}
+{"id": 108536, "text": "- IPT: The Integrated Publishing Toolkit (IPT) is a deployable web-based tool that allows users to serve onto the Internet (or Intranet): primary biodiversity occurrence data [...], taxonomic checklist data [...] and higher-level dataset descriptive data (metadata) [...].", "label": "auxiliary"}
+{"id": 108537, "text": "(source: Integrated Publishing Toolkit (IPT) - Architectural view)", "label": "auxiliary"}
+{"id": 108538, "text": "- Maintenance mode: the mode the system switches to when achieving certain operations that may prevent to deliver a satisfactory experience to the user in particular when the index may be inconsistent.", "label": "auxiliary"}
+{"id": 108539, "text": "When in that mode, all portal screens display an apology message informing the visitors that the portal is under maintenance and inviting them to wait a moment before trying to use it.", "label": "auxiliary"}
+{"id": 108540, "text": "- MVC: the Model View Controller is a software architecture pattern used in web applications to separate the concerns of data modeling, the rendering of the model for client consumption and the logic for accessing the content.", "label": "auxiliary"}
+{"id": 108541, "text": "- Report: a file generated when a consuming operation on core resource index has been completed.", "label": "auxiliary"}
+{"id": 108542, "text": "Such a file contains a success status, description on the job outcome and statistics about the core resource index after completion.", "label": "auxiliary"}
+{"id": 108543, "text": "In case of failure, the report indicates the cause.", "label": "auxiliary"}
+{"id": 108544, "text": "- Resource: In this document, a resource refers to a dataset and associated metadata.", "label": "auxiliary"}
+{"id": 108545, "text": "Resources handled by NPT instances are core resources, multimedia files, institutions, literature entries and experts.", "label": "auxiliary"}
+{"id": 108546, "text": "- Resource file: a file containing data for a resource (i.e.", "label": "auxiliary"}
+{"id": 108547, "text": "both records and metadata).", "label": "auxiliary"}
+{"id": 108548, "text": "- Spatial layers: the geospatial layers displayed on the distribution map.", "label": "auxiliary"}
+{"id": 108549, "text": "- Taxonomic backbone: A specialized checklist, which is used to organize biodiversity data, indexed within the NPT, particularly occurrence data.", "label": "auxiliary"}
+{"id": 108550, "text": "- Identifier of use cases start with ‘UC’ and sub flows with ‘S’.", "label": "auxiliary"}
+{"id": 108551, "text": "- An underlined phrase in a use case flow refers to the use case (or sub flow) with the same name.", "label": "auxiliary"}
+{"id": 108552, "text": "- Standard (e.g.", "label": "auxiliary"}
+{"id": 108553, "text": "“log in” or “register”) or obvious (e.g.", "label": "auxiliary"}
+{"id": 108554, "text": "“view Network summary information”) functionalities haven’t been promoted as a use case but are nevertheless listed in the functionality requirement section.", "label": "auxiliary"}
+{"id": 108555, "text": "A user may only initiate the use cases in this section if he is logged into the system using a user account with administrator role.", "label": "auxiliary"}
+{"id": 108556, "text": "Identifier-Name UC-A1 – Manage modules", "label": "auxiliary"}
+{"id": 108557, "text": "Description The administrator selects to manage modules so as to add new functionalities to the system by installing modules, configure or update previously installed modules.", "label": "auxiliary"}
+{"id": 108558, "text": "The use case starts when the administrator selects to manage modules.", "label": "auxiliary"}
+{"id": 108559, "text": "The system retrieves the list of all installed modules and displays the list to the administrator.", "label": "auxiliary"}
+{"id": 108560, "text": "The system provides two options for each module: update and configure.", "label": "auxiliary"}
+{"id": 108561, "text": "The system also displays the function install a new module.", "label": "auxiliary"}
+{"id": 108562, "text": "The administrator selects to install a new module.", "label": "auxiliary"}
+{"id": 108563, "text": "The system requests the administrator to provide the module file.", "label": "auxiliary"}
+{"id": 108564, "text": "The administrator selects the module file on his local computer.", "label": "auxiliary"}
+{"id": 108565, "text": "The system installs the module from the file.", "label": "auxiliary"}
+{"id": 108566, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108567, "text": "The system informs the administrator that the module has been successfully installed.", "label": "auxiliary"}
+{"id": 108568, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108569, "text": "The administrator selects the module of interest and chooses to configure it.", "label": "auxiliary"}
+{"id": 108570, "text": "The system requests the administrator to enter the configuration parameters specific to that module.", "label": "auxiliary"}
+{"id": 108571, "text": "The administrator enters the configuration parameters so the module fits the Node’s needs.", "label": "auxiliary"}
+{"id": 108572, "text": "The system saves the module configuration.", "label": "auxiliary"}
+{"id": 108573, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108574, "text": "The system informs the administrator that the module has been successfully configured.", "label": "auxiliary"}
+{"id": 108575, "text": "The administrator selects the module of interest and chooses the option to update it.", "label": "auxiliary"}
+{"id": 108576, "text": "The system requests the administrator to provide the module file.", "label": "auxiliary"}
+{"id": 108577, "text": "The administrator selects the module file on his local computer.", "label": "auxiliary"}
+{"id": 108578, "text": "The system installs the new version of the module from the file.", "label": "auxiliary"}
+{"id": 108579, "text": "The system configures it with the parameters used for the previous version.", "label": "auxiliary"}
+{"id": 108580, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108581, "text": "The system informs admin the module has been successfully updated.", "label": "auxiliary"}
+{"id": 108582, "text": "The system reports the installation failure to the administrator.", "label": "auxiliary"}
+{"id": 108583, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108584, "text": "The system records an error log entry.", "label": "auxiliary"}
+{"id": 108585, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108586, "text": "The system reports the update failure to the administrator.", "label": "auxiliary"}
+{"id": 108587, "text": "The system records an error log entry.", "label": "auxiliary"}
+{"id": 108588, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108589, "text": "Identifier-Name UC-A2 – Configure the distribution map", "label": "auxiliary"}
+{"id": 108590, "text": "Description The administrator selects to configure the distribution map so it uses the specific projection and default extent for the Node area of interest.", "label": "auxiliary"}
+{"id": 108591, "text": "Post conditions The distribution map will use the projection and default extent the administrator chose.", "label": "auxiliary"}
+{"id": 108592, "text": "Trigger Upon NPT instance configuration, the administrator selects to configure the distribution map.", "label": "auxiliary"}
+{"id": 108593, "text": "The administrator selects to configure the distribution map.", "label": "auxiliary"}
+{"id": 108594, "text": "The system retrieves the list of standard projections and displays the list to the administrator.", "label": "auxiliary"}
+{"id": 108595, "text": "The system requests the administrator to select the projection and to enter the default extent for the map.", "label": "auxiliary"}
+{"id": 108596, "text": "The administrator enters the default extent and selects the projection that will be used by the distribution map from the list.", "label": "auxiliary"}
+{"id": 108597, "text": "The Portal manager updates the system configuration.", "label": "auxiliary"}
+{"id": 108598, "text": "The system validates the provided default extent values.", "label": "auxiliary"}
+{"id": 108599, "text": "The system updates its portal configuration with the new projection and default extent.", "label": "auxiliary"}
+{"id": 108600, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108601, "text": "The system informs the administrator the changes have successfully been saved.", "label": "auxiliary"}
+{"id": 108602, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108603, "text": "UC-A3 – Manage spatial layers", "label": "auxiliary"}
+{"id": 108604, "text": "The administrator selects to add or delete the spatial layers displayed on the distribution map for the specific Node.", "label": "auxiliary"}
+{"id": 108605, "text": "The use case starts when the administrator selects to manage spatial layers.", "label": "auxiliary"}
+{"id": 108606, "text": "The system retrieves the list of all available spatial layers.", "label": "auxiliary"}
+{"id": 108607, "text": "The system displays the list to the administrator with two options for each layer: “delete this layer” and “update this layer”.", "label": "auxiliary"}
+{"id": 108608, "text": "The system offers a third function: “add a layer”.", "label": "auxiliary"}
+{"id": 108609, "text": "The administrator chooses the option to add a new spatial layer.", "label": "auxiliary"}
+{"id": 108610, "text": "The system requests the administrator to enter a name for the layer and to provide the spatial layer file.", "label": "auxiliary"}
+{"id": 108611, "text": "The administrator enters a name for the layer.", "label": "auxiliary"}
+{"id": 108612, "text": "The administrator selects the spatial layer file on his local computer.", "label": "auxiliary"}
+{"id": 108613, "text": "The system validates the spatial layer file.", "label": "auxiliary"}
+{"id": 108614, "text": "The system saves the spatial layer.", "label": "auxiliary"}
+{"id": 108615, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108616, "text": "The system informs the administrator that the addition was successful.", "label": "auxiliary"}
+{"id": 108617, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108618, "text": "The administrator selects the spatial layer of interest and chooses the option to update it.", "label": "auxiliary"}
+{"id": 108619, "text": "The system displays the spatial layer name.", "label": "auxiliary"}
+{"id": 108620, "text": "The system proposes the administrator to edit the layer name and to provide a new version of the spatial layer file.", "label": "auxiliary"}
+{"id": 108621, "text": "The administrator edits the layer name and/or selects a spatial layer file on his local computer.", "label": "auxiliary"}
+{"id": 108622, "text": "The use case resumes at step g.", "label": "auxiliary"}
+{"id": 108623, "text": "The administrator selects the spatial layer of interest and chooses the option to delete it.", "label": "auxiliary"}
+{"id": 108624, "text": "The system deletes the spatial layer.", "label": "auxiliary"}
+{"id": 108625, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108626, "text": "The system informs the administrator of the deletion success.", "label": "auxiliary"}
+{"id": 108627, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108628, "text": "The system informs the administrator that the file corrupted or is not of an invalid format and requests him to try again.", "label": "auxiliary"}
+{"id": 108629, "text": "The system records an error log entry.", "label": "auxiliary"}
+{"id": 108630, "text": "UC-A4 – Manage user accounts", "label": "auxiliary"}
+{"id": 108631, "text": "The administrator performs this use case in order to create or delete accounts for the portal staff members.", "label": "auxiliary"}
+{"id": 108632, "text": "Depending on the roles the administrator associates with those accounts, the users may be allowed to access restricted back end functionalities.", "label": "auxiliary"}
+{"id": 108633, "text": "The administrator selects to manage user accounts.", "label": "auxiliary"}
+{"id": 108634, "text": "The system retrieves the list of user accounts and displays the list to the administrator.", "label": "auxiliary"}
+{"id": 108635, "text": "For each user account, the system displays options to delete and update the user account.", "label": "auxiliary"}
+{"id": 108636, "text": "The system also provides an option to create a new user account.", "label": "auxiliary"}
+{"id": 108637, "text": "The administrator selects to create a new user account.", "label": "auxiliary"}
+{"id": 108638, "text": "The system requests the security officer to enter user account information.", "label": "auxiliary"}
+{"id": 108639, "text": "The administrator enters user account information.", "label": "auxiliary"}
+{"id": 108640, "text": "The system displays the list of roles and requests the administrator to select the security roles for the user account.", "label": "auxiliary"}
+{"id": 108641, "text": "The administrator selects the security roles for this user account.", "label": "auxiliary"}
+{"id": 108642, "text": "The system verifies that no user account with the provided user name already exists.", "label": "auxiliary"}
+{"id": 108643, "text": "The system saves the user account.", "label": "auxiliary"}
+{"id": 108644, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108645, "text": "The system informs the administrator that the user account was successfully created.", "label": "auxiliary"}
+{"id": 108646, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108647, "text": "The data manager selects the user account of interest and chooses the option to update it.", "label": "auxiliary"}
+{"id": 108648, "text": "The system displays the user account information associated with this account and requests the administrator to edit the user account password or contact email address.", "label": "auxiliary"}
+{"id": 108649, "text": "If needed, the administrator edits the user account information.", "label": "auxiliary"}
+{"id": 108650, "text": "The system displays the list of roles.", "label": "auxiliary"}
+{"id": 108651, "text": "Each role is preselected if the user account is associated with it.", "label": "auxiliary"}
+{"id": 108652, "text": "For each role, the system provides the option to select or unselect it.", "label": "auxiliary"}
+{"id": 108653, "text": "The system requests the security officer to select the security roles this user account will be associated with.", "label": "auxiliary"}
+{"id": 108654, "text": "The administrator selects the security roles to be associated with that user account.", "label": "auxiliary"}
+{"id": 108655, "text": "The system updates the user account.", "label": "auxiliary"}
+{"id": 108656, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108657, "text": "A user account with that user name already exists; the system informs the administrator that the user account could not be created because the user name already exists.", "label": "auxiliary"}
+{"id": 108658, "text": "The use case returns to step b.", "label": "auxiliary"}
+{"id": 108659, "text": "A user may only initiate the use cases in this section if he is logged into the system using a user account with data manager role.", "label": "auxiliary"}
+{"id": 108660, "text": "Identifier-Name UC-DM1 – Manage resources", "label": "auxiliary"}
+{"id": 108661, "text": "Description The data manager wants to manage resources so as to import a new resource, edit a resource metadata or delete a resource.", "label": "auxiliary"}
+{"id": 108662, "text": "Actors Data manager", "label": "auxiliary"}
+{"id": 108663, "text": "The use case starts when the data manager selects to manage resources.", "label": "auxiliary"}
+{"id": 108664, "text": "The system displays the list of available resource types (occurrence, checklist, institution, multimedia, literature or expert).", "label": "auxiliary"}
+{"id": 108665, "text": "The system requests the data manager to select the type of resource he wishes to manage.", "label": "auxiliary"}
+{"id": 108666, "text": "The data manager selects the type of resources to manage.", "label": "auxiliary"}
+{"id": 108667, "text": "The system retrieves the list of resources of that type.", "label": "auxiliary"}
+{"id": 108668, "text": "The system displays the list to the data manager with two options for each resource: delete and edit metadata.", "label": "auxiliary"}
+{"id": 108669, "text": "The system also displays two high level functions: import a resource and search resources.", "label": "auxiliary"}
+{"id": 108670, "text": "The data manager chooses the option to import a resource.", "label": "auxiliary"}
+{"id": 108671, "text": "The system requests the data manager to provide the resource file and a short name for the resource.", "label": "auxiliary"}
+{"id": 108672, "text": "The data manager selects the resource file from his local computer and enters a short name.", "label": "auxiliary"}
+{"id": 108673, "text": "The system validates the resource file.", "label": "auxiliary"}
+{"id": 108674, "text": "The system archives the resource file.", "label": "auxiliary"}
+{"id": 108675, "text": "The system extracts the records and metadata from the file and saves them.", "label": "auxiliary"}
+{"id": 108676, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108677, "text": "The system informs the data manager that the import was successful.", "label": "auxiliary"}
+{"id": 108678, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108679, "text": "Edit a resource metadata.", "label": "auxiliary"}
+{"id": 108680, "text": "The data manager selects the resource of interest and chooses the option to edit its metadata.", "label": "auxiliary"}
+{"id": 108681, "text": "The system retrieves the resource metadata.", "label": "auxiliary"}
+{"id": 108682, "text": "The system displays the metadata to the data manager.", "label": "auxiliary"}
+{"id": 108683, "text": "The data manager edits the metadata.", "label": "auxiliary"}
+{"id": 108684, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108685, "text": "The system saves the metadata.", "label": "auxiliary"}
+{"id": 108686, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108687, "text": "The data manager selects a resource and chooses the option to delete it.", "label": "auxiliary"}
+{"id": 108688, "text": "The system asks the data manager for confirmation.", "label": "auxiliary"}
+{"id": 108689, "text": "The data manager confirms deletion.", "label": "auxiliary"}
+{"id": 108690, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108691, "text": "The system deletes the resource records and its metadata.", "label": "auxiliary"}
+{"id": 108692, "text": "The system deletes the archived resource file.", "label": "auxiliary"}
+{"id": 108693, "text": "The system informs the data manager of the deletion success.", "label": "auxiliary"}
+{"id": 108694, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108695, "text": "The data manager selects to search secondary resource of interest.", "label": "auxiliary"}
+{"id": 108696, "text": "The system requests the data manager to enter a keyword query.", "label": "auxiliary"}
+{"id": 108697, "text": "The data manager enters the keywords and launches search.", "label": "auxiliary"}
+{"id": 108698, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108699, "text": "The system retrieves the list of resources which metadata match the keyword query.", "label": "auxiliary"}
+{"id": 108700, "text": "The use case resumes at step c.", "label": "auxiliary"}
+{"id": 108701, "text": "The data manager cancels deletion.", "label": "auxiliary"}
+{"id": 108702, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108703, "text": "The system informs the data manager that the import operation failed because the provided file was corrupted or have an invalid format.", "label": "auxiliary"}
+{"id": 108704, "text": "The system records an error log entry.", "label": "auxiliary"}
+{"id": 108705, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108706, "text": "Identifier-Name: UC-DM2 – Register a new data source", "label": "auxiliary"}
+{"id": 108707, "text": "Description: The data manager registers a new data source so the associated core resource is harvested during next harvesting job.", "label": "auxiliary"}
+{"id": 108708, "text": "Actors: Data manager – Secondary: Data source", "label": "auxiliary"}
+{"id": 108709, "text": "The use case starts when the data manager selects to register a data source.", "label": "auxiliary"}
+{"id": 108710, "text": "The data manager selects to add a new data source.", "label": "auxiliary"}
+{"id": 108711, "text": "The system displays the list of available data source types to the data manager.", "label": "auxiliary"}
+{"id": 108712, "text": "The system requests the data manager to select a type and provide a name and a URL for the source.", "label": "auxiliary"}
+{"id": 108713, "text": "Data manager selects the type and enters a name for the source.", "label": "auxiliary"}
+{"id": 108714, "text": "The system requests the data manager to enter the specific configuration parameters for this source type.", "label": "auxiliary"}
+{"id": 108715, "text": "Data manager enters the configuration parameters.", "label": "auxiliary"}
+{"id": 108716, "text": "The system sends a request to the data source.", "label": "auxiliary"}
+{"id": 108717, "text": "The data source responds with a success OK code.", "label": "auxiliary"}
+{"id": 108718, "text": "The system saves the new data source to its source registry.", "label": "auxiliary"}
+{"id": 108719, "text": "The system informs the data manager of the addition success.", "label": "auxiliary"}
+{"id": 108720, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108721, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108722, "text": "Handle communication failure with the data source.", "label": "auxiliary"}
+{"id": 108723, "text": "If the system cannot communicate with the data source, the system informs the data manager that the data source cannot be added because the source is not accessible.", "label": "auxiliary"}
+{"id": 108724, "text": "The system records an error log entry.", "label": "auxiliary"}
+{"id": 108725, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108726, "text": "Handle a response with an error code.", "label": "auxiliary"}
+{"id": 108727, "text": "If the data source responded with an error code, the system informs the data manager that the data source cannot be added because the source responded with an error code.", "label": "auxiliary"}
+{"id": 108728, "text": "The system records an error log entry.", "label": "auxiliary"}
+{"id": 108729, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108730, "text": "Identifier-Name UC-DM3 – Register a GBIF index data source", "label": "auxiliary"}
+{"id": 108731, "text": "Description Specializes Register a new data source to allow specific configuration for GBIF occurrence Web services data sources.", "label": "auxiliary"}
+{"id": 108732, "text": "Actors Data manager – Secondary: GBIF Web services", "label": "auxiliary"}
+{"id": 108733, "text": "The visitor enters the request parameters that will be used to query GBIF portal API.", "label": "auxiliary"}
+{"id": 108734, "text": "The use case resumes at step g.", "label": "auxiliary"}
+{"id": 108735, "text": "Identifier-Name UC-DM4 – Register an IPT data source", "label": "auxiliary"}
+{"id": 108736, "text": "Description Specializes Register a new data source to allow specific configuration for IPT data sources.", "label": "auxiliary"}
+{"id": 108737, "text": "Actors Data manager – Secondary: IPT data source", "label": "auxiliary"}
+{"id": 108738, "text": "The data manager enters the URL of the IPT instance hosting the data source of interest.", "label": "auxiliary"}
+{"id": 108739, "text": "The system calls the IPT instance for the list of hosted public core resources.", "label": "auxiliary"}
+{"id": 108740, "text": "The IPT instance returns the resource list to the system.", "label": "auxiliary"}
+{"id": 108741, "text": "The system displays this list of resources to the data manager.", "label": "auxiliary"}
+{"id": 108742, "text": "The system requests the data manager to select the core resource he wishes to register.", "label": "auxiliary"}
+{"id": 108743, "text": "The data manager selects the core resource.", "label": "auxiliary"}
+{"id": 108744, "text": "The use case resumes at step g.", "label": "auxiliary"}
+{"id": 108745, "text": "Identifier-Name: UC-DM5 – Unregister a data source", "label": "auxiliary"}
+{"id": 108746, "text": "The data manager previously added a data source which is no more relevant to the node or not available any more.", "label": "auxiliary"}
+{"id": 108747, "text": "The data manager wants to unregister this source.", "label": "auxiliary"}
+{"id": 108748, "text": "Actors: Data manager", "label": "auxiliary"}
+{"id": 108749, "text": "Priority: 1 Frequency: 2", "label": "auxiliary"}
+{"id": 108750, "text": "The data source has been removed from the system configuration.", "label": "auxiliary"}
+{"id": 108751, "text": "During next harvesting job, no occurrence records will be harvested from this data source.", "label": "auxiliary"}
+{"id": 108752, "text": "The use case starts when the data manager selects to unregister a data source.", "label": "auxiliary"}
+{"id": 108753, "text": "The data manager selects the source of interest and chooses the option to unregister it.", "label": "auxiliary"}
+{"id": 108754, "text": "The system prompts the user for confirmation and displays an option to also delete related occurrence records from the index.", "label": "auxiliary"}
+{"id": 108755, "text": "The data manager confirms that he wishes to unregister the selected data source and selects the option to delete related occurrence records from the index.", "label": "auxiliary"}
+{"id": 108756, "text": "The system deletes occurrence records that were harvested from this source.", "label": "auxiliary"}
+{"id": 108757, "text": "The system removes this source from its registry.", "label": "auxiliary"}
+{"id": 108758, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108759, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108760, "text": "Cancel to unregister the data source.", "label": "auxiliary"}
+{"id": 108761, "text": "The data manager chooses to cancel unregistering the data source.", "label": "auxiliary"}
+{"id": 108762, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108763, "text": "Unregister data source but keep related occurrence records.", "label": "auxiliary"}
+{"id": 108764, "text": "If the data manager confirms data source deletion but doesn’t select the option to delete related occurrence records from the index.", "label": "auxiliary"}
+{"id": 108765, "text": "The use case resumes to step g.", "label": "auxiliary"}
+{"id": 108766, "text": "Identifier-Name: UC-DM6 – Manage harvesting jobs", "label": "auxiliary"}
+{"id": 108767, "text": "Description: The data manager wants to manage jobs so as to monitor finished and upcoming jobs, schedule a new job or cancel a scheduled job.", "label": "auxiliary"}
+{"id": 108768, "text": "Actors: Data manager", "label": "auxiliary"}
+{"id": 108769, "text": "Priority: 3 Frequency: 1", "label": "auxiliary"}
+{"id": 108770, "text": "The use case starts when the data manager chooses the option to manage harvesting jobs.", "label": "auxiliary"}
+{"id": 108771, "text": "The system retrieves two lists of jobs: finished and forthcoming jobs.", "label": "auxiliary"}
+{"id": 108772, "text": "The system displays the lists to the data manager.", "label": "auxiliary"}
+{"id": 108773, "text": "For the former, an option to...", "label": "auxiliary"}
+{"id": 108774, "text": "view the associated harvesting report is provided.", "label": "auxiliary"}
+{"id": 108775, "text": "For the latter, the system displays a cancel option for each job.", "label": "auxiliary"}
+{"id": 108776, "text": "The system also offers the function schedule a new job.", "label": "auxiliary"}
+{"id": 108777, "text": "The data manager chooses to schedule a new job.", "label": "auxiliary"}
+{"id": 108778, "text": "The system requests the data manager to provide date and time for the new job.", "label": "auxiliary"}
+{"id": 108779, "text": "Data manager enters the new job date and time.", "label": "auxiliary"}
+{"id": 108780, "text": "The system saves the new job.", "label": "auxiliary"}
+{"id": 108781, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108782, "text": "The system informs the data manager that the job has successfully been scheduled.", "label": "auxiliary"}
+{"id": 108783, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108784, "text": "c1 The data manager selects the job of interest and chooses the option to cancel it.", "label": "auxiliary"}
+{"id": 108785, "text": "d1 The system deletes the job.", "label": "auxiliary"}
+{"id": 108786, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108787, "text": "c2 The data manager selects the job of interest and chooses the option to view the harvesting report associated to it.", "label": "auxiliary"}
+{"id": 108788, "text": "d2 The system displays the harvesting report for this job to the data manager.", "label": "auxiliary"}
+{"id": 108789, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108790, "text": "Identifier-Name S-DM1 – Retrieve the list of data sources updated since last harvesting job", "label": "auxiliary"}
+{"id": 108791, "text": "Description The system builds two lists: updated and unavailable data sources.", "label": "auxiliary"}
+{"id": 108792, "text": "a The system retrieves the list of registered data sources.", "label": "auxiliary"}
+{"id": 108793, "text": "b The system picks a data source.", "label": "auxiliary"}
+{"id": 108794, "text": "c The system requests this data source to return the version number of the associated core resource.", "label": "auxiliary"}
+{"id": 108795, "text": "d The data source returns the version number of its core resource.", "label": "auxiliary"}
+{"id": 108796, "text": "e If the version number doesn’t match the one of the local core resource, the system adds the source to the list of updated data sources.", "label": "auxiliary"}
+{"id": 108797, "text": "f Step c to f repeats for all registered data sources.", "label": "auxiliary"}
+{"id": 108798, "text": "g Return to the next step.", "label": "auxiliary"}
+{"id": 108799, "text": "Handle communication failure with the data source.", "label": "auxiliary"}
+{"id": 108800, "text": "d1 If the system cannot communicate with the data source, the system adds the data source to the list of unavailable data sources.", "label": "auxiliary"}
+{"id": 108801, "text": "e1 The system records an error log entry.", "label": "auxiliary"}
+{"id": 108802, "text": "f1 The sub flow resumes at step c.", "label": "auxiliary"}
+{"id": 108803, "text": "Identifier-Name UC-DM7 – Check core resources consistency with registered data sources", "label": "auxiliary"}
+{"id": 108804, "text": "Description The data manager checks core resources consistency with registered data sources to identify outdated core resources and unavailable data sources.", "label": "auxiliary"}
+{"id": 108805, "text": "Actors Data manager - Secondary: Registered occurrence data source", "label": "auxiliary"}
+{"id": 108806, "text": "UC-DM8 – Trigger a harvesting job", "label": "auxiliary"}
+{"id": 108807, "text": "The data manager selects to trigger a harvesting job so as to synchronize the portal biodiversity data with those hosted on the registered data sources.", "label": "auxiliary"}
+{"id": 108808, "text": "Primary: Data manager - Secondary: Data sources", "label": "auxiliary"}
+{"id": 108809, "text": "At least one data source has been added.", "label": "auxiliary"}
+{"id": 108810, "text": "The local occurrence index is consistent with all configured data source index.", "label": "auxiliary"}
+{"id": 108811, "text": "The use case starts when the data manager selects to trigger a harvesting job.", "label": "auxiliary"}
+{"id": 108812, "text": "The system adds a new job to the harvesting schedule with the current date and time.", "label": "auxiliary"}
+{"id": 108813, "text": "Perform Retrieve the list of updated data sources", "label": "auxiliary"}
+{"id": 108814, "text": "The system picks a resource from the updated data source list.", "label": "auxiliary"}
+{"id": 108815, "text": "The system requests this resource originating data source to return the associated resource file.", "label": "auxiliary"}
+{"id": 108816, "text": "The data source returns the core resource file.", "label": "auxiliary"}
+{"id": 108817, "text": "The system validates and archives the core resource file.", "label": "auxiliary"}
+{"id": 108818, "text": "The system repeats steps d to g for all data sources in the list.", "label": "auxiliary"}
+{"id": 108819, "text": "The system switches to maintenance mode.", "label": "auxiliary"}
+{"id": 108820, "text": "The system updates its index with harvested data.", "label": "auxiliary"}
+{"id": 108821, "text": "The system switches back to normal mode.", "label": "auxiliary"}
+{"id": 108822, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108823, "text": "The system sets job status to “finished” and success status to “success”.", "label": "auxiliary"}
+{"id": 108824, "text": "The system sends a harvesting report to the data manager by email.", "label": "auxiliary"}
+{"id": 108825, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108826, "text": "If the system cannot communicate with the data source, the system adds the data source to the list of unharvested data sources.", "label": "auxiliary"}
+{"id": 108827, "text": "The system records an error log entry.", "label": "auxiliary"}
+{"id": 108828, "text": "The use case resumes at step d.", "label": "auxiliary"}
+{"id": 108829, "text": "If the file served by the source is corrupted, the system adds the data.", "label": "auxiliary"}
+{"id": 108830, "text": "UC-DM9 – Update taxonomic backbone", "label": "auxiliary"}
+{"id": 108831, "text": "The data manager updates the taxonomic backbone with a checklist resource.", "label": "auxiliary"}
+{"id": 108832, "text": "A file containing the checklist resource to be used as the new taxonomic backbone is stored on the data manager’s local computer.", "label": "auxiliary"}
+{"id": 108833, "text": "The use case starts when the data manager selects to update the system taxonomic backbone.", "label": "auxiliary"}
+{"id": 108834, "text": "The system requests the data manager to provide a file containing the checklist resource to replace the taxonomic backbone with.", "label": "auxiliary"}
+{"id": 108835, "text": "The data manager selects the file containing the new taxonomic backbone from his local computer.", "label": "auxiliary"}
+{"id": 108836, "text": "The system validates the file.", "label": "auxiliary"}
+{"id": 108837, "text": "The system informs the data manager that the process may be long and that an email will be sent to him upon completion.", "label": "auxiliary"}
+{"id": 108838, "text": "The system switches to maintenance mode.", "label": "auxiliary"}
+{"id": 108839, "text": "The system updates its taxonomic backbone with the chosen checklist resource.", "label": "auxiliary"}
+{"id": 108840, "text": "The system updates all indexes referring to entries in the taxonomic backbone to ensure index consistency.", "label": "auxiliary"}
+{"id": 108841, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108842, "text": "The system switches back to normal mode.", "label": "auxiliary"}
+{"id": 108843, "text": "The system sends a taxonomic backbone update report with a ‘success’ status to the data manager by email.", "label": "auxiliary"}
+{"id": 108844, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108845, "text": "If the file provided by the data manager is corrupted or of an invalid format, the system sends the data manager a backup restoration report with a ‘failure’ status by email.", "label": "auxiliary"}
+{"id": 108846, "text": "The system records an error log entry.", "label": "auxiliary"}
+{"id": 108847, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108848, "text": "If an error occurs while updating the taxonomic backbone index, the system rollbacks.", "label": "auxiliary"}
+{"id": 108849, "text": "The system sends an email to the data manager containing a backup restoration report with a ‘failure’ status.", "label": "auxiliary"}
+{"id": 108850, "text": "If an error occurs while updating all indexes referring to entries in the taxonomic backbone, the system rollbacks.", "label": "auxiliary"}
+{"id": 108851, "text": "The system sends an email to the data manager containing a backup restoration report with a ‘failure’ status.", "label": "auxiliary"}
+{"id": 108852, "text": "The system records an error log entry.", "label": "auxiliary"}
+{"id": 108853, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108854, "text": "Identifier-Name UC-DM10 – Install an extension", "label": "auxiliary"}
+{"id": 108855, "text": "Description The data manager wants to install an extension to allow the system to deal with extra attributes for records of core resources.", "label": "auxiliary"}
+{"id": 108856, "text": "Actors Primary: Data manager – Secondary: GBIF registry", "label": "auxiliary"}
+{"id": 108857, "text": "Priority 3 Frequency 3", "label": "auxiliary"}
+{"id": 108858, "text": "The use case starts when the data manager chooses the option to manage extensions.", "label": "auxiliary"}
+{"id": 108859, "text": "The system retrieves the list of installed extensions from its local registry and displays the list to the data manager.", "label": "auxiliary"}
+{"id": 108860, "text": "The data manager chooses to install a new extension.", "label": "auxiliary"}
+{"id": 108861, "text": "The system requests the GBIF registry for the lists of extensions.", "label": "auxiliary"}
+{"id": 108862, "text": "GBIF registry returns the list of all available extensions along with their URLs.", "label": "auxiliary"}
+{"id": 108863, "text": "The system removes the list of already installed extensions from this list.", "label": "auxiliary"}
+{"id": 108864, "text": "The system displays this list to the data manager.", "label": "auxiliary"}
+{"id": 108865, "text": "The data manager chooses the extension to install.", "label": "auxiliary"}
+{"id": 108866, "text": "The system calls the GBIF registry for the extension.", "label": "auxiliary"}
+{"id": 108867, "text": "The GBIF registry returns the extension to the system.", "label": "auxiliary"}
+{"id": 108868, "text": "The system saves the extension and adds it to its local registry.", "label": "auxiliary"}
+{"id": 108869, "text": "The system creates an index for the data type or extra attributes defined by this extension.", "label": "auxiliary"}
+{"id": 108870, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108871, "text": "The system informs the data manager that the installation was successful.", "label": "auxiliary"}
+{"id": 108872, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108873, "text": "A user may only initiate the use cases in this section if he is logged into the system using an account with portal manager role.", "label": "auxiliary"}
+{"id": 108874, "text": "Identifier-Name UC-PM3 - Configure data metrics visibility", "label": "auxiliary"}
+{"id": 108875, "text": "The portal manager configures data metrics visibility in order to hide some metrics from the visitors.", "label": "auxiliary"}
+{"id": 108876, "text": "The data metrics not declared as visible by the portal manager are hidden to the portal visitors.", "label": "auxiliary"}
+{"id": 108877, "text": "The use case starts when the portal manager selects to configure data metrics public availability.", "label": "auxiliary"}
+{"id": 108878, "text": "The system displays the list of all data metrics and associated visibility status to the data manager.", "label": "auxiliary"}
+{"id": 108879, "text": "The portal manager selects the desired visibility status for each data metrics.", "label": "auxiliary"}
+{"id": 108880, "text": "The system updates its configuration with the new visibility status for the data metrics.", "label": "auxiliary"}
+{"id": 108881, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108882, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108883, "text": "UC-PM2 - Customize NPT instance", "label": "auxiliary"}
+{"id": 108884, "text": "The portal manager customizes the NPT instance to adapt the portal appearance and parameters to fit its organization.", "label": "auxiliary"}
+{"id": 108885, "text": "The system displays the node banner, logo and custom information on the portal.", "label": "auxiliary"}
+{"id": 108886, "text": "The use case starts when the portal manager selects to configure institutional information.", "label": "auxiliary"}
+{"id": 108887, "text": "The system displays two functions: customize “look and feel” and configure portal.", "label": "auxiliary"}
+{"id": 108888, "text": "The portal manager chooses to configure the portal.", "label": "auxiliary"}
+{"id": 108889, "text": "The system requests the portal manager to enter the node name, Network summary information (in all front office languages) and contact person’s name and email address, and HTML metadata tags.", "label": "auxiliary"}
+{"id": 108890, "text": "The portal manager enters this information.", "label": "auxiliary"}
+{"id": 108891, "text": "The system updates the NPT configuration with the new parameters.", "label": "auxiliary"}
+{"id": 108892, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108893, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108894, "text": "The system requests the portal manager to provide files for the organization logo and the portal banner image.", "label": "auxiliary"}
+{"id": 108895, "text": "The portal manager selects the logo and/or banner image files on his local computer.", "label": "auxiliary"}
+{"id": 108896, "text": "The use case resumes at step f.", "label": "auxiliary"}
+{"id": 108897, "text": "UC-PM3 – Configure front office languages", "label": "auxiliary"}
+{"id": 108898, "text": "The data manager selects to manage front office languages so as to set the default and alternate portal languages.", "label": "auxiliary"}
+{"id": 108899, "text": "The use case starts when the portal manager selects to manage front office languages.", "label": "auxiliary"}
+{"id": 108900, "text": "The system retrieves the list of all installed languages.", "label": "auxiliary"}
+{"id": 108901, "text": "The system displays the default language and the list of alternate languages.", "label": "auxiliary"}
+{"id": 108902, "text": "and two options: change the default language and install a new language.", "label": "auxiliary"}
+{"id": 108903, "text": "For each alternate language, the system displays two options: uninstall and set as default.", "label": "auxiliary"}
+{"id": 108904, "text": "The data manager selects to change the default language.", "label": "auxiliary"}
+{"id": 108905, "text": "The system displays the list of all installed non-default languages.", "label": "auxiliary"}
+{"id": 108906, "text": "The data manager selects the new default language.", "label": "auxiliary"}
+{"id": 108907, "text": "The system saves the new default language in its configuration.", "label": "auxiliary"}
+{"id": 108908, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108909, "text": "The system informs the security officer of the operation success.", "label": "auxiliary"}
+{"id": 108910, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108911, "text": "The portal manager selects to install a new language.", "label": "auxiliary"}
+{"id": 108912, "text": "The system requests the portal manager to provide the language file.", "label": "auxiliary"}
+{"id": 108913, "text": "The portal manager selects the language file on his local computer.", "label": "auxiliary"}
+{"id": 108914, "text": "The system validates the language file.", "label": "auxiliary"}
+{"id": 108915, "text": "The file is valid.", "label": "auxiliary"}
+{"id": 108916, "text": "The system installs the new language from the file.", "label": "auxiliary"}
+{"id": 108917, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108918, "text": "The system informs the portal manager of the install success.", "label": "auxiliary"}
+{"id": 108919, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108920, "text": "The data manager selects the language of interest and chooses the option to uninstall it.", "label": "auxiliary"}
+{"id": 108921, "text": "The system uninstalls the language.", "label": "auxiliary"}
+{"id": 108922, "text": "The system records an audit log entry.", "label": "auxiliary"}
+{"id": 108923, "text": "The system informs the portal manager of the uninstall success.", "label": "auxiliary"}
+{"id": 108924, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108925, "text": "The system informs the portal manager that it’s impossible to install the language because the file he provided is invalid.", "label": "auxiliary"}
+{"id": 108926, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108927, "text": "Identifier-Name: UC-V1 - Send feedback to the portal contact person", "label": "auxiliary"}
+{"id": 108928, "text": "Description: The visitor sends remarks or suggestions about the portal or about the hosted data to the portal contact person.", "label": "auxiliary"}
+{"id": 108929, "text": "Preconditions: The portal manager has customized NPT instance and provided information for the contact person.", "label": "auxiliary"}
+{"id": 108930, "text": "Trigger: The visitor decides to contact the NPT portal contact person.", "label": "auxiliary"}
+{"id": 108931, "text": "The use case starts when the visitor selects to send feedback.", "label": "auxiliary"}
+{"id": 108932, "text": "The system requests the visitor to enter a text and body for the message and personal information (name and email address).", "label": "auxiliary"}
+{"id": 108933, "text": "The visitor supplies that information.", "label": "auxiliary"}
+{"id": 108934, "text": "The system validates the email address and checks that the message body is not empty.", "label": "auxiliary"}
+{"id": 108935, "text": "The system sends the message along with the visitor’s personal information to the contact person by email.", "label": "auxiliary"}
+{"id": 108936, "text": "The system informs the visitor that his feedback has successfully been sent.", "label": "auxiliary"}
+{"id": 108937, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108938, "text": "Handle invalid email address: If the email address is invalid, the system asks the visitor to enter a valid email address and prevents her to send the feedback until done.", "label": "auxiliary"}
+{"id": 108939, "text": "The use case resumes to step b.", "label": "auxiliary"}
+{"id": 108940, "text": "Handle blank message body: If the message body is empty, the system asks the visitor to enter one.", "label": "auxiliary"}
+{"id": 108941, "text": "The use case resumes to step b.", "label": "auxiliary"}
+{"id": 108942, "text": "Handle error during sending the email: If an error occurs while sending the email, the system warns the user about the issue, apologizes and asks the user to try again later.", "label": "auxiliary"}
+{"id": 108943, "text": "The system records an error log entry.", "label": "auxiliary"}
+{"id": 108944, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108945, "text": "Identifier-Name: S-V1 – Build an occurrence record selection filter", "label": "auxiliary"}
+{"id": 108946, "text": "The sub flow starts when the selects to search for occurrence records.", "label": "auxiliary"}
+{"id": 108947, "text": "The system displays the filter-building interface to the visitor.", "label": "auxiliary"}
+{"id": 108948, "text": "Perform Add a criterion to the filter.", "label": "auxiliary"}
+{"id": 108949, "text": "User repeats step c until the filter matches only the occurrence records he’s interested in.", "label": "auxiliary"}
+{"id": 108950, "text": "c1.1 Provided that the filter has at least one criterion.", "label": "auxiliary"}
+{"id": 108951, "text": "The visitor selects a criterion and chooses to remove it.", "label": "auxiliary"}
+{"id": 108952, "text": "c1.2 The system removes the criterion from the filter.", "label": "auxiliary"}
+{"id": 108953, "text": "The use case resumes at step d.", "label": "auxiliary"}
+{"id": 108954, "text": "S-V2 - Add a criterion to the filter", "label": "auxiliary"}
+{"id": 108955, "text": "a The visitor selects to add a taxonomic criterion.", "label": "auxiliary"}
+{"id": 108956, "text": "b The visitor finds the taxon of interest.", "label": "auxiliary"}
+{"id": 108957, "text": "c The system adds the criterion to the filter.", "label": "auxiliary"}
+{"id": 108958, "text": "d The sub flow ends.", "label": "auxiliary"}
+{"id": 108959, "text": "a1 The visitor selects to add a depth criterion.", "label": "auxiliary"}
+{"id": 108960, "text": "b1 The visitor enters a minimum and/or maximum observation depth value(s).", "label": "auxiliary"}
+{"id": 108961, "text": "The sub flow ends.", "label": "auxiliary"}
+{"id": 108962, "text": "a2 The visitor selects to add an altitude criterion.", "label": "auxiliary"}
+{"id": 108963, "text": "b2 The visitor enters a minimum and/or maximum observation altitude value(s).", "label": "auxiliary"}
+{"id": 108964, "text": "The sub flow ends.", "label": "auxiliary"}
+{"id": 108965, "text": "a3 The visitor selects to add a date criterion.", "label": "auxiliary"}
+{"id": 108966, "text": "b3 The visitor enters a start and/or an end observation date(s).", "label": "auxiliary"}
+{"id": 108967, "text": "The sub flow ends.", "label": "auxiliary"}
+{"id": 108968, "text": "a4 The visitor selects to add a dataset criterion.", "label": "auxiliary"}
+{"id": 108969, "text": "b4.1 The system retrieves the list of hosted occurrence resources and displays the list to the visitor.", "label": "auxiliary"}
+{"id": 108970, "text": "b4.2 The visitor selects the occurrence resource of interest.", "label": "auxiliary"}
+{"id": 108971, "text": "The sub flow ends.", "label": "auxiliary"}
+{"id": 108972, "text": "a5 The visitor selects to add a basis of records criterion.", "label": "auxiliary"}
+{"id": 108973, "text": "b5.1 The system displays the list of basis of records to the visitor.", "label": "auxiliary"}
+{"id": 108974, "text": "b5.2 The visitor selects the basis of record from the proposed list.", "label": "auxiliary"}
+{"id": 108975, "text": "The sub flow ends.", "label": "auxiliary"}
+{"id": 108976, "text": "a6 The visitor selects to add a geographic area criterion.", "label": "auxiliary"}
+{"id": 108977, "text": "b6 User draws a polygon defining his area of interest on a map interface.", "label": "auxiliary"}
+{"id": 108978, "text": "The sub flow ends.", "label": "auxiliary"}
+{"id": 108979, "text": "UC-V2 – Select occurrence records and view distribution map", "label": "auxiliary"}
+{"id": 108980, "text": "The visitor wants to discover and access occurrence records.", "label": "auxiliary"}
+{"id": 108981, "text": "He can select", "label": "auxiliary"}
+{"id": 108982, "text": "The use case starts when the visitor selects to search occurrences.", "label": "auxiliary"}
+{"id": 108983, "text": "The system proposes the visitor two search options: taxonomic search and advanced search.", "label": "auxiliary"}
+{"id": 108984, "text": "The visitor selects to search occurrence records using advanced search.", "label": "auxiliary"}
+{"id": 108985, "text": "Perform Build an occurrence record selection filter.", "label": "auxiliary"}
+{"id": 108986, "text": "The visitor launches the search.", "label": "auxiliary"}
+{"id": 108987, "text": "The system retrieves the occurrence records matching the filter criteria.", "label": "auxiliary"}
+{"id": 108988, "text": "The system records a data usage log entry with type ‘mapped’.", "label": "auxiliary"}
+{"id": 108989, "text": "The system displays the distribution map for the occurrence record selection.", "label": "auxiliary"}
+{"id": 108990, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108991, "text": "The visitor selects to search occurrence records using taxonomic search.", "label": "auxiliary"}
+{"id": 108992, "text": "Perform Select a taxon.", "label": "auxiliary"}
+{"id": 108993, "text": "The visitor launches the search.", "label": "auxiliary"}
+{"id": 108994, "text": "The system retrieves the occurrence records for that taxon.", "label": "auxiliary"}
+{"id": 108995, "text": "Use case resumes at step g.", "label": "auxiliary"}
+{"id": 108996, "text": "Perform Select an occurrence resource.", "label": "auxiliary"}
+{"id": 108997, "text": "The system displays the details for this occurrence resource and the distribution map for associated occurrence records.", "label": "auxiliary"}
+{"id": 108998, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 108999, "text": "The visitor searches portal using full text search.", "label": "auxiliary"}
+{"id": 109000, "text": "If no taxon is returned, the use case ends.", "label": "auxiliary"}
+{"id": 109001, "text": "The visitor selects a taxon.", "label": "auxiliary"}
+{"id": 109002, "text": "The system displays the details for this taxon and the distribution map for associated occurrence records.", "label": "auxiliary"}
+{"id": 109003, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 109004, "text": "UC-V3 - View occurrence record selection as a table", "label": "auxiliary"}
+{"id": 109005, "text": "User selects to view occurrence records selection as a table in order to display their attributes.", "label": "auxiliary"}
+{"id": 109006, "text": "The record selection contains at least one record.", "label": "auxiliary"}
+{"id": 109007, "text": "The visitor selects occurrence records and view distribution map.", "label": "auxiliary"}
+{"id": 109008, "text": "The visitor chooses the option to view the occurrence record selection as a table.", "label": "auxiliary"}
+{"id": 109009, "text": "The system records a data usage log entry with type ‘viewed’.", "label": "auxiliary"}
+{"id": 109010, "text": "UC-V4 - Export occurrence record selection", "label": "auxiliary"}
+{"id": 109011, "text": "User exports the occurrence selection for further analysis.", "label": "auxiliary"}
+{"id": 109012, "text": "The record selection contains at least one record.", "label": "auxiliary"}
+{"id": 109013, "text": "A file containing the record selection has been transferred to the visitor's local computer.", "label": "auxiliary"}
+{"id": 109014, "text": "The visitor selects occurrence records and views distribution map.", "label": "auxiliary"}
+{"id": 109015, "text": "The visitor chooses the option to download the record selection in his format of choice.", "label": "auxiliary"}
+{"id": 109016, "text": "The system checks that the user has accepted the data usage agreement.", "label": "auxiliary"}
+{"id": 109017, "text": "The system records a data usage log entry with type ‘downloaded’.", "label": "auxiliary"}
+{"id": 109018, "text": "The system warns visitor that the process may take up to half an hour.", "label": "auxiliary"}
+{"id": 109019, "text": "It provides visitor a download link that will allow him to retrieve the file later.", "label": "auxiliary"}
+{"id": 109020, "text": "The system builds the file.", "label": "auxiliary"}
+{"id": 109021, "text": "The visitor later follows the download link.", "label": "auxiliary"}
+{"id": 109022, "text": "The file is ready for download.", "label": "auxiliary"}
+{"id": 109023, "text": "The system informs the visitor that the building process has been successfully carried out and offers an option to download the file.", "label": "auxiliary"}
+{"id": 109024, "text": "The visitor chooses to download the file.", "label": "auxiliary"}
+{"id": 109025, "text": "The system transfers the file to the visitor's local computer.", "label": "auxiliary"}
+{"id": 109026, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 109027, "text": "If the visitor has not accepted the data usage agreement, the system displays it to the user and prompts the user to accept it.", "label": "auxiliary"}
+{"id": 109028, "text": "If the user does, the system will remember and the use case resumes at step c.", "label": "auxiliary"}
+{"id": 109029, "text": "If he doesn't, the use case ends.", "label": "auxiliary"}
+{"id": 109030, "text": "The system informs the visitor that the export process is not finished yet and suggests him to try again in a few moments.", "label": "auxiliary"}
+{"id": 109031, "text": "Use case returns to step f.", "label": "auxiliary"}
+{"id": 109032, "text": "UC-V5 - Export distribution map as an image", "label": "auxiliary"}
+{"id": 109033, "text": "The visitor exports distribution map as an image so as to be able, e.g., to insert it in a paper.", "label": "auxiliary"}
+{"id": 109034, "text": "An image of the distribution map has been transferred to the visitor’s local computer.", "label": "auxiliary"}
+{"id": 109035, "text": "Description: The visitor searches resource metadata, blog, article and news entries using full text search in order to find and access matching resources and entries.", "label": "auxiliary"}
+{"id": 109036, "text": "The use case starts when the visitor selects to search the portal using full text search.", "label": "auxiliary"}
+{"id": 109037, "text": "The system prompts visitor to type his keyword query.", "label": "auxiliary"}
+{"id": 109038, "text": "The visitor enters the query.", "label": "auxiliary"}
+{"id": 109039, "text": "The system retrieves the list of matching resources and entries.", "label": "auxiliary"}
+{"id": 109040, "text": "The system displays those results grouped by data types with an option to view the details for each of them.", "label": "auxiliary"}
+{"id": 109041, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 109042, "text": "Description: The visitor contacts the publisher of an occurrence resource to request more information or send a comment.", "label": "auxiliary"}
+{"id": 109043, "text": "Precondition: The dataset provider’s metadata contains a valid contact email address.", "label": "auxiliary"}
+{"id": 109044, "text": "Post conditions: The visitor’s message has been sent to the provider’s contact email address.", "label": "auxiliary"}
+{"id": 109045, "text": "Perform Select an occurrence resource.", "label": "auxiliary"}
+{"id": 109046, "text": "The visitor selects to contact the data provider of this dataset.", "label": "auxiliary"}
+{"id": 109047, "text": "The system requests the visitor to enter the subject and body of the message and personal information (name and email address).", "label": "auxiliary"}
+{"id": 109048, "text": "The visitor enters the requested information.", "label": "auxiliary"}
+{"id": 109049, "text": "The system validates the email address and checks that the message body is not empty.", "label": "auxiliary"}
+{"id": 109050, "text": "The system sends the visitor’s message and personal information to the dataset provider by email.", "label": "auxiliary"}
+{"id": 109051, "text": "The system informs the visitor that the message has successfully been sent.", "label": "auxiliary"}
+{"id": 109052, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 109053, "text": "e2 The system informs the visitor that the email address he provided is invalid.", "label": "auxiliary"}
+{"id": 109054, "text": "Use case resumes at step c.", "label": "auxiliary"}
+{"id": 109055, "text": "e3 The system informs the visitor that the message body cannot be left blank.", "label": "auxiliary"}
+{"id": 109056, "text": "The use case resumes at step c.", "label": "auxiliary"}
+{"id": 109057, "text": "If an error occurs while sending the email, the system warns the user that the message could not be sent, apologizes for the inconvenience and suggests the visitor to try again later.", "label": "auxiliary"}
+{"id": 109058, "text": "g4 The system records an error log entry.", "label": "auxiliary"}
+{"id": 109059, "text": "h4 The use case ends.", "label": "auxiliary"}
+{"id": 109060, "text": "Identifier-Name UC-V8 – Export a checklist", "label": "auxiliary"}
+{"id": 109061, "text": "Description The visitor downloads a checklist for local consultation/analysis.", "label": "auxiliary"}
+{"id": 109062, "text": "a The use case starts when the visitor chooses the option to view the list of checklists hosted on the portal.", "label": "auxiliary"}
+{"id": 109063, "text": "b The system retrieves the list of checklist resources and displays it to the visitor.", "label": "auxiliary"}
+{"id": 109064, "text": "c The visitor selects the checklist resource of interest and chooses the option to view its details.", "label": "auxiliary"}
+{"id": 109065, "text": "d The system displays detailed metadata for this checklist resource and an export checklist option.", "label": "auxiliary"}
+{"id": 109066, "text": "e The visitor selects to export the checklist.", "label": "auxiliary"}
+{"id": 109067, "text": "f The system transfers the archived checklist resource file to the visitor’s local computer.", "label": "auxiliary"}
+{"id": 109068, "text": "g The use case ends.", "label": "auxiliary"}
+{"id": 109069, "text": "S-V3 – Select a taxon", "label": "auxiliary"}
+{"id": 109070, "text": "a The visitor chooses the option to find a taxon.", "label": "auxiliary"}
+{"id": 109071, "text": "b The system presents a taxonomic tree and a taxon search interface.", "label": "auxiliary"}
+{"id": 109072, "text": "c The visitor browses the tree until he finds the taxon he’s interested in.", "label": "auxiliary"}
+{"id": 109073, "text": "d The visitor selects this taxon.", "label": "auxiliary"}
+{"id": 109074, "text": "Selects taxon by searching by name", "label": "auxiliary"}
+{"id": 109075, "text": "c1.1 The visitor searches the taxon by name (scientific or common).", "label": "auxiliary"}
+{"id": 109076, "text": "The visitor enters part of the name.", "label": "auxiliary"}
+{"id": 109077, "text": "c1.2 The system presents the list of matching taxa.", "label": "auxiliary"}
+{"id": 109078, "text": "The use case resumes at step d.", "label": "auxiliary"}
+{"id": 109079, "text": "S-V4 – Select an occurrence resource", "label": "auxiliary"}
+{"id": 109080, "text": "The visitor selects to list datasets.", "label": "auxiliary"}
+{"id": 109081, "text": "The system retrieves the list of occurrence resources.", "label": "auxiliary"}
+{"id": 109082, "text": "The system displays the list to the visitor.", "label": "auxiliary"}
+{"id": 109083, "text": "The visitor selects the occurrence resource of interest.", "label": "auxiliary"}
+{"id": 109084, "text": "The visitor searches portal using full text search.", "label": "auxiliary"}
+{"id": 109085, "text": "If at least one occurrence resource is returned, the flow resumes to step c.", "label": "auxiliary"}
+{"id": 109086, "text": "If not, it ends.", "label": "auxiliary"}
+{"id": 109087, "text": "UC-V9 - Choose portal language", "label": "auxiliary"}
+{"id": 109088, "text": "The visitor chooses his language of preference.", "label": "auxiliary"}
+{"id": 109089, "text": "The portal manager has configured front office languages with at least one alternate language.", "label": "auxiliary"}
+{"id": 109090, "text": "The portal uses the chosen language for that visitor from now on.", "label": "auxiliary"}
+{"id": 109091, "text": "The use case starts when the visitor selects to choose portal language.", "label": "auxiliary"}
+{"id": 109092, "text": "The system retrieves the list of available languages to the visitor.", "label": "auxiliary"}
+{"id": 109093, "text": "The system displays the list to the visitor.", "label": "auxiliary"}
+{"id": 109094, "text": "The visitor chooses his preferred language.", "label": "auxiliary"}
+{"id": 109095, "text": "The system switches portal language to the chosen language.", "label": "auxiliary"}
+{"id": 109096, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 109097, "text": "A visitor may only initiate the use cases in this section if he is logged into the system as a registered visitor.", "label": "auxiliary"}
+{"id": 109098, "text": "UC-RV1 – Save a custom filter", "label": "auxiliary"}
+{"id": 109099, "text": "The registered visitor builds an occurrence record filter and wants to be able to reuse it in the future.", "label": "auxiliary"}
+{"id": 109100, "text": "To do so, he saves the filter in his profile.", "label": "auxiliary"}
+{"id": 109101, "text": "Perform Build an occurrence record selection filter.", "label": "auxiliary"}
+{"id": 109102, "text": "Visitor selects to save the current filter.", "label": "auxiliary"}
+{"id": 109103, "text": "The system prompts visitor for a name and description for the filter.", "label": "auxiliary"}
+{"id": 109104, "text": "The visitor enters a name and description for the filter.", "label": "auxiliary"}
+{"id": 109105, "text": "The system saves the filter in the registered visitor’s profile.", "label": "auxiliary"}
+{"id": 109106, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 109107, "text": "Identifier-Name UC-RV2 – Load a custom filter", "label": "auxiliary"}
+{"id": 109108, "text": "Description   The registered visitor loads a filter he previously saved in his profile.", "label": "auxiliary"}
+{"id": 109109, "text": "Actors Registered visitor", "label": "auxiliary"}
+{"id": 109110, "text": "Priority 1 Frequency 2", "label": "auxiliary"}
+{"id": 109111, "text": "Preconditions The registered visitor is displayed the filter building interface.", "label": "auxiliary"}
+{"id": 109112, "text": "The registered visitor has saved at least one filter.", "label": "auxiliary"}
+{"id": 109113, "text": "The use case starts when the visitor selects to manage custom filters.", "label": "auxiliary"}
+{"id": 109114, "text": "The system retrieves the list of filters for the registered visitor.", "label": "auxiliary"}
+{"id": 109115, "text": "The system displays the list to the visitor with options to load or delete each of them.", "label": "auxiliary"}
+{"id": 109116, "text": "The visitor selects the filter of interest and chooses the option to load it.", "label": "auxiliary"}
+{"id": 109117, "text": "The system retrieves the filter criteria and populates the filter-building interface with these criteria.", "label": "auxiliary"}
+{"id": 109118, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 109119, "text": "Identifier-Name UC-RV3 – Delete a custom filter", "label": "auxiliary"}
+{"id": 109120, "text": "Description The visitor wants to delete a previously saved filter.", "label": "auxiliary"}
+{"id": 109121, "text": "Actors Registered visitor", "label": "auxiliary"}
+{"id": 109122, "text": "Priority 1 Frequency 2", "label": "auxiliary"}
+{"id": 109123, "text": "Preconditions The visitor is displayed the filter building interface.", "label": "auxiliary"}
+{"id": 109124, "text": "The visitor has saved at least one filter.", "label": "auxiliary"}
+{"id": 109125, "text": "The use case starts when the visitor selects to manage custom filters.", "label": "auxiliary"}
+{"id": 109126, "text": "The system retrieves the list of filters for the registered visitor.", "label": "auxiliary"}
+{"id": 109127, "text": "The system displays the list to the visitor with options to load or delete each of them.", "label": "auxiliary"}
+{"id": 109128, "text": "The visitor selects the filter of interest and chooses the option to delete it.", "label": "auxiliary"}
+{"id": 109129, "text": "The system deletes the filter and informs the registered visitor of the deletion success.", "label": "auxiliary"}
+{"id": 109130, "text": "The use case ends.", "label": "auxiliary"}
+{"id": 109131, "text": "BR ID Name", "label": "auxiliary"}
+{"id": 109132, "text": "BR1 Visitors must accept the portal data usage agreement before being allowed to export data from the portal.", "label": "auxiliary"}
+{"id": 109133, "text": "BR2 To avoid conflict, the data usage agreement for all NPT instances is the same as on GBIF portal.", "label": "auxiliary"}
+{"id": 109134, "text": "BR3 Only user logged into the system using an account with an administrator role can manage user accounts.", "label": "auxiliary"}
+{"id": 109135, "text": "BR4 Only user logged into the system using an account with a data manager role can access the following functionalities: manage resources, manage data sources, manage harvesting jobs, and manage taxonomic backbone.", "label": "auxiliary"}
+{"id": 109136, "text": "BR5 Only user logged into the system using an account with a portal manager role can access the following functionalities: manage blog posts, pages and news entries, customize NPT instance and choose languages available on the front end.", "label": "auxiliary"}
+{"id": 109137, "text": "BR6 Only user logged into the system using an account with an administrator role can configure the distribution map, manage installed modules and manage user accounts.", "label": "auxiliary"}
+{"id": 109138, "text": "BR7 Only user logged into the system using an account with a portal manager, administrator or data manager role can access data metrics with a visibility status of ‘hidden’.", "label": "auxiliary"}
+{"id": 109139, "text": "NPT resources for further information can be found on:", "label": "auxiliary"}
+{"id": 109140, "text": "- NPT group on GBIF Community site: http://community.gbif.org/pg/groups/3507/nodes-portal-toolkit-npt/", "label": "auxiliary"}
+{"id": 109141, "text": "Standards, formats, tools and API documentation:", "label": "auxiliary"}
+{"id": 109142, "text": "- Audubon: http://www.keytonature.eu/wiki/Audubon_Core", "label": "auxiliary"}
+{"id": 109143, "text": "- EML: http://knb.ecoinformatics.org/software/eml/eml-2.0.1/index.html", "label": "auxiliary"}
+{"id": 109144, "text": "- Darwin core: http://rs.tdwg.org/dwc/", "label": "auxiliary"}
+{"id": 109145, "text": "- Darwin core archive: http://www.gbif.org/informatics/standards-and-tools/publishing-data/data-standards/darwin-core-archives/", "label": "auxiliary"}
+{"id": 109146, "text": "- Documentation on the GBIF Portal API Google Code site: http://code.google.com/p/gbif-portalapi/", "label": "auxiliary"}
+{"id": 109147, "text": "- The GBIF Integrated Publishing Toolkit User Manual: http://code.google.com/p/gbif-providertoolkit/wiki/IPT2ManualNotes", "label": "auxiliary"}
+{"id": 109148, "text": "- Integrated Publishing Toolkit (IPT) - Architectural view: http://code.google.com/p/gbif-providertoolkit/downloads/detail?name=ipt-architecture_1.1.pdf", "label": "auxiliary"}
