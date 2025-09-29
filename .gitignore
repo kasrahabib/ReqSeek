@@ -6,8 +6,6 @@ datasets_with_data/*
 **/.DS_Store
 
 
-viewing_licenses.ipynb
-
 evaluations/RQ1/training_scripts_and_models/models/*
 evaluations/RQ1/training_scripts_and_models/model_snapshot_download.py
 evaluations/RQ2/training_scripts_and_models/models_with_inconsistency_levels/*
