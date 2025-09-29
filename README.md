@@ -29,6 +29,6 @@ This replication package supports our paper titled: **ReqSeek: Transformer-Based
 ---
 
 ## 🔒 License  
-Copyright © REELICIT, 2025. All rights reserved.  
+Copyright © Mohammad Kasra Habib, 2025. All rights reserved.  
 **Strictly no use, modification, or distribution permitted until paper publication.**  
 Post-publication, this repository will be archived on Zenodo under an open license. 

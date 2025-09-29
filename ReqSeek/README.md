@@ -13,7 +13,7 @@ probably proofread and complete it, then remove this comment. -->
 
 # kasrahabib/roberta-base-finetuned-iso29148-req-detector
 
-This model is a fine-tuned version of [FacebookAI/roberta-base](https://huggingface.co/FacebookAI/roberta-base) on an unknown dataset.
+This model is a fine-tuned version of [FacebookAI/roberta-base](https://huggingface.co/FacebookAI/roberta-base) on ARID dataset.
 It achieves the following results on the evaluation set:
 - Train Loss: 0.0257
 - Validation Loss: 0.4146

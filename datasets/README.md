@@ -89,7 +89,7 @@ A large-scale dataset derived by applying ReqSeek to refine and extend earlier r
 - `system_related_auxiliary`: 25,746 (useful for other AI tasks, e.g., RAG)
 
 
-The `10,201` instances in the requirement class form the main contribution, representing well-formed requirements, while the auxiliary classes capture surrounding context and system-related information. SwaRD offers high label quality and broad domain coverage, making it suitable for scalable ARI research.
+The `10,201` instances in the `requirement` class form the main contribution, while `contextual_auxiliary` and `system_related_auxiliary` support tasks like traceability, rationale extraction, test generation, RAG, and consistency checking.
 
 
 | Column Name                         | Description |
