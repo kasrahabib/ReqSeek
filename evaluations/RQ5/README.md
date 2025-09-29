@@ -10,8 +10,8 @@ This directory documetns the process of constructing the **SwaRD** dataset using
 
 - [`Identifying_Requirements_for_SwaRD_and_adding_license.ipynb`](./Identifying_Requirements_for_SwaRD_and_adding_license.ipynb)  
   This notebook demonstrates how requirements were identified from the heuristic dataset using **ReqSeek** to create the **SwaRD** dataset.  
-  > ⚠️ *This notebook cannot be executed as-is, as it depends on the raw heuristic dataset (blinded for peer review), due to licensing restrictions and the inclusion of non-disclosure protected requirements. It is provided here solely for transparency and documentation of the SwaRD construction process.*
+  > ⚠️ *This notebook cannot be executed as-is, as it depends on the raw UOCSSR dataset, due to licensing restrictions and the inclusion of non-disclosure protected requirements, we cannot release this dataset in full. It is provided here solely for transparency and documentation of the SwaRD construction process.*
 
 - [`RQ5.ipynb`](./RQ5.ipynb)  
-  Evaluates and compares **SwaRD**, the (blinded) heuristic dataset, and two human-curated datasets to address **Research Question 5 (RQ5)**.  
-  Interested users can replicate the analysis by placing the provided datasets into the appropriate directory structure using the **HotCRP.com** submission portal.
+  Evaluates and compares **SwaRD**, **UOCSSR**, and two human-curated datasets to address **Research Question 5 (RQ5)**.  
+  Interested users can replicate the analysis by placing the provided datasets into the appropriate directory structure using the submission portal.
