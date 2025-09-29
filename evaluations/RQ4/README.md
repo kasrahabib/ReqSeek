@@ -6,7 +6,6 @@ This directory supports the evaluation of model generalizability beyond controll
 
 - [`three_real_world_srs/`](./three_unseen_srs/)  
   Contains three real-world SRS documents used for **out-of-distribution evaluation**.  
-  > ⚠️ *One of the SRS documents originates from the authors and contains hardcoded institutional affiliations that could compromise the double-blind review process. Therefore, it has been temporarily removed and will be released under an appropriate open-source license after the review period.* We appreciate your understanding.
 
 The original licenses for the remaining two SRS (NTP and RMOS) documents are provided within each subdirectory. Users are requested to read and comply with their licensing terms before use. 
 
