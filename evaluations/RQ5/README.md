@@ -11,4 +11,4 @@ This directory documents the process of constructing the **SwaRD** dataset using
   > ⚠️ *This notebook cannot be executed as-is, as it depends on the raw UOCSSR dataset. Due to licensing restrictions and the inclusion of non-disclosure protected requirements, we cannot release the UOCSSR dataset in full. It is provided here solely for transparency and documentation of the SwaRD construction process.*
 
 - [`RQ5.ipynb`](./RQ5.ipynb)  
-  Evaluates and compares **SwaRD**, **UOCSSR**, and two human-curated datasets (KIB3, NTP, and RMOS) to address **Research Question 5 **.  
+  Evaluates and compares **SwaRD**, **UOCSSR**, and two human-curated datasets (KIB3, NTP, and RMOS) to address **Research Question 5**.  
