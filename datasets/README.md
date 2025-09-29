@@ -1,12 +1,13 @@
-# Datasets:
+# Directory Content
+
+🔒 **Availability Notice:** These datasets are currently shared exclusively for peer review through the submission portal for the peer-review process.
+
+This directory provides details and instructions on how to use the three datasets: `ARID`, `SwaRD`, `UOCSSR`).
 
 
-This directory provides details and instruction how to use the three datasets (`ARID`, `SwaRD`, `BLINDED-DATASET`) that were made available via the HotCRP submission portal during the peer-review process.
 
-- 🔒 **Access Notice**: These datasets are currently shared exclusively for peer review.
-- 📢 We will **make them publicly available; open-source,** after the peer-review process is complete.
 
-We use Hugging Face API `dataset` format for our datasets. Hugging Face datasets offer several advantages:
+We use Hugging Face `dataset` API for our datasets. Hugging Face datasets offer several advantages:
 
 
 - Efficient memory usage for large datasets
@@ -22,55 +23,74 @@ Make sure you have the `datasets` library installed:
 ```bash
 pip install datasets
 ```
+
 ## Loading the Datasets
 
-Load the datasets using:
+Load the datasets using Hugging Face dataset:
 
 ```python
 from datasets import load_from_disk
 
 # Load SwaRD dataset
 sward = load_from_disk("<path-to-dataset>/SwaRD/")
-sward
 ```
 
-Output:
-```
-Dataset({
-	features: ['REQID', 'REQID_expanded', 'Project Name', 'Subproject Name', 'Requirement Sentences', 'isF/NF', 'NF Subclasses', 'isReqSysAuxContAux_with_keyword', 'isReqSysAuxContAux', 'isReqAux'], num_rows: 40522
-})
-```
+### To View Each Dataset's Licenses
+Each dataset is governed by its own license. After loading, you can use the dataset variable holding the dataset and access its license as follow:
 
-## Selecting the Requirements
-
-You can filter the ```requirements from the auxilariy classes using:
 ```python
-sward.filter(lambda col: col['isReqAux'] == 'requirement')
+print(sward.info.license)
 ```
 
-Output:
-```
-Dataset({
-    features: ['REQID', 'REQID_expanded', 'Project Name', 'Subproject Name', 'Requirement Sentences', 'isF/NF', 'NF Subclasses', 'isReqSysAuxContAux_with_keyword', 'isReqSysAuxContAux', 'isReqAux'],
-    num_rows: 10201
-})
-```
-
-## Converting the Dataset to Other Formats
+### Converting from Hugging Face to Pandas
 
 ```python
 sward.to_pandas()
 ```
 
-Or
+### Converting from Hugging Face to Dictionary
 
 ```python 
 sward.to_dict()
 ```
 
-# Datasets Columns and Description
+See Hugging Face for conversion to other supported dataset formats. 
 
-## SwaRD 
+
+---
+
+## Datasets Columns and Description
+
+
+
+### Automatic Requirements Identification Dataset (ARID)
+A manually curated and labeled dataset of ISO/IEC/IEEE 29148 requirements from 23 industrial SRSs. While ReqSeek was trained on the full set, 6 SRSs were excluded from release due to licensing restrictions, leaving requirements from 17 SRSs in the current release. ARID was created to support domain-agnostic training and evaluation of ReqSeek.
+
+
+| Column Name             | Description |
+|------------------------|-------------|
+| `REQID`                 | Internal identifier assigned by the authors. May contain duplicate values. |
+| `REQID_expanded`        | Unique identifier for each requirement in ARID. |
+| `Project Name`          | Name of the project from which the requirement originates. |
+| `Subproject Name`       | Name of a subproject within the larger project. |
+| `Requirement Sentences` | The textual content of the requirement statement. |
+| `signal_keyword`        | Manually labeled signal keyword in the sentence (e.g., *shall*, *should*, *will*, *may*, *must*). |
+| `binary_cls`            | Manually annotated class: **requirement**, **system-related auxiliary**, or **contextual auxiliary**. |
+| `ternary_cls`           | Binary annotation: **requirement** or **auxiliary** (merging system/context auxiliary). |
+
+
+---
+
+### Software Requirements Dataset (SwaRD) 
+
+A large-scale dataset derived by applying ReqSeek to refine and extend earlier resources. It covers three categories:
+- `requirement`: 10,201 (primary class of interest)
+- `contextual_auxiliary`: 4,575 (useful for other AI tasks, e.g., RAG)
+- `system_related_auxiliary`: 25,746 (useful for other AI tasks, e.g., RAG)
+
+
+The `10,201` instances in the requirement class form the main contribution, representing well-formed requirements, while the auxiliary classes capture surrounding context and system-related information. SwaRD offers high label quality and broad domain coverage, making it suitable for scalable ARI research.
+
 
 | Column Name                         | Description |
 |------------------------------------|-------------|
@@ -87,7 +107,8 @@ sward.to_dict()
 
 ---
 
-## UOCSSR
+### Unified Open- and Close-Source Software Requirements Dataset (UOCSSR)
+An earlier dataset was created using heuristic-based methods. While useful for initial studies, UOCSSR primarily served as a foundation for developing SwaRD, which improves reliability, consistency, and representativeness.
 
 | Column Name             | Description |
 |------------------------|-------------|
@@ -98,20 +119,3 @@ sward.to_dict()
 | `Requirement Sentences` | The textual content of the requirement statement. |
 | `isF/NF`                | Indicates whether the requirement is **Functional (F)** or **Non-Functional (NF)**. |
 | `NF Subclasses`         | If non-functional, specifies the sub-category (e.g., reliability, maintainability). |
-
----
-
-## ARID
-
-| Column Name             | Description |
-|------------------------|-------------|
-| `REQID`                 | Internal identifier assigned by the authors. May contain duplicate values. |
-| `REQID_expanded`        | Unique identifier for each requirement in ARID. |
-| `Project Name`          | Name of the project from which the requirement originates. |
-| `Subproject Name`       | Name of a subproject within the larger project. |
-| `Requirement Sentences` | The textual content of the requirement statement. |
-| `signal_keyword`        | Manually labeled signal keyword in the sentence (e.g., *shall*, *should*, *will*, *may*, *must*). |
-| `binary_cls`            | Manually annotated class: **requirement**, **system-related auxiliary**, or **contextual auxiliary**. |
-| `ternary_cls`           | Binary annotation: **requirement** or **auxiliary** (merging system/context auxiliary). |
-
-
