@@ -20,7 +20,7 @@ This replication package supports our paper titled: **ReqSeek: Transformer-Based
    - **Note**: To run `ReqSeek`, you might need GPU power
 
 2. **[`datasets/`](./datasets/)**  
-   - **Will contain** our curated requirements datasets. The three curated datasets (`ARID`, `SwaRD`, `BLINDED-DATASET`) are exclusively submitted for review through the submission portal.
+   - **Will contain** our curated requirements datasets. The three curated datasets (`ARID`, `SwaRD`, `UOCSSR`) are exclusively submitted for review through the submission portal.
    - Includes a tutorial on how to load and use them. 
    -  We will **make all three datasets publicly available,** after the peer-review process is complete.
 
