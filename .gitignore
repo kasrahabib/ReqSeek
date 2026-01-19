@@ -1,5 +1,7 @@
 datasets_with_data/*
-
+ReqSeek_Presentation/*
+datasets_directly_shared_with_TOSEM/*
+ReqSeek_Figures/*
 
 
 **/.ipynb_checkpoints/
@@ -8,6 +10,7 @@ datasets_with_data/*
 
 evaluations/RQ1/training_scripts_and_models/models/*
 evaluations/RQ1/training_scripts_and_models/model_snapshot_download.py
+evaluations/RQ1/training_scripts_and_models/models_10fold_dataset_splits/*
 evaluations/RQ2/training_scripts_and_models/models_with_inconsistency_levels/*
 
 
