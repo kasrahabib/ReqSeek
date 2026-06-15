@@ -17,7 +17,7 @@ We use Hugging Face `dataset` API for our datasets. Hugging Face datasets offer 
 
 ## View Example Requirements
 
-To explore a small sample of requirements on ARID and SwaRD without loading the full dataset, see the notebook:[`A_Sample_Requirements_Identified_by_ReqSeek_in_the_SwaRD_Dataset.ipynb`](./A_Sample_Requirements_Identified_by_ReqSeek_in_the_SwaRD_Dataset.ipynb)
+To explore a small sample of requirements on ARID and SwaRD without loading the full dataset, see the notebook:[`ARID_SwaRD_requirement_samples.ipynb`](./ARID_SwaRD_requirement_samples.ipynb)
 
 ## Prerequisite
 
