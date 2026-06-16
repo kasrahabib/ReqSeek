@@ -13,5 +13,5 @@ evaluations/RQ1/training_scripts_and_models/model_snapshot_download.py
 evaluations/RQ1/training_scripts_and_models/models_10fold_dataset_splits/*
 evaluations/RQ2/training_scripts_and_models/models_with_inconsistency_levels/*
 
-
+evaluations/RQ4/rq4_error_characterization.xlsx
 
