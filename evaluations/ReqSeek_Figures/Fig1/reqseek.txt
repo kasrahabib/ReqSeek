@@ -1,0 +1,67 @@
+%%{init: {
+  "theme": "neutral",
+  "layout": "dagre",
+  "look": "classic",
+  "themeVariables": {
+    "fontFamily": "Georgia, serif",
+    "borderRadius": "50px"
+  },
+  "flowchart": {
+    "curve": "linear",
+    "nodeSpacing": 80,
+    "rankSpacing": 5
+  }
+}}%%
+
+flowchart LR
+subgraph ENV[" "]
+direction LR
+
+    B@{shape: lin-cyl, label: "<i class="fa-solid fa-file"></i> **Document**<br>*[.csv, .xml, or .pdf ...]*"}
+ 
+        subgraph PREPROCESS["Preprocessing"]
+            C@{shape: proc, label: "**SRS Flattening**<br>*[Long plain text...]*"}
+            D@{shape: procs, label: "S**entence Segmentation**<br>*[sentence 1, sentence 2, ... N]*"}
+        end
+    B --❶---> C
+    C --❷---> D
+
+    
+        subgraph CLASSIFICATION["Classification"]
+        E@{ shape: stadium, label: "<i class="fas fa-magnifying-glass-plus"></i> **ReqSeek**"}
+        F@{shape: tag-rect, label: "*-> prediction 1 <br>-> prediction 2 <br> ... <br>-> prediction N*"}
+        D --❸---> E
+        E --❹---> F
+
+        end
+B~~~E
+    
+end
+
+
+    %% Styling
+    style B fill:#B2DCDC,stroke:#9CBEBE,stroke-width:1px;
+    
+    classDef ModelColor fill:#FFD6D6,stroke:#d46a6a,stroke-width:1px
+    class E ModelColor
+
+    style PREPROCESS rx:8px,ry:8px
+
+    style CLASSIFICATION rx:8px,ry:8px
+    %% Changing font size
+    classDef phaseTitle font-size:21px,font-weight:bold;
+    class ENV,PREPROCESS,CLASSIFICATION phaseTitle;
+
+    classDef makeRound rx:20px,ry:20px
+    class PREPROCESS,CLASSIFICATION makeRound;
+
+    classDef NoStroke stroke-width:0px;
+    class PREPROCESS,CLASSIFICATION NoStroke
+
+    classDef nowrap text-wrap:nowrap;
+    class B,C,D nowrap
+    %% classDef default font-size:18px;
+
+
+    classDef SoftColor fill:#f9f9f9,stroke:none,rx:20px,ry:20px;
+    class ENV SoftColor;

@@ -1,0 +1,9 @@
+This work incorporates material from the dataset released by Lima et al. as part of their study, "Software engineering repositories: expanding the PROMISE database", presented at the XXXIII Brazilian Symposium on Software Engineering (SBES 2019).
+
+The dataset was directly obtained from the following publicly shared location:
+https://drive.google.com/file/d/1qieNEidEfqU0dQLiMw-kT1xOGR4pYe2W/view
+
+Full citation:
+Lima, M., Valle, V., Costa, E., Lira, F., & Gadelha, B. (2019). Software engineering repositories: expanding the PROMISE database. In Proceedings of the XXXIII Brazilian Symposium on Software Engineering (pp. 427–436).
+
+Note: This dataset does not carry a standard open-source license. It was shared for academic and research use. Users must cite the original authors and publication and verify that any further use is consistent with fair use and academic norms.

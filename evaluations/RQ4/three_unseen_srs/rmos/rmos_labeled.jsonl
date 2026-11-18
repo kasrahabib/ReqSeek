@@ -1,0 +1,724 @@
+{"id": 111279, "text": "Dr David Carrington", "label": "auxiliary"}
+{"id": 111280, "text": "School of Information Technology & Electrical Engineering", "label": "auxiliary"}
+{"id": 111281, "text": "University of Queensland", "label": "auxiliary"}
+{"id": 111282, "text": "Mr Tyson Henning (41213250)", "label": "auxiliary"}
+{"id": 111283, "text": "Mr Daryl Keehn (40766357)", "label": "auxiliary"}
+{"id": 111284, "text": "Mr Jonathan Thompson (40525460)", "label": "auxiliary"}
+{"id": 111285, "text": "Mr Michael Wildermoth (40092560)", "label": "auxiliary"}
+{"id": 111286, "text": "TABLE OF CONTENTS", "label": "auxiliary"}
+{"id": 111287, "text": "LIST OF FIGURES ...............................................................................................................................vii", "label": "auxiliary"}
+{"id": 111288, "text": "LIST OF TABLES ..................................................................................................................................", "label": "auxiliary"}
+{"id": 111289, "text": "Prepared By Team Danger Tutorial One", "label": "auxiliary"}
+{"id": 111290, "text": "• v •", "label": "auxiliary"}
+{"id": 111291, "text": "Prepared By Team Danger Tutorial One • vi • April 2008", "label": "auxiliary"}
+{"id": 111292, "text": "Figure 4.1.1 Restaurant Menu & Ordering System Use Case Diagram 16", "label": "auxiliary"}
+{"id": 111293, "text": "Figure 4.2.1 Log In Activity Diagram 23", "label": "auxiliary"}
+{"id": 111294, "text": "Figure 4.2.2 Log Out Activity Diagram 23", "label": "auxiliary"}
+{"id": 111295, "text": "Figure 4.2.3 Activate Table Activity Diagram 24", "label": "auxiliary"}
+{"id": 111296, "text": "Figure 4.2.4 Deactivate Table Activity Diagram 24", "label": "auxiliary"}
+{"id": 111297, "text": "Figure 4.2.5 Accept Order Activity Diagram 25", "label": "auxiliary"}
+{"id": 111298, "text": "Figure 4.2.6 Deliver Item Activity Diagram 25", "label": "auxiliary"}
+{"id": 111299, "text": "Figure 4.2.7 Process Bankcard Payment Activity Diagram 26", "label": "auxiliary"}
+{"id": 111300, "text": "Figure 4.2.8 Process Cash Payment Activity Diagram 26", "label": "auxiliary"}
+{"id": 111301, "text": "Figure 4.2.9 Pay Bill Activity Diagram 27", "label": "auxiliary"}
+{"id": 111302, "text": "Figure 4.2.10 Place Order Activity Diagram 27", "label": "auxiliary"}
+{"id": 111303, "text": "Figure 4.2.11 Call Waiter Activity Diagram 28", "label": "auxiliary"}
+{"id": 111304, "text": "Figure 4.2.12 Abort Meal Activity Diagram 28", "label": "auxiliary"}
+{"id": 111305, "text": "Figure 4.2.13 Abort Account Activity Diagram 29", "label": "auxiliary"}
+{"id": 111306, "text": "Figure 4.2.14 Issue Refund Activity Diagram 29", "label": "auxiliary"}
+{"id": 111307, "text": "Figure 4.2.15 Accept/Reject Item Activity Diagram 30", "label": "auxiliary"}
+{"id": 111308, "text": "Figure 4.2.16 Indicate Item Ready Activity Diagram 30", "label": "auxiliary"}
+{"id": 111309, "text": "Figure 4.3.1 Restaurant Menu & Ordering System Class Diagram 33", "label": "auxiliary"}
+{"id": 111310, "text": "Figure 4.4.1 Meal Class Statechart Diagram 34", "label": "auxiliary"}
+{"id": 111311, "text": "Figure 4.4.2 Account Class Statechart Diagram 34", "label": "auxiliary"}
+{"id": 111312, "text": "Figure 4.4.3 Tablet Class Statechart Diagram 34", "label": "auxiliary"}
+{"id": 111313, "text": "Figure 4.4.4 Payment Class Statechart Diagram 34", "label": "auxiliary"}
+{"id": 111314, "text": "Figure 4.4.5 Item Class Statechart Diagram 35", "label": "auxiliary"}
+{"id": 111315, "text": "Figure 4.4.6 Order Class Statechart Diagram 35", "label": "auxiliary"}
+{"id": 111316, "text": "Figure 4.4.7 Table Class Statechart Diagram 35", "label": "auxiliary"}
+{"id": 111317, "text": "Prepared By Team Danger Tutorial One • vii • April 2008", "label": "auxiliary"}
+{"id": 111318, "text": "Prepared By Team Danger Tutorial One", "label": "auxiliary"}
+{"id": 111319, "text": "• viii •", "label": "auxiliary"}
+{"id": 111320, "text": "Table 1.3.1 System Terminology ......................................................................................................... 3", "label": "auxiliary"}
+{"id": 111321, "text": "Table 1.3.2 System Acronyms ............................................................................................................. 3", "label": "auxiliary"}
+{"id": 111322, "text": "Table 3.1.1 Functional General Requirements .................................................................................................................. 9", "label": "auxiliary"}
+{"id": 111323, "text": "Table 3.1.2 Functional Customer Requirements ................................................................................................................. 10", "label": "auxiliary"}
+{"id": 111324, "text": "Table 3.1.3 Functional Waiter Requirements .................................................................................................................. 11", "label": "auxiliary"}
+{"id": 111325, "text": "Table 3.1.4 Functional Chef Requirements .................................................................................................................. 11", "label": "auxiliary"}
+{"id": 111326, "text": "Table 3.1.5 Functional Supervisor Requirements ................................................................................................................. 12", "label": "auxiliary"}
+{"id": 111327, "text": "Table 3.2.1 Non-Functional Safety Requirements ................................................................................................................. 12", "label": "auxiliary"}
+{"id": 111328, "text": "Table 3.2.2 Non-Functional Security Requirements .................................................................................................................. 13", "label": "auxiliary"}
+{"id": 111329, "text": "Table 3.2.3 Non-Functional Human Engineering Requirements ................................................................................................................. 13", "label": "auxiliary"}
+{"id": 111330, "text": "Table 3.2.4 Non-Functional Performance Requirements .................................................................................................................. 13", "label": "auxiliary"}
+{"id": 111331, "text": "Table 4.1.1 Log In Use Case Description .................................................................................................................. 17", "label": "auxiliary"}
+{"id": 111332, "text": "Table 4.1.2 Log Out Use Case Description .................................................................................................................. 17", "label": "auxiliary"}
+{"id": 111333, "text": "Table 4.1.3 Activate Table Use Case Description .................................................................................................................. 17", "label": "auxiliary"}
+{"id": 111334, "text": "Table 4.1.4 Deactivate Table Use Case Description .................................................................................................................. 18", "label": "auxiliary"}
+{"id": 111335, "text": "Table 4.1.5 Accept Order Use Case Description .................................................................................................................. 18", "label": "auxiliary"}
+{"id": 111336, "text": "Table 4.1.6 Deliver Item Use Case Description .................................................................................................................. 18", "label": "auxiliary"}
+{"id": 111337, "text": "Table 4.1.7 Process Bankcard Payment Use Case Description .................................................................................................................. 19", "label": "auxiliary"}
+{"id": 111338, "text": "Table 4.1.8 Process Cash Payment Use Case Description .................................................................................................................. 19", "label": "auxiliary"}
+{"id": 111339, "text": "Table 4.1.9 Pay Bills Use Case Description .................................................................................................................. 20", "label": "auxiliary"}
+{"id": 111340, "text": "Table 4.1.10 Place Order Use Case Description .................................................................................................................. 20", "label": "auxiliary"}
+{"id": 111341, "text": "Table 4.1.11 Call Waiter Use Case Description .................................................................................................................. 21", "label": "auxiliary"}
+{"id": 111342, "text": "Table 4.1.12 Abort Meal Use Case Description .................................................................................................................. 21", "label": "auxiliary"}
+{"id": 111343, "text": "Table 4.1.13 Abort Account Use Case Description .................................................................................................................. 21", "label": "auxiliary"}
+{"id": 111344, "text": "Table 4.1.14 Issue Refund Use Case Description .................................................................................................................. 22", "label": "auxiliary"}
+{"id": 111345, "text": "Table 4.1.15 Accept/Reject Item Use Case Description .................................................................................................................. 22", "label": "auxiliary"}
+{"id": 111346, "text": "Table 4.1.16 Indicate Item Ready Use Case Description .................................................................................................................. 22", "label": "auxiliary"}
+{"id": 111347, "text": "Prepared By Team Danger Tutorial One • ix • April 2008", "label": "auxiliary"}
+{"id": 111348, "text": "Prepared By Team Danger Tutorial One • x • April 2008", "label": "auxiliary"}
+{"id": 111349, "text": "Name Date Reason Version", "label": "auxiliary"}
+{"id": 111350, "text": "Jonathan Thompson 24/04/08 Document Draft 1.0", "label": "auxiliary"}
+{"id": 111351, "text": "Jonathan Thompson, Tyson Henning 27/04/08 Document Final Draft 1.1", "label": "auxiliary"}
+{"id": 111352, "text": "Tyson Henning 28/04/08 Document Final 1.2", "label": "auxiliary"}
+{"id": 111353, "text": "Prepared By Team Danger Tutorial One • xi • April 2008", "label": "auxiliary"}
+{"id": 111354, "text": "Prepared By Team Danger Tutorial One", "label": "auxiliary"}
+{"id": 111355, "text": "• xii •", "label": "auxiliary"}
+{"id": 111356, "text": "The following section provides an overview of the derived Software Requirements Specification (SRS) for the subject Restaurant Menu and Ordering System (RMOS).", "label": "auxiliary"}
+{"id": 111357, "text": "To begin with, the purpose of the document is presented and its intended audience outlined.", "label": "auxiliary"}
+{"id": 111358, "text": "Subsequently, the scope of the project specified by the document is given with a particular focus on what the resultant software will do and the relevant benefits associated with it.", "label": "auxiliary"}
+{"id": 111359, "text": "The nomenclature used throughout the SRS is also offered.", "label": "auxiliary"}
+{"id": 111360, "text": "To conclude, a complete document overview is provided to facilitate increased reader comprehension and navigation.", "label": "auxiliary"}
+{"id": 111361, "text": "The purpose of this SRS is to outline both the functional and non-functional requirements of the subject RMOS.", "label": "auxiliary"}
+{"id": 111362, "text": "In addition to said requirements, the document also provides a detailed profile of the external interfaces, performance considerations and design constraints imposed on the subsequent implementation.", "label": "auxiliary"}
+{"id": 111363, "text": "It is the intention that the presented set of requirements possesses the following qualities; correctness, unambiguousness, completeness, consistency, verifiability, modifiability and traceability.", "label": "auxiliary"}
+{"id": 111364, "text": "Consequently, the document should act as a foundation for efficient and well-managed project completion and further serve as an accurate reference in the future.", "label": "auxiliary"}
+{"id": 111365, "text": "The primary audience of this SRS document will be the development team employed to implement the specified RMOS.", "label": "auxiliary"}
+{"id": 111366, "text": "It will not only provide an extensive capacity for project planning and progress assessment but it will further assist with developer/stakeholder interactions.", "label": "auxiliary"}
+{"id": 111367, "text": "The secondary document audience comprises the stakeholders of the project, that is, restaurateurs and associated staff.", "label": "auxiliary"}
+{"id": 111368, "text": "To this audience group, this SRS should convey and confirm the required functionality and represent a contractual agreement between the involved parties.", "label": "auxiliary"}
+{"id": 111369, "text": "In current formal dining environments, some form of physical static menu is utilised to convey the available food and beverage choices to customers.", "label": "auxiliary"}
+{"id": 111370, "text": "Said menus are generally paper based and hence impose restrictions on the textual real estate available and the ability a restaurateur has to update them.", "label": "auxiliary"}
+{"id": 111371, "text": "This document specifies the requirements for a restaurant paper menu and ordering replacement strategy to alleviate the problems associated with the current archaic method.", "label": "auxiliary"}
+{"id": 111372, "text": "Three related concepts are encompassed by the general scope of the Restaurant Menu and Ordering System.", "label": "auxiliary"}
+{"id": 111373, "text": "The first pertains to the replacement of paper-based menus using an electronic format, the second relates to a complementary electronic strategy for the front of house handling of a customer’s order and the third surrounds the process of transferring said electronic orders to the kitchen for preparation.", "label": "auxiliary"}
+{"id": 111374, "text": "It should be noted that while the suggested strategy incorporates the use of various hardware components, the primary focus of the presented SRS relates to the constituent software elements.", "label": "auxiliary"}
+{"id": 111375, "text": "The Restaurant Menu and Ordering System is a software package to facilitate ordering within a traditional restaurant.", "label": "auxiliary"}
+{"id": 111376, "text": "The customer is able to view the menu, place orders, call the waiter, and organise the final bill through the surface computer interface built into their table.", "label": "auxiliary"}
+{"id": 111377, "text": "Waiters are able to initialise a table for customers, control table functions remotely to assist customers, confirm", "label": "auxiliary"}
+{"id": 111378, "text": "Prepared By Team Danger Tutorial One", "label": "auxiliary"}
+{"id": 111379, "text": "Orders, send orders to food preparation staff and finalise the customer’s bill – all through their wireless tablet PC.", "label": "auxiliary"}
+{"id": 111380, "text": "The food staff, with their touch-display interfaces to the system, are able to view orders sent to the kitchen by waiters.", "label": "auxiliary"}
+{"id": 111381, "text": "During preparation, they are able to let the waiter know the status of each item, and can send notifications when items are completed, again through the touch-display.", "label": "auxiliary"}
+{"id": 111382, "text": "The system contains full accountability and logging systems, and supports supervisor actions to account for exceptional circumstances, such as a meal being refunded or walked out on.", "label": "auxiliary"}
+{"id": 111383, "text": "Customers are presented with an attractive and easy-to-use surface computer GUI with a drag-and-drop ‘object’ metaphor in their menus.", "label": "auxiliary"}
+{"id": 111384, "text": "Waiters are able to perform all actions that the table system normally handles via their tablet PCs, so in the event of a customer being unable to operate the surface computer, the waiter can handle orders traditionally while using retaining the accountability and logging functions of the system, and retaining the same channel of communication with food staff.", "label": "auxiliary"}
+{"id": 111385, "text": "Greater flexibility in menus, an increase in restaurant productivity and capacity for extensive business auditing are the primary benefits associated with the RMOS.", "label": "auxiliary"}
+{"id": 111386, "text": "Menu updates can be rolled out at any time with no extra labour from printing and distributing new menus, allowing for more dynamic pricing and content changes.", "label": "auxiliary"}
+{"id": 111387, "text": "With the underlying software system taking responsibility for a customer’s order throughout its lifecycle, not only is accuracy ensured, but all actions are logged in a database for analysis and accountability of staff.", "label": "auxiliary"}
+{"id": 111388, "text": "This allows the company to audit and account staff time, materials and restaurant efficiency, as well as to review exceptional circumstances for future handling.", "label": "auxiliary"}
+{"id": 111389, "text": "This subsection presents definitions for the terms and acronyms used throughout this SRS as they relate to the subject RMOS.", "label": "auxiliary"}
+{"id": 111390, "text": "Item Single serving of food/beverage", "label": "auxiliary"}
+{"id": 111391, "text": "Order Comprises one or more items", "label": "auxiliary"}
+{"id": 111392, "text": "Meal Comprises one or more orders (associated with one customer)", "label": "auxiliary"}
+{"id": 111393, "text": "Customer Restaurant patron that orders/pays for a meal", "label": "auxiliary"}
+{"id": 111394, "text": "Staff General restaurant employee", "label": "auxiliary"}
+{"id": 111395, "text": "Waiter Staff member whose primary job is to take orders/serve meals to customers", "label": "auxiliary"}
+{"id": 111396, "text": "Chef Staff member whose primary job is to prepare items", "label": "auxiliary"}
+{"id": 111397, "text": "Supervisor Staff member whose primary job is to manage restaurant operations", "label": "auxiliary"}
+{"id": 111398, "text": "Table Comprises one or more seats at which customers sit and place orders from", "label": "auxiliary"}
+{"id": 111399, "text": "Account Comprises all the meals from a table", "label": "auxiliary"}
+{"id": 111400, "text": "Payment Comprises the total cost of zero or more meals and zero or more tips", "label": "auxiliary"}
+{"id": 111401, "text": "Prepared By Team Danger Tutorial One • 2 • April 2008", "label": "auxiliary"}
+{"id": 111402, "text": "Server: Backend computer that hosts the restaurant menu and ordering system", "label": "auxiliary"}
+{"id": 111403, "text": "Surface Computer: Built into tables to provide customers with menu/ordering functionality", "label": "auxiliary"}
+{"id": 111404, "text": "Tablet: Wireless mobile computer to provide staff with customer serving functionality", "label": "auxiliary"}
+{"id": 111405, "text": "Display: Touch screen to provide a means for chefs to interact with the system", "label": "auxiliary"}
+{"id": 111406, "text": "Register System: Point of sale terminal for handling bill payments", "label": "auxiliary"}
+{"id": 111407, "text": "Bankcard: Customer debit/credit card", "label": "auxiliary"}
+{"id": 111408, "text": "Menu: Surface computer representation of the available items and other options", "label": "auxiliary"}
+{"id": 111409, "text": "SRS Software Requirement Specification", "label": "auxiliary"}
+{"id": 111410, "text": "RMOS Restaurant Menu and Ordering System", "label": "auxiliary"}
+{"id": 111411, "text": "DBMS Database Management System", "label": "auxiliary"}
+{"id": 111412, "text": "LAN Local Area Network", "label": "auxiliary"}
+{"id": 111413, "text": "IP Internet Protocol", "label": "auxiliary"}
+{"id": 111414, "text": "TCP Transmission Control Protocol", "label": "auxiliary"}
+{"id": 111415, "text": "UDP User Datagram Protocol", "label": "auxiliary"}
+{"id": 111416, "text": "IEEE 802.11 Wireless Local Area Network Standard", "label": "auxiliary"}
+{"id": 111417, "text": "SSLv3 Secure Sockets Layer Version 3", "label": "auxiliary"}
+{"id": 111418, "text": "WPA2-PSK Wi-Fi Protected Access 2 with Pre-Shared Key", "label": "auxiliary"}
+{"id": 111419, "text": "The structure of this Software Requirements Specification is as follows.", "label": "auxiliary"}
+{"id": 111420, "text": "Section 2 presents an overall description of the subject RMOS.", "label": "auxiliary"}
+{"id": 111421, "text": "Attention is given to putting the resultant software product into perspective and further outlining end-user characteristics, system constraints and assumptions.", "label": "auxiliary"}
+{"id": 111422, "text": "Section 3 is devoted to the explicit specification of software requirements both functional and non-functional in nature.", "label": "auxiliary"}
+{"id": 111423, "text": "The functional requirements listed have been demarcated according to the categories of system users.", "label": "auxiliary"}
+{"id": 111424, "text": "For completeness, Section 4 extends upon Section 3 through the inclusion of UML analysis models and diagrams.", "label": "auxiliary"}
+{"id": 111425, "text": "To begin with, the identified RMOS use cases are given.", "label": "auxiliary"}
+{"id": 111426, "text": "In supplement, activity diagrams for each use case are presented along with an overall class diagram and relevant statechart diagrams.", "label": "auxiliary"}
+{"id": 111427, "text": "Prepared By Team Danger Tutorial One • 3 • April 2008", "label": "auxiliary"}
+{"id": 111428, "text": "Prepared By Team Danger Tutorial One", "label": "auxiliary"}
+{"id": 111429, "text": "• 4 •", "label": "auxiliary"}
+{"id": 111430, "text": "The following section presents an overall description of the subject RMOS.", "label": "auxiliary"}
+{"id": 111431, "text": "In particular, the product has been put into perspective through a detailed assessment of the system, user, hardware, software and communication interfaces, memory considerations, operational modes and site adaptation requirements.", "label": "auxiliary"}
+{"id": 111432, "text": "Further, characteristics of the system’s end-users are discussed along with the identified system constraints and assumptions.", "label": "auxiliary"}
+{"id": 111433, "text": "To conclude the section, an apportioning of requirements has been outlined.", "label": "auxiliary"}
+{"id": 111434, "text": "The software described in this SRS is the software for a complete RMOS system.", "label": "auxiliary"}
+{"id": 111435, "text": "The system merges various hardware and software elements and further interfaces with external systems.", "label": "auxiliary"}
+{"id": 111436, "text": "Thus, while the software covers the majority of the system's functionality, it relies on a number of external interfaces for persistence and unhandled tasks, as well as physically interfacing with humans.", "label": "auxiliary"}
+{"id": 111437, "text": "The RMOS interfaces with an existing payment system, including a cash register and software-accessible credit/EFTPOS system, in order to quickly and easily handle customer billing.", "label": "auxiliary"}
+{"id": 111438, "text": "The payment system should be operable such that it can return information to the RMOS system as to whether payment was successful or failed.", "label": "auxiliary"}
+{"id": 111439, "text": "There are three separate user interfaces used by the RMOS software, each related to an interfaced physical hardware device (see Section 2.1.3).", "label": "auxiliary"}
+{"id": 111440, "text": "These three user interfaces are the Surface Computer UI, Tablet UI and Display UI.", "label": "auxiliary"}
+{"id": 111441, "text": "The Surface Computer UI is the interface used by restaurant customers.", "label": "auxiliary"}
+{"id": 111442, "text": "This interface uses the surface computer paradigm - users interact with the system by dragging 'objects' around on the flat-screen touch-sensitive display.", "label": "auxiliary"}
+{"id": 111443, "text": "For the RMOS, users can manipulate objects such as items of food, dietary requirements, tips and menus on the surface of their table.", "label": "auxiliary"}
+{"id": 111444, "text": "Such objects can be moved into static objects such as meals and payments to perform various functions.", "label": "auxiliary"}
+{"id": 111445, "text": "In addition to this object manipulation paradigm, a limited system menu is necessary.", "label": "auxiliary"}
+{"id": 111446, "text": "Users will summon their restaurant menu, which is combined with a system/command menu, using an easy touch gesture, a double-tap on the touch surface, and dismiss it with a similar gesture or by tapping a close button GUI element.", "label": "auxiliary"}
+{"id": 111447, "text": "The GUI will take a small percentage of the table's screen, so the UI will be clear and uncluttered.", "label": "auxiliary"}
+{"id": 111448, "text": "The Tablet UI is designed to run on a small, wireless-enabled touch-screen tablet PC, to be used by waiters to accommodate customer needs.", "label": "auxiliary"}
+{"id": 111449, "text": "This UI will be designed for use with a stylus input into the touch-screen.", "label": "auxiliary"}
+{"id": 111450, "text": "Because the number of operations the UI needs to support is relatively limited, there will be no nested menu structure.", "label": "auxiliary"}
+{"id": 111451, "text": "The UI shall provide simple graphical interfaces, similar to a map, to allow the user to select tables/customers as the target of operations.", "label": "auxiliary"}
+{"id": 111452, "text": "Prepared By Team Danger Tutorial One • 5 • April 2008", "label": "auxiliary"}
+{"id": 111453, "text": "The Display UI provides kitchen staff with simple functionality related to ordered items.", "label": "auxiliary"}
+{"id": 111454, "text": "The UI will display the list of items in large, easy-to-read text, sorted by time of submission with additional information (such as dietary requirements and the destination table) displayed in tabulated format.", "label": "auxiliary"}
+{"id": 111455, "text": "Input is provided by fingertips, as opposed to a stylus.", "label": "auxiliary"}
+{"id": 111456, "text": "There are three external hardware devices used by the RMOS, each related to a user interface (see Section 2.1.2).", "label": "auxiliary"}
+{"id": 111457, "text": "These devices are the surface computers, the wireless tablets and the touch displays.", "label": "auxiliary"}
+{"id": 111458, "text": "All three devices must be physically robust and immune to liquid damage and stains.", "label": "auxiliary"}
+{"id": 111459, "text": "The devices (with the possible exception of displays) must also have good industrial design aesthetics, as they are to be used in place of normal restaurant tables and notepads and will be in direct contact with customers.", "label": "auxiliary"}
+{"id": 111460, "text": "The devices behave as 'terminals' in the sense that they never have a full system image, do not store data and are not used for the core logic of the system.", "label": "auxiliary"}
+{"id": 111461, "text": "However, they should be fully capable computers that can use textual data from the server along with local UI/interpretation code to display UI elements and take input.", "label": "auxiliary"}
+{"id": 111462, "text": "All order and transaction records should be stored on the server, not these computers.", "label": "auxiliary"}
+{"id": 111463, "text": "The performance of dumb terminals over an area the size of a restaurant is likely to be unacceptable.", "label": "auxiliary"}
+{"id": 111464, "text": "In all three cases, the hardware device takes information from the RMOS and processes the information to display.", "label": "auxiliary"}
+{"id": 111465, "text": "It also provides user input information to the RMOS.", "label": "auxiliary"}
+{"id": 111466, "text": "The RMOS will interface with a Database Management System (DBMS) that stores the information necessary for the RMOS to operate.", "label": "auxiliary"}
+{"id": 111467, "text": "The DBMS must be able to provide, on request and with low latency, data concerning the restaurant's menu, employees (and their passwords) and available dietary requirements.", "label": "auxiliary"}
+{"id": 111468, "text": "Additionally, it should take and archive data provided to it by the RMOS.", "label": "auxiliary"}
+{"id": 111469, "text": "This data will include records of all orders and transactions (system states and state changes) executed by the RMOS.", "label": "auxiliary"}
+{"id": 111470, "text": "The DBMS must store all data such that it can be used for accounting, as well as accountability.", "label": "auxiliary"}
+{"id": 111471, "text": "The RMOS will interface with a Local Area Network (LAN) to maintain communication with all its devices.", "label": "auxiliary"}
+{"id": 111472, "text": "It should use a reliable-type IP protocol such as TCP/IP or reliable-UDP/IP for maximum compatibility and stability.", "label": "auxiliary"}
+{"id": 111473, "text": "All devices it will interface with should contain standard Ethernet compatible, software accessible LAN cards to maintain communication between the server and the surface computers, tablets, displays and the external payment system.", "label": "auxiliary"}
+{"id": 111474, "text": "Devices that are wireless should also use Ethernet compatible cards, using the IEEE 802.11b/g standard and having support for WPA2-PSK encryption.", "label": "auxiliary"}
+{"id": 111475, "text": "The use of IEEE 802.11n transmission standard hardware is also acceptable if all other local hardware is conformant to the same standard.", "label": "auxiliary"}
+{"id": 111476, "text": "The memory usage of the RMOS will obviously have to be constrained by the devices it is intended to run on.", "label": "auxiliary"}
+{"id": 111477, "text": "In particular, the wireless tablets, as mobile devices, may have limited memory - this should be taken into account when writing the tablet software.", "label": "auxiliary"}
+{"id": 111478, "text": "Memory constraints upon the server.", "label": "auxiliary"}
+{"id": 111479, "text": "Prepared By Team Danger Tutorial One • 6 • April 2008", "label": "auxiliary"}
+{"id": 111480, "text": "Surface computers and displays are not likely to be an issue as each will likely have at least a gigabyte of primary memory and hundreds of gigabytes or more of secondary memory.", "label": "auxiliary"}
+{"id": 111481, "text": "The RMOS has only one mode of operation.", "label": "auxiliary"}
+{"id": 111482, "text": "However, because of the restaurant environment it is used in, it must be able to operate for long periods, without error.", "label": "auxiliary"}
+{"id": 111483, "text": "The server must be able to operate unattended indefinitely.", "label": "auxiliary"}
+{"id": 111484, "text": "It should not need physical interaction except for upgrades and failure of hardware elements.", "label": "auxiliary"}
+{"id": 111485, "text": "Backup and recovery should be handled by the DBMS and operating system, or external software running on a timed backup system.", "label": "auxiliary"}
+{"id": 111486, "text": "Interaction from the RMOS should not be required.", "label": "auxiliary"}
+{"id": 111487, "text": "Since stateful data should not be stored on any of the devices other than the server, keeping a system image on the server for each device may be a sufficient operational method to facilitate restoration should a device become corrupted.", "label": "auxiliary"}
+{"id": 111488, "text": "Site configuration for the RMOS is expected to encompass the following steps:", "label": "auxiliary"}
+{"id": 111489, "text": "- Install the server, surface computers and displays", "label": "auxiliary"}
+{"id": 111490, "text": "- Acquire sufficient tablets for all staff that need to use them", "label": "auxiliary"}
+{"id": 111491, "text": "- Network all devices, install operating systems, server software and DBMS", "label": "auxiliary"}
+{"id": 111492, "text": "- Secure network, distribute initial passkeys", "label": "auxiliary"}
+{"id": 111493, "text": "- Install RMOS software", "label": "auxiliary"}
+{"id": 111494, "text": "- Configure server RMOS software", "label": "auxiliary"}
+{"id": 111495, "text": "Some customisation of RMOS software elements may be required, including:", "label": "auxiliary"}
+{"id": 111496, "text": "- Table layout maps", "label": "auxiliary"}
+{"id": 111497, "text": "- GUI elements, especially for customer-facing UIs", "label": "auxiliary"}
+{"id": 111498, "text": "The end-users of the RMOS fall into three primary categories, unskilled, partly skilled and highly skilled.", "label": "auxiliary"}
+{"id": 111499, "text": "The users of the surface computers are walk-in customers and should therefore be assumed to have no relevant prior skills or education other than basic abilities to operate an automated system; no more complex than a parking meter or vending machine.", "label": "auxiliary"}
+{"id": 111500, "text": "The users of the tablets and displays are waiters and chefs respectively and they should be able to use the system and further be able to train others with minimal training themselves.", "label": "auxiliary"}
+{"id": 111501, "text": "They must be able to explain all elements of the user interfaces except the server.", "label": "auxiliary"}
+{"id": 111502, "text": "Supervisors also fall into the same category, though they will have to learn other sections of the system (refunds etc); these should not be of notably greater complexity than the standard functions.", "label": "auxiliary"}
+{"id": 111503, "text": "This class of user would be expected to have a junior high-school certificate education or equivalent.", "label": "auxiliary"}
+{"id": 111504, "text": "Prepared By Team Danger Tutorial One • 7 • April 2008", "label": "auxiliary"}
+{"id": 111505, "text": "Highly skilled user", "label": "auxiliary"}
+{"id": 111506, "text": "The initial installation and configuration of hardware and the constituent RMOS system components (especially the server) is guaranteed to require someone with notable computer experience, including extensive experience with network and operating systems to complete it.", "label": "auxiliary"}
+{"id": 111507, "text": "The software should not be needlessly complex, but it is still expected not to be entirely 'plug and play'.", "label": "auxiliary"}
+{"id": 111508, "text": "This class of user is expected to have a high-school certificate or equivalent, as well as extensive computer experience.", "label": "auxiliary"}
+{"id": 111509, "text": "The RMOS should be written in an object-oriented language with strong GUI links and a simple, accessible network API.", "label": "auxiliary"}
+{"id": 111510, "text": "The primary candidate tool chains are Java/Swing, C++/Qt and Python/Qt.", "label": "auxiliary"}
+{"id": 111511, "text": "The system must provide a capacity for parallel operation and system design should not introduce scalability issues with regard to the number of surface computers, tablets or displays connected at any one time.", "label": "auxiliary"}
+{"id": 111512, "text": "The end system should also allow for seamless recovery, without data loss, from individual device failure.", "label": "auxiliary"}
+{"id": 111513, "text": "There must be a strong audit chain with all system actions logged.", "label": "auxiliary"}
+{"id": 111514, "text": "While interfaces are covered in Section 2.1, it is worth noting that this system is likely to conform to what is available.", "label": "auxiliary"}
+{"id": 111515, "text": "With that in mind, the most adaptable and portable technologies should be used for the implementation.", "label": "auxiliary"}
+{"id": 111516, "text": "The system has criticality insofar as it is a live system.", "label": "auxiliary"}
+{"id": 111517, "text": "If the system is down, then customers must not notice, or notice that the system recovers quickly (seconds).", "label": "auxiliary"}
+{"id": 111518, "text": "The system must be reliable enough to run crash and glitch free more or less indefinitely, or facilitate error recovery strong enough such that glitches are never revealed to its end-users.", "label": "auxiliary"}
+{"id": 111519, "text": "The SRS assumes that none of the constituent system components will be implemented as embedded applications.", "label": "auxiliary"}
+{"id": 111520, "text": "The implication is that the target hardware will provide a capacity for standalone program/application deployment and not require customised embedded firmware to be written.", "label": "auxiliary"}
+{"id": 111521, "text": "It is further assumed that tablet PCs of sufficient processing capability and battery life will be utilised.", "label": "auxiliary"}
+{"id": 111522, "text": "The surface computers employed by the system should facilitate being utilised/left on for extended periods (sufficient for daily use) and that they are programmable in the same fashion as x86 architecture computers.", "label": "auxiliary"}
+{"id": 111523, "text": "Finally, it is further assumed that the deployment environment is capable of supporting an IEEE 802.11 wireless network for system communication.", "label": "auxiliary"}
+{"id": 111524, "text": "This subsection pertains to both the functional and non-functional requirements omitted unintentionally from this SRS document.", "label": "auxiliary"}
+{"id": 111525, "text": "Prepared By Team Danger Tutorial One • 8 • April 2008", "label": "auxiliary"}
+{"id": 111526, "text": "The following section presents the complete set of functional and non-functional requirements identified for the subject RMOS.", "label": "auxiliary"}
+{"id": 111527, "text": "Functional requirements are listed first, according to their relationship to the overall system, customers, waiters, chefs and supervisors.", "label": "auxiliary"}
+{"id": 111528, "text": "The non-functional requirements that pertain to safety, security, the interface, human engineering, qualification, operation, maintenance and performance are subsequently presented.", "label": "auxiliary"}
+{"id": 111529, "text": "The functional requirements have been specified using a natural language description and as such, the reader is directed to Section 4 (UML Analysis Models) for further detail.", "label": "auxiliary"}
+{"id": 111530, "text": "This subsection presents the identified functional requirements for the subject RMOS.", "label": "auxiliary"}
+{"id": 111531, "text": "Initially, general requirements that pertain to the whole system are given.", "label": "auxiliary"}
+{"id": 111532, "text": "Where possible, subsequent requirements have been demarcated based on their relevance to the users of the system, that is, customers, waiters, chefs and supervisors.", "label": "auxiliary"}
+{"id": 111533, "text": "G01 A server shall host the RMOS and provide system data processing and storage capability.", "label": "requirement"}
+{"id": 111534, "text": "G02 A surface computer shall provide a customer with all customer system functionality.", "label": "requirement"}
+{"id": 111535, "text": "G03 A tablet shall provide a waiter/supervisor with all waiter/supervisor system functionality (according to access control).", "label": "requirement"}
+{"id": 111536, "text": "G04 A display shall provide a chef with all chef system functionality.", "label": "requirement"}
+{"id": 111537, "text": "G05 All system functionality shall be accessible through touch sensitive surface computers, tablets and displays via simple touch gestures.", "label": "requirement"}
+{"id": 111538, "text": "G06 A tablet shall be capable of interfacing with a register to facilitate the accurate processing of a payment.", "label": "requirement"}
+{"id": 111539, "text": "C01 A customer shall be able to engage their menu by double tapping the activated surface computer in their table.", "label": "requirement"}
+{"id": 111540, "text": "C02 A customer shall be able to dismiss their menu by double tapping its dismiss option.", "label": "requirement"}
+{"id": 111541, "text": "C03 A customer shall be able to create an empty pending order through their engaged menu.", "label": "requirement"}
+{"id": 111542, "text": "C04 A customer shall not be able to dismiss their engaged menu while there is a non-empty pending order associated with the engaged menu.", "label": "requirement"}
+{"id": 111543, "text": "C05 A customer shall be able to navigate through the available items in their engaged menu.", "label": "requirement"}
+{"id": 111544, "text": "C06 A customer shall be able to add an item to a pending order by dragging the item from the engaged menu onto the order.", "label": "requirement"}
+{"id": 111545, "text": "C07 A customer shall be able to remove an item from a pending order by dragging the item off the order.", "label": "requirement"}
+{"id": 111546, "text": "C08 A customer shall be able to add a special dietary requirement to an order by dragging the requirement from the engaged menu onto the order.", "label": "requirement"}
+{"id": 111547, "text": "C09 A customer shall be able to add a wildcard special dietary requirement to an order in the case that their requirement is not represented by the system.", "label": "requirement"}
+{"id": 111548, "text": "C10 A customer shall be able to place an order through their engaged menu if it is pending and not empty.", "label": "requirement"}
+{"id": 111549, "text": "C11 A customer shall be able to cancel an order through their engaged menu if it is pending and not yet placed.", "label": "requirement"}
+{"id": 111550, "text": "C12 A customer shall be able to call for waiter assistance through their engaged menu.", "label": "requirement"}
+{"id": 111551, "text": "C13 A customer shall be able to engage bill mode to finalise payment through their engaged menu.", "label": "requirement"}
+{"id": 111552, "text": "C14 A customer shall be able to disengage bill mode to cancel the billing process through their engaged menu.", "label": "requirement"}
+{"id": 111553, "text": "C15 When in billing mode, a surface computer shall display a representation of a cash payment for the whole table.", "label": "requirement"}
+{"id": 111554, "text": "C16 When in billing mode, a surface computer shall display a representation of a bankcard payment for each customer.", "label": "requirement"}
+{"id": 111555, "text": "C17 When in billing mode, a surface computer shall display a representation of every meal ordered that may each be dragged into a payment.", "label": "requirement"}
+{"id": 111556, "text": "C18 When in billing mode, a surface computer shall display a representation of tip denominations that may be dragged into a payment.", "label": "requirement"}
+{"id": 111557, "text": "C19 A customer shall be able to drag a meal into a bankcard payment or a cash payment.", "label": "requirement"}
+{"id": 111558, "text": "C20 A customer shall be able to drag a meal out of a bankcard payment or a cash payment.", "label": "requirement"}
+{"id": 111559, "text": "C21 A customer shall be able to drag a tip denomination into a bankcard payment or a cash payment.", "label": "requirement"}
+{"id": 111560, "text": "C22 A customer shall be able to drag a tip denomination out of a bankcard payment or a cash payment.", "label": "requirement"}
+{"id": 111561, "text": "Table 3.1.3 presents the identified functional waiter requirements that directly relate to the waiters (and supervisors) of the subject RMOS.", "label": "auxiliary"}
+{"id": 111562, "text": "Prepared By Team Danger Tutorial One • 10 • April 2008", "label": "auxiliary"}
+{"id": 111563, "text": "W01 A waiter shall be able to log into a tablet using their assigned username and password.", "label": "requirement"}
+{"id": 111564, "text": "W02 A waiter shall be able to log out of a tablet.", "label": "requirement"}
+{"id": 111565, "text": "W03 A waiter shall be able to activate a surface computer and consequently open its associated account through a tablet.", "label": "requirement"}
+{"id": 111566, "text": "W04 A waiter shall be able to deactivate a surface computer and consequently close its associated account through a tablet.", "label": "requirement"}
+{"id": 111567, "text": "W05 A waiter who activates a surface computer shall be assigned to the table that contains it.", "label": "requirement"}
+{"id": 111568, "text": "W06 A waiter assigned to a table shall be alerted via their wireless tablet when:", "label": "requirement"}
+{"id": 111569, "text": "- An order is placed from that table", "label": "auxiliary"}
+{"id": 111570, "text": "- An item ordered by that table is rejected by the kitchen", "label": "auxiliary"}
+{"id": 111571, "text": "- An item ordered by that table is ready to be served", "label": "auxiliary"}
+{"id": 111572, "text": "- The table has requested waiter assistance", "label": "auxiliary"}
+{"id": 111573, "text": "- An order is placed from that table", "label": "auxiliary"}
+{"id": 111574, "text": "- An item ordered by that table is rejected by the kitchen", "label": "auxiliary"}
+{"id": 111575, "text": "- An item ordered by that table is ready to be served", "label": "auxiliary"}
+{"id": 111576, "text": "- The table has requested waiter assistance", "label": "auxiliary"}
+{"id": 111577, "text": "W07 A tablet shall allow a waiter to accept an order placed by a customer through a surface computer.", "label": "requirement"}
+{"id": 111578, "text": "W08 A tablet shall allow a waiter to reject an order placed by a customer through a surface computer.", "label": "requirement"}
+{"id": 111579, "text": "W09 A tablet shall allow a waiter to indicate the delivery of an item to its customer.", "label": "requirement"}
+{"id": 111580, "text": "W10 A tablet shall allow a waiter to process a payment using cash.", "label": "requirement"}
+{"id": 111581, "text": "W11 A tablet shall allow a waiter to process a payment using a bankcard.", "label": "requirement"}
+{"id": 111582, "text": "K01 A chef shall be able to accept a customer’s order item through a display.", "label": "requirement"}
+{"id": 111583, "text": "K02 A chef shall be able to reject a customer’s order item through a display.", "label": "requirement"}
+{"id": 111584, "text": "K03 A chef shall be able to indicate that a customer’s order item is ready to be served through a display.", "label": "requirement"}
+{"id": 111585, "text": "S01 A supervisor shall be able to do everything a waiter can.", "label": "requirement"}
+{"id": 111586, "text": "S02 A supervisor shall be able to do everything a chef can.", "label": "requirement"}
+{"id": 111587, "text": "S03 A supervisor shall be able to abort/purge a customer’s meal from the active system with no expectation of payment.", "label": "requirement"}
+{"id": 111588, "text": "Prepared By Team Danger Tutorial One • 11 • April 2008", "label": "auxiliary"}
+{"id": 111589, "text": "S04 A supervisor shall be able to abort/purge a table's account/meals from the active system with no expectation of payment.", "label": "requirement"}
+{"id": 111590, "text": "S05 A supervisor shall be able to issue a refund for one or more items to a customer.", "label": "requirement"}
+{"id": 111591, "text": "This subsection presents the identified non-functional requirements for the subject RMOS.", "label": "auxiliary"}
+{"id": 111592, "text": "The subcategories of non-functional requirements given are safety, security, interface, human engineering, qualification, operational and maintenance.", "label": "auxiliary"}
+{"id": 111593, "text": "F01 The system shall log every state and state change of every surface computer, tablet and display to provision recovery from system failure.", "label": "requirement"}
+{"id": 111594, "text": "F02 The system shall be capable of restoring itself to its previous state in the event of failure (e.g.", "label": "requirement"}
+{"id": 111595, "text": "a system crash or power loss).", "label": "auxiliary"}
+{"id": 111596, "text": "F03 The system shall be able to display a menu at all times to facilitate manual order taking should the need arise.", "label": "requirement"}
+{"id": 111597, "text": "F04 The system shall utilise periodic 30-second keep-alive messages between tablets and the server to monitor tablet operational status.", "label": "requirement"}
+{"id": 111598, "text": "F05 The system shall flag tablets that fail to send timely keep-alive messages as non-operational and disassociate the assigned waiter from the tablet.", "label": "requirement"}
+{"id": 111599, "text": "Y01 Wireless communication throughout the system will be encrypted using SSLv3 at the application layer and WPA2-PSK at the data link layer.", "label": "requirement"}
+{"id": 111600, "text": "Y02 The WPA2-PSK password used for wireless communication must have a bit-strength of at least 80 bits.", "label": "requirement"}
+{"id": 111601, "text": "Y03 The WPA2-PSK password used for wireless communication must be changed every three months.", "label": "requirement"}
+{"id": 111602, "text": "Y04 A waiter password used for tablet login must have a bit-strength of at least 64 bits.", "label": "requirement"}
+{"id": 111603, "text": "Y05 A waiter password used for tablet login must be changed every three months.", "label": "requirement"}
+{"id": 111604, "text": "Y06 A waiter shall only be able to log into one tablet at any given instance of time.", "label": "requirement"}
+{"id": 111605, "text": "Y07 A waiter that attempts to log into a second tablet while already logged into", "label": "requirement"}
+{"id": 111606, "text": "Prepared By Team Danger Tutorial One • 12 • April 2008", "label": "auxiliary"}
+{"id": 111607, "text": "Another tablet shall be rejected and notified through both tablets.", "label": "requirement"}
+{"id": 111608, "text": "The system shall provide two levels of access:", "label": "requirement"}
+{"id": 111609, "text": "- A supervisor level for unrestricted access to system functionality", "label": "auxiliary"}
+{"id": 111610, "text": "- A waiter level for access to waiter functionality", "label": "auxiliary"}
+{"id": 111611, "text": "A surface computer shall not require a user to log in.", "label": "requirement"}
+{"id": 111612, "text": "A tablet shall require a user to log in using a username and password.", "label": "requirement"}
+{"id": 111613, "text": "A display shall not require a user to log in.", "label": "requirement"}
+{"id": 111614, "text": "Table 3.2.3 presents the identified non-functional human engineering requirements that directly relate to the entire subject RMOS.", "label": "auxiliary"}
+{"id": 111615, "text": "H01 Any element of the system will take no longer than 10-seconds to restart.", "label": "requirement"}
+{"id": 111616, "text": "H02 A surface computer must not dismiss an engaged menu unless the customer requests it.", "label": "requirement"}
+{"id": 111617, "text": "Table 3.2.4 presents the identified non-functional performance requirements that directly relate to the entire subject RMOS.", "label": "auxiliary"}
+{"id": 111618, "text": "P01 The server shall be capable of supporting no less than 200 concurrent connections from any combination of surface computers, tablets and displays.", "label": "requirement"}
+{"id": 111619, "text": "P02 The server shall be capable of supporting an arbitrary number of surface computers, tablets and displays, that is, it shall provide no limit on how many devices are in the system.", "label": "requirement"}
+{"id": 111620, "text": "P03 The server shall be capable of supporting an arbitrary number of active meals/orders, that is, no meals/orders shall be lost under any circumstances.", "label": "requirement"}
+{"id": 111621, "text": "P04 The server shall be capable of supporting an arbitrary number of active customer payments, that is, no payments shall be lost under any circumstances.", "label": "requirement"}
+{"id": 111622, "text": "Prepared By Team Danger Tutorial One • 13 • April 2008", "label": "auxiliary"}
+{"id": 111623, "text": "Prepared By Team Danger Tutorial One", "label": "auxiliary"}
+{"id": 111624, "text": "• 14 •", "label": "auxiliary"}
+{"id": 111625, "text": "This subsection extends upon the functional requirements given in Section 3.1 through the presentation of detailed use cases.", "label": "auxiliary"}
+{"id": 111626, "text": "To facilitate an unambiguous and clear view of how the end-users interact with the subject RMOS, the actors (end-users) involved in the use cases, a use case diagram and detailed use case descriptions are provided.", "label": "auxiliary"}
+{"id": 111627, "text": "The use cases that find representation are Log In, Log Out, Activate Table, Deactivate Table, Accept Order, Deliver Item, Process Bankcard Payment, Process Cash Payment, Abort Meal, Abort Account, Issue Refund, Place Order, Call Waiter, Pay Bill, Accept/Reject Item and Indicate Item Ready.", "label": "auxiliary"}
+{"id": 111628, "text": "There are four actors in the RMOS, waiter, chef, supervisor and customer.", "label": "auxiliary"}
+{"id": 111629, "text": "While the waiter, chef and customer actors are base specialisations, the supervisor class inherits from both the waiter and chef actors as a generalisation.", "label": "auxiliary"}
+{"id": 111630, "text": "Prepared By Team Danger Tutorial One • 15 • April 2008", "label": "auxiliary"}
+{"id": 111631, "text": "Figure 4.1.1 presents a use case diagram for the subject RMOS.", "label": "auxiliary"}
+{"id": 111632, "text": "The key interactions between the end-users of the system and the system itself are depicted.", "label": "auxiliary"}
+{"id": 111633, "text": "Log Out Log Out", "label": "auxiliary"}
+{"id": 111634, "text": "Log In Log In", "label": "auxiliary"}
+{"id": 111635, "text": "Deactivate Table Activate Table", "label": "auxiliary"}
+{"id": 111636, "text": "Deliver Item Accept Order", "label": "auxiliary"}
+{"id": 111637, "text": "Waiter Process Cash Payment", "label": "auxiliary"}
+{"id": 111638, "text": "Process Bankcard Payment «includes»", "label": "auxiliary"}
+{"id": 111639, "text": "«includes» Pay Bill", "label": "auxiliary"}
+{"id": 111640, "text": "Abort Meal Place Order", "label": "auxiliary"}
+{"id": 111641, "text": "Abort Account Call Waiter", "label": "auxiliary"}
+{"id": 111642, "text": "Issue Refund «inherits»", "label": "auxiliary"}
+{"id": 111643, "text": "Accept/Reject Item Indicate Item Ready", "label": "auxiliary"}
+{"id": 111644, "text": "Figure 4.1.1 Restaurant Menu & Ordering System Use Case Diagram", "label": "auxiliary"}
+{"id": 111645, "text": "Prepared By Team Danger Tutorial One • 16 • April 2008", "label": "auxiliary"}
+{"id": 111646, "text": "Use Case Log In", "label": "auxiliary"}
+{"id": 111647, "text": "Primary Actor Waiter", "label": "auxiliary"}
+{"id": 111648, "text": "Goal In Context Enable waiter access to the system through a tablet", "label": "auxiliary"}
+{"id": 111649, "text": "Preconditions The waiter has a valid username and password and is not already logged in", "label": "auxiliary"}
+{"id": 111650, "text": "Trigger The waiter requires access to the system to perform their job", "label": "auxiliary"}
+{"id": 111651, "text": "Scenario 1) The waiter selects ‘Log In’ from the tablet menu 2) The tablet prompts the user for their username and password 3) The user enters their username and password 4) The tablet enables access to the system according to access control", "label": "auxiliary"}
+{"id": 111652, "text": "Exceptions The waiter enters an invalid username or password", "label": "auxiliary"}
+{"id": 111653, "text": "Table 4.1.1 Log In Use Case Description", "label": "auxiliary"}
+{"id": 111654, "text": "Use Case Log Out", "label": "auxiliary"}
+{"id": 111655, "text": "Primary Actor Waiter", "label": "auxiliary"}
+{"id": 111656, "text": "Goal In Context Disable waiter access to the system through a tablet", "label": "auxiliary"}
+{"id": 111657, "text": "Preconditions The waiter is already logged in", "label": "auxiliary"}
+{"id": 111658, "text": "Trigger The waiter no longer requires access to the system to perform their job", "label": "auxiliary"}
+{"id": 111659, "text": "Scenario 1) The waiter selects ‘Log Out’ from the tablet menu 2) The tablet disables access to the system", "label": "auxiliary"}
+{"id": 111660, "text": "Table 4.1.2 Log Out Use Case Description", "label": "auxiliary"}
+{"id": 111661, "text": "Use Case Activate Table", "label": "auxiliary"}
+{"id": 111662, "text": "Primary Actor Waiter", "label": "auxiliary"}
+{"id": 111663, "text": "Goal In Context Activate the surface computer in a table to enable customer functionality", "label": "auxiliary"}
+{"id": 111664, "text": "Preconditions The waiter is already logged in", "label": "auxiliary"}
+{"id": 111665, "text": "Trigger A new group of customers have been seated at the table", "label": "auxiliary"}
+{"id": 111666, "text": "Scenario 1) The waiter selects ‘Activate Table’ from the tablet menu 2) The waiter selects a free deactivated table from those available 3) The waiter selects the seats to be occupied by customers 4) The surface computer in the table is activated and an account is created 5) An empty order is automatically created for each customer at the table 6) The waiter is assigned to take care of the table’s account", "label": "auxiliary"}
+{"id": 111667, "text": "Exceptions There are no free deactivated tables available", "label": "auxiliary"}
+{"id": 111668, "text": "Table 4.1.3 Activate Table Use Case Description", "label": "auxiliary"}
+{"id": 111669, "text": "Prepared By Team Danger Tutorial One • 17 • April 2008", "label": "auxiliary"}
+{"id": 111670, "text": "Use Case Deactivate Table", "label": "auxiliary"}
+{"id": 111671, "text": "Primary Actor Waiter", "label": "auxiliary"}
+{"id": 111672, "text": "Goal In Context Deactivate the surface computer in a table once its customers have left", "label": "auxiliary"}
+{"id": 111673, "text": "Preconditions The account (every meal) associated with the table has been finalised/paid", "label": "auxiliary"}
+{"id": 111674, "text": "Trigger A table of customers finalise their account and leave the restaurant", "label": "auxiliary"}
+{"id": 111675, "text": "Scenario 1) The waiter selects 'Deactivate Table' from the tablet menu 2) The waiter selects the table to be deactivated 3) The table is deactivated and its account details are archived 4) The account is deleted from the active system", "label": "auxiliary"}
+{"id": 111676, "text": "Use Case Accept Order", "label": "auxiliary"}
+{"id": 111677, "text": "Primary Actor Waiter", "label": "auxiliary"}
+{"id": 111678, "text": "Goal In Context Accept an order that has been placed by a customer", "label": "auxiliary"}
+{"id": 111679, "text": "Preconditions A customer has placed an order", "label": "auxiliary"}
+{"id": 111680, "text": "Trigger The waiter chooses to serve the customer", "label": "auxiliary"}
+{"id": 111681, "text": "Scenario 1) The waiter selects 'Take Order' from the tablet menu 2) The waiter selects a table with pending orders from those assigned to them 3) The waiter selects a pending order from the selected table 4) The waiter confirms the order and selects ‘Accept’ from the tablet menu 5) The items in the order are sent to the kitchen for preparation 6) The order is added to the customer’s meal (and the table’s account)", "label": "auxiliary"}
+{"id": 111682, "text": "Exceptions The waiter rejects the order by selecting 'Reject' from the tablet menu", "label": "auxiliary"}
+{"id": 111683, "text": "Use Case Deliver Item", "label": "auxiliary"}
+{"id": 111684, "text": "Primary Actor Waiter", "label": "auxiliary"}
+{"id": 111685, "text": "Goal In Context Deliver a ready item to its customer", "label": "auxiliary"}
+{"id": 111686, "text": "Preconditions An item for a table assigned to the waiter is prepared and ready", "label": "auxiliary"}
+{"id": 111687, "text": "Trigger The system sends an alert to the waiter notifying them the item is ready", "label": "auxiliary"}
+{"id": 111688, "text": "Scenario 1) The waiter reads the alert, noting the item and its table/seat number 2) The waiter delivers the item to the customer who ordered it 3) The waiter marks the item as delivered through the tablet", "label": "auxiliary"}
+{"id": 111689, "text": "Prepared By Team Danger Tutorial One • 18 • April 2008", "label": "auxiliary"}
+{"id": 111690, "text": "Use Case Process Bankcard Payment", "label": "auxiliary"}
+{"id": 111691, "text": "Primary Actor Waiter", "label": "auxiliary"}
+{"id": 111692, "text": "Goal In Context Charge a customer for their meals taking a bankcard payment", "label": "auxiliary"}
+{"id": 111693, "text": "Preconditions Meals have been assigned to the customer’s bankcard payment bill", "label": "auxiliary"}
+{"id": 111694, "text": "Trigger The waiter chooses to finalise a customer’s bill", "label": "auxiliary"}
+{"id": 111695, "text": "Scenario 1) The waiter selects 'Bill Table' from the tablet menu 2) The waiter selects a table with outstanding bills from which the customer’s have asked to finalise their account 3) The waiter selects a customer to process payment for, from a list of customers with meals assigned to their bankcard payment bill 4) The waiter swipes the customer's bankcard through the tablet 5) The system interfaces with the register system to process the payment 6) The meals are marked as paid and disappear from the surface computer", "label": "auxiliary"}
+{"id": 111696, "text": "Exceptions The transaction is rejected by the register system", "label": "auxiliary"}
+{"id": 111697, "text": "Use Case Process Cash Payment", "label": "auxiliary"}
+{"id": 111698, "text": "Primary Actor Waiter", "label": "auxiliary"}
+{"id": 111699, "text": "Goal In Context Charge a table of customers for their meals taking a collective cash payment", "label": "auxiliary"}
+{"id": 111700, "text": "Preconditions Meals have been assigned to the table’s cash payment bill", "label": "auxiliary"}
+{"id": 111701, "text": "Trigger The waiter chooses to finalise a customer’s bill", "label": "auxiliary"}
+{"id": 111702, "text": "Scenario 1) The waiter selects 'Bill Table' from the tablet menu 2) The waiter selects a table with outstanding bills from which the customer’s have asked to finalise their account 3) The waiter selects 'Cash Payment' from the tablet menu 4) The waiter takes cash from customers and moves to the payment system 5) The tablet automatically connects with the payment system when in proximity 6) The waiter processes the payment using the payment system 7) The meals are marked as paid and disappear from the surface computer 8) The waiter returns to the customers with their change", "label": "auxiliary"}
+{"id": 111703, "text": "Exceptions Insufficient cash is provided by the customers", "label": "auxiliary"}
+{"id": 111704, "text": "Prepared By Team Danger Tutorial One • 19 • April 2008", "label": "auxiliary"}
+{"id": 111705, "text": "Use Case Pay Bill", "label": "auxiliary"}
+{"id": 111706, "text": "Primary Actor Customer", "label": "auxiliary"}
+{"id": 111707, "text": "Goal In Context A customer decides to pay for their meals when they are ready to leave", "label": "auxiliary"}
+{"id": 111708, "text": "Preconditions Every item ordered by the customer has been delivered or cancelled", "label": "auxiliary"}
+{"id": 111709, "text": "Trigger The customer asks to finalise their bill", "label": "auxiliary"}
+{"id": 111710, "text": "Scenario 1) The customer double-taps the table to bring up a menu 2) The customer selects 'Ask For Bill' from the menu 3) The surface computer enters billing mode and displays a representation of each customer's bankcard payment, a table cash payment and each customer's meal 4) The customer drags/assigns their meals into the appropriate payment 5) The customer drags/assigns any tip denominations into the appropriate payment 6) The customer finalises the assignment process and an alert is sent to the waiter assigned to the table 7) The waiter processes the payment 8) The customer double-taps the dismiss menu option on the table to close the menu", "label": "auxiliary"}
+{"id": 111711, "text": "Exceptions The customer cancels billing mode", "label": "auxiliary"}
+{"id": 111712, "text": "Use Case Place Order", "label": "auxiliary"}
+{"id": 111713, "text": "Primary Actor Customer", "label": "auxiliary"}
+{"id": 111714, "text": "Goal In Context Place an order for menu items from the restaurant", "label": "auxiliary"}
+{"id": 111715, "text": "Preconditions The customer has been seated at an activated table", "label": "auxiliary"}
+{"id": 111716, "text": "Trigger The customer wants to order one or more menu items", "label": "auxiliary"}
+{"id": 111717, "text": "Scenario 1) The customer double-taps the table to bring up a menu 2) The customer selects 'Order' from the menu 3) The surface computer in the table displays an empty order and the available food/beverage/dietary requirement items 4) The customer navigates through the available items and adds the ones they want by dragging them from the menu onto their order (menu items can be removed by dragging them out of the order) 5) The customer selects 'Place Order' from the menu 6) The waiter assigned to the table’s account is notified that the order has been placed 7) The customer double-taps the dismiss menu option on the table to close the menu", "label": "auxiliary"}
+{"id": 111718, "text": "Exceptions The customer cancels the order by selecting 'Cancel' from the menu", "label": "auxiliary"}
+{"id": 111719, "text": "Prepared By Team Danger Tutorial One • 20 • April 2008", "label": "auxiliary"}
+{"id": 111720, "text": "Use Case Call Waiter", "label": "auxiliary"}
+{"id": 111721, "text": "Primary Actor Customer", "label": "auxiliary"}
+{"id": 111722, "text": "Goal In Context Get assistance from the waiter assigned to the customer’s table", "label": "auxiliary"}
+{"id": 111723, "text": "Preconditions The customer has been seated at an activated table", "label": "auxiliary"}
+{"id": 111724, "text": "Trigger The customer decides they require waiter assistance", "label": "auxiliary"}
+{"id": 111725, "text": "Scenario 1) The customer double-taps the table to bring up a menu 2) The customer selects 'Call Waiter' from the menu 3) An alert is sent to the waiter assigned to the table", "label": "auxiliary"}
+{"id": 111726, "text": "Table 4.1.11 Call Waiter Use Case Description", "label": "auxiliary"}
+{"id": 111727, "text": "Use Case Abort Meal", "label": "auxiliary"}
+{"id": 111728, "text": "Primary Actor Supervisor", "label": "auxiliary"}
+{"id": 111729, "text": "Goal In Context Abort a customer’s meal with no expectation of payment", "label": "auxiliary"}
+{"id": 111730, "text": "Preconditions The meal exists and is associated with the customer", "label": "auxiliary"}
+{"id": 111731, "text": "Trigger Exceptional circumstances arise and the supervisor must abort the meal", "label": "auxiliary"}
+{"id": 111732, "text": "Scenario 1) The supervisor selects 'Abort Meal' from the tablet menu 2) The supervisor selects a table from those that have active meals 3) The supervisor selects an active meal from the selected table 4) The details of the meal, the abortion and the supervisor are archived 5) The active meal is deleted from the active system", "label": "auxiliary"}
+{"id": 111733, "text": "Table 4.1.12 Abort Meal Use Case Description", "label": "auxiliary"}
+{"id": 111734, "text": "Use Case Abort Account", "label": "auxiliary"}
+{"id": 111735, "text": "Primary Actor Supervisor", "label": "auxiliary"}
+{"id": 111736, "text": "Goal In Context Abort a table’s account with no expectation of payment", "label": "auxiliary"}
+{"id": 111737, "text": "Preconditions The account exists and is associated with the table", "label": "auxiliary"}
+{"id": 111738, "text": "Trigger Exceptional circumstances arise and the supervisor must abort the account", "label": "auxiliary"}
+{"id": 111739, "text": "Scenario 1) The supervisor selects 'Abort Account' from the tablet menu 2) The supervisor selects a table from those that have active accounts 3) The details of the account, the abortion and the supervisor are archived 4) The active account is deleted from the active system", "label": "auxiliary"}
+{"id": 111740, "text": "Table 4.1.13 Abort Account Use Case Description", "label": "auxiliary"}
+{"id": 111741, "text": "Prepared By Team Danger Tutorial One • 21 • April 2008", "label": "auxiliary"}
+{"id": 111742, "text": "Table 4.1.14 Issue Refund Use Case Description Table 4.1.14 Issue Refund Use Case Description", "label": "auxiliary"}
+{"id": 111743, "text": "Use Case Issue Refund", "label": "auxiliary"}
+{"id": 111744, "text": "Primary Actor Supervisor", "label": "auxiliary"}
+{"id": 111745, "text": "Goal In Context Refund a customer’s payment for a meal", "label": "auxiliary"}
+{"id": 111746, "text": "Preconditions The customer paid for a meal in the restaurant", "label": "auxiliary"}
+{"id": 111747, "text": "Trigger Exceptional circumstances arise and the supervisor must refund the payment", "label": "auxiliary"}
+{"id": 111748, "text": "Scenario 1) The supervisor confirms that refund should be given 2) The supervisor selects 'Issue Refund' from the tablet menu 3) The supervisor selects the meal from a list for the given date 4) The supervisor selects ‘Confirm Refund’ from the tablet menu 5) The details of the meal, the refund and the supervisor are archived 6) The supervisor returns the cost of the meal to the customer", "label": "auxiliary"}
+{"id": 111749, "text": "Table 4.1.15 Accept/Reject Item Use Case Description Table 4.1.15 Accept/Reject Item Use Case Description", "label": "auxiliary"}
+{"id": 111750, "text": "Use Case Accept/Reject Item", "label": "auxiliary"}
+{"id": 111751, "text": "Primary Actor Chef", "label": "auxiliary"}
+{"id": 111752, "text": "Goal In Context Notify waiters if an item cannot be prepared", "label": "auxiliary"}
+{"id": 111753, "text": "Preconditions The item has not already been accepted or rejected", "label": "auxiliary"}
+{"id": 111754, "text": "Trigger Chef proceeds to action the pending items on a kitchen display", "label": "auxiliary"}
+{"id": 111755, "text": "Scenario 1) The chef checks if the pending item can be fulfilled and rejects or accepts it 2) An accepted pending item is added to a list of items to prepare 3) A rejected pending item is removed from the kitchen display and an alert is sent to the waiter assigned to the pending item’s account", "label": "auxiliary"}
+{"id": 111756, "text": "Table 4.1.16 Indicate Item Ready Use Case Description Table 4.1.16 Indicate Item Ready Use Case Description", "label": "auxiliary"}
+{"id": 111757, "text": "Use Case Indicate Item Ready", "label": "auxiliary"}
+{"id": 111758, "text": "Primary Actor Chef", "label": "auxiliary"}
+{"id": 111759, "text": "Goal In Context Alert the appropriate waiter that an item is ready to be delivered", "label": "auxiliary"}
+{"id": 111760, "text": "Preconditions The item has been accepted by a chef", "label": "auxiliary"}
+{"id": 111761, "text": "Trigger Item preparation completes", "label": "auxiliary"}
+{"id": 111762, "text": "Scenario 1) The chef selects the item from the list of items to prepare 2) The chef selects 'Ready' from the display menu 3) An alert is sent to the waiter assigned to the prepared item’s account", "label": "auxiliary"}
+{"id": 111763, "text": "Prepared By Team Danger Tutorial One • 22 • April 2008", "label": "auxiliary"}
+{"id": 111764, "text": "Figure 4.2.1 presents the Log In activity diagram to provide a graphical representation of a waiter logging into the system.", "label": "auxiliary"}
+{"id": 111765, "text": "[Log In' selected] Prompt for username and password", "label": "auxiliary"}
+{"id": 111766, "text": "Access to system enabled Access to system enabled", "label": "auxiliary"}
+{"id": 111767, "text": "Figure 4.2.1 Log In Activity Diagram", "label": "auxiliary"}
+{"id": 111768, "text": "Figure 4.2.2 presents the Log Out activity diagram to provide a graphical representation of a waiter logging out of the system.", "label": "auxiliary"}
+{"id": 111769, "text": "['Log Out' selected]Access to system disabled", "label": "auxiliary"}
+{"id": 111770, "text": "Figure 4.2.2 Log Out Activity Diagram", "label": "auxiliary"}
+{"id": 111771, "text": "Prepared By Team Danger Tutorial One • 23 • April 2008", "label": "auxiliary"}
+{"id": 111772, "text": "Figure 4.2.3 presents the Activate Table activity diagram to provide a graphical representation of a waiter activating the surface computer in a table.", "label": "auxiliary"}
+{"id": 111773, "text": "['Activate Table' selected] Display inactive tables Activate Table", "label": "auxiliary"}
+{"id": 111774, "text": "[table selected] Show seats at table Create account and meals", "label": "auxiliary"}
+{"id": 111775, "text": "[customers assigned seats] Activate surface computer (Empty order created for each customer", "label": "auxiliary"}
+{"id": 111776, "text": "Assign account to waiter", "label": "auxiliary"}
+{"id": 111777, "text": "Figure 4.2.4 presents the Deactivate Table activity diagram to provide a graphical representation of a waiter deactivating the surface computer in a table.", "label": "auxiliary"}
+{"id": 111778, "text": "['Deactivate Table' selected] Display fully paid tables Deactivate Table", "label": "auxiliary"}
+{"id": 111779, "text": "[table selected] Deactivate surface computer", "label": "auxiliary"}
+{"id": 111780, "text": "Archive account details Account deleted", "label": "auxiliary"}
+{"id": 111781, "text": "Prepared By Team Danger Tutorial One • 24 • April 2008", "label": "auxiliary"}
+{"id": 111782, "text": "presents the Accept Order activity diagram to provide a graphical representation of a waiter accepting a customer’s order.", "label": "auxiliary"}
+{"id": 111783, "text": "[Take Order' selected] Accept Order", "label": "auxiliary"}
+{"id": 111784, "text": "Display assigned tables with pending orders [table selected]", "label": "auxiliary"}
+{"id": 111785, "text": "[order selected] Display pending orders at table", "label": "auxiliary"}
+{"id": 111786, "text": "['Accept' selected] Add items in order to customer's meal", "label": "auxiliary"}
+{"id": 111787, "text": "[Reject selected] Order deleted", "label": "auxiliary"}
+{"id": 111788, "text": "Figure 4.2.5 Accept Order Activity Diagram", "label": "auxiliary"}
+{"id": 111789, "text": "presents the Deliver Item activity diagram to provide a graphical representation of a waiter delivering an item to a customer.", "label": "auxiliary"}
+{"id": 111790, "text": "Deliver ItemAlert waiter[waiter selects item]Mark item delivered", "label": "auxiliary"}
+{"id": 111791, "text": "Figure 4.2.6 Deliver Item Activity Diagram", "label": "auxiliary"}
+{"id": 111792, "text": "Prepared By Team Danger Tutorial One • 25 • April 2008", "label": "auxiliary"}
+{"id": 111793, "text": "presents the Process Bankcard Payment activity diagram to provide a graphical representation of a waiter processing a bankcard payment.", "label": "auxiliary"}
+{"id": 111794, "text": "Display tables with outstanding bills Process Bankcard Payment", "label": "auxiliary"}
+{"id": 111795, "text": "[Bill Table' selected] [table selected]", "label": "auxiliary"}
+{"id": 111796, "text": "Display payments [payment selected]", "label": "auxiliary"}
+{"id": 111797, "text": "Prompt for card Process payment", "label": "auxiliary"}
+{"id": 111798, "text": "[card accepted] Mark meal as paid", "label": "auxiliary"}
+{"id": 111799, "text": "Figure 4.2.7 Process Bankcard Payment Activity Diagram", "label": "auxiliary"}
+{"id": 111800, "text": "presents the Process Cash Payment activity diagram to provide a graphical representation of a waiter processing a cash payment.", "label": "auxiliary"}
+{"id": 111801, "text": "Display tables with outstanding bills Process Cash Payment", "label": "auxiliary"}
+{"id": 111802, "text": "[Bill Table' elected] [table selected]", "label": "auxiliary"}
+{"id": 111803, "text": "Display payments [payment selected]", "label": "auxiliary"}
+{"id": 111804, "text": "Wait for register to connect Payment system reports payment", "label": "auxiliary"}
+{"id": 111805, "text": "Mark meal as paid", "label": "auxiliary"}
+{"id": 111806, "text": "Figure 4.2.8 Process Cash Payment Activity Diagram", "label": "auxiliary"}
+{"id": 111807, "text": "Prepared By Team Danger Tutorial One • 26 • April 2008", "label": "auxiliary"}
+{"id": 111808, "text": "presents the Pay Bill activity diagram to provide a graphical representation of a customer paying for their meal.", "label": "auxiliary"}
+{"id": 111809, "text": "[customer selects Pay Bill Pay Bill", "label": "auxiliary"}
+{"id": 111810, "text": "Wait for input Display meals and payments [meal dragged", "label": "auxiliary"}
+{"id": 111811, "text": "[customer selects 'Cancel Billing'] [payment finalised]", "label": "auxiliary"}
+{"id": 111812, "text": "Send alert to waiter Remove meal from payment Add meal to payment", "label": "auxiliary"}
+{"id": 111813, "text": "presents the Place Order activity diagram to provide a graphical representation of a customer placing an order.", "label": "auxiliary"}
+{"id": 111814, "text": "Display empty order and menu [customer selects 'Order]", "label": "auxiliary"}
+{"id": 111815, "text": "Wait for input [item dragged to order]", "label": "auxiliary"}
+{"id": 111816, "text": "Add item to order [item dragged out of order]", "label": "auxiliary"}
+{"id": 111817, "text": "[customer selects Place Order'] [customer selects", "label": "auxiliary"}
+{"id": 111818, "text": "Cancel'] Send order to waiter Delete order", "label": "auxiliary"}
+{"id": 111819, "text": "Remove item from order", "label": "auxiliary"}
+{"id": 111820, "text": "Prepared By Team Danger Tutorial One • 27 • April 2008", "label": "auxiliary"}
+{"id": 111821, "text": "Figure 4.2.11 presents the Call Waiter activity diagram to provide a graphical representation of a customer calling for waiter assistance.", "label": "auxiliary"}
+{"id": 111822, "text": "[customer selects 'Call Waiter']Send alert to waiter", "label": "auxiliary"}
+{"id": 111823, "text": "Figure 4.2.12 presents the Abort Meal activity diagram to provide a graphical representation of a supervisor aborting a customer’s meal.", "label": "auxiliary"}
+{"id": 111824, "text": "[Abort Meal selected]", "label": "auxiliary"}
+{"id": 111825, "text": "Display tables [table selected]", "label": "auxiliary"}
+{"id": 111826, "text": "[meal selected]     Display meals", "label": "auxiliary"}
+{"id": 111827, "text": "Prompt for confirmation", "label": "auxiliary"}
+{"id": 111828, "text": "Archive meal details", "label": "auxiliary"}
+{"id": 111829, "text": "Prepared By Team Danger Tutorial One • 28 • April 2008", "label": "auxiliary"}
+{"id": 111830, "text": "Figure 4.2.13 presents the Abort Account activity diagram to provide a graphical representation of a supervisor aborting a table’s account.", "label": "auxiliary"}
+{"id": 111831, "text": "['Abort Account' selected]Display tables[table selected]Prompt for confirmation[cancel]Archive account detailsDestroy account", "label": "auxiliary"}
+{"id": 111832, "text": "Figure 4.2.14 presents the Issue Refund activity diagram to provide a graphical representation of a supervisor issuing a customer with a refund.", "label": "auxiliary"}
+{"id": 111833, "text": "[Issue Refund selected]", "label": "auxiliary"}
+{"id": 111834, "text": "[Confirm Refund selected]", "label": "auxiliary"}
+{"id": 111835, "text": "[meals selected] [item selected]", "label": "auxiliary"}
+{"id": 111836, "text": "Archive item details", "label": "auxiliary"}
+{"id": 111837, "text": "[item deselected] Destroy highlighted items", "label": "auxiliary"}
+{"id": 111838, "text": "Prepared By Team Danger Tutorial One • 29 • April 2008", "label": "auxiliary"}
+{"id": 111839, "text": "Figure 4.2.15 presents the Accept/Reject Item activity diagram to provide a graphical representation of a chef accepting or rejecting an item from a customer’s order.", "label": "auxiliary"}
+{"id": 111840, "text": "Display pending item", "label": "auxiliary"}
+{"id": 111841, "text": "Destroy item [cantt prepare] [can prepare]", "label": "auxiliary"}
+{"id": 111842, "text": "Alert waiter   Add item to preparation list", "label": "auxiliary"}
+{"id": 111843, "text": "Figure 4.2.16 presents the Indicate Item Ready diagram to provide a graphical representation of a chef indicating that a customer’s item is ready for delivery.", "label": "auxiliary"}
+{"id": 111844, "text": "Display itemMark item as readySend alert to waiter", "label": "auxiliary"}
+{"id": 111845, "text": "Prepared By Team Danger Tutorial One • 30 • April 2008", "label": "auxiliary"}
+{"id": 111846, "text": "The following subsection presents descriptions for the classes identified for the subject RMOS.", "label": "auxiliary"}
+{"id": 111847, "text": "This class represents an item of food or beverage from the restaurant’s menu.", "label": "auxiliary"}
+{"id": 111848, "text": "It exists as a part of either a single order or a single meal, but not both at the same time (an order gets decomposed into the constituent Items and they are added to a meal).", "label": "auxiliary"}
+{"id": 111849, "text": "An Item that is part of an order may contain a dietary requirement.", "label": "auxiliary"}
+{"id": 111850, "text": "An Item contains the menu item's name, price, description, status and an image or model to depict the Item on a surface computer or display.", "label": "auxiliary"}
+{"id": 111851, "text": "This class represents a customer’s dietary requirement (e.g.", "label": "auxiliary"}
+{"id": 111852, "text": "It exists as part of either a single Order or a single Item, but not both at the same time.", "label": "auxiliary"}
+{"id": 111853, "text": "A DietaryRequirement contains both the name and a description of the particular requirement it represents.", "label": "auxiliary"}
+{"id": 111854, "text": "This class represents a collection of Items and DietaryRequirements.", "label": "auxiliary"}
+{"id": 111855, "text": "It is part of a single Meal and maintains information about whether it has been placed or approved.", "label": "auxiliary"}
+{"id": 111856, "text": "An Order can be in either the placed, cancelled or the approved state.", "label": "auxiliary"}
+{"id": 111857, "text": "An Order will typically be deleted shortly after it has been approved and its Items added to the customer's Meal, tying the Items in the Order to an Account.", "label": "auxiliary"}
+{"id": 111858, "text": "This class represents a collection of all items ordered by a single customer.", "label": "auxiliary"}
+{"id": 111859, "text": "It is part of a single Account and maintains the seat number related to the Meal.", "label": "auxiliary"}
+{"id": 111860, "text": "The total price of a Meal is also maintained.", "label": "auxiliary"}
+{"id": 111861, "text": "This class represents the associated Meals and Payments of a Table of customers.", "label": "auxiliary"}
+{"id": 111862, "text": "It consists of one or more Meals and one or more Payments.", "label": "auxiliary"}
+{"id": 111863, "text": "An account is related to one Table and is associated with one Tablet.", "label": "auxiliary"}
+{"id": 111864, "text": "This class represents a physical table at which a customer may be seated and its integrated surface computer.", "label": "auxiliary"}
+{"id": 111865, "text": "If the represented table is activated, an Account will be associated with the Table.", "label": "auxiliary"}
+{"id": 111866, "text": "It contains information about its current mode and its unique identification number.", "label": "auxiliary"}
+{"id": 111867, "text": "Further, it may be woken (activated), put to sleep (deactivated), placed in ordering mode or placed in billing mode.", "label": "auxiliary"}
+{"id": 111868, "text": "This class represents a wireless tablet used by staff; it essentially represents a waiter/supervisor logged into the tablet and consequently the system.", "label": "auxiliary"}
+{"id": 111869, "text": "The class contains information about who is.", "label": "auxiliary"}
+{"id": 111870, "text": "Prepared By Team Danger Tutorial One • 31 • April 2008", "label": "auxiliary"}
+{"id": 111871, "text": "logged into the Tablet.", "label": "auxiliary"}
+{"id": 111872, "text": "It may also be associated with any number of Alerts that can be sent to it by the system.", "label": "auxiliary"}
+{"id": 111873, "text": "This class represents a message sent to a Tablet to alert the waiter/supervisor of an event related to one of the Tables they have been assigned.", "label": "auxiliary"}
+{"id": 111874, "text": "It maintains a category (e.g.", "label": "auxiliary"}
+{"id": 111875, "text": "'item rejected', 'item ready') and a description.", "label": "auxiliary"}
+{"id": 111876, "text": "An Alert belongs to exactly one Tablet.", "label": "auxiliary"}
+{"id": 111877, "text": "This class represents a payment to be made to the restaurant.", "label": "auxiliary"}
+{"id": 111878, "text": "It may contain any number of Meals and TipDenominations and is related to exactly one Account.", "label": "auxiliary"}
+{"id": 111879, "text": "A Payment maintains its total value and the seat number of the paying customer.", "label": "auxiliary"}
+{"id": 111880, "text": "This class represents an extension of the Payment class for customer payments that are to be paid using a bankcard.", "label": "auxiliary"}
+{"id": 111881, "text": "This class represents an extension of the Payment class for customer payments that are to be paid using cash.", "label": "auxiliary"}
+{"id": 111882, "text": "This class represents a tip denomination to be given to a waiter.", "label": "auxiliary"}
+{"id": 111883, "text": "A TipDenomination belongs to a single Payment and contains information about the denomination value.", "label": "auxiliary"}
+{"id": 111884, "text": "Prepared By Team Danger Tutorial One • 32 • April 2008", "label": "auxiliary"}
+{"id": 111885, "text": "Dietary Requirement type ~description", "label": "auxiliary"}
+{"id": 111886, "text": "Display Item ~name ~price 0..1 -description ~image", "label": "auxiliary"}
+{"id": 111887, "text": "Meal Order seat Number HisPlaced LisApproved tapprove() +placer cance", "label": "auxiliary"}
+{"id": 111888, "text": "Tip Denomination ~mode ~tableNumber Lamovni +wakel)", "label": "auxiliary"}
+{"id": 111889, "text": "Account eep() +changeToBillMode() tchange oOrderMode()", "label": "auxiliary"}
+{"id": 111890, "text": "Payment Tablet +costl) employeelD HloggedInTo aieru", "label": "auxiliary"}
+{"id": 111891, "text": "Bankcard Payment Cash Payment seatNumber +costl) tCost()", "label": "auxiliary"}
+{"id": 111892, "text": "Prepared By Team Danger Tutorial One • 33 • April 2008", "label": "auxiliary"}
+{"id": 111893, "text": "[Meals Paid] Active", "label": "auxiliary"}
+{"id": 111894, "text": "[Turn On] Dormant [Log Into] Active [Turn Off]", "label": "auxiliary"}
+{"id": 111895, "text": "Prepared By Team Danger Tutorial One • 34 • April 2008", "label": "auxiliary"}
+{"id": 111896, "text": "Figure 4.4.5 Item Class Statechart Diagram", "label": "auxiliary"}
+{"id": 111897, "text": "[Approval] [Items Transferred]", "label": "auxiliary"}
+{"id": 111898, "text": "Figure 4.4.6 Order Class Statechart Diagram", "label": "auxiliary"}
+{"id": 111899, "text": "[Activation] [Payment Completion]", "label": "auxiliary"}
+{"id": 111900, "text": "Ordering   Billing", "label": "auxiliary"}
+{"id": 111901, "text": "Figure 4.4.7 Table Class Statechart Diagram", "label": "auxiliary"}
+{"id": 111902, "text": "Prepared By Team Danger Tutorial One • 35 • April 2008", "label": "auxiliary"}
+{"id": 111903, "text": "Prepared By Team Danger Tutorial One", "label": "auxiliary"}
+{"id": 111904, "text": "• 36 •", "label": "auxiliary"}
+{"id": 111905, "text": "Larman, APPLYING UML AND PATTERNS An Introduction to Object-Oriented Analysis and Design and Iterative Development, 3rd ed., Massachusetts: Pearson Education, 2005.", "label": "auxiliary"}
+{"id": 111906, "text": "Carrington, CSSE3002 Course Notes, School of ITEE University of Queensland, 2008", "label": "auxiliary"}
+{"id": 111907, "text": "IEEE Recommended Practice for Software Requirements Specifications, IEEE Standard 830, 1998.", "label": "auxiliary"}
+{"id": 111908, "text": "Prepared By Team Danger Tutorial One • 37 • April 2008", "label": "auxiliary"}
+{"id": 111909, "text": "Prepared By Team Danger Tutorial One", "label": "auxiliary"}
+{"id": 111910, "text": "• 38 •", "label": "auxiliary"}
+{"id": 111911, "text": "In order to improve an engineering process, it must be recorded and analysed.", "label": "auxiliary"}
+{"id": 111912, "text": "This appendix seeks to collate time data based on both the planned schedule and the actual time spent during the process.", "label": "auxiliary"}
+{"id": 111913, "text": "Furthermore, it discusses the problems encountered during the process of developing the subject SRS and suggests remedies to prevent these problems from arising in future iterations.", "label": "auxiliary"}
+{"id": 111914, "text": "The team's original plan for developing the Software Requirements Specification (SRS) was straightforward.", "label": "auxiliary"}
+{"id": 111915, "text": "Each team member was to review lecture notes and related textbook chapters to ensure familiarity with the process (background research).", "label": "auxiliary"}
+{"id": 111916, "text": "They were to also research existing computerised restaurant menu/ordering systems to gather an idea of what already currently exists and what the requirements of the system would be (requirements elicitation).", "label": "auxiliary"}
+{"id": 111917, "text": "The list of requirements gathered from this were then to be refined in a meeting with all team members, which would result in a consistent and complete set of requirements defining the system.", "label": "auxiliary"}
+{"id": 111918, "text": "This would include a use case model, use case descriptions, sequence diagrams, activity diagrams, UML class analysis diagram and state chart diagrams.", "label": "auxiliary"}
+{"id": 111919, "text": "From this set of requirements, the final SRS was to be developed written as a formal SRS as per the IEEE template.", "label": "auxiliary"}
+{"id": 111920, "text": "The requirements gathered in previous phases were collated and each section was to be written in turn making sure that later sections were consistent with previously written sections and then reviewed by all team members to check for any errors or inconsistencies.", "label": "auxiliary"}
+{"id": 111921, "text": "The completed SRS once agreed to by all team members was then to be submitted.", "label": "auxiliary"}
+{"id": 111922, "text": "The most serious problem encountered was that of finding the time in which everyone could meet outside of university, work hours and other commitments.", "label": "auxiliary"}
+{"id": 111923, "text": "With all of the team members having busy timetables, as well as other commitments, we were limited in the times that we were able to meet and therefore had to spend a lot of time working via email.", "label": "auxiliary"}
+{"id": 111924, "text": "Second was the inaccurate estimation of time required to complete the writing of the SRS.", "label": "auxiliary"}
+{"id": 111925, "text": "The time required for requirements elicitation was underestimated, delaying the schedule and leaving less time available for diagram production and report writing.", "label": "auxiliary"}
+{"id": 111926, "text": "This miscalculation occurred because the team had no previous metrics by which to estimate the time needed to complete the requirements elicitation phase.", "label": "auxiliary"}
+{"id": 111927, "text": "The primary change to the SRS development process that this report suggests pertains to time estimation.", "label": "auxiliary"}
+{"id": 111928, "text": "It is not ideal to plan the development of a SRS with no previous metrics on which to base the time estimations.", "label": "auxiliary"}
+{"id": 111929, "text": "It is recommended that a longer window of time be allocated to requirements elicitation, diagram production and the writing of the final report.", "label": "auxiliary"}
+{"id": 111930, "text": "Prepared By Team Danger Tutorial One • 39 • April 2008", "label": "auxiliary"}
+{"id": 111931, "text": "The differences between the submitted SRS plan and the actual process undertaken have been summarised below.", "label": "auxiliary"}
+{"id": 111932, "text": "Preparation of SRS Plan", "label": "auxiliary"}
+{"id": 111933, "text": "Proof reading of the SRS Plan", "label": "auxiliary"}
+{"id": 111934, "text": "'Requirements Elicitation' meeting", "label": "auxiliary"}
+{"id": 111935, "text": "Complete analysis/use case modelling", "label": "auxiliary"}
+{"id": 111936, "text": "Complete sequence, activity, UML class analysis, and statechart diagrams", "label": "auxiliary"}
+{"id": 111937, "text": "Complete first draft", "label": "auxiliary"}
+{"id": 111938, "text": "Proof read first draft", "label": "auxiliary"}
+{"id": 111939, "text": "Complete final report draft", "label": "auxiliary"}
+{"id": 111940, "text": "Tables B 1.1-3 presented below highlight the aforementioned time discrepancies.", "label": "auxiliary"}
+{"id": 111941, "text": "Early completion dates and shorter time expenditures are highlighted in green; late completion dates and extra time expenditures are highlighted in red.", "label": "auxiliary"}
+{"id": 111942, "text": "**Table B 1.1 Plan Writing Time Data Listing**", "label": "auxiliary"}
+{"id": 111943, "text": "Task Predicted Completion Actual Completion Predicted Time Expended Actual Time Expended", "label": "auxiliary"}
+{"id": 111944, "text": "SRS plan first draft 08/04/08 08/04/08 1.5 hours (meeting) 1.5 hours (meeting)", "label": "auxiliary"}
+{"id": 111945, "text": "SRS plan final draft 09/04/08 09/04/08 1.5 hours (MW) 1 hour (MW)", "label": "auxiliary"}
+{"id": 111946, "text": "SRS plan proof read 10/04/08 11/04/08 0.5 hours (all) 0.5 hours (TH) 0 hours (DK) 0.5 hours (JT) 0 hours (MW)", "label": "auxiliary"}
+{"id": 111947, "text": "SRS plan edited and submitted 12/04/08 13/04/08 0.5 hours (MW) 0.5 hours (MW)", "label": "auxiliary"}
+{"id": 111948, "text": "Prepared By Team Danger Tutorial One • 40 • April 2008", "label": "auxiliary"}
+{"id": 111949, "text": "Task Predicted Completion Actual Completion Predicted Time Expended Actual Time Expended", "label": "auxiliary"}
+{"id": 111950, "text": "Background Research 14/04/08 14/04/08 6 hours (all) 2 hours (TH) 1 hour (DK) 3 hours (JT) 2 hours (MW)", "label": "auxiliary"}
+{"id": 111951, "text": "Requirements Elicitation 15/04/08 22/04/08 5 hours (meeting) 6 hours (meeting)", "label": "auxiliary"}
+{"id": 111952, "text": "Complete analysis/use case modelling 17/04/08 20/04/08 4 hours (all) 1 hour (TH) 0 hours (DK) 4 hours (JT) 12 hours (MW)", "label": "auxiliary"}
+{"id": 111953, "text": "Complete other diagrams 21/04/08 26/04/08 10 hours (all) 2 hours (TH) 0 hours (DK) 2 hours (JT) 8 hours (MW)", "label": "auxiliary"}
+{"id": 111954, "text": "Review requirements 22/04/08 22/04/08 3 hours (meeting) 3 hours (TH) 3 hours (DK) 5 hours (JT) 5 hours (MW)", "label": "auxiliary"}
+{"id": 111955, "text": "Table B 1.2 Preliminary Documentation Time Data Listing", "label": "auxiliary"}
+{"id": 111956, "text": "Task Predicted Completion Actual Completion Predicted Time Expended Actual Time Expended", "label": "auxiliary"}
+{"id": 111957, "text": "Report first draft 25/04/08 24/04/08 4 hours (all) 6 hours (TH) 4 hours (DK) 15 hours (JT) 15 hours (MW)", "label": "auxiliary"}
+{"id": 111958, "text": "Report proof read 26/04/08 26/04/08 2 hours (all) 10 hours (TH) 0 hours (DK) 4 hours (JT) 0 hours (MW)", "label": "auxiliary"}
+{"id": 111959, "text": "Report final draft 27/04/08 28/04/08 2 hours (MW) 10 hours (TH) 0 hours (DK) 12 hours (JT) 0 hours (MW)", "label": "auxiliary"}
+{"id": 111960, "text": "Report submitted 28/04/08 28/04/08 0.5 hours (MW) 0.5 hour (TH) 0.25 hours (JT)", "label": "auxiliary"}
+{"id": 111961, "text": "Table B 1.3 Final Documentation Time Data Listing", "label": "auxiliary"}
+{"id": 111962, "text": "Prepared By Team Danger Tutorial One • 41 • April 2008", "label": "auxiliary"}
+{"id": 111963, "text": "Prepared By Team Danger Tutorial One", "label": "auxiliary"}
+{"id": 111964, "text": "• 42 •", "label": "auxiliary"}
+{"id": 111965, "text": "Review lecture notes and related textbook chapters to ensure familiarity with the requirements engineering process and the essential components of a Software Requirements Specification.", "label": "auxiliary"}
+{"id": 111966, "text": "This includes gaining an understanding of the different categories of requirements, the various methods and diagrams used to describe them and an understanding of why requirements engineering is important.", "label": "auxiliary"}
+{"id": 111967, "text": "Additionally, research existing computerised restaurant menu/ordering systems and document this research for inclusion in the report.", "label": "auxiliary"}
+{"id": 111968, "text": "Because there is not an actual client for this assignment, the elicitation phase will consist of the team brainstorming possible functionality from the “client’s” point of view.", "label": "auxiliary"}
+{"id": 111969, "text": "The elicited requirements will be based primarily on the research previously conducted into existing computerised restaurant systems.", "label": "auxiliary"}
+{"id": 111970, "text": "During the analysis phase, team members will take the derived requirements and transform them into a constant, thorough and complete set of requirements.", "label": "auxiliary"}
+{"id": 111971, "text": "This will include formulating a use case model, use case descriptions, sequence diagrams, activity diagrams, a UML analysis class diagram and statechart diagrams.", "label": "auxiliary"}
+{"id": 111972, "text": "The outcome of this final phase will be the production of the final report, including the full Software Requirements Specification and an appendix concerning process reflection.", "label": "auxiliary"}
+{"id": 111973, "text": "Details of the specification will be finalised and all requirements and diagrams will be collated and organised into a single coherent Software Requirements Specification document.", "label": "auxiliary"}
+{"id": 111974, "text": "- Tyson Henning (TH) (41213250)", "label": "auxiliary"}
+{"id": 111975, "text": "- Jonathan Thompson (JT) (40525460)", "label": "auxiliary"}
+{"id": 111976, "text": "- Daryl Keehn (DK) (40766357)", "label": "auxiliary"}
+{"id": 111977, "text": "- Michael Wildermoth (MW) (40092560)", "label": "auxiliary"}
+{"id": 111978, "text": "Week Date Task", "label": "auxiliary"}
+{"id": 111979, "text": "Week 6 08/04 Prepare plan first draft", "label": "auxiliary"}
+{"id": 111980, "text": "Week 6 10/04 Review and proofread plan first draft", "label": "auxiliary"}
+{"id": 111981, "text": "Week 6 12/04 Amend review changes and submit inspection plan", "label": "auxiliary"}
+{"id": 111982, "text": "Week 7 14/04 Complete research", "label": "auxiliary"}
+{"id": 111983, "text": "Week 7 15/04 'Requirements Elicitation' brainstorming meeting", "label": "auxiliary"}
+{"id": 111984, "text": "Week 7 17/04 Complete analysis/use case modelling", "label": "auxiliary"}
+{"id": 111985, "text": "Week 8 21/04 Complete sequence, activity, UML analysis class, and statechart diagrams", "label": "auxiliary"}
+{"id": 111986, "text": "Week 8 22/04 Review requirements", "label": "auxiliary"}
+{"id": 111987, "text": "Prepared By Team Danger Tutorial One • 43 • April 2008", "label": "auxiliary"}
+{"id": 111988, "text": "- 25/04 - Prepare inspection report draft", "label": "auxiliary"}
+{"id": 111989, "text": "- 26/04 - Review and proofread report first draft", "label": "auxiliary"}
+{"id": 111990, "text": "- 27/04 - Complete report final draft and submit", "label": "auxiliary"}
+{"id": 111991, "text": "1.5 hours (meeting) Prepare plan first draft", "label": "auxiliary"}
+{"id": 111992, "text": "0.5 hours (all) Review and proof read plan first draft", "label": "auxiliary"}
+{"id": 111993, "text": "0.5 hours (MW) Amend review changes and submit inspection plan", "label": "auxiliary"}
+{"id": 111994, "text": "6.0 hours (all) Complete research", "label": "auxiliary"}
+{"id": 111995, "text": "5.0 hours (meeting) 'Requirements Elicitation' brainstorming meeting", "label": "auxiliary"}
+{"id": 111996, "text": "4.0 hours (all) Complete analysis/use case modelling", "label": "auxiliary"}
+{"id": 111997, "text": "10.0 hours (all) Complete sequence, activity, UML analysis class, and statechart diagrams", "label": "auxiliary"}
+{"id": 111998, "text": "3.0 hours (meeting) Review requirements", "label": "auxiliary"}
+{"id": 111999, "text": "4.0 hours (all) Complete report first draft", "label": "auxiliary"}
+{"id": 112000, "text": "2.0 hours (all) Review and proofread report first draft", "label": "auxiliary"}
+{"id": 112001, "text": "2.0 hours (MW) Complete report final draft and submit", "label": "auxiliary"}
+{"id": 112002, "text": "Prepared By Team Danger Tutorial One • 44 • April 2008", "label": "auxiliary"}

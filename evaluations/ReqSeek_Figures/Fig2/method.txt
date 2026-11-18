@@ -1,0 +1,111 @@
+%%{init: {
+  "theme": "neutral",
+  "layout": "dagre",
+  "look": "classic",
+  "themeVariables": {
+    "fontFamily": "Georgia, serif",
+    "fontSize": "25px",
+    "borderRadius": "10px"
+  },
+
+  "flowchart": {
+    "curve": "linear",
+    "nodeSpacing": 20,
+    "rankSpacing": 5
+  }
+  
+}}%%
+
+flowchart LR
+
+subgraph ENV[" "]
+direction LR
+
+    ARID@{shape: lin-cyl, label: "**ARID**<br>*2,396 instances*"}
+    split_1@{ shape: subproc, label: "*10-Fold CV*"}
+    split_2@{shape: subproc, label: "*T=80%<br>E=20%*"}
+    
+    subgraph RQ1["<b>RQ1<b>"]
+    subgraph x[" "]
+    end
+    RQ1.1@{shape: procs, label: "*Candidate Model Selection*"}
+    RQ1.2@{shape: procs, label: "*Human-Model Benchmark*"}
+    
+    end
+    ARID~~~x
+    ReqSeek@{shape: stadium, label: "fas:fa-magnifying-glass-plus **ReqSeek**"}
+
+
+    RQ2@{ shape: procs, label: "**RQ2**<br>*Label Inconsistency Analysis*"}
+    RoBERTa@{shape: stadium, label: "**fas:fa-cube 25 × Model Training**"}
+
+ 
+    transformations@{shape: processes, label: "**Transformation**<br>*+linguistic errors*"}
+    RQ3@{shape: procs, label: "**RQ3**<br>*Linguistic Error Robustness*"}
+
+    subgraph y[" "]
+
+        subgraph yy[" "]
+            UOCSSR@{ shape: lin-cyl, label: "**UOCSSR**<br>*33,098 records*" }
+            SRS3@{ shape: lin-cyl, label: "**3 × SRSs**<br>*2,085 sentences*" }
+        end
+
+        RQ4@{ shape: procs, label: "**RQ4**<br>*Domain-agnosticism*"}
+        RQ5@{ shape: procs, label: "**RQ5**<br>*Use-case Validation*"}
+     
+    end
+
+SwaRD@{ shape: lin-cyl, label: "**SwaRD**<br>*40,522 instances*" }
+
+end
+%% --- RQ1 (benchmarking) uses CV version of ARID ---
+ARID --- split_1
+split_1 --> RQ1.1
+
+RQ1.1 --> ReqSeek
+split_2 -- "102 samples<br/>from E=20%" --> RQ1.2
+
+%% --- Fixed split used for final fine-tuning + all downstream RQs ---
+split_2 --T=80%--> RoBERTa
+split_2 --E=20%--> RQ2
+ARID --- split_2
+ReqSeek ---> RQ3
+ReqSeek --> RQ4
+ReqSeek --> RQ5
+
+RQ4~~~RQ5
+
+%% --- Transformations applied on the fixed evaluation set ---
+ARID --E=20%--> transformations
+transformations --[T0-T6]---> RQ3
+
+RQ5 --> SwaRD
+RoBERTa -- +inconsistency --> RQ2
+SRS3 --> RQ4
+UOCSSR --> RQ5
+
+
+
+    classDef PastelPink fill:#ffcccb,stroke:#d46a6a,stroke-width:1.5px
+    class ReqSeek,RoBERTa PastelPink
+
+    classDef PastelTeal fill:#B2DCDC,stroke:#9CBEBE,stroke-width:1.5px;
+    class ARID,SwaRD,SRS3,UOCSSR PastelTeal
+
+    classDef PastelLavender fill:#E6CCFF,stroke:#A47ED4,stroke-width:1.5px;
+    class transformations PastelLavender
+
+    classDef nowrap text-wrap:nowrap;
+    class ARID,UOCSSR,SRS3,SwaRD,split_1,split_2,SRS3,ReqSeek,RoBERTa,RQ1,RQ1.1,RQ1.2,RQ2,RQ3,RQ4,RQ5 nowrap
+
+    classDef MakeInvisible fill:#ffffff00,stroke:#ffffff00,stroke-width:0px;
+    class yy,y,x MakeInvisible
+
+    classDef NoStroke stroke-width:0px;
+    class RQ1 NoStroke
+
+    classDef makeRound rx:20px,ry:20px
+    class RQ1 makeRound;
+
+    classDef SoftColor fill:#f9f9f9,stroke:none,rx:20px,ry:20px;
+    class ENV SoftColor;
