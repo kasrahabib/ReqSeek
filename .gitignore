@@ -11,7 +11,6 @@ datasets/validate_dataset_release.ipynb
 evaluations/RQ1/training_scripts_and_models/models/*
 evaluations/RQ1/training_scripts_and_models/model_snapshot_download.py
 
-# Human evaluation records excluded from the public release
 evaluations/RQ1/human_annotated_data/A1/
 evaluations/RQ1/human_annotated_data/A2/
 evaluations/RQ1/human_annotated_data/A3/
@@ -20,11 +19,7 @@ evaluations/RQ1/human_annotated_data/A1.csv
 evaluations/RQ1/human_annotated_data/A2.csv
 evaluations/RQ1/human_annotated_data/A3.csv
 evaluations/RQ1/human_annotated_data/for_human_annotation_sample_102.csv
-# End
 
 evaluations/RQ1/training_scripts_and_models/models_10fold_dataset_splits/*
 evaluations/RQ2/training_scripts_and_models/models_with_inconsistency_levels/*
-
-
-evaluations/RQ4/rq4_error_characterization.xlsx
 
