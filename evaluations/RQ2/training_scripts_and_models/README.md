@@ -18,7 +18,3 @@ This repository provides training scripts and related resources for reproducing 
 
 - [`training_40_inconsistency_roberta_base.ipynb`](./training_40_inconsistency_roberta_base.ipynb)  
   Training script for the model trained on a dataset with **40% label inconsistency**.
-
-## Model Availability
-
-The `models_with_inconsistency_levels/` directory is intentionally left empty, as the model checkpoints (total size: **138.03 GB**) are not included in this replication package due to GitHub size constraints.
