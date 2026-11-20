@@ -19,17 +19,11 @@ The construction of large and diverse requirements datasets is challenging, part
 ## Repository Contents
 
 ### 1. [`ReqSeek/`](./ReqSeek/)
-
-Contains the ReqSeek model and supporting resources. 
-
-- [`demo.ipynb`](./demo.ipynb): Demonstrates how to download and use ReqSeek.
+Contains the ReqSeek model and supporting resources. The model is also available on [Hugging Face](https://huggingface.co/kasrahabib/ReqSeek). For instructions on downloading and using the model, see [`demo.ipynb`](./demo.ipynb).
 
 ### 2. [`datasets/`](./datasets/)
 
-Contains the two datasets developed for this study, along with documentation and usage instructions:
-
-- **Automatic Requirements Identification Dataset (ARID):** A curated, manually labeled dataset used to train and evaluate ReqSeek.
-- **Software Requirements Dataset (SwaRD):** A large-scale requirements dataset constructed using ReqSeek.
+Contains the two datasets developed for this study (ARID and SwaRD), along with their documentation and [usage instructions](./datasets/README.md). Both datasets are also available on Hugging Face: [ARID](https://huggingface.co/datasets/kasrahabib/ARID) and [SwaRD](https://huggingface.co/datasets/kasrahabib/SwaRD).
 
 ### 3. [`evaluations/`](./evaluations/)
 
