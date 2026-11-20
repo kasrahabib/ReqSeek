@@ -69,6 +69,21 @@ The **publicly released ARID dataset contains 1,331 instances**, distributed as 
 
 Overall, **1,065 instances from 10 source-project groups** are excluded from the public version. These exclusions do not affect the original experimental results reported in the paper.
 
+#### ARID Column Descriptions
+
+The following table describes the columns of the released ARID dataset.
+
+| Column Name             | Description |
+|------------------------|-------------|
+| `REQID`                 | Internal identifier assigned by the authors. May contain duplicate values. |
+| `REQID_expanded`        | Unique identifier for each requirement in ARID. |
+| `Project Name`          | Name of the project from which the requirement originates. |
+| `Subproject Name`       | Name of a subproject within the larger project. |
+| `Requirement Sentences` | Requirement text. |
+| `signal_keyword`        | Manually labeled signal keyword in the sentence (e.g., *shall*, *should*, *will*, *may*, *must*). |
+| `binary_cls`            | Manually annotated class: **requirement**, **system-related auxiliary**, or **contextual auxiliary**. |
+| `ternary_cls`           | Binary annotation: **requirement** or **auxiliary** (merging system/context auxiliary). |
+
 ### 2. Software Requirements Dataset (SwaRD)
 
 SwaRD is constructed using ReqSeek to automatically identify requirements and auxiliary sentences from textual requirements data.
@@ -87,6 +102,26 @@ The **publicly released SwaRD dataset contains 33,260 instances**, distributed a
 Overall, **7,262 instances** originating from four source groups, including 13 COEST constituent datasets, are excluded from the public version.
 
 The reported research results are based on the complete SwaRD dataset and remain unchanged.
+
+#### SwaRD Column Descriptions
+
+The following table describes the columns of the released SwaRD dataset.
+
+| Column Name | Description |
+|---|---|
+| `REQID` | Internal identifier assigned by the authors; may contain duplicate values. |
+| `REQID_expanded` | Unique identifier for each instance in SwaRD. |
+| `Project Name` | Name of the project from which the sentence originates. |
+| `Subproject Name` | Name of a subproject within the larger project. |
+| `Requirement Sentences` | Requirement text. |
+| \*`F/NF Classes` | Placeholder for functional (F) versus non-functional (NF) requirement classification. |
+| \*`NF Subclasses` | Placeholder for non-functional requirement subclasses (e.g., performance, usability). |
+| `isReqSysAuxContAux_with_keyword` | Signal keyword used (e.g., *shall*, *should*, *will*, *may*, *must*). |
+| `isReqSysAuxContAux` | Multi-class label: requirement vs. system-related auxiliary vs. contextual auxiliary. |
+| `isReqAux` | Binary label: requirement vs. auxiliary (system/context merged). |
+
+**\*Note:** The `F/NF Classes` and `NF Subclasses` columns are currently unpopulated (all values are `None`) and are retained for potential future requirements classification tasks.
+
 
 ---
 

@@ -2,6 +2,7 @@ datasets_with_data/*
 ReqSeek_Presentation/*
 datasets_directly_shared_with_TOSEM/*
 datasets/validate_dataset_release.ipynb
+upload_reqseek_and_datasets_to_huggingface.ipynb
 
 **/.ipynb_checkpoints/
 **/.DS_Store
