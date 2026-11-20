@@ -3,6 +3,7 @@ ReqSeek_Presentation/*
 datasets_directly_shared_with_TOSEM/*
 datasets/validate_dataset_release.ipynb
 upload_reqseek_and_datasets_to_huggingface.ipynb
+datasets/create_hf_dataset_cards_licensing_updated.ipynb
 
 **/.ipynb_checkpoints/
 **/.DS_Store
