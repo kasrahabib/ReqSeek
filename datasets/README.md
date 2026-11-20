@@ -81,8 +81,8 @@ The following table describes the columns of the released ARID dataset.
 | `Subproject Name`       | Name of a subproject within the larger project. |
 | `Requirement Sentences` | Requirement text. |
 | `signal_keyword`        | Manually labeled signal keyword in the sentence (e.g., *shall*, *should*, *will*, *may*, *must*). |
-| `binary_cls`            | Manually annotated class: **requirement**, **system-related auxiliary**, or **contextual auxiliary**. |
-| `ternary_cls`           | Binary annotation: **requirement** or **auxiliary** (merging system/context auxiliary). |
+|    `ternary_cls`         | Manually annotated class: **requirement**, **system-related auxiliary**, or **contextual auxiliary**. |
+| `binary_cls`           | Binary annotation: **requirement** or **auxiliary** (merging system/context auxiliary). |
 
 ### 2. Software Requirements Dataset (SwaRD)
 

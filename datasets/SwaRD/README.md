@@ -35,15 +35,14 @@ The following table describes the columns of the released SwaRD dataset.
 
 ## Dataset Size
 
+The original study analyzed the **complete research dataset (40,522 instances)**. The public release currently contains **33,260 instances**; **7,262 instances** are excluded due to source-specific redistribution restrictions or unclear permissions. These public-release exclusions do not change the reported research results.
+
 | Class | Complete Research Dataset | Public Release |
 |---|---:|---:|
 | `requirement` | 10,201 | 7,168 |
 | `system_related_auxiliary` | 25,746 | 23,062 |
 | `contextual_auxiliary` | 4,575 | 3,030 |
 | **Total** | **40,522** | **33,260** |
-
-The original study analyzed the **complete research dataset (40,522 instances)**. The public release currently contains **33,260 instances**; **7,262 instances** are excluded due to source-specific redistribution restrictions or unclear permissions. These public-release exclusions do not change the reported research results.
-
 
 ## Loading
 

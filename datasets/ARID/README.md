@@ -26,10 +26,12 @@ The following table describes the columns of the released ARID dataset.
 | `Subproject Name`       | Name of a subproject within the larger project. |
 | `Requirement Sentences` | Requirement text. |
 | `signal_keyword`        | Manually labeled signal keyword in the sentence (e.g., *shall*, *should*, *will*, *may*, *must*). |
-| `binary_cls`            | Manually annotated class: **requirement**, **system-related auxiliary**, or **contextual auxiliary**. |
-| `ternary_cls`           | Binary annotation: **requirement** or **auxiliary** (merging system/context auxiliary). |
+| `ternary_cls` | Manually annotated class: **requirement**, **system-related auxiliary**, or **contextual auxiliary**. |
+| `binary_cls` | Binary annotation: **requirement** or **auxiliary** (merging system/context auxiliary). |
 
 ## Dataset Size
+
+The original experiments used the **complete research dataset (2,396 instances)**. The public release currently contains **1,331 instances**, with **1,065 instances** excluded because redistribution permissions are restricted or unclear. Public-release changes do not alter the experiments or results reported in the paper.
 
 | Class | Complete Research Dataset | Public Release |
 |---|---:|---:|
@@ -37,9 +39,6 @@ The following table describes the columns of the released ARID dataset.
 | `system_related_auxiliary` | 746 | 284 |
 | `contextual_auxiliary` | 600 | 531 |
 | **Total** | **2,396** | **1,331** |
-
-The original experiments used the **complete research dataset (2,396 instances)**. The public release currently contains **1,331 instances**, with **1,065 instances from 10 source-project groups** excluded because redistribution permissions are restricted or unclear. Public-release changes do not alter the experiments or results reported in the paper.
-
 
 ## Loading
 
