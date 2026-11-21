@@ -56,7 +56,7 @@ Both approaches provide access to the datasets through the Hugging Face `dataset
 
 ARID is a manually curated and labeled dataset of ISO 29148-style requirements, system-related auxiliary sentences, and contextual auxiliary sentences collected from 23 heterogeneous Software Requirements Specifications (SRSs) and requirements datasets.
 
-The complete research dataset used in the experiments contains **2,396 instances**. For public redistribution, selected source projects have been excluded pending clarification of their redistribution permissions.
+The complete research dataset used in the experiments contains **2,396 instances**. or public redistribution, certain source projects have been excluded pending clarification of their redistribution permissions.
 
 The **publicly released ARID dataset contains 1,331 instances**, distributed as follows:
 
@@ -67,7 +67,7 @@ The **publicly released ARID dataset contains 1,331 instances**, distributed as 
 | contextual_auxiliary | 600 | 531 |
 | **Total** | **2,396** | **1,331** |
 
-Overall, **1,065 instances from 10 source-project groups** are excluded from the public version. These exclusions do not affect the original experimental results reported in the paper.
+These exclusions do not affect the original experimental results reported in the paper.
 
 #### ARID Column Descriptions
 
@@ -99,9 +99,7 @@ The **publicly released SwaRD dataset contains 33,260 instances**, distributed a
 | contextual_auxiliary | 4,575 | 3,030 |
 | **Total** | **40,522** | **33,260** |
 
-Overall, **7,262 instances** originating from four source groups, including 13 COEST constituent datasets, are excluded from the public version.
-
-The reported research results are based on the complete SwaRD dataset and remain unchanged.
+These exclusions do not affect the original experimental results reported in the paper.
 
 #### SwaRD Column Descriptions
 
