@@ -42,10 +42,10 @@ Alternatively, load **[ARID](https://huggingface.co/datasets/kasrahabib/ARID)** 
 from datasets import load_dataset
 
 # Load ARID
-arid = load_dataset("kasrahabib/ARID")
+arid = load_dataset("kasrahabib/ARID", split = 'data')
 
 # Load SwaRD
-sward = load_dataset("kasrahabib/SwaRD")
+sward = load_dataset("kasrahabib/SwaRD", split = 'data')
 ```
 
 Both approaches provide access to the datasets through the Hugging Face `datasets` library, supporting operations for exploration, filtering, and conversion.
