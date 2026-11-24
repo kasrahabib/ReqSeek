@@ -1,0 +1,43 @@
+
+
+cff-version: 1.2.0
+
+message: >-
+  If you use ReqSeek, ARID, or SwaRD in your research,
+  please cite our paper. Accepted for publication in
+  ACM Transactions on Software Engineering and
+  Methodology (TOSEM), 2026.
+
+type: software
+
+title: "ReqSeek: Transformer-Based Automatic Requirements Identification for Building Large Requirements Datasets"
+
+version: 1.0.1
+
+authors:
+  - given-names: Mohammad Kasra
+    family-names: Habib
+  - name: Umm-e-Habiba
+  - given-names: Daniel
+    family-names: Graziotin
+  - given-names: Stefan
+    family-names: Wagner
+
+preferred-citation:
+  type: article
+  title: "ReqSeek: Transformer-Based Automatic Requirements Identification for Building Large Requirements Datasets"
+  authors:
+    - given-names: Mohammad Kasra
+      family-names: Habib
+    - name: Umm-e-Habiba
+    - given-names: Daniel
+      family-names: Graziotin
+    - given-names: Stefan
+      family-names: Wagner
+  year: 2026
+  url: "https://arxiv.org/abs/2611.29722"
+  identifiers:
+    - type: url
+      value: "https://arxiv.org/abs/2611.29722"
+      description: "arXiv:2611.29722"
+

@@ -2,7 +2,9 @@
 
 [![DOI](https://zenodo.org/badge/1463329008.svg)](https://doi.org/10.5281/zenodo.24418048)
 
-**Associated Publication:** *ReqSeek: Transformer-Based Automatic Requirements Identification for Building Large Requirements Datasets*. *ACM Transactions on Software Engineering and Methodology (TOSEM)*.
+
+**Associated Publication:** *ReqSeek: Transformer-Based Automatic Requirements Identification for Building Large Requirements Datasets*. Accepted for publication in *ACM Transactions on Software Engineering and Methodology (TOSEM)*, 2026. [arXiv:2611.29722](https://arxiv.org/abs/2611.29722).
+
 
 **Authors:** Mohammad Kasra Habib, Umm-e-Habiba, Daniel Graziotin, and Stefan Wagner.
 
@@ -33,11 +35,31 @@ Contains experimental setups, evaluation scripts, results, and supporting materi
 
 ---
 
+
 ## Citation
 
 If you use ReqSeek, ARID, SwaRD, or other materials from this replication package in your research, please cite the associated publication.
 
-For citation details, see [`CITATION.cff`](./CITATION.cff).
+**Publication status:** Accepted for publication in *ACM Transactions on Software Engineering and Methodology (TOSEM)*, 2026.
+
+**Preprint:** [arXiv:2611.29722](https://arxiv.org/abs/2611.29722)
+
+**BibTeX:**
+
+```bibtex
+@misc{habib2026reqseek,
+  title         = {ReqSeek: Transformer-Based Automatic Requirements Identification for Building Large Requirements Datasets},
+  author        = {Mohammad Kasra Habib and Umm-e-Habiba and Daniel Graziotin and Stefan Wagner},
+  year          = {2026},
+  eprint        = {2611.29722},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SE},
+  url           = {https://arxiv.org/abs/2611.29722}
+}
+```
+
+For machine-readable citation metadata, see [`CITATION.cff`](./CITATION.cff).
+
 
 
 ## License
